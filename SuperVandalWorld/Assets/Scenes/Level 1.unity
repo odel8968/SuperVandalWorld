@@ -688,7 +688,7 @@ GameObject:
   - component: {fileID: 76854319}
   - component: {fileID: 76854318}
   m_Layer: 0
-  m_Name: Pilck-up (4)
+  m_Name: Pick-up (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1288,7 +1288,7 @@ GameObject:
   - component: {fileID: 246871832}
   - component: {fileID: 246871831}
   m_Layer: 0
-  m_Name: Pilck-up (2)
+  m_Name: Pick-up (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2002,7 +2002,7 @@ GameObject:
   - component: {fileID: 454528049}
   - component: {fileID: 454528048}
   m_Layer: 0
-  m_Name: Pilck-up (6)
+  m_Name: Pick-up (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2101,7 +2101,7 @@ GameObject:
   - component: {fileID: 496327942}
   - component: {fileID: 496327941}
   m_Layer: 0
-  m_Name: Pilck-up (5)
+  m_Name: Pick-up (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2311,7 +2311,7 @@ GameObject:
   - component: {fileID: 529144436}
   - component: {fileID: 529144435}
   m_Layer: 0
-  m_Name: Pilck-up (13)
+  m_Name: Pick-up (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2410,7 +2410,7 @@ GameObject:
   - component: {fileID: 543470119}
   - component: {fileID: 543470118}
   m_Layer: 0
-  m_Name: Pilck-up (9)
+  m_Name: Pick-up (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -84352,7 +84352,7 @@ GameObject:
   - component: {fileID: 624495653}
   - component: {fileID: 624495652}
   m_Layer: 0
-  m_Name: Pilck-up (3)
+  m_Name: Pick-up (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -85032,7 +85032,7 @@ GameObject:
   - component: {fileID: 813402379}
   - component: {fileID: 813402378}
   m_Layer: 0
-  m_Name: Pilck-up (11)
+  m_Name: Pick-up (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -86481,7 +86481,7 @@ GameObject:
   - component: {fileID: 1191027099}
   - component: {fileID: 1191027098}
   m_Layer: 0
-  m_Name: Pilck-up (12)
+  m_Name: Pick-up (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -86691,7 +86691,7 @@ GameObject:
   - component: {fileID: 1289924764}
   - component: {fileID: 1289924763}
   m_Layer: 0
-  m_Name: Pilck-up (7)
+  m_Name: Pick-up (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -86790,7 +86790,7 @@ GameObject:
   - component: {fileID: 1372193384}
   - component: {fileID: 1372193383}
   m_Layer: 0
-  m_Name: Pilck-up
+  m_Name: Pick-up
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -87222,7 +87222,7 @@ GameObject:
   - component: {fileID: 1504391743}
   - component: {fileID: 1504391742}
   m_Layer: 0
-  m_Name: Pilck-up (10)
+  m_Name: Pick-up (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -87353,7 +87353,7 @@ GameObject:
   - component: {fileID: 1605674059}
   - component: {fileID: 1605674058}
   m_Layer: 0
-  m_Name: Pilck-up (8)
+  m_Name: Pick-up (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -88003,7 +88003,7 @@ GameObject:
   - component: {fileID: 1758103073}
   - component: {fileID: 1758103072}
   m_Layer: 0
-  m_Name: Pilck-up (1)
+  m_Name: Pick-up (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
