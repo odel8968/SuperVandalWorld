@@ -10,9 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5565368482642660731}
   - component: {fileID: 5565368482642660733}
-  - component: {fileID: -4756791513734880157}
   - component: {fileID: -4553585268787601459}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sapphire
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -84,27 +83,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!50 &-4756791513734880157
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5565368482642660728}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 1
-  m_Constraints: 0
 --- !u!61 &-4553585268787601459
 BoxCollider2D:
   m_ObjectHideFlags: 0
