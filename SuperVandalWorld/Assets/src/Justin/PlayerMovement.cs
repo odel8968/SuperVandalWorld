@@ -30,9 +30,4 @@ public class PlayerMovement : MonoBehaviour
         PlayerRb.velocity = new Vector2(horizontal * movementSpeed, PlayerRb.velocity.y);
     }
 
-    void OnTriggerEnter2D(Collider2D other){
-        if(other.gameObject.CompareTag("Item")){
-            Item.collisionItem(other);
-        }
-    }
 }
