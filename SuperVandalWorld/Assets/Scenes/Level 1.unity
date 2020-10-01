@@ -2654,7 +2654,7 @@ GameObject:
   m_Component:
   - component: {fileID: 348907317}
   - component: {fileID: 348907316}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GroundBase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3655,7 +3655,7 @@ GameObject:
   - component: {fileID: 608864389}
   - component: {fileID: 608864388}
   - component: {fileID: 608864387}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GroundTilemap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -87214,9 +87214,9 @@ GameObject:
   - component: {fileID: 868055312}
   - component: {fileID: 868055311}
   - component: {fileID: 868055309}
+  - component: {fileID: 868055314}
   - component: {fileID: 868055313}
   - component: {fileID: 868055310}
-  - component: {fileID: 868055314}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -87245,8 +87245,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!58 &868055310
-CircleCollider2D:
+--- !u!61 &868055310
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -87259,8 +87259,18 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!212 &868055311
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -87301,8 +87311,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 138ce20bc6628564cb0a4f1c818c206d, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 5d6a21e69aceb469ea18f13c0c4a514f, type: 3}
+  m_Color: {r: 0.9811321, g: 0.9729074, b: 0.06016379, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -87338,7 +87348,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3dd8cea1f2d89c489db592cd2c830dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 10
+  speed: 10
+  jumpForce: 12
+  checkGroundRadius: 0.1
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 2048
 --- !u!114 &868055314
 MonoBehaviour:
   m_ObjectHideFlags: 0
