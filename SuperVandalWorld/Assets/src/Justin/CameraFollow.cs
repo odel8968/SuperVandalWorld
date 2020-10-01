@@ -18,22 +18,7 @@ public class CameraFollow : MonoBehaviour
 
     void FixedUpdate()
     {
-        Vector2 follow = followObject.transform.position;
-        float xDifference = Vector2.Distance(Vector2.right * transform.position.x, Vector2.right * follow.x);
-        float yDifference = Vector2.Distance(Vector2.up * transform.position.y, Vector2.up * follow.y);
-
-        Vector3 newPosition = transform.position;
-        if(Mathf.Abs(xDifference) >= threshold.x)
-        {
-            newPosition.x = follow.x;
-        }
-
-        if(Mathf.Abs(yDifference) >= threshold.y)
-        {
-            newPosition.y = follow.y;
-        }
-        float moveSpeed = rb.velocity.magnitude > speed ? rb.velocity.magnitude : speed;
-        transform.position = Vector3.MoveTowards(transform.position, newPosition, moveSpeed * Time.deltaTime);
+        followPlayer();
 
     }
 
@@ -50,5 +35,25 @@ public class CameraFollow : MonoBehaviour
         Gizmos.color = Color.blue;
         Vector2 border = calculateThreshold();
         Gizmos.DrawWireCube(transform.position, new Vector3(border.x * 2, border.y * 2, 1));
+    }
+
+    private void followPlayer()
+    {
+        Vector2 follow = followObject.transform.position;
+        float xDifference = Vector2.Distance(Vector2.right * transform.position.x, Vector2.right * follow.x);
+        float yDifference = Vector2.Distance(Vector2.up * transform.position.y, Vector2.up * follow.y);
+
+        Vector3 newPosition = transform.position;
+        if(Mathf.Abs(xDifference) >= threshold.x)
+        {
+            newPosition.x = follow.x;
+        }
+
+        if(Mathf.Abs(yDifference) >= threshold.y)
+        {
+            newPosition.y = follow.y;
+        }
+        float moveSpeed = rb.velocity.magnitude > speed ? rb.velocity.magnitude : speed;
+        transform.position = Vector3.MoveTowards(transform.position, newPosition, moveSpeed * Time.deltaTime);
     }
 }
