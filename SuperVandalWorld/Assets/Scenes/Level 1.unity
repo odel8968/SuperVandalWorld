@@ -86576,7 +86576,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 12
+  orthographic size: 14
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -86619,7 +86619,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   followObject: {fileID: 868055308}
-  followOffset: {x: 25, y: 0}
+  followOffset: {x: 25, y: 8}
   speed: 5
 --- !u!1 &820240254
 GameObject:
