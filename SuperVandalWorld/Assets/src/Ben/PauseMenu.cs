@@ -6,6 +6,8 @@ public class PauseMenu : MonoBehaviour
 {
 	GameObject[] pauseObjects;
 
+	//public float volumeSlider = 1.0f;
+
 	void Start()
 	{
 		Time.timeScale = 1;
@@ -21,7 +23,6 @@ public class PauseMenu : MonoBehaviour
 		if (Input.GetKeyDown(KeyCode.Escape))
 		{
 			pauseControl();
-			SoundManager.instance.PlaySound("Jump");
 		}
 	}
 
@@ -32,11 +33,13 @@ public class PauseMenu : MonoBehaviour
 		if (Time.timeScale == 1)
 		{
 			Time.timeScale = 0;
+			SoundManager.instance.PlaySound("mOpen");
 			showPaused();
 		}
 		else if (Time.timeScale == 0)
 		{
 			Time.timeScale = 1;
+			SoundManager.instance.PlaySound("mClose");
 			hidePaused();
 		}
 	}
@@ -75,4 +78,10 @@ public class PauseMenu : MonoBehaviour
 		Debug.Log("Quit command received");
 		Application.Quit();
     }
+
+	public void SetVolume(float newVolume)
+    {
+		AudioListener.volume = newVolume;
+		//Debug.Log(newVolume);
+	}
 }

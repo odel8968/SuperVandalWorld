@@ -63,5 +63,18 @@ public class SoundManager : MonoBehaviour
 
         }
     }
+
+    public void PlaySound(string _name, GameObject _object)
+    {
+        for (int i = 0; i < sounds.Length; i++)
+        {
+            if (sounds[i].name == _name)
+            {
+                sounds[i].Play();
+                return;
+            }
+
+        }
+    }
 }
 
