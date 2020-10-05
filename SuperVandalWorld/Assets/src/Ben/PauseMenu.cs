@@ -17,20 +17,11 @@ public class PauseMenu : MonoBehaviour
 	void Update()
 	{
 
-		//uses the p button to pause and unpause the game
+		//uses the escape button to pause and unpause the game
 		if (Input.GetKeyDown(KeyCode.Escape))
 		{
-			if (Time.timeScale == 1)
-			{
-				Time.timeScale = 0;
-				showPaused();
-			}
-			else if (Time.timeScale == 0)
-			{
-				Debug.Log("high");
-				Time.timeScale = 1;
-				hidePaused();
-			}
+			pauseControl();
+			SoundManager.instance.PlaySound("Jump");
 		}
 	}
 
