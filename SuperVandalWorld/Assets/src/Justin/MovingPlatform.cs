@@ -4,10 +4,7 @@ using UnityEngine;
 
 public class MovingPlatform : MonoBehaviour
 {
-
-    //reference to game object to move
     public GameObject platform;
-    //positions that the platform will move between
     public Transform[] movePoints;
 
     //current point of the platform
@@ -44,6 +41,20 @@ public class MovingPlatform : MonoBehaviour
             //set current point to array position
             startPoint = movePoints[endPoint];
         }
+
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.collider.tag == "Player")
+        {
+            collision.collider.transform.SetParent(transform);
+        }
+            
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+            collision.collider.transform.SetParent(null);
+    }
 }
