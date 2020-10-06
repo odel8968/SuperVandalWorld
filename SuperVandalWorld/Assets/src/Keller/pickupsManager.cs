@@ -3,12 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class pickupsManager : MonoBehaviour
-{
-    public bool abilityEnabled;
-    
-    void start(){
-        abilityEnabled = false;
-    }
+{    
     void OnTriggerEnter2D(Collider2D other){
         if(other.gameObject.CompareTag("Item")){
             Item.collisionItem(other);

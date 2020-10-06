@@ -8,7 +8,7 @@ public class Character_Movement : MonoBehaviour
     BoxCollider2D bc;
     public float speed;
     public float jumpForce;
-    public bool hasAbility;
+    public static bool hasAbility;
 
     bool isGrounded = false;
     public float checkGroundRadius;
