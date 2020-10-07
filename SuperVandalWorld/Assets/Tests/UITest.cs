@@ -76,5 +76,34 @@ namespace Tests
             yield return null;
 
         }
+
+        [UnityTest]
+        public IEnumerator VolumeTest()
+        {
+            yield return new WaitWhile(() => sceneLoaded == false);
+
+            var gobject = GameObject.Find("UI").GetComponent<PauseMenu>();
+            var volume = AudioListener.volume;
+
+            Assert.AreEqual(volume, 1f);
+
+            gobject.SetVolume(.5f);
+            volume = AudioListener.volume;
+
+            Assert.AreEqual(volume, .5f);
+
+            gobject.SetVolume(0f);
+            volume = AudioListener.volume;
+
+            Assert.AreEqual(volume, 0f);
+
+            gobject.SetVolume(1f);
+            volume = AudioListener.volume;
+
+            Assert.AreEqual(volume, 1f);
+
+            yield return null;
+
+        }
     }
 }
