@@ -4,10 +4,21 @@ using System.Globalization;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class UIScript : MonoBehaviour
+public class UIManager : MonoBehaviour
 {
     public Text scoreText;
     private int score;
+
+    public static UIManager instance;
+
+
+    void Awake()
+    {
+        if (instance == null)
+            instance = this;
+        else
+            Debug.Log("Multiple sound managers created");
+    }
 
     public void addScore(int _score)
     {
@@ -19,10 +30,14 @@ public class UIScript : MonoBehaviour
         score = 0;
     }
 
+    public int getScore()
+    {
+        return score;
+    }
+
     // Update is called once per frame
     void Update()
     {
-        //score++;
         scoreText.text = score.ToString();
     }
 }

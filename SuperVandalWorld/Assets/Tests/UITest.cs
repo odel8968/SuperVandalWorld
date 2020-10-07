@@ -1,44 +1,77 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography.X509Certificates;
 using System.Threading;
 using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 namespace Tests
 {
     public class UITest
     {
-        // A Test behaves as an ordinary method
-        [Test]
-        public void UITestSimplePasses()
+        private bool sceneLoaded;
+
+        private void SceneManager_sceneLoaded(Scene arg0, LoadSceneMode arg1)
         {
-            // Use the Assert class to test conditions
+
+            sceneLoaded = true;
         }
 
-        // A UnityTest behaves like a coroutine in Play Mode. In Edit Mode you can use
-        // `yield return null;` to skip a frame.
+        [OneTimeSetUp]
+        public void loadedLevel()
+        {
+
+            SceneManager.sceneLoaded += SceneManager_sceneLoaded;
+            SceneManager.LoadScene("Level 1", LoadSceneMode.Single);
+        }
+
+
         [UnityTest]
         public IEnumerator PauseFunctionTest()
         {
-            // Use the Assert class to test conditions.
-            // Use yield to skip a frame.
-            
+            yield return new WaitWhile(() => sceneLoaded == false);
+
+            var gobject = GameObject.Find("UI").GetComponent<PauseMenu>();
             var gameSpeed = Time.timeScale;
+
             Assert.AreEqual(gameSpeed, 1.0f);
+
+
+            gobject.pauseControl();
+
+            gameSpeed = Time.timeScale;
+            Assert.AreEqual(gameSpeed, 0f);
+
+            gobject.pauseControl();
+
+            gameSpeed = Time.timeScale;
+            Assert.AreEqual(gameSpeed, 1f);
 
             yield return null;
 
         }
 
+        [UnityTest]
         public IEnumerator ScoreTest()
         {
-            // Use the Assert class to test conditions.
-            // Use yield to skip a frame.
+            yield return new WaitWhile(() => sceneLoaded == false);
 
-            var score = GameObject.Find("Score").GetComponent<Text>();
-            Assert.AreEqual(score, "0");
+            var gobject = GameObject.Find("Score").GetComponent<UIManager>();
+            var score = gobject.getScore();
+            Assert.AreEqual(score, 0);
+
+            gobject.addScore(15);
+
+            score = gobject.getScore();
+            Assert.AreEqual(score, 15);
+
+
+            gobject.resetScore();
+            score = gobject.getScore();
+            Assert.AreEqual(score, 0);
 
             yield return null;
 
