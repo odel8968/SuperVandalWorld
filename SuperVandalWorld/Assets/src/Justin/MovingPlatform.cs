@@ -14,19 +14,11 @@ public class MovingPlatform : MonoBehaviour
     public int endPoint;
     public float moveSpeed = 5f;
 
-    private Rigidbody2D pointB;
-    private Rigidbody2D pointA;
-
-    private Rigidbody2D MovingPlatform1;
-
     // Start is called before the first frame update
     void Start()
     {
         //set start point to end point to move towards
-        MovingPlatform1 = GetComponent<Rigidbody2D>();
         startPoint = movePoints[endPoint];
-        pointB = GetComponent<Rigidbody2D>();
-        pointA = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -52,4 +44,17 @@ public class MovingPlatform : MonoBehaviour
 
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.collider.tag == "Player")
+        {
+            collision.collider.transform.SetParent(transform);
+        }
+            
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+            collision.collider.transform.SetParent(null);
+    }
 }

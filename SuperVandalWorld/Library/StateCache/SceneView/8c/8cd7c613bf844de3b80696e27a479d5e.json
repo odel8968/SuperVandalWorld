@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true,"showVisualEffectGraphs":true,"m_FxEnabled":true},"in2DMode":true,"pivot":{"x":43.69670486450195,"y":0.12204411625862122,"z":688.2009887695313},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":3.270873785018921,"orthographic":true}
+=======
+﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true,"showVisualEffectGraphs":true,"m_FxEnabled":true},"in2DMode":true,"pivot":{"x":165.12818908691407,"y":4.514459609985352,"z":-8.812628746032715},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":8.526496887207032,"orthographic":true}
+>>>>>>> parent of f92d21e0... Testing methods
