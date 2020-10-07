@@ -6,6 +6,8 @@ public class PauseMenu : MonoBehaviour
 {
 	GameObject[] pauseObjects;
 
+	//public float volumeSlider = 1.0f;
+
 	void Start()
 	{
 		Time.timeScale = 1;
@@ -17,20 +19,10 @@ public class PauseMenu : MonoBehaviour
 	void Update()
 	{
 
-		//uses the p button to pause and unpause the game
+		//uses the escape button to pause and unpause the game
 		if (Input.GetKeyDown(KeyCode.Escape))
 		{
-			if (Time.timeScale == 1)
-			{
-				Time.timeScale = 0;
-				showPaused();
-			}
-			else if (Time.timeScale == 0)
-			{
-				Debug.Log("high");
-				Time.timeScale = 1;
-				hidePaused();
-			}
+			pauseControl();
 		}
 	}
 
@@ -41,11 +33,13 @@ public class PauseMenu : MonoBehaviour
 		if (Time.timeScale == 1)
 		{
 			Time.timeScale = 0;
+			SoundManager.instance.PlaySound("mOpen");
 			showPaused();
 		}
 		else if (Time.timeScale == 0)
 		{
 			Time.timeScale = 1;
+			SoundManager.instance.PlaySound("mClose");
 			hidePaused();
 		}
 	}
@@ -84,4 +78,10 @@ public class PauseMenu : MonoBehaviour
 		Debug.Log("Quit command received");
 		Application.Quit();
     }
+
+	public void SetVolume(float newVolume)
+    {
+		AudioListener.volume = newVolume;
+		//Debug.Log(newVolume);
+	}
 }

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7896068681396778603}
   - component: {fileID: 1097337091954297914}
   - component: {fileID: -1889671638563756548}
+  - component: {fileID: -8047272040375343467}
   m_Layer: 0
   m_Name: Square
   m_TagString: Untagged
@@ -119,3 +120,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1
   moveTime: 3
+--- !u!114 &-8047272040375343467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 74636750633710547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8861cff9a03f6594b9b7d74bda5228a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  abilityEnabled: 0
