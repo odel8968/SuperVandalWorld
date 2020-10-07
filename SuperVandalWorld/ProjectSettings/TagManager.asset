@@ -8,7 +8,6 @@ TagManager:
   - Item
   - PowerUp
   - MovingPlatform
-  - Sound
   layers:
   - Default
   - TransparentFX
