@@ -3,19 +3,24 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Square : MonoBehaviour
-{
-    public float speed;
+{   
+    public float speed;    
     private Rigidbody2D rb;
+    private Animator animator;
     private Vector2 moveVelocity;
-
-    private float curTime;
+    public float curTime;
     public float moveTime = 3;
-    private float direction = 1;
+    public float direction = 1;
+    // public float curTime { get {return curTime;}}
+     //public float direction { get {return direction;}}
+
 
     // Start is called before the first frame update
     void Start()
     {
-       rb = GetComponent<Rigidbody2D>();   
+       rb = GetComponent<Rigidbody2D>();  
+       animator = GetComponent<Animator>();
+        
     }
 
     // Update is called once per frame
@@ -29,6 +34,7 @@ public class Square : MonoBehaviour
             curTime = 0;
         }
         moveVelocity = new Vector2(direction, 0) * speed;
+        animator.SetFloat("velocity", moveVelocity.x);
         
     }
 
