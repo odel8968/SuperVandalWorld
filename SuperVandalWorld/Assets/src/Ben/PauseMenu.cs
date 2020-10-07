@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Globalization;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PauseMenu : MonoBehaviour
 {
@@ -18,7 +20,6 @@ public class PauseMenu : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
-
 		//uses the escape button to pause and unpause the game
 		if (Input.GetKeyDown(KeyCode.Escape))
 		{
