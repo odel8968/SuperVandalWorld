@@ -10,7 +10,7 @@ namespace Tests
     public class pickupPointTest
     {
 
-        public int updateScore(string[] items, int[] numItems, int currentScore){
+        public static int updateScore(string[] items, int[] numItems, int currentScore){
 
             for(int i = 0; i < items.Length; i++){
                 switch(items[i]){
@@ -45,8 +45,9 @@ namespace Tests
             if(currentScore < 0){
                 currentScore = 0;
             }
-
+            
             return currentScore;
+            
         }
 
 
@@ -60,12 +61,12 @@ namespace Tests
             int[] numItems = {5,3,4,2};
 
             //act
-            score += updateScore(items, numItems, score);
+            score = updateScore(items, numItems, score);
 
             yield return null;
 
             //assert
-            Assert.AreEqual(score, 7700);
+            Assert.AreEqual(7700, score);
         }
 
 
@@ -77,12 +78,12 @@ namespace Tests
             int[] numPowerUps = {3,2,7};
 
             //act
-            score += updateScore(powerUps, numPowerUps, score);
+            score = updateScore(powerUps, numPowerUps, score);
 
             yield return null;
 
             //assert
-            Assert.AreEqual(score, 0);
+            Assert.AreEqual(0, score);
         }
 
         [UnityTest]
@@ -96,13 +97,12 @@ namespace Tests
             int[] numItems = {5,3,4,2};
 
             //act
-            score += updateScore(items, numItems, score);
-            score += updateScore(powerUps, numPowerUps, score);
-
+            score = updateScore(items, numItems, score);
+            score = updateScore(powerUps, numPowerUps, score);
             yield return null;
 
             //asset
-            Assert.AreEqual(score, 5700);
+            Assert.AreEqual(5700, score);
         }
 
         [UnityTest]
@@ -116,14 +116,14 @@ namespace Tests
             int[] numItems = {5,3,4,2};
 
             //act
-            score += updateScore(powerUps, numPowerUps, score);
-            score += updateScore(items, numItems, score);
+            score = updateScore(powerUps, numPowerUps, score);
+            score = updateScore(items, numItems, score);
 
 
             yield return null;
 
             //asset
-            Assert.AreEqual(score, 7700);
+            Assert.AreEqual(7700, score);
         }
     }
 }
