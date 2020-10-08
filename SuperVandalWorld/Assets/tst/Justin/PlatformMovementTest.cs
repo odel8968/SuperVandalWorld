@@ -44,52 +44,6 @@ namespace Tests
             yield return new WaitForSeconds((20));
 
             Assert.That(platform, Is.EqualTo(pointB));
-        } 
-    
-        [UnityTest]
-        public IEnumerator MovingPlatformToAFromB()
-        {
-            yield return new WaitWhile(() => sceneLoaded == false);
-            var platform = GameObject.Find("MovingRockPlatform_0").GetComponent<MovingPlatform>();
-            var pointB = GameObject.Find("PointB").GetComponent<MovingPlatform>();
-            var pointA = GameObject.Find("PointA").GetComponent<MovingPlatform>();
-            yield return new WaitForSeconds((10));
-
-            Assert.That(platform, Is.EqualTo(pointA));
         }
-
-        //Heba Trying 
-     [UnityTest]
-    public IEnumerator MovingPlatformToAFromB_Heba()
-        {
-            yield return new WaitWhile(() => sceneLoaded == false);
-            var platform = GameObject.Find("MovingRockPlatform_0").GetComponent<MovingPlatform>();
-            var MovingPlatform1 = GameObject.Find("MovingPlatform1").GetComponent<MovingPlatform>();
-            var pointB = GameObject.Find("PointB").GetComponent<MovingPlatform>();
-            var pointA = GameObject.Find("PointA").GetComponent<MovingPlatform>(); 
-          /* yield return new WaitWhile(
-               () =>
-               {
-            
-               
-                        if(pointB)
-                        {
-                            Debug.Log("Assert Check");
-                            Assert.That(pointA, Is.EqualTo(pointB));
-
-                        }
-
-               }
-               
-
-
-           );
-           */
-
-         Assert.That(pointA, Is.EqualTo(pointB));  
-
-        } 
-
-        
-    }
+    } 
 }
