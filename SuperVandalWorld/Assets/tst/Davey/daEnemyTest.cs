@@ -10,7 +10,9 @@ namespace Tests {
 
         private bool sceneLoaded;
         private bool enemyIsMoving;
-        private bool enemyIsAtPlayerPosition;
+        private bool enemyMovingToPlayer;
+
+
 
         [OneTimeSetUp]
         public void OneTimeSetup() {
@@ -28,7 +30,7 @@ namespace Tests {
             
             yield return new WaitWhile(() => sceneLoaded == false);
 
-            var enemy = GameObject.Find("Enemy_Square").GetComponent<enemyController>();
+            var enemy = GameObject.Find("Test_Enemy_Square").GetComponent<enemyController>();
             var speed = enemy.enemySpeed;
 
             yield return new WaitForSeconds(1f);
@@ -36,17 +38,13 @@ namespace Tests {
             Assert.That(speed, Is.EqualTo(2.5f));   
         }
 
-        // TODO: Send Heba what my test do and why
-        //       What i will be working on next week
-        //       Check to see if i can change the size of the Gantt Chart
-
         // Test to see if the enemy is moving
         [UnityTest]
         public IEnumerator isEnemyMoving() {
 
-            yield return new WaitWhile(() => sceneLoaded == false);
+        yield return new WaitWhile(() => sceneLoaded == false);
 
-            var enemy = GameObject.Find("Enemy_Square").GetComponent<enemyController>();
+            var enemy = GameObject.Find("Test_Enemy_Square").GetComponent<enemyController>();
             Vector2 enemySPos = enemy.initPos;
 
             yield return new WaitForSeconds(1f);
@@ -62,24 +60,26 @@ namespace Tests {
 
         // Test to check if the enemy was able to locate the player
         [UnityTest]
-        public IEnumerator movesTowardsPlayer() {
+        public IEnumerator movingTowardsPlayer() {
 
             yield return new WaitWhile(() => sceneLoaded == false);
 
-            var enemy = GameObject.Find("Enemy_Square").GetComponent<enemyController>();
+            var enemy = GameObject.Find("Test_Enemy_Square").GetComponent<enemyController>();
             var player = GameObject.Find("Player").GetComponent<Character_Movement>();
 
-            var playerPos = player.transform.position;
-            var enemyPos = enemy.transform.position;
+            float initDist = Vector2.Distance(player.transform.position, enemy.transform.position);
 
             yield return new WaitForSeconds(2f);
 
-            if (playerPos == enemyPos) {
-                enemyIsAtPlayerPosition = true;
-            }
-            Assert.That(enemyIsAtPlayerPosition, Is.EqualTo(true));
-        }
+            float distFinal = Vector2.Distance(player.transform.position, enemy.transform.position);            
 
-        // Test to see if the enemy is visible
+            if (distFinal < initDist) {
+                enemyMovingToPlayer = true;
+            } else {
+                enemyMovingToPlayer = false;
+            }
+
+            Assert.That(enemyMovingToPlayer, Is.EqualTo(true));
+        }
     }
 }

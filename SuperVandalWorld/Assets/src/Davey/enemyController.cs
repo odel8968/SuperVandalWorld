@@ -16,6 +16,7 @@ public class enemyController : MonoBehaviour {
     public float enemySpeed = 2.5f;
 
     // Set position of enemy at launch
+    [HideInInspector]
     public Vector2 initPos;
     void Start() {
         initPos = transform.position;
