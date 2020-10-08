@@ -33,5 +33,17 @@ namespace Tests
             yield return null;
             Assert.AreNotEqual(Player.transform.position.y, initialpos);
         }
+
+        [UnityTest]
+        public IEnumerator movement_test()
+        {
+            yield return new WaitWhile(() => sceneLoaded == false);
+            var Player = GameObject.Find("Player").GetComponent<Character_Movement>();
+            float initialpos = Player.transform.position.x;
+            Player.speed = 10;
+            Player.rb.velocity = new Vector2(Player.speed, Player.rb.velocity.y);
+            yield return null;
+            Assert.AreNotEqual(Player.transform.position.x, initialpos);
+        }
     }
 }

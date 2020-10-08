@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: Test Runner
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 875, y: 392}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -119,10 +119,10 @@ MonoBehaviour:
     y: 30
     width: 2560
     height: 1308
-  m_MinSize: {x: 503, y: 342}
-  m_MaxSize: {x: 12003, y: 8042}
+  m_MinSize: {x: 504, y: 492}
+  m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 123
+  controlID: 133
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,10 +144,10 @@ MonoBehaviour:
     y: 0
     width: 1621
     height: 1308
-  m_MinSize: {x: 403, y: 342}
-  m_MaxSize: {x: 8003, y: 8042}
+  m_MinSize: {x: 403, y: 492}
+  m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 17
+  controlID: 103
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -172,7 +172,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 18
+  controlID: 104
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -238,7 +238,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ConsoleWindow
+  m_Name: ProjectBrowser
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -247,14 +247,14 @@ MonoBehaviour:
     y: 790
     width: 1621
     height: 518
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 18}
+  m_MinSize: {x: 231, y: 271}
+  m_MaxSize: {x: 10001, y: 10021}
+  m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
   - {fileID: 18}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -274,8 +274,8 @@ MonoBehaviour:
     y: 0
     width: 939
     height: 1308
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 19}
@@ -374,7 +374,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 08a4ffff1ea4ffff74a9ffff46afffff5cafffffd0afffffeeb4ffff04b5ffff78b5ffff6cbaffff82bafffff6baffff1ac0ffff30c0ffffacc0ffffcac5ffffe0c5ffff60c6ffff94cbffffaacbffff2accffff56d2ffff6cd2ffffe8d2ffff02d8ffff16d8ffff34d8ffffe4ddfffffaddffff76deffffa6e3ffffbae3ffffd8e3ffffd8e8ffffeee8ffff70e9ffffc0efffff
+      m_ExpandedIDs: 1cfbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -666,21 +666,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/tst/Heba
+    - Assets/tst/John
     m_Globs: []
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/tst/Heba
+  - Assets/tst/John
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\John Cambareri\Documents\GitHub\SuperVandalWorld\SuperVandalWorld
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: da480000
-    m_LastClickedID: 18650
-    m_ExpandedIDs: 00000000ae480000b0480000b2480000b448000000ca9a3b
+    m_SelectedIDs: 74430000
+    m_LastClickedID: 17268
+    m_ExpandedIDs: 00000000484300004a4300004c4300004e43000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -708,7 +708,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000ae480000b0480000b2480000b4480000
+    m_ExpandedIDs: 00000000484300004a4300004c4300004e430000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -809,10 +809,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1631
-    y: 182
-    width: 804
-    height: 1081
+    x: 1621
+    y: 72
+    width: 938
+    height: 1287
   m_ViewDataDictionary: {fileID: 0}
   m_ObjectsLockedBeforeSerialization: []
   m_InstanceIDsLockedBeforeSerialization: 
@@ -853,7 +853,7 @@ MonoBehaviour:
     height: 1287
   m_ViewDataDictionary: {fileID: 0}
   m_Spl:
-    ID: 154
+    ID: 164
     splitterInitialOffset: 516
     currentActiveSplitter: -1
     realSizes:
@@ -884,7 +884,7 @@ MonoBehaviour:
       uniqueId: '[SuperVandalWorld][suite]'
       name: SuperVandalWorld
       fullName: SuperVandalWorld
-      resultStatus: 1
+      resultStatus: 0
       duration: 1.2950336
       messages: 
       output: 
@@ -896,435 +896,12 @@ MonoBehaviour:
       categories: []
       parentId: 
       parentUniqueId: 
-    - id: 1012
-      uniqueId: '[Tests.dll][suite]'
-      name: Tests.dll
-      fullName: /Users/hebaaljabrine/Desktop/PLEASE/SuperVandalWorld/SuperVandalWorld/Library/ScriptAssemblies/Tests.dll
-      resultStatus: 1
-      duration: 1.267564
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1003
-      parentUniqueId: '[SuperVandalWorld][suite]'
-    - id: 1013
-      uniqueId: Tests.dll/[Tests][suite]
-      name: Tests
-      fullName: Tests
-      resultStatus: 1
-      duration: 1.2623302
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1012
-      parentUniqueId: '[Tests.dll][suite]'
-    - id: 1010
-      uniqueId: Tests.dll/Tests/[Tests][Tests.CameraTest][suite]
-      name: CameraTest
-      fullName: Tests.CameraTest
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1024
-      parentUniqueId: Tests.dll/[Tests][suite]
-    - id: 1011
-      uniqueId: Tests.dll/Tests/CameraTest/[Tests][Tests.CameraTest.Camera_Set_To_Follow_Player]
-      name: Camera_Set_To_Follow_Player
-      fullName: Tests.CameraTest.Camera_Set_To_Follow_Player
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1010
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.CameraTest][suite]
-    - id: 1014
-      uniqueId: Tests.dll/Tests/CameraTest/[Tests][Tests.CameraTest.Camera_Speed_Set]
-      name: Camera_Speed_Set
-      fullName: Tests.CameraTest.Camera_Speed_Set
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1010
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.CameraTest][suite]
-    - id: 1012
-      uniqueId: Tests.dll/Tests/CameraTest/[Tests][Tests.CameraTest.Camera_X_Offset_Set]
-      name: Camera_X_Offset_Set
-      fullName: Tests.CameraTest.Camera_X_Offset_Set
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1010
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.CameraTest][suite]
-    - id: 1013
-      uniqueId: Tests.dll/Tests/CameraTest/[Tests][Tests.CameraTest.Camera_Y_Offset_Set]
-      name: Camera_Y_Offset_Set
-      fullName: Tests.CameraTest.Camera_Y_Offset_Set
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1010
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.CameraTest][suite]
-    - id: 1010
-      uniqueId: Tests.dll/Tests/[Tests][Tests.CharacterMovementTests][suite]
-      name: CharacterMovementTests
-      fullName: Tests.CharacterMovementTests
-      resultStatus: 1
-      duration: 1.2573979
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1025
-      parentUniqueId: Tests.dll/[Tests][suite]
-    - id: 1011
-      uniqueId: Tests.dll/Tests/CharacterMovementTests/[Tests][Tests.CharacterMovementTests.jump_test]
-      name: jump_test
-      fullName: Tests.CharacterMovementTests.jump_test
-      resultStatus: 1
-      duration: 1.2333992
-      messages: 
-      output: 'Jumping
-
-'
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1010
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.CharacterMovementTests][suite]
-    - id: 1009
-      uniqueId: Tests.dll/Tests/[Tests][Tests.pickupPointTest][suite]
-      name: pickupPointTest
-      fullName: Tests.pickupPointTest
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1015
-      parentUniqueId: Tests.dll/[Tests][suite]
-    - id: 1012
-      uniqueId: Tests.dll/Tests/pickupPointTest/[Tests][Tests.pickupPointTest.AddPointsForItemsBeforePowerUps]
-      name: AddPointsForItemsBeforePowerUps
-      fullName: Tests.pickupPointTest.AddPointsForItemsBeforePowerUps
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1009
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.pickupPointTest][suite]
-    - id: 1013
-      uniqueId: Tests.dll/Tests/pickupPointTest/[Tests][Tests.pickupPointTest.AddPointsForPowerupsBeforeItems]
-      name: AddPointsForPowerupsBeforeItems
-      fullName: Tests.pickupPointTest.AddPointsForPowerupsBeforeItems
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1009
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.pickupPointTest][suite]
-    - id: 1010
-      uniqueId: Tests.dll/Tests/pickupPointTest/[Tests][Tests.pickupPointTest.PickUpItemAddsPointsToScore]
-      name: PickUpItemAddsPointsToScore
-      fullName: Tests.pickupPointTest.PickUpItemAddsPointsToScore
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1009
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.pickupPointTest][suite]
-    - id: 1011
-      uniqueId: Tests.dll/Tests/pickupPointTest/[Tests][Tests.pickupPointTest.PickUpPowerUpsAddsPointsToScore]
-      name: PickUpPowerUpsAddsPointsToScore
-      fullName: Tests.pickupPointTest.PickUpPowerUpsAddsPointsToScore
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1009
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.pickupPointTest][suite]
-    - id: 1004
-      uniqueId: Tests.dll/Tests/[Tests][Tests.PlatformMovementTest][suite]
-      name: PlatformMovementTest
-      fullName: Tests.PlatformMovementTest
-      resultStatus: 1
-      duration: 0.6442872
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1013
-      parentUniqueId: Tests.dll/[Tests][suite]
-    - id: 1005
-      uniqueId: Tests.dll/Tests/PlatformMovementTest/[Tests][Tests.PlatformMovementTest.MovingPlatformSpeed]
-      name: MovingPlatformSpeed
-      fullName: Tests.PlatformMovementTest.MovingPlatformSpeed
-      resultStatus: 1
-      duration: 0.6253011
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1004
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.PlatformMovementTest][suite]
-    - id: 1004
-      uniqueId: Tests.dll/Tests/[Tests][Tests.SquareTest][suite]
-      name: SquareTest
-      fullName: Tests.SquareTest
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1020
-      parentUniqueId: Tests.dll/[Tests][suite]
-    - id: 1006
-      uniqueId: Tests.dll/Tests/SquareTest/[Tests][Tests.SquareTest.SquareTestBoundary1]
-      name: SquareTestBoundary1
-      fullName: Tests.SquareTest.SquareTestBoundary1
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1004
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.SquareTest][suite]
-    - id: 1007
-      uniqueId: Tests.dll/Tests/SquareTest/[Tests][Tests.SquareTest.SquareTestBoundary2]
-      name: SquareTestBoundary2
-      fullName: Tests.SquareTest.SquareTestBoundary2
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1004
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.SquareTest][suite]
-    - id: 1005
-      uniqueId: Tests.dll/Tests/SquareTest/[Tests][Tests.SquareTest.SquareTestInitialCondition]
-      name: SquareTestInitialCondition
-      fullName: Tests.SquareTest.SquareTestInitialCondition
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1004
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.SquareTest][suite]
-    - id: 1008
-      uniqueId: Tests.dll/Tests/SquareTest/[Tests][Tests.SquareTest.SquareTestStress]
-      name: SquareTestStress
-      fullName: Tests.SquareTest.SquareTestStress
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1004
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.SquareTest][suite]
-    - id: 1009
-      uniqueId: Tests.dll/Tests/[Tests][Tests.UITest][suite]
-      name: UITest
-      fullName: Tests.UITest
-      resultStatus: 1
-      duration: 0.4505333
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1013
-      parentUniqueId: Tests.dll/[Tests][suite]
-    - id: 1011
-      uniqueId: Tests.dll/Tests/UITest/[Tests][Tests.UITest.PauseFunctionTest]
-      name: PauseFunctionTest
-      fullName: Tests.UITest.PauseFunctionTest
-      resultStatus: 1
-      duration: 0.3687347
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1009
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.UITest][suite]
-    - id: 1003
-      uniqueId: Tests.dll/Tests/UITest/[Tests][Tests.UITest.ScoreTest]
-      name: ScoreTest
-      fullName: Tests.UITest.ScoreTest
-      resultStatus: 1
-      duration: 0.0427744
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.UITest][suite]
-    - id: 1004
-      uniqueId: Tests.dll/Tests/UITest/[Tests][Tests.UITest.VolumeTest]
-      name: VolumeTest
-      fullName: Tests.UITest.VolumeTest
-      resultStatus: 1
-      duration: 0.0111952
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.UITest][suite]
-    m_ResultText: 'jump_test (1.233s)
-
-      ---
-
-      Jumping'
+    m_ResultText: CharacterMovementTests (1.257s)
     m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 16c5509b
-      m_LastClickedID: -1689205482
+      m_SelectedIDs: c337b2b4
+      m_LastClickedID: -1263388733
       m_ExpandedIDs: c337b2b45dfc4bdfe557abf7761f4b11ab3ce1198302573d8359db41e6daa968ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
@@ -1422,10 +999,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 911
-    y: 30
-    width: 528
-    height: 829
+    x: 1621
+    y: 72
+    width: 938
+    height: 1287
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
