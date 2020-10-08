@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Character_Movement : MonoBehaviour
 {
-    Rigidbody2D rb;
-    BoxCollider2D bc;
+    public Rigidbody2D rb;
+    public BoxCollider2D bc;
     public float speed;
     public float jumpForce;
     public static bool hasAbility;
@@ -31,17 +31,22 @@ public class Character_Movement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             isGrounded = CheckIfGrounded();
-            if (isGrounded)
-            {
-                Debug.Log("Jumping");
-                rb.velocity = new Vector2(rb.velocity.x, jumpForce);
-            }
-            else
-            {
-                Debug.Log("Jump pressed; but not grounded.");
-            }
+            Jump(isGrounded);
         }
 
+    }
+
+    public void Jump(bool is_grounded)
+    {
+        if (is_grounded)
+        {
+            Debug.Log("Jumping");
+            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+        }
+        else
+        {
+            Debug.Log("Jump pressed; but not grounded.");
+        }
     }
 
     bool CheckIfGrounded()
