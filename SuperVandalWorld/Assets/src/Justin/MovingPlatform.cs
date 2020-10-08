@@ -12,18 +12,23 @@ public class MovingPlatform : MonoBehaviour
 
     //which point platform moves towards
     public int endPoint;
-    public float moveSpeed = 5f;
+    public float setSpeed;
+
+    private float moveSpeed;
 
     // Start is called before the first frame update
     void Start()
     {
         //set start point to end point to move towards
         startPoint = movePoints[endPoint];
+        
     }
 
     // Update is called once per frame
     void Update()
     {
+        SetSpeed(setSpeed);
+
         //move platform from start point to end point
         platform.transform.position = Vector3.MoveTowards(platform.transform.position, startPoint.position, moveSpeed * Time.deltaTime);
         
@@ -44,17 +49,9 @@ public class MovingPlatform : MonoBehaviour
 
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    public float SetSpeed(float setSpeed)
     {
-        if(collision.collider.tag == "Player")
-        {
-            collision.collider.transform.SetParent(transform);
-        }
-            
-    }
-
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-            collision.collider.transform.SetParent(null);
+        moveSpeed = setSpeed;
+        return moveSpeed;
     }
 }

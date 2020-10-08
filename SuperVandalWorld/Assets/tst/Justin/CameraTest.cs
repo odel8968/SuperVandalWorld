@@ -49,10 +49,11 @@ namespace Tests
 
             //Check if code reading x-offset is set correctly
             var mainCamera = GameObject.Find("Main Camera").GetComponent<CameraFollow>();
+            var xOffset = mainCamera.followOffset.x;
 
             Debug.Log(mainCamera.followOffset.x);
 
-            Assert.AreEqual(mainCamera.followOffset.x, 30);
+            Assert.AreEqual(xOffset, 30);
         }
 
         [UnityTest]
@@ -62,10 +63,11 @@ namespace Tests
 
             //Check if code reading y-offset is set correctly
             var mainCamera = GameObject.Find("Main Camera").GetComponent<CameraFollow>();
+            var yOffset = mainCamera.followOffset.y;
 
             Debug.Log(mainCamera.followOffset.y);
             
-            Assert.AreEqual(mainCamera.followOffset.y, 20);
+            Assert.AreEqual(yOffset, 20);
         }
 
         [UnityTest]
@@ -75,10 +77,12 @@ namespace Tests
 
             //Check if code reading y-offset is set correctly
             var mainCamera = GameObject.Find("Main Camera").GetComponent<CameraFollow>();
+            var speed = mainCamera.speed;
 
-            Debug.Log(mainCamera.speed);
+            Debug.Log(speed);
             
-            Assert.AreEqual(mainCamera.speed, 7);
+            Assert.AreEqual(speed, 7);
         }
     }
+
 }

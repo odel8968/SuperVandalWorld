@@ -31,19 +31,20 @@ namespace Tests
         {
             yield return new WaitWhile(()=>sceneLoaded == false);
             var platform = GameObject.Find("MovingPlatform1").GetComponent<MovingPlatform>();
+            var speed = platform.setSpeed;
+            //Check initial speed value
+            Assert.That(speed, Is.EqualTo(5f));
 
-            Assert.That(platform.moveSpeed, Is.EqualTo(5f));
+           //Change speed value with function in MovingPlatform script
+           //Check that value was updated correctly
+            speed = platform.SetSpeed(10f);
+            Assert.AreEqual(speed, 10f);
+
+            //Change speed value with function in MovingPlatform script
+           //Check that value was updated correctly
+            speed = platform.SetSpeed(2f);
+            Assert.AreEqual(speed, 2f);
         }
 
-        [UnityTest]
-        public IEnumerator MovingPlatformToPointB()
-        {
-            yield return new WaitWhile(()=>sceneLoaded == false);
-            var platform = GameObject.Find("MovingRockPlatform_0").GetComponent<MovingPlatform>();
-            var pointB = GameObject.Find("PointB").GetComponent<MovingPlatform>();
-            yield return new WaitForSeconds((20));
-
-            Assert.That(platform, Is.EqualTo(pointB));
-        }
     } 
 }
