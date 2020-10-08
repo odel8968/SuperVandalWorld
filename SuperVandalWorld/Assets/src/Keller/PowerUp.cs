@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PowerUp : pickupsManager
 {
+    
+    public int scoreValue;
     public static void collisionPowerUp(Collider2D other){
         //on trigger with pickup
 

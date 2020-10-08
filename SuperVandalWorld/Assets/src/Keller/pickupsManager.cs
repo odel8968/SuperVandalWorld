@@ -19,33 +19,33 @@ public class pickupsManager : MonoBehaviour
     }
     
     public static int updateScore(Collider2D other){
-        //call GUI manager's function for score to be updated
+
         int addPoints = 0;
 
-        switch(other.tag)
-        {
+        string pickUpType = other.gameObject.tag;
+        switch(other.gameObject.tag){
             case "Item":
-                if(other.gameObject.name.Contains("Sapphire")){
-                    addPoints = 100;
-                } 
-                else if(other.gameObject.name.Contains("Emerald")){
-                    addPoints = 200;
-                }
-                else if(other.gameObject.name.Contains("Ruby")){
-                    addPoints = 400;
-                }
-                else if(other.gameObject.name.Contains("Diamond")){
-                    addPoints = 2500;
-                }
-                
-                Debug.Log("Points added = " + addPoints);
-                break;
+            {
+                var obj = other.GetComponent<Item>();
+                addPoints = obj.scoreValue;
+
+                Debug.Log("Adding " + addPoints + " to score");    
+                return addPoints;
+            }
+            
             case "PowerUp":
-                addPoints = 1000;
-                break;
-        }
-        
-        return addPoints;
+            {
+                var obj = other.GetComponent<PowerUp>();
+                addPoints = obj.scoreValue;
+
+                Debug.Log("Adding " + addPoints + " to score");    
+                return addPoints;
+            }
+            default:
+            {
+                return addPoints;
+            }
+        }   
     }
 
     public static void removeAsset(Collider2D other){

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1699818205201390147}
   - component: {fileID: 1699818205201390156}
   - component: {fileID: 1699818205201390157}
+  - component: {fileID: 3900363977776457873}
   m_Layer: 8
   m_Name: Ruby
   m_TagString: Item
@@ -109,3 +110,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.2, y: 0.19}
   m_EdgeRadius: 0
+--- !u!114 &3900363977776457873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1699818205201390159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bc47024876a2cb418c65628bf785c05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 400

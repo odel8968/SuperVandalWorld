@@ -9,59 +9,71 @@ namespace Tests
 {
     public class pickupPointTest
     {
+        private bool sceneLoaded;
 
-        public static int updateScore(string[] items, int[] numItems, int currentScore){
+        [OneTimeSetUp]
+        public void loadedLevel(){
+            SceneManager.sceneLoaded += SceneManager_sceneLoaded;
+            SceneManager.LoadScene("Level 1", LoadSceneMode.Single);
+        }
 
-            for(int i = 0; i < items.Length; i++){
-                switch(items[i]){
-                    case("sapphire"):
-                        currentScore += numItems[i] * 100;
-                        break;
-                    case("emerald"):
-                        currentScore += numItems[i] * 200;
-                        break;
-                    case("ruby"):
-                        currentScore += numItems[i] * 400;                        
-                        break;
-                    case("diamond"):
-                        currentScore += numItems[i] * 2500;                        
-                        break;
-                    case("multiJump"):
-                        currentScore += numItems[i] * 1000;
-                        break;
-                    case("powerAxe"):
-                        currentScore += numItems[i] * 1000;
-                        break;
-                    case("badApple"):
-                        currentScore -= numItems[i] * 1000;
-                        break;
+        private void SceneManager_sceneLoaded(Scene arg0, LoadSceneMode arg1){
+            sceneLoaded = true;
+        }
+
+        public static int updateScore(GameObject other, int numItems, int currentScore){
+
+            string pickUpType = other.gameObject.tag;
+            for(int i=0; i < numItems; i++){
+                switch(other.gameObject.tag){
+                    case "Item":
+                    {
+                        var obj = other.GetComponent<Item>();
+                        currentScore += obj.scoreValue;
+                    }
+                    break;
+                    
+                    case "PowerUp":
+                    {
+                        var obj = other.GetComponent<PowerUp>();
+                        currentScore += obj.scoreValue;
+                    }
+                    break;
                     default:
-                        currentScore += 0;
-                        break;
+                    {
+                        return currentScore;
+                    }
+                    break;
+                }   
+
+                //if score would be negative, make it 0
+                if(currentScore < 0){
+                    currentScore = 0;
                 }
             }
-
-            //if score would be negative, make it 0
-            if(currentScore < 0){
-                currentScore = 0;
-            }
-            
             return currentScore;
-            
         }
 
 
         [UnityTest]
         public IEnumerator PickUpItemAddsPointsToScore()
         {
+            yield return new WaitWhile(() => sceneLoaded == false);
+
             //arrange
             int score = 0;
+            var sapphire = GameObject.Find("Sapphire");
+            var emerald = GameObject.Find("Emerald");
+            var ruby = GameObject.Find("Ruby");
+            var diamond = GameObject.Find("Diamond");
 
-            string[] items = {"sapphire", "emerald", "ruby", "diamond"};
             int[] numItems = {5,3,4,2};
 
             //act
-            score = updateScore(items, numItems, score);
+            score = updateScore(sapphire, numItems[0], score); //collect sapphires
+            score = updateScore(emerald, numItems[1], score); //collect emeralds
+            score = updateScore(ruby, numItems[2], score); //collect rubies
+            score = updateScore(diamond, numItems[3], score); //collect diamonds
 
             yield return null;
 
@@ -74,11 +86,15 @@ namespace Tests
         public IEnumerator PickUpPowerUpsAddsPointsToScore(){
             //arrange
             int score = 0;
-            string[] powerUps = {"multiJump", "powerAxe", "badApple"};
+            var multiJump = GameObject.Find("MultiJump");
+            var powerAxe = GameObject.Find("PowerAxe");
+            var badApple = GameObject.Find("BadApple");
             int[] numPowerUps = {3,2,7};
 
             //act
-            score = updateScore(powerUps, numPowerUps, score);
+            score = updateScore(multiJump, numPowerUps[0], score); //collect sapphires
+            score = updateScore(powerAxe, numPowerUps[1], score); //collect emeralds
+            score = updateScore(badApple, numPowerUps[2], score); //collect rubies
 
             yield return null;
 
@@ -91,14 +107,27 @@ namespace Tests
 
             //arrange
             int score = 0;
-            string[] powerUps = {"multiJump", "powerAxe", "badApple"};
+            var multiJump = GameObject.Find("MultiJump");
+            var powerAxe = GameObject.Find("PowerAxe");
+            var badApple = GameObject.Find("BadApple");
             int[] numPowerUps = {3,2,7};
-            string[] items = {"sapphire", "emerald", "ruby", "diamond"};
+
+            var sapphire = GameObject.Find("Sapphire");
+            var emerald = GameObject.Find("Emerald");
+            var ruby = GameObject.Find("Ruby");
+            var diamond = GameObject.Find("Diamond");
             int[] numItems = {5,3,4,2};
 
             //act
-            score = updateScore(items, numItems, score);
-            score = updateScore(powerUps, numPowerUps, score);
+            score = updateScore(sapphire, numItems[0], score); //collect sapphires
+            score = updateScore(emerald, numItems[1], score); //collect emeralds
+            score = updateScore(ruby, numItems[2], score); //collect rubies
+            score = updateScore(diamond, numItems[3], score); //collect diamonds
+
+            score = updateScore(multiJump, numPowerUps[0], score); //collect sapphires
+            score = updateScore(powerAxe, numPowerUps[1], score); //collect emeralds
+            score = updateScore(badApple, numPowerUps[2], score); //collect rubies
+            
             yield return null;
 
             //asset
@@ -110,15 +139,26 @@ namespace Tests
 
             //arrange
             int score = 0;
-            string[] powerUps = {"multiJump", "powerAxe", "badApple"};
+            var multiJump = GameObject.Find("MultiJump");
+            var powerAxe = GameObject.Find("PowerAxe");
+            var badApple = GameObject.Find("BadApple");
             int[] numPowerUps = {3,2,7};
-            string[] items = {"sapphire", "emerald", "ruby", "diamond"};
+
+            var sapphire = GameObject.Find("Sapphire");
+            var emerald = GameObject.Find("Emerald");
+            var ruby = GameObject.Find("Ruby");
+            var diamond = GameObject.Find("Diamond");
             int[] numItems = {5,3,4,2};
 
             //act
-            score = updateScore(powerUps, numPowerUps, score);
-            score = updateScore(items, numItems, score);
+            score = updateScore(multiJump, numPowerUps[0], score); //collect multijump
+            score = updateScore(powerAxe, numPowerUps[1], score); //collect powerAxe
+            score = updateScore(badApple, numPowerUps[2], score); //collect badApple
 
+            score = updateScore(sapphire, numItems[0], score); //collect sapphires
+            score = updateScore(emerald, numItems[1], score); //collect emeralds
+            score = updateScore(ruby, numItems[2], score); //collect rubies
+            score = updateScore(diamond, numItems[3], score); //collect diamonds
 
             yield return null;
 

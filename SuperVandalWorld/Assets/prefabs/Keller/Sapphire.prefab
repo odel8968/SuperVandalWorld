@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5565368482642660731}
   - component: {fileID: 5565368482642660733}
   - component: {fileID: -4553585268787601459}
+  - component: {fileID: 5165063176540389763}
   m_Layer: 8
   m_Name: Sapphire
   m_TagString: Item
@@ -109,3 +110,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.21, y: 0.21}
   m_EdgeRadius: 0
+--- !u!114 &5165063176540389763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5565368482642660728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bc47024876a2cb418c65628bf785c05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
