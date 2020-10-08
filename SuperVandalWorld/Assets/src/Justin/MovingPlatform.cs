@@ -12,7 +12,7 @@ public class MovingPlatform : MonoBehaviour
 
     //which point platform moves towards
     public int endPoint;
-    public float setSpeed;
+    public float setSpeed= 5f;
 
     private float moveSpeed;
 
