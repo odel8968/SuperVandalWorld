@@ -8,25 +8,78 @@ using UnityEngine.TestTools;
 namespace Tests {
     public class daEnemyTest {
 
-        private bool sceneLoader;
-
-        private void SceneManager_sceneLoaded(Scene arg0, LoadScene arg1) {
-                sceneLoader = true;
-        }
+        private bool sceneLoaded;
+        private bool enemyIsMoving;
+        private bool enemyIsAtPlayerPosition;
 
         [OneTimeSetUp]
-        public void loadedlevel() {
+        public void OneTimeSetup() {
             SceneManager.sceneLoaded += SceneManager_sceneLoaded;
             SceneManager.LoadScene("Level 1", LoadSceneMode.Single);
         }
 
-        // A UnityTest behaves like a coroutine in Play Mode. In Edit Mode you can use
-        // `yield return null;` to skip a frame.
-        [UnityTest]
-        public IEnumerator daEnemyTestWithEnumeratorPasses() {
-            // Use the Assert class to test conditions.
-            // Use yield to skip a frame.
-            yield return null;
+        private void SceneManager_sceneLoaded(Scene arg0, LoadSceneMode arg1) {
+            sceneLoaded = true;
         }
+
+        // Test to check if the enemy speed is set
+        [UnityTest]
+        public IEnumerator enemySpeedIsSet() {
+            
+            yield return new WaitWhile(() => sceneLoaded == false);
+
+            var enemy = GameObject.Find("Enemy_Square").GetComponent<enemyController>();
+            var speed = enemy.enemySpeed;
+
+            yield return new WaitForSeconds(1f);
+
+            Assert.That(speed, Is.EqualTo(2.5f));   
+        }
+
+        // TODO: Send Heba what my test do and why
+        //       What i will be working on next week
+        //       Check to see if i can change the size of the Gantt Chart
+
+        // Test to see if the enemy is moving
+        [UnityTest]
+        public IEnumerator isEnemyMoving() {
+
+            yield return new WaitWhile(() => sceneLoaded == false);
+
+            var enemy = GameObject.Find("Enemy_Square").GetComponent<enemyController>();
+            Vector2 enemySPos = enemy.initPos;
+
+            yield return new WaitForSeconds(1f);
+            
+            Vector2 enemyFPos = enemy.transform.position;
+
+            if (enemySPos.x != enemyFPos.x) {
+                enemyIsMoving = true;
+            }
+
+            Assert.That(enemyIsMoving, Is.EqualTo(true));
+        }
+
+        // Test to check if the enemy was able to locate the player
+        [UnityTest]
+        public IEnumerator movesTowardsPlayer() {
+
+            yield return new WaitWhile(() => sceneLoaded == false);
+
+            var enemy = GameObject.Find("Enemy_Square").GetComponent<enemyController>();
+            var player = GameObject.Find("Player").GetComponent<Character_Movement>();
+
+            var playerPos = player.transform.position;
+            var enemyPos = enemy.transform.position;
+
+            yield return new WaitForSeconds(2f);
+
+            if (playerPos == enemyPos) {
+                enemyIsAtPlayerPosition = true;
+            }
+            Assert.That(enemyIsAtPlayerPosition, Is.EqualTo(true));
+        }
+
+        // Test to see if the enemy is visible
     }
 }
