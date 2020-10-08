@@ -24,31 +24,33 @@ public class enemyController : MonoBehaviour {
 
     // Track and follow player location
     void Update() {
-
         // Check if the enemy is visibly on the scene
-        // If the enemy is visible move
-        // Else do nothing
         if (rnr.isVisible) {
-            //Debug.Log("The enemy is visible!!!");
-
-            // Find the difference in location of the player and the enemy
-            float diff = player.transform.position.x - transform.position.x;
-
-            // If the difference is greater than zero move up
-            if (diff > 0) {
-                move.x = enemySpeed * Mathf.Min(diff, 1.0f);
-            }
-
-            // If the difference is less than zero move down
-            if (diff < 0) {
-                move.x = -(enemySpeed * Mathf.Min(-diff, 1.0f));
-            }
-            
-            // Update position of enemy
-            transform.position += move * Time.deltaTime;
+            // Debug.Log("The enemy is visible!!!");
+            enemyMovement();
         } else {
-            transform.position = initPos;
-            //Debug.Log("The enemy is not visible.");
+            // Debug.Log("The enemy is not visible.");
+            move.x = 0;
+            transform.position += move * Time.deltaTime;
         }
+    }
+
+    void enemyMovement() {
+
+        // Find the difference in location of the player and the enemy
+        float diff = player.transform.position.x - transform.position.x;
+
+        // If the difference is greater than zero move up
+        if (diff > 0) {
+            move.x = enemySpeed * Mathf.Min(diff, 1.0f);
+        }
+
+        // If the difference is less than zero move down
+        if (diff < 0) {
+            move.x = -(enemySpeed * Mathf.Min(-diff, 1.0f));
+        }
+
+        // Update position of enemy
+        transform.position += move * Time.deltaTime;
     }
 }
