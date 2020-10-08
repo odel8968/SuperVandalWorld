@@ -30,19 +30,37 @@ namespace Tests
             var Player = GameObject.Find("Player").GetComponent<Character_Movement>();
             float initialpos = Player.transform.position.y;
             Player.Jump(true);
-            yield return null;
+            yield return new WaitForSeconds(2f);
             Assert.AreNotEqual(Player.transform.position.y, initialpos);
         }
 
         [UnityTest]
-        public IEnumerator movement_test()
+        public IEnumerator movement_test_right()
         {
             yield return new WaitWhile(() => sceneLoaded == false);
             var Player = GameObject.Find("Player").GetComponent<Character_Movement>();
             float initialpos = Player.transform.position.x;
-            Player.speed = 10;
-            Player.rb.velocity = new Vector2(Player.speed, Player.rb.velocity.y);
-            yield return null;
+            float speed = 10f;
+            for (int i = 0; i < 750; i++)
+            {
+                Player.rb.velocity = new Vector2(speed, 0);
+                yield return null;
+            }
+            Assert.AreNotEqual(Player.transform.position.x, initialpos);
+        }
+
+        [UnityTest]
+        public IEnumerator movement_test_left()
+        {
+            yield return new WaitWhile(() => sceneLoaded == false);
+            var Player = GameObject.Find("Player").GetComponent<Character_Movement>();
+            float initialpos = Player.transform.position.x;
+            float speed = -10f;
+            for (int i = 0; i < 750; i++)
+            {
+                Player.rb.velocity = new Vector2(speed, 0);
+                yield return null;
+            }
             Assert.AreNotEqual(Player.transform.position.x, initialpos);
         }
     }
