@@ -69,7 +69,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3013616345258977205}
-  - component: {fileID: 6210475793624988416}
   m_Layer: 11
   m_Name: MovingPlatform1
   m_TagString: MovingPlatform
@@ -94,13 +93,13 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6210475793624988416
+--- !u!114 &6830700628159501567
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3013616345258977204}
+  m_GameObject: {fileID: 5228407047757142248}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b7a09f6c5fb22804f85eacd7a7c91926, type: 3}
@@ -110,20 +109,8 @@ MonoBehaviour:
   movePoints:
   - {fileID: 3013616344625334282}
   - {fileID: 3013616345053794939}
-  endPoint: 1
-  moveSpeed: 5
---- !u!114 &699760823
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5228407047757142248}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 41406e7b40740ec41b975bde200011b9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  endPoint: 0
+  setSpeed: 5
 --- !u!1001 &6051675751480185428
 PrefabInstance:
   m_ObjectHideFlags: 0

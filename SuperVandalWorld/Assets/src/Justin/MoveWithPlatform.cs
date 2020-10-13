@@ -6,11 +6,13 @@ public class MoveWithPlatform : MonoBehaviour
 {
     private void OnCollisionEnter2D(Collision2D collision)
     {
-            collision.collider.transform.SetParent(transform);            
+            collision.collider.transform.SetParent(transform); 
+            GameObject.Find("Main Camera").transform.SetParent(transform);           
     }
 
     private void OnCollisionExit2D(Collision2D collision)
     {
             collision.collider.transform.SetParent(null);
+            GameObject.Find("Main Camera").transform.SetParent(null);
     }
 }

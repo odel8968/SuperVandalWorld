@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MovingPlatform : MonoBehaviour
+public class MovingPlatform : EnvObject
 {
     public GameObject platform;
     public Transform[] movePoints;
@@ -49,9 +49,22 @@ public class MovingPlatform : MonoBehaviour
 
     }
 
+     public override void OnCollisionEnter2D(Collision2D collision)
+    {
+            collision.collider.transform.SetParent(transform); 
+            GameObject.Find("Main Camera").transform.SetParent(transform);           
+    }
+
+    public override void OnCollisionExit2D(Collision2D collision)
+    {
+            collision.collider.transform.SetParent(null);
+            GameObject.Find("Main Camera").transform.SetParent(null);
+    }
+
     public float SetSpeed(float setSpeed)
     {
         moveSpeed = setSpeed;
         return moveSpeed;
     }
+
 }
