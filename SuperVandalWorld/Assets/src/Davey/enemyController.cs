@@ -6,7 +6,7 @@ public class enemyController : MonoBehaviour {
 
     // Choose the enemy and player ridgid body
     private Rigidbody2D rb;
-    public GameObject player;
+    private GameObject player;
 
     Renderer rnr;                       // TODO: Fix to move enemy when player is near 
     Vector3 move = Vector3.zero;        // Variable to change x-axis value
@@ -21,6 +21,7 @@ public class enemyController : MonoBehaviour {
     void Start() {
         initPos = transform.position;
         rb = GetComponent<Rigidbody2D>();
+        player = GameObject.Find("Player");
         rnr = GetComponent<Renderer>();
     }
 

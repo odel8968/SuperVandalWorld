@@ -12,8 +12,6 @@ namespace Tests {
         private bool enemyIsMoving;
         private bool enemyMovingToPlayer;
 
-
-
         [OneTimeSetUp]
         public void OneTimeSetup() {
             SceneManager.sceneLoaded += SceneManager_sceneLoaded;
@@ -42,7 +40,7 @@ namespace Tests {
         [UnityTest]
         public IEnumerator isEnemyMoving() {
 
-        yield return new WaitWhile(() => sceneLoaded == false);
+            yield return new WaitWhile(() => sceneLoaded == false);
 
             var enemy = GameObject.Find("Test_Enemy_Square").GetComponent<enemyController>();
             Vector2 enemySPos = enemy.initPos;
@@ -80,6 +78,30 @@ namespace Tests {
             }
 
             Assert.That(enemyMovingToPlayer, Is.EqualTo(true));
+        }
+
+        // Push the speed of the enemy until it breaks
+        // It usually breaks around 800 but some times it more resilient
+        [UnityTest]
+        public IEnumerator enemyStressTest() {
+
+            yield return new WaitWhile(() => sceneLoaded == false);
+
+            var enemy = GameObject.Find("Test_Enemy_Square").GetComponent<enemyController>();
+            var speed = 0f;
+
+            WaitForSeconds wait = new WaitForSeconds(1f) ;
+
+            // Increases the speed by 100 every second until 1500
+            while (enemy.enemySpeed <= 1500f) {
+                speed += 100f;
+                enemy.enemySpeed = speed;
+                yield return wait;
+            }
+
+            speed -= 100f;
+            
+            Assert.That(speed, Is.EqualTo(1500f));
         }
     }
 }
