@@ -5,8 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class EnvHazard : EnvObject
 {
-
-    int playerAlive;
     public float restartDelay = 2f;
 
     public Character_Movement playerMovement;
@@ -14,12 +12,12 @@ public class EnvHazard : EnvObject
     // Start is called before the first frame update
     void Start()
     {
-        playerAlive = 1;
+        playerAlive = true;
     }
 
     public override void OnCollisionEnter2D(Collision2D collision)
     {
-        if(playerAlive == 1)
+        if(playerAlive == true)
         {
             if(collision.collider.tag == "Player")
             {
@@ -27,14 +25,9 @@ public class EnvHazard : EnvObject
             }
 
             Debug.Log("You Died");
-            playerAlive = 0;
+            playerAlive = false;
             Invoke("ResetLevel", restartDelay);
         }
     }
 
-    void ResetLevel()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        playerAlive = 1;
-    }
 }
