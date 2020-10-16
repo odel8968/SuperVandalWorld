@@ -8,6 +8,7 @@ TagManager:
   - Item
   - PowerUp
   - MovingPlatform
+  - Projectile
   layers:
   - Default
   - TransparentFX
