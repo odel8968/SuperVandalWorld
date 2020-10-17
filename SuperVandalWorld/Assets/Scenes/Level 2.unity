@@ -457,6 +457,18 @@ PrefabInstance:
       propertyPath: followObject
       value: 
       objectReference: {fileID: 216067659}
+    - target: {fileID: 2450455076584226336, guid: 5b35992ee5df66f4dba2a749a4d7dce6, type: 3}
+      propertyPath: followOffset.x
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 2450455076584226336, guid: 5b35992ee5df66f4dba2a749a4d7dce6, type: 3}
+      propertyPath: followOffset.y
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 2450455076584226336, guid: 5b35992ee5df66f4dba2a749a4d7dce6, type: 3}
+      propertyPath: speed
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 2450455076584226337, guid: 5b35992ee5df66f4dba2a749a4d7dce6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -500,6 +512,10 @@ PrefabInstance:
     - target: {fileID: 2450455076584226337, guid: 5b35992ee5df66f4dba2a749a4d7dce6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2450455076584226338, guid: 5b35992ee5df66f4dba2a749a4d7dce6, type: 3}
+      propertyPath: orthographic size
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 2450455076584226524, guid: 5b35992ee5df66f4dba2a749a4d7dce6, type: 3}
       propertyPath: m_Name
