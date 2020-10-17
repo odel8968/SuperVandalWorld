@@ -25,12 +25,12 @@ public class MovingPlatform : EnvObject
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         SetSpeed(setSpeed);
 
         //move platform from start point to end point
-        platform.transform.position = Vector3.MoveTowards(platform.transform.position, startPoint.position, moveSpeed * Time.deltaTime);
+        platform.transform.position = Vector3.MoveTowards(platform.transform.position, startPoint.position, moveSpeed *Time.deltaTime);
         
         //if platfrom reached end point, increment array
         if(platform.transform.position == startPoint.position)

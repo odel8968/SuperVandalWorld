@@ -61,7 +61,7 @@ TextureImporter:
   spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -107,8 +107,8 @@ TextureImporter:
       name: snowpatches_0
       rect:
         serializedVersion: 2
-        x: 136
-        y: 231
+        x: 112
+        y: 180
         width: 97
         height: 12
       alignment: 0
@@ -128,8 +128,8 @@ TextureImporter:
       name: snowpatches_1
       rect:
         serializedVersion: 2
-        x: 107
-        y: 181
+        x: 83
+        y: 130
         width: 26
         height: 23
       alignment: 0
@@ -149,8 +149,8 @@ TextureImporter:
       name: snowpatches_2
       rect:
         serializedVersion: 2
-        x: 143
-        y: 181
+        x: 119
+        y: 130
         width: 27
         height: 23
       alignment: 0
@@ -170,8 +170,8 @@ TextureImporter:
       name: snowpatches_3
       rect:
         serializedVersion: 2
-        x: 214
-        y: 185
+        x: 190
+        y: 134
         width: 45
         height: 15
       alignment: 0
@@ -191,8 +191,8 @@ TextureImporter:
       name: snowpatches_4
       rect:
         serializedVersion: 2
-        x: 171
-        y: 150
+        x: 147
+        y: 99
         width: 37
         height: 7
       alignment: 0
