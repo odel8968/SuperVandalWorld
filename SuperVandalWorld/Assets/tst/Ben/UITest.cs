@@ -7,6 +7,8 @@ using UnityEngine;
 using UnityEngine.TestTools;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+//using System.Media;
+//using System.Net;
 
 namespace Tests
 {
@@ -105,5 +107,58 @@ namespace Tests
             yield return null;
 
         }
+
+        [UnityTest]
+        public IEnumerator SoundStressTest()
+        {
+
+            yield return new WaitWhile(() => sceneLoaded == false);
+
+            var sounds = GameObject.Find("SoundManager").GetComponent<SoundManager>();
+
+            int count = 1000;
+            int i = 0;
+
+
+            while (i < count)
+            {
+
+                if ((i % 35) == 0)
+                    sounds.PlaySound("Theme");
+
+                yield return new WaitForEndOfFrame();
+
+                i++;
+            }
+            //yield return new WaitForSecondsRealtime(2);
+
+            Assert.That(i, Is.EqualTo(count));
+        }
+
+        [UnityTest]
+        public IEnumerator UIStressTest()
+        {
+
+            yield return new WaitWhile(() => sceneLoaded == false);
+
+            var menu = GameObject.Find("UI").GetComponent<PauseMenu>();
+
+            int count = 1000;
+            int i = 0;
+
+     
+            while (i < count)
+            {
+                menu.pauseControl();
+
+                yield return new WaitForEndOfFrame();
+
+                i++;
+            }
+            //yield return new WaitForSecondsRealtime(2);
+
+            Assert.That(i, Is.EqualTo(count));
+        }
+
     }
 }
