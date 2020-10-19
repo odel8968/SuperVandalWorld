@@ -30,7 +30,7 @@ namespace Tests
         public IEnumerator MovingPlatformSpeed()
         {
             yield return new WaitWhile(()=>sceneLoaded == false);
-            var platform = GameObject.Find("MovingPlatform1").GetComponent<MovingPlatform>();
+            var platform = GameObject.Find("MovingRockPlatform_0").GetComponent<MovingPlatform>();
             var speed = platform.setSpeed;
             //Check initial speed value
             Assert.That(speed, Is.EqualTo(5f));

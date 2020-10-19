@@ -53,7 +53,7 @@ namespace Tests
 
             Debug.Log(mainCamera.followOffset.x);
 
-            Assert.AreEqual(xOffset, 30);
+            Assert.AreEqual(xOffset, 45);
         }
 
         [UnityTest]
@@ -67,7 +67,7 @@ namespace Tests
 
             Debug.Log(mainCamera.followOffset.y);
             
-            Assert.AreEqual(yOffset, 20);
+            Assert.AreEqual(yOffset, 25);
         }
 
         [UnityTest]
@@ -81,7 +81,7 @@ namespace Tests
 
             Debug.Log(speed);
             
-            Assert.AreEqual(speed, 7);
+            Assert.AreEqual(speed, 10);
         }
     }
 
