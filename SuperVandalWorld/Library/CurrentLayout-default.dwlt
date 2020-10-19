@@ -19,9 +19,9 @@ MonoBehaviour:
     width: 2560
     height: 997
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Scene
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -119,10 +119,10 @@ MonoBehaviour:
     y: 30
     width: 2560
     height: 947
-  m_MinSize: {x: 702, y: 492}
-  m_MaxSize: {x: 18003, y: 14042}
+  m_MinSize: {x: 704, y: 492}
+  m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
-  controlID: 174
+  controlID: 1483
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,10 +144,10 @@ MonoBehaviour:
     y: 0
     width: 2007
     height: 947
-  m_MinSize: {x: 602, y: 492}
+  m_MinSize: {x: 603, y: 492}
   m_MaxSize: {x: 14003, y: 14042}
   vertical: 1
-  controlID: 175
+  controlID: 1595
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -169,11 +169,11 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 2007
-    height: 426
-  m_MinSize: {x: 602, y: 221}
-  m_MaxSize: {x: 12002, y: 4021}
+    height: 515
+  m_MinSize: {x: 603, y: 221}
+  m_MaxSize: {x: 12003, y: 4021}
   vertical: 0
-  controlID: 176
+  controlID: 1596
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -192,9 +192,9 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 425
-    height: 426
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+    height: 515
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -217,10 +217,10 @@ MonoBehaviour:
     serializedVersion: 2
     x: 425
     y: 0
-    width: 895
-    height: 426
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+    width: 874
+    height: 515
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -241,12 +241,12 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1320
+    x: 1299
     y: 0
-    width: 687
-    height: 426
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+    width: 708
+    height: 515
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -270,13 +270,13 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 426
+    y: 515
     width: 2007
-    height: 521
+    height: 432
   m_MinSize: {x: 333, y: 271}
   m_MaxSize: {x: 14003, y: 10021}
   vertical: 0
-  controlID: 114
+  controlID: 1548
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -295,7 +295,7 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 951
-    height: 521
+    height: 432
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
   m_ActualView: {fileID: 18}
@@ -321,7 +321,7 @@ MonoBehaviour:
     x: 951
     y: 0
     width: 1056
-    height: 521
+    height: 432
   m_MinSize: {x: 102, y: 121}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 19}
@@ -348,8 +348,8 @@ MonoBehaviour:
     y: 0
     width: 553
     height: 947
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 21}
   m_Panes:
   - {fileID: 20}
@@ -377,10 +377,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1320
+    x: 1299
     y: 73
-    width: 685
-    height: 405
+    width: 706
+    height: 494
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
   m_SerializedViewValues: []
@@ -388,7 +388,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 685, y: 384}
+  m_TargetSize: {x: 706, y: 473}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -396,17 +396,17 @@ MonoBehaviour:
   m_UseMipMap: 0
   m_VSyncEnabled: 0
   m_Gizmos: 0
-  m_Stats: 0
+  m_Stats: 1
   m_SelectedSizes: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
   m_ZoomArea:
     m_HRangeLocked: 0
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -342.5
-    m_HBaseRangeMax: 342.5
-    m_VBaseRangeMin: -192
-    m_VBaseRangeMax: 192
+    m_HBaseRangeMin: -353
+    m_HBaseRangeMax: 353
+    m_VBaseRangeMin: -236.5
+    m_VBaseRangeMax: 236.5
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -415,7 +415,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
+    m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -424,23 +424,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 685
-      height: 384
+      width: 706
+      height: 473
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 342.5, y: 192}
+    m_Translation: {x: 353, y: 236.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -342.5
-      y: -192
-      width: 685
-      height: 384
+      x: -353
+      y: -236.5
+      width: 706
+      height: 473
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 685, y: 405}
+  m_LastWindowPixelSize: {x: 706, y: 494}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -469,14 +469,14 @@ MonoBehaviour:
     x: 0
     y: 73
     width: 424
-    height: 405
+    height: 494
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: c8f3fbffe4f3fbff32befcffe8c4fcff04c5fcff48d9ffff5ce3ffff
+      m_SelectedIDs: bc970100
+      m_LastClickedID: 104380
+      m_ExpandedIDs: 886368ffa46368ff908179ffae8779ffc48779ff468f79ff628f79ff7ce296ff0ce396ffe8e996ff04ea96ffa4d7a2ff82dea2ff9edea2ff9e27b2ff842eb2ffa02eb2ff80d6b9ff9addb9ffb6ddb9ffce86c1ffe88cc1ff048dc1ff6835c9ffae3bc9ffca3bc9ffaae3d0ff90ead0ffacead0ff8c92d8ff6699d8ff8299d8ffd20adcffea10dcff0611dcfff87fddffa886ddffc486ddffaaccdeff5cd3deff78d3deffdeeddfff40f5dfff5cf5dfffcc93e0ff7a9ae0ff969ae0ff5828e2ff0c2fe2ff282fe2ff7e9ce2ff44a3e2ff60a3e2ff0eb9e2ffe0bfe2fffcbfe2ff6609f2ffe410f2ff0011f2ffdeabf6ff9eb2f6ffbab2f6ff087df7ff8c84f7ffa884f7fff64ef8ff0a55f8ff2655f8ff741ff9ff2e26f9ff4a26f9ff98f0f9ff56f7f9ff72f7f9ffc0c1faff7ac8faff96c8faff8c8afcff3891fcff5491fcff6c3dfeff9844feffb444feffdae5ffffe0ecfffffcecffff48f4ffff5cfbffff2462000068520100c076010086960100
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -522,8 +522,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 425
     y: 73
-    width: 893
-    height: 405
+    width: 872
+    height: 494
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
   m_WindowGUID: 8fde1c7c9ac16d04fb45d7d761e25119
@@ -536,9 +536,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 4.766638, y: -0.2851093, z: -185.10538}
+    m_Target: {x: -5.312615, y: 1.1001046, z: -226.90747}
     speed: 2
-    m_Value: {x: 4.766638, y: -0.2851093, z: -185.10538}
+    m_Value: {x: -5.312615, y: 1.1001046, z: -226.90747}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -589,9 +589,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 6.697856
+    m_Target: 36.298725
     speed: 2
-    m_Value: 6.697856
+    m_Value: 36.298725
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -637,9 +637,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 499
+    y: 588
     width: 950
-    height: 500
+    height: 411
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -665,10 +665,10 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: f64b0000
-    m_LastClickedID: 19446
-    m_ExpandedIDs: 00000000f64b0000f84b0000fa4b0000fc4b0000fe4b0000004c0000024c0000044c0000064c0000084c0000
+    scrollPos: {x: 0, y: 45}
+    m_SelectedIDs: 3c430000
+    m_LastClickedID: 17212
+    m_ExpandedIDs: 000000003c4300003e43000040430000424300004443000046430000484300004a4300004c4300004e430000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -696,7 +696,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000f64b0000f84b0000fa4b0000fc4b0000fe4b0000004c0000024c0000044c0000064c0000084c0000
+    m_ExpandedIDs: 000000003c4300003e43000040430000424300004443000046430000484300004a4300004c4300004e430000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -723,7 +723,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000a4430000ae3f0000b83c00007e4600007246000064430000383d0000f43c00006e400000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -773,9 +773,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 951
-    y: 499
+    y: 588
     width: 1054
-    height: 500
+    height: 411
   m_ViewDataDictionary: {fileID: 0}
 --- !u!114 &20
 MonoBehaviour:
@@ -841,7 +841,7 @@ MonoBehaviour:
     height: 926
   m_ViewDataDictionary: {fileID: 0}
   m_Spl:
-    ID: 242
+    ID: 1645
     splitterInitialOffset: 516
     currentActiveSplitter: -1
     realSizes:
@@ -872,8 +872,8 @@ MonoBehaviour:
       uniqueId: '[SuperVandalWorld][suite]'
       name: SuperVandalWorld
       fullName: SuperVandalWorld
-      resultStatus: 1
-      duration: 4.1380124
+      resultStatus: 0
+      duration: 76.333786
       messages: 
       output: 
       stacktrace: 
@@ -888,8 +888,8 @@ MonoBehaviour:
       uniqueId: '[Tests.dll][suite]'
       name: Tests.dll
       fullName: C:/Users/adave/Documents/GitHub/SuperVandalWorld/SuperVandalWorld/Library/ScriptAssemblies/Tests.dll
-      resultStatus: 1
-      duration: 4.116559
+      resultStatus: 0
+      duration: 76.31128
       messages: 
       output: 
       stacktrace: 
@@ -904,8 +904,8 @@ MonoBehaviour:
       uniqueId: Tests.dll/[Tests][suite]
       name: Tests
       fullName: Tests
-      resultStatus: 1
-      duration: 4.1088686
+      resultStatus: 0
+      duration: 76.30039
       messages: 
       output: 
       stacktrace: 
@@ -1167,9 +1167,9 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/[Tests][Tests.MovingPlatformStressTest][suite]
       name: MovingPlatformStressTest
       fullName: Tests.MovingPlatformStressTest
-      resultStatus: 1
-      duration: 0.1917638
-      messages: 
+      resultStatus: 2
+      duration: 185.26761
+      messages: One or more child tests had errors
       output: 
       stacktrace: 
       notRunnable: 0
@@ -1183,10 +1183,12 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/MovingPlatformStressTest/[Tests][Tests.MovingPlatformStressTest.MovingPlatformSpeedStressTest]
       name: MovingPlatformSpeedStressTest
       fullName: Tests.MovingPlatformStressTest.MovingPlatformSpeedStressTest
-      resultStatus: 1
-      duration: 0.1862917
-      messages: 
-      output: 
+      resultStatus: 2
+      duration: 185.24869
+      messages: Test exceeded Timeout value of 180000ms
+      output: 'Expected: 8100, Actual; 8100
+
+'
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
@@ -1284,8 +1286,8 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/[Tests][Tests.pickUpsStressTest][suite]
       name: pickUpsStressTest
       fullName: Tests.pickUpsStressTest
-      resultStatus: 1
-      duration: 4.105006
+      resultStatus: 0
+      duration: 76.29619
       messages: 
       output: 
       stacktrace: 
@@ -1300,10 +1302,12 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/pickUpsStressTest/[Tests][Tests.pickUpsStressTest.stressSpawnDiamonds]
       name: stressSpawnDiamonds
       fullName: Tests.pickUpsStressTest.stressSpawnDiamonds
-      resultStatus: 1
-      duration: 4.0880575
+      resultStatus: 0
+      duration: 76.278015
       messages: 
-      output: 'Expected: 5000, Actual: 5000
+      output: 'Jumping
+
+        Expected: 100000, Actual: 100000
 
 '
       stacktrace: 
@@ -1320,7 +1324,7 @@ MonoBehaviour:
       name: PlatformMovementTest
       fullName: Tests.PlatformMovementTest
       resultStatus: 1
-      duration: 0.1989417
+      duration: 0.5381539
       messages: 
       output: 
       stacktrace: 
@@ -1336,7 +1340,7 @@ MonoBehaviour:
       name: MovingPlatformSpeed
       fullName: Tests.PlatformMovementTest.MovingPlatformSpeed
       resultStatus: 1
-      duration: 0.1935337
+      duration: 0.1308337
       messages: 
       output: 
       stacktrace: 
@@ -3377,18 +3381,20 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1001
       parentUniqueId: Tests.dll/Tests/[Tests][Tests.UITest][suite]
-    m_ResultText: 'stressSpawnDiamonds (4.088s)
+    m_ResultText: 'stressSpawnDiamonds (76.278s)
 
       ---
 
-      Expected: 5000,
-      Actual: 5000'
+      Jumping
+
+      Expected:
+      100000, Actual: 100000'
     m_ResultStacktrace: 
     m_TestListState:
-      scrollPos: {x: 0, y: 63}
+      scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 39eb793e
       m_LastClickedID: 1048177465
-      m_ExpandedIDs: c973899ac337b2b498906ddc5dfc4bdfe557abf795fbf000761f4b11ab3ce1198302573d8359db41e6daa968ffffff7f
+      m_ExpandedIDs: c973899a98906ddc5dfc4bdfe557abf795fbf000761f4b11e1b063178359db41ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 

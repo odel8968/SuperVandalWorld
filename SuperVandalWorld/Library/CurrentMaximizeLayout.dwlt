@@ -20,11 +20,11 @@ MonoBehaviour:
     x: 0
     y: 30
     width: 2560
-    height: 1307
-  m_MinSize: {x: 878, y: 492}
-  m_MaxSize: {x: 18003, y: 14042}
+    height: 947
+  m_MinSize: {x: 703, y: 471}
+  m_MaxSize: {x: 18002, y: 14021}
   vertical: 0
-  controlID: 9670
+  controlID: 1296
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -45,10 +45,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1320
+    x: 1299
     y: 73
-    width: 685
-    height: 567
+    width: 706
+    height: 494
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
   m_SerializedViewValues: []
@@ -56,25 +56,25 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 685, y: 546}
+  m_TargetSize: {x: 706, y: 473}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
-  m_MaximizeOnPlay: 0
+  m_MaximizeOnPlay: 1
   m_UseMipMap: 0
   m_VSyncEnabled: 0
   m_Gizmos: 0
-  m_Stats: 0
+  m_Stats: 1
   m_SelectedSizes: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
   m_ZoomArea:
     m_HRangeLocked: 0
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -342.5
-    m_HBaseRangeMax: 342.5
-    m_VBaseRangeMin: -273
-    m_VBaseRangeMax: 273
+    m_HBaseRangeMin: -353
+    m_HBaseRangeMax: 353
+    m_VBaseRangeMin: -236.5
+    m_VBaseRangeMax: 236.5
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -92,23 +92,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 685
-      height: 546
+      width: 706
+      height: 473
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 342.5, y: 273}
+    m_Translation: {x: 353, y: 236.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -342.5
-      y: -273
-      width: 685
-      height: 546
+      x: -353
+      y: -236.5
+      width: 706
+      height: 473
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 685, y: 567}
+  m_LastWindowPixelSize: {x: 706, y: 494}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -134,11 +134,11 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 2007
-    height: 1307
-  m_MinSize: {x: 603, y: 492}
-  m_MaxSize: {x: 14003, y: 14042}
+    height: 947
+  m_MinSize: {x: 603, y: 471}
+  m_MaxSize: {x: 14002, y: 14021}
   vertical: 1
-  controlID: 9671
+  controlID: 1249
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -160,11 +160,11 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 2007
-    height: 588
+    height: 515
   m_MinSize: {x: 603, y: 221}
   m_MaxSize: {x: 12003, y: 4021}
   vertical: 0
-  controlID: 9672
+  controlID: 1224
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -183,9 +183,9 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 425
-    height: 588
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+    height: 515
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 6}
   m_Panes:
   - {fileID: 6}
@@ -214,14 +214,14 @@ MonoBehaviour:
     x: 0
     y: 73
     width: 424
-    height: 567
+    height: 494
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: deafffff
-      m_LastClickedID: -20514
-      m_ExpandedIDs: 82b0ffff4eb9ffffb4baffffdac3ffff5cfbffff403b00003e65000066680000
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: ce86c1ffe88cc1ff048dc1ff6835c9ffae3bc9ffca3bc9ffaae3d0ff90ead0ffacead0ff8c92d8ff6699d8ff8299d8ffd20adcffea10dcff0611dcfff87fddffa886ddffc486ddffaaccdeff5cd3deff78d3deffdeeddfff40f5dfff5cf5dfffcc93e0ff7a9ae0ff969ae0ff5828e2ff0c2fe2ff282fe2ff7e9ce2ff44a3e2ff60a3e2ff0eb9e2ffe0bfe2fffcbfe2ff6609f2ffe410f2ff0011f2ffdeabf6ff9eb2f6ffbab2f6ff087df7ff8c84f7ffa884f7fff64ef8ff0a55f8ff2655f8ff741ff9ff2e26f9ff4a26f9ff98f0f9ff56f7f9ff72f7f9ffc0c1faff7ac8faff96c8faff8c8afcff3891fcff5491fcff6c3dfeff9844feffb444feffdae5ffffe0ecfffffcecffff48f4ffff5cfbffff24620000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -262,8 +262,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 425
     y: 0
-    width: 895
-    height: 588
+    width: 874
+    height: 515
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 8}
@@ -293,8 +293,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 425
     y: 73
-    width: 893
-    height: 567
+    width: 872
+    height: 494
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
   m_WindowGUID: 8fde1c7c9ac16d04fb45d7d761e25119
@@ -307,9 +307,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 146.27911, y: 7.759185, z: -48.97372}
+    m_Target: {x: -4.818728, y: 4.938784, z: -211.7905}
     speed: 2
-    m_Value: {x: 146.27911, y: 7.759185, z: -48.97372}
+    m_Value: {x: -4.818728, y: 4.938784, z: -211.7905}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -360,9 +360,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 43.274666
+    m_Target: 27.11298
     speed: 2
-    m_Value: 43.274666
+    m_Value: 27.11298
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -402,10 +402,10 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1320
+    x: 1299
     y: 0
-    width: 687
-    height: 588
+    width: 708
+    height: 515
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 2}
@@ -431,13 +431,13 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 588
+    y: 515
     width: 2007
-    height: 719
-  m_MinSize: {x: 333, y: 271}
-  m_MaxSize: {x: 14003, y: 10021}
+    height: 432
+  m_MinSize: {x: 332, y: 250}
+  m_MaxSize: {x: 14002, y: 10000}
   vertical: 0
-  controlID: 9694
+  controlID: 1250
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -456,9 +456,9 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 951
-    height: 719
-  m_MinSize: {x: 231, y: 271}
-  m_MaxSize: {x: 10001, y: 10021}
+    height: 432
+  m_MinSize: {x: 230, y: 250}
+  m_MaxSize: {x: 10000, y: 10000}
   m_ActualView: {fileID: 12}
   m_Panes:
   - {fileID: 12}
@@ -485,9 +485,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 661
+    y: 588
     width: 950
-    height: 698
+    height: 411
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -502,21 +502,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/tst/Keller
     m_Globs: []
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/tst/Keller
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\Justin\Desktop\NewClone\SuperVandalWorld\SuperVandalWorld
+  m_LastProjectPath: C:\Users\Keller\Desktop\SuperVandalWorld\SuperVandalWorld
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: f23c0000
-    m_LastClickedID: 15602
-    m_ExpandedIDs: 00000000ba3c0000bc3c0000be3c0000c03c0000c23c0000c43c0000c63c0000c83c0000ca3c0000cc3c000000ca9a3b
+    scrollPos: {x: 0, y: 45}
+    m_SelectedIDs: 3c430000
+    m_LastClickedID: 17212
+    m_ExpandedIDs: 000000003c4300003e43000040430000424300004443000046430000484300004a4300004c4300004e430000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -544,7 +544,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000ba3c0000bc3c0000be3c0000c03c0000c23c0000c43c0000c63c0000c83c0000ca3c0000cc3c000000ca9a3b
+    m_ExpandedIDs: 000000003c4300003e43000040430000424300004443000046430000484300004a4300004c4300004e430000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -569,10 +569,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: deafffff
-    m_LastClickedInstanceID: -20514
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 0
-    m_ExpandedInstanceIDs: c6230000a4430000ae3f0000b83c00007e4600007246000064430000383d0000f43c0000d8400000
+    m_ExpandedInstanceIDs: c6230000a4430000ae3f0000b83c00007e4600007246000064430000383d0000f43c00006e400000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -618,7 +618,7 @@ MonoBehaviour:
     x: 951
     y: 0
     width: 1056
-    height: 719
+    height: 432
   m_MinSize: {x: 102, y: 121}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 14}
@@ -647,9 +647,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 951
-    y: 661
+    y: 588
     width: 1054
-    height: 698
+    height: 411
   m_ViewDataDictionary: {fileID: 0}
 --- !u!114 &15
 MonoBehaviour:
@@ -661,7 +661,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: InspectorWindow
+  m_Name: TestRunnerWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -669,17 +669,16 @@ MonoBehaviour:
     x: 2007
     y: 0
     width: 553
-    height: 1307
-  m_MinSize: {x: 275, y: 50}
+    height: 947
+  m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 16}
+  m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 16}
   - {fileID: 17}
   - {fileID: 18}
-  - {fileID: 19}
-  m_Selected: 0
-  m_LastSelected: 3
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -703,7 +702,7 @@ MonoBehaviour:
     x: 2007
     y: 73
     width: 552
-    height: 1286
+    height: 926
   m_ViewDataDictionary: {fileID: 0}
   m_ObjectsLockedBeforeSerialization: []
   m_InstanceIDsLockedBeforeSerialization: 
@@ -738,18 +737,18 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 2091
-    y: 81
-    width: 460
-    height: 1270
+    x: 2007
+    y: 73
+    width: 552
+    height: 926
   m_ViewDataDictionary: {fileID: 0}
   m_Spl:
-    ID: 398
+    ID: 1350
     splitterInitialOffset: 516
     currentActiveSplitter: -1
     realSizes:
-    - 702
-    - 498
+    - 501
+    - 355
     relativeSizes:
     - 0.58498025
     - 0.41501975
@@ -759,7 +758,7 @@ MonoBehaviour:
     maxSizes:
     - 0
     - 0
-    lastTotalSize: 1200
+    lastTotalSize: 856
     splitSize: 6
     xOffset: 0
     m_Version: 1
@@ -775,8 +774,8 @@ MonoBehaviour:
       uniqueId: '[SuperVandalWorld][suite]'
       name: SuperVandalWorld
       fullName: SuperVandalWorld
-      resultStatus: 1
-      duration: 17.035915
+      resultStatus: 0
+      duration: 53.78466
       messages: 
       output: 
       stacktrace: 
@@ -791,8 +790,8 @@ MonoBehaviour:
       uniqueId: '[Tests.dll][suite]'
       name: Tests.dll
       fullName: C:/Users/adave/Documents/GitHub/SuperVandalWorld/SuperVandalWorld/Library/ScriptAssemblies/Tests.dll
-      resultStatus: 1
-      duration: 17.006617
+      resultStatus: 0
+      duration: 53.775654
       messages: 
       output: 
       stacktrace: 
@@ -807,8 +806,8 @@ MonoBehaviour:
       uniqueId: Tests.dll/[Tests][suite]
       name: Tests
       fullName: Tests
-      resultStatus: 1
-      duration: 16.997438
+      resultStatus: 0
+      duration: 53.7733
       messages: 
       output: 
       stacktrace: 
@@ -824,7 +823,7 @@ MonoBehaviour:
       name: CameraTest
       fullName: Tests.CameraTest
       resultStatus: 1
-      duration: 0.3365597
+      duration: 0.7367772
       messages: 
       output: 
       stacktrace: 
@@ -840,7 +839,7 @@ MonoBehaviour:
       name: Camera_Set_To_Follow_Player
       fullName: Tests.CameraTest.Camera_Set_To_Follow_Player
       resultStatus: 1
-      duration: 0.2778162
+      duration: 0.643819
       messages: 
       output: 'Player (UnityEngine.GameObject)
 
@@ -861,9 +860,9 @@ MonoBehaviour:
       name: Camera_Speed_Set
       fullName: Tests.CameraTest.Camera_Speed_Set
       resultStatus: 1
-      duration: 0.0125916
+      duration: 0.0331694
       messages: 
-      output: '7
+      output: '10
 
 '
       stacktrace: 
@@ -880,9 +879,9 @@ MonoBehaviour:
       name: Camera_X_Offset_Set
       fullName: Tests.CameraTest.Camera_X_Offset_Set
       resultStatus: 1
-      duration: 0.0161443
+      duration: 0.0215757
       messages: 
-      output: '30
+      output: '45
 
 '
       stacktrace: 
@@ -899,9 +898,9 @@ MonoBehaviour:
       name: Camera_Y_Offset_Set
       fullName: Tests.CameraTest.Camera_Y_Offset_Set
       resultStatus: 1
-      duration: 0.0095683
+      duration: 0.0141987
       messages: 
-      output: '20
+      output: '25
 
 '
       stacktrace: 
@@ -918,7 +917,7 @@ MonoBehaviour:
       name: CharacterMovementTests
       fullName: Tests.CharacterMovementTests
       resultStatus: 1
-      duration: 1.6674641
+      duration: 6.7265763
       messages: 
       output: 
       stacktrace: 
@@ -934,7 +933,7 @@ MonoBehaviour:
       name: jump_test
       fullName: Tests.CharacterMovementTests.jump_test
       resultStatus: 1
-      duration: 2.73874
+      duration: 2.1893492
       messages: 
       output: 'Jumping
 
@@ -953,7 +952,7 @@ MonoBehaviour:
       name: movement_test_left
       fullName: Tests.CharacterMovementTests.movement_test_left
       resultStatus: 1
-      duration: 2.028912
+      duration: 2.258727
       messages: 
       output: 
       stacktrace: 
@@ -970,15 +969,9 @@ MonoBehaviour:
       name: movement_test_right
       fullName: Tests.CharacterMovementTests.movement_test_right
       resultStatus: 1
-      duration: 1.6443754
+      duration: 2.2717967
       messages: 
-      output: 'Ablitiy has been enabled
-
-        True
-
-        Collision with MultiJump
-
-'
+      output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
@@ -993,7 +986,7 @@ MonoBehaviour:
       name: daEnemyTest
       fullName: Tests.daEnemyTest
       resultStatus: 1
-      duration: 16.993195
+      duration: 20.281355
       messages: 
       output: 
       stacktrace: 
@@ -1009,7 +1002,7 @@ MonoBehaviour:
       name: enemySpeedIsSet
       fullName: Tests.daEnemyTest.enemySpeedIsSet
       resultStatus: 1
-      duration: 1.2334472
+      duration: 1.188535
       messages: 
       output: 
       stacktrace: 
@@ -1026,7 +1019,7 @@ MonoBehaviour:
       name: enemyStressTest
       fullName: Tests.daEnemyTest.enemyStressTest
       resultStatus: 1
-      duration: 16.207691
+      duration: 16.04688
       messages: 
       output: 
       stacktrace: 
@@ -1043,7 +1036,7 @@ MonoBehaviour:
       name: isEnemyMoving
       fullName: Tests.daEnemyTest.isEnemyMoving
       resultStatus: 1
-      duration: 1.0293307
+      duration: 1.019501
       messages: 
       output: 
       stacktrace: 
@@ -1060,7 +1053,7 @@ MonoBehaviour:
       name: movingTowardsPlayer
       fullName: Tests.daEnemyTest.movingTowardsPlayer
       resultStatus: 1
-      duration: 2.0260394
+      duration: 2.0161002
       messages: 
       output: 
       stacktrace: 
@@ -1073,11 +1066,46 @@ MonoBehaviour:
       parentId: 1005
       parentUniqueId: Tests.dll/Tests/[Tests][Tests.daEnemyTest][suite]
     - id: 1024
+      uniqueId: Tests.dll/Tests/[Tests][Tests.MovingPlatformStressTest][suite]
+      name: MovingPlatformStressTest
+      fullName: Tests.MovingPlatformStressTest
+      resultStatus: 2
+      duration: 185.26761
+      messages: One or more child tests had errors
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1035
+      parentUniqueId: Tests.dll/[Tests][suite]
+    - id: 1025
+      uniqueId: Tests.dll/Tests/MovingPlatformStressTest/[Tests][Tests.MovingPlatformStressTest.MovingPlatformSpeedStressTest]
+      name: MovingPlatformSpeedStressTest
+      fullName: Tests.MovingPlatformStressTest.MovingPlatformSpeedStressTest
+      resultStatus: 2
+      duration: 185.24869
+      messages: Test exceeded Timeout value of 180000ms
+      output: 'Expected: 8100, Actual; 8100
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1024
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.MovingPlatformStressTest][suite]
+    - id: 1024
       uniqueId: Tests.dll/Tests/[Tests][Tests.pickupPointTest][suite]
       name: pickupPointTest
       fullName: Tests.pickupPointTest
       resultStatus: 1
-      duration: 0.5921841
+      duration: 0.2324886
       messages: 
       output: 
       stacktrace: 
@@ -1093,7 +1121,7 @@ MonoBehaviour:
       name: AddPointsForItemsBeforePowerUps
       fullName: Tests.pickupPointTest.AddPointsForItemsBeforePowerUps
       resultStatus: 1
-      duration: 0.5309209
+      duration: 0.18438
       messages: 
       output: 
       stacktrace: 
@@ -1110,7 +1138,7 @@ MonoBehaviour:
       name: AddPointsForPowerupsBeforeItems
       fullName: Tests.pickupPointTest.AddPointsForPowerupsBeforeItems
       resultStatus: 1
-      duration: 0.0105992
+      duration: 0.0130192
       messages: 
       output: 
       stacktrace: 
@@ -1127,7 +1155,7 @@ MonoBehaviour:
       name: PickUpItemAddsPointsToScore
       fullName: Tests.pickupPointTest.PickUpItemAddsPointsToScore
       resultStatus: 1
-      duration: 0.0213358
+      duration: 0.0146882
       messages: 
       output: 
       stacktrace: 
@@ -1144,7 +1172,7 @@ MonoBehaviour:
       name: PickUpPowerUpsAddsPointsToScore
       fullName: Tests.pickupPointTest.PickUpPowerUpsAddsPointsToScore
       resultStatus: 1
-      duration: 0.01102
+      duration: 0.0122143
       messages: 
       output: 
       stacktrace: 
@@ -1156,12 +1184,79 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1025
       parentUniqueId: Tests.dll/Tests/[Tests][Tests.pickupPointTest][suite]
+    - id: 1028
+      uniqueId: Tests.dll/Tests/[Tests][Tests.pickUpsStressTest][suite]
+      name: pickUpsStressTest
+      fullName: Tests.pickUpsStressTest
+      resultStatus: 0
+      duration: 53.770947
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1036
+      parentUniqueId: Tests.dll/[Tests][suite]
+    - id: 1029
+      uniqueId: Tests.dll/Tests/pickUpsStressTest/[Tests][Tests.pickUpsStressTest.stressSpawnDiamonds]
+      name: stressSpawnDiamonds
+      fullName: Tests.pickUpsStressTest.stressSpawnDiamonds
+      resultStatus: 0
+      duration: 53.754814
+      messages: 
+      output: 'Jumping
+
+        Jumping
+
+        Jumping
+
+        Jumping
+
+        Jumping
+
+        Jumping
+
+        Jumping
+
+        Jumping
+
+        Jumping
+
+        Jumping
+
+        Jumping
+
+        Jumping
+
+        Collision
+        Exited
+
+        Jumping
+
+        Jumping
+
+        Expected: 50000, Actual:
+        50000
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1028
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.pickUpsStressTest][suite]
     - id: 1022
       uniqueId: Tests.dll/Tests/[Tests][Tests.PlatformMovementTest][suite]
       name: PlatformMovementTest
       fullName: Tests.PlatformMovementTest
       resultStatus: 1
-      duration: 0.175085
+      duration: 0.5381539
       messages: 
       output: 
       stacktrace: 
@@ -1177,7 +1272,7 @@ MonoBehaviour:
       name: MovingPlatformSpeed
       fullName: Tests.PlatformMovementTest.MovingPlatformSpeed
       resultStatus: 1
-      duration: 0.1714709
+      duration: 0.1308337
       messages: 
       output: 
       stacktrace: 
@@ -1194,7 +1289,7 @@ MonoBehaviour:
       name: SquareTest
       fullName: Tests.SquareTest
       resultStatus: 1
-      duration: 14.977453
+      duration: 14.990219
       messages: 
       output: 
       stacktrace: 
@@ -1210,7 +1305,7 @@ MonoBehaviour:
       name: SquareTestBoundary1
       fullName: Tests.SquareTest.SquareTestBoundary1
       resultStatus: 1
-      duration: 4.6737413
+      duration: 4.6880703
       messages: 
       output: 
       stacktrace: 
@@ -1227,7 +1322,7 @@ MonoBehaviour:
       name: SquareTestBoundary2
       fullName: Tests.SquareTest.SquareTestBoundary2
       resultStatus: 1
-      duration: 7.507589
+      duration: 7.517307
       messages: 
       output: 
       stacktrace: 
@@ -1244,7 +1339,7 @@ MonoBehaviour:
       name: SquareTestInitialCondition
       fullName: Tests.SquareTest.SquareTestInitialCondition
       resultStatus: 1
-      duration: 0.007418
+      duration: 0.0119787
       messages: 
       output: 
       stacktrace: 
@@ -1261,7 +1356,7 @@ MonoBehaviour:
       name: SquareTestStress
       fullName: Tests.SquareTest.SquareTestStress
       resultStatus: 1
-      duration: 2.7709234
+      duration: 2.7606175
       messages: 
       output: 'ASSERT CHECK
 
@@ -3141,2468 +3236,6 @@ MonoBehaviour:
 
         ASSERT CHECK
 
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
 '
       stacktrace: 
       notRunnable: 0
@@ -5618,7 +3251,7 @@ MonoBehaviour:
       name: UITest
       fullName: Tests.UITest
       resultStatus: 1
-      duration: 0.195791
+      duration: 0.2489055
       messages: 
       output: 
       stacktrace: 
@@ -5634,7 +3267,7 @@ MonoBehaviour:
       name: PauseFunctionTest
       fullName: Tests.UITest.PauseFunctionTest
       resultStatus: 1
-      duration: 0.1757386
+      duration: 0.2076623
       messages: 
       output: 
       stacktrace: 
@@ -5651,7 +3284,7 @@ MonoBehaviour:
       name: ScoreTest
       fullName: Tests.UITest.ScoreTest
       resultStatus: 1
-      duration: 0.0079144
+      duration: 0.0159631
       messages: 
       output: 
       stacktrace: 
@@ -5668,7 +3301,7 @@ MonoBehaviour:
       name: VolumeTest
       fullName: Tests.UITest.VolumeTest
       resultStatus: 1
-      duration: 0.0071432
+      duration: 0.0182894
       messages: 
       output: 
       stacktrace: 
@@ -5680,13 +3313,48 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1001
       parentUniqueId: Tests.dll/Tests/[Tests][Tests.UITest][suite]
-    m_ResultText: enemyStressTest (16.208s)
+    m_ResultText: 'stressSpawnDiamonds (53.755s)
+
+      ---
+
+      Jumping
+
+      Jumping
+
+      Jumping
+
+      Jumping
+
+      Jumping
+
+      Jumping
+
+      Jumping
+
+      Jumping
+
+      Jumping
+
+      Jumping
+
+      Jumping
+
+      Jumping
+
+      Collision
+      Exited
+
+      Jumping
+
+      Jumping
+
+      Expected: 50000, Actual: 50000'
     m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 3548cfc7
-      m_LastClickedID: -942716875
-      m_ExpandedIDs: c337b2b498906ddc5dfc4bdfe557abf795fbf000761f4b11ab3ce1198302573d8359db41e6daa968ffffff7f
+      m_SelectedIDs: 39eb793e
+      m_LastClickedID: 1048177465
+      m_ExpandedIDs: c973899a98906ddc5dfc4bdfe557abf795fbf000761f4b11e1b063178359db41ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -5772,34 +3440,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 12071, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Animation
-    m_Image: {fileID: -8166618308981325432, guid: 0000000000000000d000000000000000, type: 0}
-    m_Tooltip: 
-  m_Pos:
-    serializedVersion: 2
-    x: 1232
-    y: 73
-    width: 1327
-    height: 926
-  m_ViewDataDictionary: {fileID: 0}
-  m_LockTracker:
-    m_IsLocked: 0
-  m_LastSelectedObjectID: -20514
---- !u!114 &19
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3f683d99f24875748a6656966ca9cea0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -5820,5 +3460,5 @@ MonoBehaviour:
     m_CachedPref: 50
     m_ControlHash: 1964396721
     m_PrefName: Preview_TilemapBrushInspector
-  m_Palette: {fileID: 4914733372615852719, guid: 4c595496acd2b1c428f07881f8e955c2, type: 3}
+  m_Palette: {fileID: 5713101419344279301, guid: b0186b213b3ff05489000e4ca7c9417e, type: 3}
   m_DrawGizmos: 0

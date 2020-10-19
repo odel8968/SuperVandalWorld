@@ -30,14 +30,20 @@ namespace Tests
             GameObject axeProj = GameObject.Find("Diamond");
            // GameObject axe = UnityEngine.Object.Instantiate(axeProj, Vector3.zero, Quaternion.identity);
 
-            int MaxTested = 5000;
+            int MaxTested = 120000;
             int actualNum = 0;
             GameObject proj = null;
             
 
             for(int i = 0; i < MaxTested; i++){
+
                 proj = GameObject.Instantiate(axeProj, Vector3.zero, Quaternion.identity);
+                proj.transform.position = new Vector3(Random.Range(-15f,15f), Random.Range(5f,25f), Random.Range(-15f,15f));
                 actualNum++;
+                if(actualNum % 2000 == 0){
+                    yield return new WaitForSeconds(0.4f);
+                }
+                
             }
             
             yield return null;

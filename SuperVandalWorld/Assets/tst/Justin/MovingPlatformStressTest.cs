@@ -10,7 +10,7 @@ namespace Tests
     public class MovingPlatformStressTest
     {
         private bool sceneLoaded;
-        private int stressValue = 100000;
+        private int stressValue = 8100;
         int actualValue = 0;
 
 
