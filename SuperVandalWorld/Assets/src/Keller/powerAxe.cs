@@ -11,6 +11,7 @@ public class powerAxe : PowerUp
     public GameObject axeProj;
     public KeyCode abilityKey = KeyCode.J;
 
+
     public void addAxeForce(GameObject axe){
         axe.GetComponent<Rigidbody2D>().velocity = new Vector2(projVel, 1.5f * projVel);
     }

@@ -29,7 +29,7 @@ public class pickupsManager : MonoBehaviour
                 var obj = other.GetComponent<Item>();
                 addPoints = obj.scoreValue;
 
-                //Debug.Log("Adding " + addPoints + " to score");    
+                Debug.Log("Adding " + addPoints + " to score");    
                 return addPoints;
             }
             
@@ -38,7 +38,7 @@ public class pickupsManager : MonoBehaviour
                 var obj = other.GetComponent<PowerUp>();
                 addPoints = obj.scoreValue;
 
-               // Debug.Log("Adding " + addPoints + " to score");    
+                Debug.Log("Adding " + addPoints + " to score");    
                 return addPoints;
             }
             default:
