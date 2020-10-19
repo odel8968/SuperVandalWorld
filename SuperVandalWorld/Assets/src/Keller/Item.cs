@@ -12,6 +12,6 @@ public class Item : pickupsManager
         removeAsset(other);
         updateScore(other);
         triggerSound(other);
-        LogInfo(other);
+        //LogInfo(other);
     }
 }
