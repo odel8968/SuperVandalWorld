@@ -10,7 +10,7 @@ namespace Tests
     public class MovingPlatformStressTest
     {
         private bool sceneLoaded;
-        private int stressValue = 8100;
+        private int stressValue = 2000;
         int actualValue = 0;
 
 
@@ -29,7 +29,7 @@ namespace Tests
         }
 
         [UnityTest]
-        public IEnumerator MovingPlatformSpeedStressTest()
+        public IEnumerator MovingPlatformNumberStressTest()
         {
             yield return new WaitWhile(()=>sceneLoaded == false);
             GameObject testplatform = GameObject.Find("MovingRockPlatform_0");
@@ -38,12 +38,14 @@ namespace Tests
             {
             GameObject platform = UnityEngine.Object.Instantiate(testplatform, Vector3.zero, Quaternion.identity) as GameObject;
 
-            platform.transform.position = new Vector3(Random.Range(0,5f), Random.Range(5f,10f), 0f);
+            platform.transform.position = new Vector3(Random.Range(0,10f), Random.Range(5f,20f), 0f);
 
             actualValue ++;
 
+            yield return new WaitForSeconds(.01f);
+
             }
-            yield return null;
+            
 
             Debug.Log("Expected: " + stressValue + ", Actual; " + actualValue);
             Assert.AreEqual(stressValue, actualValue);
