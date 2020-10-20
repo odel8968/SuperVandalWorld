@@ -72,9 +72,19 @@ namespace Tests
             var testPlatform = GameObject.Find("MovingRockPlatform_0");
 
             GameObject platform = UnityEngine.Object.Instantiate(testPlatform, Vector3.zero, Quaternion.identity) as GameObject;
-
-            platform.transform.position = new Vector3(Player.transform.position.x, Player.transform.position.y + 10f, 0f);
+            platform.transform.position = new Vector3(Player.transform.position.x, Player.transform.position.y + 5f, 0f);
             platform.GetComponent<MovingPlatform>().setSpeed = 0f;
+
+            for (int i = 1; i < 5; i++)
+            {
+                GameObject another_platform = UnityEngine.Object.Instantiate(testPlatform, Vector3.zero, Quaternion.identity) as GameObject;
+                another_platform.transform.position = new Vector3(Player.transform.position.x + (5f * i), Player.transform.position.y + 5f, 0f);
+                another_platform.GetComponent<MovingPlatform>().setSpeed = 0f;
+
+                GameObject yet_another_platform = UnityEngine.Object.Instantiate(testPlatform, Vector3.zero, Quaternion.identity) as GameObject;
+                yet_another_platform.transform.position = new Vector3(Player.transform.position.x - (5f * i), Player.transform.position.y + 5f, 0f);
+                yet_another_platform.GetComponent<MovingPlatform>().setSpeed = 0f;
+            }
 
             Player.jumpForce = 15f;
             for (int i = 0; i < 20; i++)

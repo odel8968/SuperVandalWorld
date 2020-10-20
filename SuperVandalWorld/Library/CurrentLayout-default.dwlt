@@ -15,13 +15,13 @@ MonoBehaviour:
   m_PixelRect:
     serializedVersion: 2
     x: 0
-    y: 43
+    y: 42
     width: 2560
-    height: 1357
+    height: 1358
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Project
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 875, y: 542}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -45,7 +45,7 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 2560
-    height: 1357
+    height: 1358
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
@@ -93,7 +93,7 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 1337
+    y: 1338
     width: 2560
     height: 20
   m_MinSize: {x: 0, y: 0}
@@ -118,11 +118,11 @@ MonoBehaviour:
     x: 0
     y: 30
     width: 2560
-    height: 1307
-  m_MinSize: {x: 503, y: 492}
+    height: 1308
+  m_MinSize: {x: 504, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 86
+  controlID: 62
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -143,11 +143,11 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 2007
-    height: 1307
-  m_MinSize: {x: 402, y: 492}
+    height: 1308
+  m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 20
+  controlID: 133
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -168,11 +168,11 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 2007
-    height: 817
-  m_MinSize: {x: 402, y: 221}
-  m_MaxSize: {x: 8002, y: 4021}
+    height: 818
+  m_MinSize: {x: 403, y: 221}
+  m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 21
+  controlID: 134
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -191,7 +191,7 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 416
-    height: 817
+    height: 818
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 13}
@@ -217,7 +217,7 @@ MonoBehaviour:
     x: 416
     y: 0
     width: 1591
-    height: 817
+    height: 818
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 12}
@@ -242,7 +242,7 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 817
+    y: 818
     width: 2007
     height: 490
   m_MinSize: {x: 231, y: 271}
@@ -271,9 +271,9 @@ MonoBehaviour:
     x: 2007
     y: 0
     width: 553
-    height: 1307
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
+    height: 1308
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 17}
@@ -303,9 +303,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 416
-    y: 73
+    y: 72
     width: 1589
-    height: 796
+    height: 797
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
   m_WindowGUID: 8fde1c7c9ac16d04fb45d7d761e25119
@@ -419,16 +419,16 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 73
+    y: 72
     width: 415
-    height: 796
+    height: 797
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 48b3ffff
-      m_LastClickedID: -19640
-      m_ExpandedIDs: 30b9ffff4ab9ffff2ec0ffffa2c6ffffbcc6ffff2cceffffd8d7fffff2d7ffff7ae2ffff7aeaffff5a5d0000906c0000d47b0000
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 7c8bffff968bfffff892ffff0699ffff2099ffff82a0ffff80aaffff9aaaffff20b2ffffbeb8ffffd8b8ffff10c0ffffc4c6ffffdec6ffffe6cdffff82d7ffff9cd7ffff9edeffff08e6ffffcc5d00005860000070610000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -473,9 +473,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 416
-    y: 73
+    y: 72
     width: 1589
-    height: 796
+    height: 797
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
   m_SerializedViewValues: []
@@ -483,7 +483,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 1589, y: 775}
+  m_TargetSize: {x: 1589, y: 776}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -500,8 +500,8 @@ MonoBehaviour:
     vZoomLockedByDefault: 0
     m_HBaseRangeMin: -794.5
     m_HBaseRangeMax: 794.5
-    m_VBaseRangeMin: -387.5
-    m_VBaseRangeMax: 387.5
+    m_VBaseRangeMin: -388
+    m_VBaseRangeMax: 388
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -520,9 +520,9 @@ MonoBehaviour:
       x: 0
       y: 21
       width: 1589
-      height: 775
+      height: 776
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 794.5, y: 387.5}
+    m_Translation: {x: 794.5, y: 388}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
@@ -530,12 +530,12 @@ MonoBehaviour:
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
       x: -794.5
-      y: -387.5
+      y: -388
       width: 1589
-      height: 775
+      height: 776
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 1589, y: 796}
+  m_LastWindowPixelSize: {x: 1589, y: 797}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -586,14 +586,14 @@ MonoBehaviour:
   m_LastFolders:
   - Assets/tst/Justin
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\Justin\Desktop\NewClone\SuperVandalWorld\SuperVandalWorld
+  m_LastProjectPath: C:\Users\John Cambareri\Documents\GitHub\SuperVandalWorld\SuperVandalWorld
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 35}
-    m_SelectedIDs: 3a450000
-    m_LastClickedID: 17722
-    m_ExpandedIDs: 00000000f4440000f6440000f8440000fa440000fc440000fe4400000045000002450000044500000645000000ca9a3b
+    m_SelectedIDs: ac4b0000
+    m_LastClickedID: 19372
+    m_ExpandedIDs: 00000000664b0000684b00006a4b00006c4b00006e4b0000704b0000724b0000744b0000764b0000784b000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -621,7 +621,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000f4440000f6440000f8440000fa440000fc440000fe44000000450000024500000445000006450000
+    m_ExpandedIDs: 00000000664b0000684b00006a4b00006c4b00006e4b0000704b0000724b0000744b0000764b0000784b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -723,9 +723,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 2007
-    y: 73
+    y: 72
     width: 552
-    height: 1286
+    height: 1287
   m_ViewDataDictionary: {fileID: 0}
   m_ObjectsLockedBeforeSerialization: []
   m_InstanceIDsLockedBeforeSerialization: 
@@ -733,7 +733,7 @@ MonoBehaviour:
     m_CachedPref: -160
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
-  m_LastInspectedObjectInstanceID: -19640
+  m_LastInspectedObjectInstanceID: -1
   m_LastVerticalScrollValue: 0
   m_AssetGUID: 
   m_InstanceID: 0
@@ -761,16 +761,16 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 2007
-    y: 73
+    y: 72
     width: 552
-    height: 1286
+    height: 1287
   m_ViewDataDictionary: {fileID: 0}
   m_Spl:
-    ID: 242
+    ID: 181
     splitterInitialOffset: 516
     currentActiveSplitter: -1
     realSizes:
-    - 711
+    - 712
     - 505
     relativeSizes:
     - 0.58498025
@@ -781,7 +781,7 @@ MonoBehaviour:
     maxSizes:
     - 0
     - 0
-    lastTotalSize: 1216
+    lastTotalSize: 1217
     splitSize: 6
     xOffset: 0
     m_Version: 1
@@ -797,9 +797,9 @@ MonoBehaviour:
       uniqueId: '[SuperVandalWorld][suite]'
       name: SuperVandalWorld
       fullName: SuperVandalWorld
-      resultStatus: 1
-      duration: 16.350811
-      messages: 
+      resultStatus: 2
+      duration: 42.97953
+      messages: One or more child tests had errors
       output: 
       stacktrace: 
       notRunnable: 0
@@ -813,9 +813,9 @@ MonoBehaviour:
       uniqueId: '[Tests.dll][suite]'
       name: Tests.dll
       fullName: C:/Users/adave/Documents/GitHub/SuperVandalWorld/SuperVandalWorld/Library/ScriptAssemblies/Tests.dll
-      resultStatus: 1
-      duration: 16.328852
-      messages: 
+      resultStatus: 2
+      duration: 42.948196
+      messages: One or more child tests had errors
       output: 
       stacktrace: 
       notRunnable: 0
@@ -829,9 +829,9 @@ MonoBehaviour:
       uniqueId: Tests.dll/[Tests][suite]
       name: Tests
       fullName: Tests
-      resultStatus: 1
-      duration: 16.32205
-      messages: 
+      resultStatus: 2
+      duration: 42.9282
+      messages: One or more child tests had errors
       output: 
       stacktrace: 
       notRunnable: 0
@@ -939,8 +939,8 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/[Tests][Tests.CharacterMovementTests][suite]
       name: CharacterMovementTests
       fullName: Tests.CharacterMovementTests
-      resultStatus: 0
-      duration: 5.435455
+      resultStatus: 2
+      duration: 42.923355
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -955,26 +955,97 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/CharacterMovementTests/[Tests][Tests.CharacterMovementTests.jump_stress_test]
       name: jump_stress_test
       fullName: Tests.CharacterMovementTests.jump_stress_test
-      resultStatus: 0
-      duration: 5.4014754
-      messages: "  Player has broken through the platform with a speed of 150\n 
-        Expected: True\n  But was:  False\n"
+      resultStatus: 2
+      duration: 42.892963
+      messages: "  Player has broken through the platform with a speed of 1.5E+17\r\n 
+        Expected: True\r\n  But was:  False\r\n"
       output: 'Jumping
 
         Jump force = 15
 
         Jumping
 
-        Jump force
-        = 150
+        Jumping
+
+        Jump
+        force = 150
+
+        Jumping
+
+        Jump force = 1500
+
+        Jumping
+
+        Jump
+        force = 15000
+
+        Jumping
+
+        Jump force = 150000
+
+        Jumping
+
+        Jump
+        force = 1500000
+
+        Jumping
+
+        Jump force = 1.5E+07
+
+        Jumping
+
+        Jump
+        force = 1.5E+08
+
+        Jumping
+
+        Jump force = 1.5E+09
+
+        Jumping
+
+        Jump
+        force = 1.5E+10
+
+        Jumping
+
+        Jump force = 1.5E+11
+
+        Jumping
+
+        Jump
+        force = 1.5E+12
+
+        Jumping
+
+        Jump force = 1.5E+13
+
+        Jumping
+
+        Jump
+        force = 1.5E+14
+
+        Jumping
+
+        Jump force = 1.5E+15
+
+        Jumping
+
+        Jump
+        force = 1.5E+16
+
+        Jumping
+
+        Jump force = 1.5E+17
+
+        Jumping
 
 '
       stacktrace: 'at Tests.CharacterMovementTests+<jump_stress_test>d__6.MoveNext
-        () [0x001ac] in /Users/hebaaljabrine/Desktop/PLEASE/SuperVandalWorld/SuperVandalWorld/Assets/tst/John/CharacterMovementTests.cs:88
+        () [0x0029a] in C:\Users\John Cambareri\Documents\GitHub\SuperVandalWorld\SuperVandalWorld\Assets\tst\John\CharacterMovementTests.cs:98
 
         at
         UnityEngine.TestTools.TestEnumerator+<Execute>d__5.MoveNext () [0x00038]
-        in /Users/hebaaljabrine/Desktop/PLEASE/SuperVandalWorld/SuperVandalWorld/Library/PackageCache/com.unity.test-framework@1.1.16/UnityEngine.TestRunner/NUnitExtensions/Attributes/TestEnumerator.cs:31
+        in <def80c3c71174f0ea69facc89d14e13e>:0
 
 '
       notRunnable: 0
@@ -1147,8 +1218,8 @@ MonoBehaviour:
       messages: "  Expected: True\r\n  But was:  False\r\n"
       output: 'Failed at 80 Platform speed
 
-        Player falls through Ground
-        at 80 Platform speed
+        Player falls through Ground at
+        80 Platform speed
 
 '
       stacktrace: 'at Tests.FallThroughFloorStress+<FallThroughFloorStressTest>d__3.MoveNext
@@ -1879,13 +1950,32 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1001
       parentUniqueId: Tests.dll/Tests/[Tests][Tests.UITest][suite]
-    m_ResultText: enemyStressTest (16.296s)
-    m_ResultStacktrace: 
+    m_ResultText: "jump_stress_test (42.893s)\n---\nPlayer has broken through the
+      platform with a speed of 1.5E+17\r\n  Expected: True\r\n  But was:  False\n---\nat
+      Tests.CharacterMovementTests+<jump_stress_test>d__6.MoveNext () [0x0029a] in
+      C:\\Users\\John Cambareri\\Documents\\GitHub\\SuperVandalWorld\\SuperVandalWorld\\Assets\\tst\\John\\CharacterMovementTests.cs:98\r\nat
+      UnityEngine.TestTools.TestEnumerator+<Execute>d__5.MoveNext () [0x00038] in
+      <def80c3c71174f0ea69facc89d14e13e>:0\n---\nJumping\r\nJump force = 15\r\nJumping\r\nJumping\r\nJump
+      force = 150\r\nJumping\r\nJump force = 1500\r\nJumping\r\nJump force = 15000\r\nJumping\r\nJump
+      force = 150000\r\nJumping\r\nJump force = 1500000\r\nJumping\r\nJump force
+      = 1.5E+07\r\nJumping\r\nJump force = 1.5E+08\r\nJumping\r\nJump force = 1.5E+09\r\nJumping\r\nJump
+      force = 1.5E+10\r\nJumping\r\nJump force = 1.5E+11\r\nJumping\r\nJump force
+      = 1.5E+12\r\nJumping\r\nJump force = 1.5E+13\r\nJumping\r\nJump force = 1.5E+14\r\nJumping\r\nJump
+      force = 1.5E+15\r\nJumping\r\nJump force = 1.5E+16\r\nJumping\r\nJump force
+      = 1.5E+17\r\nJumping"
+    m_ResultStacktrace: 'at Tests.CharacterMovementTests+<jump_stress_test>d__6.MoveNext
+      () [0x0029a] in C:\Users\John Cambareri\Documents\GitHub\SuperVandalWorld\SuperVandalWorld\Assets\tst\John\CharacterMovementTests.cs:98
+
+      at
+      UnityEngine.TestTools.TestEnumerator+<Execute>d__5.MoveNext () [0x00038] in
+      <def80c3c71174f0ea69facc89d14e13e>:0
+
+'
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 3548cfc7
-      m_LastClickedID: -942716875
-      m_ExpandedIDs: 20712cd05dfc4bdfe557abf795fbf000e1b063178302573d8359db41ffffff7f
+      m_SelectedIDs: c9861bd8
+      m_LastClickedID: -669284663
+      m_ExpandedIDs: c337b2b420712cd05dfc4bdfe557abf795fbf000e1b063178302573d8359db41ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1989,7 +2079,7 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 16596
+  m_LastSelectedObjectID: 32160
 --- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 52
