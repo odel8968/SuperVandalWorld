@@ -73,20 +73,29 @@ namespace Tests
 
             var square = GameObject.Find("Square").GetComponent<Square>();
 
+            var posX = square.transform.position.x;
+            const int limit = 10;
+            var limitX = posX + square.speed * square.moveTime + limit;
+
+
             yield return new WaitWhile(
                 () =>
                 {
-                    if (square.curTime > 0 && square.curTime < square.moveTime)
+                    Assert.That(square.transform.position.x, Is.LessThan(limitX));
+
+                    if (square.curTime < 0.01f)
                     {
-                        Debug.Log("ASSERT CHECK");
-                        Assert.That(square.direction, Is.EqualTo(1));
+                        square.speed += 1f;
+                        //Debug.Log("ASSERT CHECK: " + square.speed + " -- " + square.transform.position.x);
                     }
 
-                    return square.direction == 1;
+                    return square.transform.position.x < limitX;
                 }
             );
 
-            Assert.That(square.direction, Is.EqualTo(-1));
+            //Assert.That(square.direction, Is.EqualTo(-1));
+            Debug.Log("ASSERT CHECK: " + square.speed + " -- " + square.transform.position.x + " -- " + limitX);
+            Assert.That(square.transform.position.x < limitX);
         }
 
     }

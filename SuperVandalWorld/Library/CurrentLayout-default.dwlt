@@ -14,43 +14,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
-    x: 8
-    y: 51
-    width: 2544
-    height: 981
+    x: 0
+    y: 46
+    width: 1440
+    height: 773
   m_ShowMode: 4
   m_Title: Game
-  m_RootView: {fileID: 3}
+  m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
-  m_Maximized: 0
+  m_Maximized: 1
 --- !u!114 &2
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: SceneView
-  m_EditorClassIdentifier: 
-  m_Children: []
-  m_Position:
-    serializedVersion: 2
-    x: 481
-    y: 0
-    width: 906
-    height: 506
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 17}
-  m_Panes:
-  - {fileID: 17}
-  m_Selected: 0
-  m_LastSelected: 0
---- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -63,22 +37,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 4}
-  - {fileID: 6}
+  - {fileID: 3}
   - {fileID: 5}
+  - {fileID: 4}
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 2544
-    height: 981
+    width: 1440
+    height: 773
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
   m_TopViewHeight: 30
   m_UseBottomView: 1
   m_BottomViewHeight: 20
---- !u!114 &4
+--- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -95,15 +69,15 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 2544
+    width: 1440
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
   m_LoadedToolbars:
-  - {fileID: 23}
-  m_MainToolbar: {fileID: 23}
+  - {fileID: 21}
+  m_MainToolbar: {fileID: 21}
   m_LastLoadedLayoutName: 
---- !u!114 &5
+--- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -119,11 +93,36 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 961
-    width: 2544
+    y: 753
+    width: 1440
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
+--- !u!114 &5
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 6}
+  - {fileID: 11}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 30
+    width: 1440
+    height: 723
+  m_MinSize: {x: 679, y: 492}
+  m_MaxSize: {x: 14002, y: 14042}
+  vertical: 0
+  controlID: 19
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -138,17 +137,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Children:
   - {fileID: 7}
-  - {fileID: 14}
+  - {fileID: 10}
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 30
-    width: 2544
-    height: 931
-  m_MinSize: {x: 703, y: 492}
-  m_MaxSize: {x: 18001, y: 14042}
-  vertical: 0
-  controlID: 106
+    y: 0
+    width: 1129
+    height: 723
+  m_MinSize: {x: 403, y: 492}
+  m_MaxSize: {x: 10001, y: 14042}
+  vertical: 1
+  controlID: 20
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -163,44 +162,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Children:
   - {fileID: 8}
-  - {fileID: 11}
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 2090
-    height: 931
-  m_MinSize: {x: 603, y: 492}
-  m_MaxSize: {x: 14001, y: 14042}
-  vertical: 1
-  controlID: 107
---- !u!114 &8
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Children:
   - {fileID: 9}
-  - {fileID: 2}
-  - {fileID: 10}
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 2090
-    height: 506
-  m_MinSize: {x: 603, y: 221}
-  m_MaxSize: {x: 12003, y: 4021}
+    width: 1129
+    height: 452
+  m_MinSize: {x: 403, y: 221}
+  m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 108
---- !u!114 &9
+  controlID: 21
+--- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -217,16 +190,16 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 481
-    height: 506
+    width: 234
+    height: 452
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 16}
+  m_ActualView: {fileID: 13}
   m_Panes:
-  - {fileID: 16}
+  - {fileID: 13}
   m_Selected: 0
   m_LastSelected: 0
---- !u!114 &10
+--- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -241,43 +214,19 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1387
+    x: 234
     y: 0
-    width: 703
-    height: 506
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 15}
+    width: 895
+    height: 452
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
+  m_ActualView: {fileID: 14}
   m_Panes:
-  - {fileID: 15}
-  m_Selected: 0
-  m_LastSelected: 0
---- !u!114 &11
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Children:
   - {fileID: 12}
-  - {fileID: 13}
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 506
-    width: 2090
-    height: 425
-  m_MinSize: {x: 331, y: 271}
-  m_MaxSize: {x: 14001, y: 10021}
-  vertical: 0
-  controlID: 130
---- !u!114 &12
+  - {fileID: 14}
+  m_Selected: 1
+  m_LastSelected: 0
+--- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -293,214 +242,47 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 0
-    width: 979
-    height: 425
+    y: 452
+    width: 1129
+    height: 271
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
-  m_ActualView: {fileID: 18}
+  m_ActualView: {fileID: 15}
   m_Panes:
+  - {fileID: 15}
+  - {fileID: 16}
+  m_Selected: 0
+  m_LastSelected: 1
+--- !u!114 &11
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: InspectorWindow
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 1129
+    y: 0
+    width: 311
+    height: 723
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 17}
+  m_Panes:
+  - {fileID: 17}
   - {fileID: 18}
-  m_Selected: 0
-  m_LastSelected: 0
---- !u!114 &13
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ConsoleWindow
-  m_EditorClassIdentifier: 
-  m_Children: []
-  m_Position:
-    serializedVersion: 2
-    x: 979
-    y: 0
-    width: 1111
-    height: 425
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 19}
-  m_Panes:
   - {fileID: 19}
-  m_Selected: 0
-  m_LastSelected: 0
---- !u!114 &14
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: TestRunnerWindow
-  m_EditorClassIdentifier: 
-  m_Children: []
-  m_Position:
-    serializedVersion: 2
-    x: 2090
-    y: 0
-    width: 454
-    height: 931
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 21}
-  m_Panes:
   - {fileID: 20}
-  - {fileID: 21}
-  - {fileID: 22}
-  m_Selected: 1
-  m_LastSelected: 0
---- !u!114 &15
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12015, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Game
-    m_Image: {fileID: -6423792434712278376, guid: 0000000000000000d000000000000000, type: 0}
-    m_Tooltip: 
-  m_Pos:
-    serializedVersion: 2
-    x: 1395
-    y: 81
-    width: 701
-    height: 485
-  m_ViewDataDictionary: {fileID: 0}
-  m_SerializedViewNames: []
-  m_SerializedViewValues: []
-  m_PlayModeViewName: GameView
-  m_ShowGizmos: 0
-  m_TargetDisplay: 0
-  m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 701, y: 464}
-  m_TextureFilterMode: 0
-  m_TextureHideFlags: 61
-  m_RenderIMGUI: 1
-  m_MaximizeOnPlay: 0
-  m_UseMipMap: 0
-  m_VSyncEnabled: 0
-  m_Gizmos: 0
-  m_Stats: 0
-  m_SelectedSizes: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
-  m_ZoomArea:
-    m_HRangeLocked: 0
-    m_VRangeLocked: 0
-    hZoomLockedByDefault: 0
-    vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -350.5
-    m_HBaseRangeMax: 350.5
-    m_VBaseRangeMin: -232
-    m_VBaseRangeMax: 232
-    m_HAllowExceedBaseRangeMin: 1
-    m_HAllowExceedBaseRangeMax: 1
-    m_VAllowExceedBaseRangeMin: 1
-    m_VAllowExceedBaseRangeMax: 1
-    m_ScaleWithWindow: 0
-    m_HSlider: 0
-    m_VSlider: 0
-    m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
-    m_EnableSliderZoomHorizontal: 0
-    m_EnableSliderZoomVertical: 0
-    m_UniformScale: 1
-    m_UpDirection: 1
-    m_DrawArea:
-      serializedVersion: 2
-      x: 0
-      y: 21
-      width: 701
-      height: 464
-    m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 350.5, y: 232}
-    m_MarginLeft: 0
-    m_MarginRight: 0
-    m_MarginTop: 0
-    m_MarginBottom: 0
-    m_LastShownAreaInsideMargins:
-      serializedVersion: 2
-      x: -350.5
-      y: -232
-      width: 701
-      height: 464
-    m_MinimalGUI: 1
-  m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 701, y: 485}
-  m_ClearInEditMode: 1
-  m_NoCameraWarning: 1
-  m_LowResolutionForAspectRatios: 01000000000000000000
-  m_XRRenderMode: 0
-  m_RenderTexture: {fileID: 0}
---- !u!114 &16
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12061, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Hierarchy
-    m_Image: {fileID: 7966133145522015247, guid: 0000000000000000d000000000000000, type: 0}
-    m_Tooltip: 
-  m_Pos:
-    serializedVersion: 2
-    x: 8
-    y: 81
-    width: 480
-    height: 485
-  m_ViewDataDictionary: {fileID: 0}
-  m_SceneHierarchy:
-    m_TreeViewState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 9ce9ffffb8e9ffffc2f0ffff26f8ffff
-      m_RenameOverlay:
-        m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
-        m_EditFieldRect:
-          serializedVersion: 2
-          x: 0
-          y: 0
-          width: 0
-          height: 0
-        m_UserData: 0
-        m_IsWaitingForDelay: 0
-        m_IsRenaming: 0
-        m_OriginalEventType: 11
-        m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 9}
-      m_SearchString: 
-    m_ExpandedScenes: []
-    m_CurrenRootInstanceID: 0
-    m_LockTracker:
-      m_IsLocked: 0
-    m_CurrentSortingName: TransformSorting
-  m_WindowGUID: b8c0478367d084f4490c2edf623b0f98
---- !u!114 &17
+  m_Selected: 0
+  m_LastSelected: 1
+--- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -516,14 +298,14 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Scene
-    m_Image: {fileID: 2593428753322112591, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: 8634526014445323508, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 489
-    y: 81
-    width: 904
-    height: 485
+    x: 235
+    y: 76
+    width: 893
+    height: 304
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
   m_WindowGUID: 8fde1c7c9ac16d04fb45d7d761e25119
@@ -536,9 +318,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -75.36977, y: -19.168934, z: -21.102846}
+    m_Target: {x: 0, y: -0.8000002, z: -10}
     speed: 2
-    m_Value: {x: -75.36977, y: -19.168934, z: -21.102846}
+    m_Value: {x: 0, y: -0.8000002, z: -10}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -589,9 +371,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 79.68964
+    m_Target: 12.124355
     speed: 2
-    m_Value: 79.68964
+    m_Value: 12.124355
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -616,7 +398,150 @@ MonoBehaviour:
   m_SceneVisActive: 1
   m_LastLockedObject: {fileID: 0}
   m_ViewIsLockedToObject: 0
---- !u!114 &18
+--- !u!114 &13
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12061, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Hierarchy
+    m_Image: {fileID: -3734745235275155857, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 0
+    y: 76
+    width: 233
+    height: 431
+  m_ViewDataDictionary: {fileID: 0}
+  m_SceneHierarchy:
+    m_TreeViewState:
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: c44b0000
+      m_LastClickedID: 0
+      m_ExpandedIDs: a218ffffb818ffffe01dfffffc23ffff1224ffff3a7effff5a84ffff7084ffff5c8bffffb091ffffc691ffffaa98ffffae9effffc49effffa8a5ffffb6abffffccabffffa2b2ffffc8b8ffffdeb8ffffc2bfffffcec5ffffe4c5ffffc8ccffffd8d2ffffeed2ffff10daffff9ce0fffff6940000
+      m_RenameOverlay:
+        m_UserAcceptedRename: 0
+        m_Name: 
+        m_OriginalName: 
+        m_EditFieldRect:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        m_UserData: 0
+        m_IsWaitingForDelay: 0
+        m_IsRenaming: 0
+        m_OriginalEventType: 11
+        m_IsRenamingFilename: 0
+        m_ClientGUIView: {fileID: 8}
+      m_SearchString: 
+    m_ExpandedScenes: []
+    m_CurrenRootInstanceID: 0
+    m_LockTracker:
+      m_IsLocked: 0
+    m_CurrentSortingName: TransformSorting
+  m_WindowGUID: b8c0478367d084f4490c2edf623b0f98
+--- !u!114 &14
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12015, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Game
+    m_Image: {fileID: 4621777727084837110, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 234
+    y: 76
+    width: 893
+    height: 431
+  m_ViewDataDictionary: {fileID: 0}
+  m_SerializedViewNames: []
+  m_SerializedViewValues: []
+  m_PlayModeViewName: GameView
+  m_ShowGizmos: 0
+  m_TargetDisplay: 0
+  m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
+  m_TargetSize: {x: 893, y: 410}
+  m_TextureFilterMode: 0
+  m_TextureHideFlags: 61
+  m_RenderIMGUI: 1
+  m_MaximizeOnPlay: 0
+  m_UseMipMap: 0
+  m_VSyncEnabled: 0
+  m_Gizmos: 0
+  m_Stats: 0
+  m_SelectedSizes: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+  m_ZoomArea:
+    m_HRangeLocked: 0
+    m_VRangeLocked: 0
+    hZoomLockedByDefault: 0
+    vZoomLockedByDefault: 0
+    m_HBaseRangeMin: -223.25
+    m_HBaseRangeMax: 223.25
+    m_VBaseRangeMin: -102.5
+    m_VBaseRangeMax: 102.5
+    m_HAllowExceedBaseRangeMin: 1
+    m_HAllowExceedBaseRangeMax: 1
+    m_VAllowExceedBaseRangeMin: 1
+    m_VAllowExceedBaseRangeMax: 1
+    m_ScaleWithWindow: 0
+    m_HSlider: 0
+    m_VSlider: 0
+    m_IgnoreScrollWheelUntilClicked: 0
+    m_EnableMouseInput: 1
+    m_EnableSliderZoomHorizontal: 0
+    m_EnableSliderZoomVertical: 0
+    m_UniformScale: 1
+    m_UpDirection: 1
+    m_DrawArea:
+      serializedVersion: 2
+      x: 0
+      y: 21
+      width: 893
+      height: 410
+    m_Scale: {x: 2, y: 2}
+    m_Translation: {x: 446.5, y: 205}
+    m_MarginLeft: 0
+    m_MarginRight: 0
+    m_MarginTop: 0
+    m_MarginBottom: 0
+    m_LastShownAreaInsideMargins:
+      serializedVersion: 2
+      x: -223.25
+      y: -102.5
+      width: 446.5
+      height: 205
+    m_MinimalGUI: 1
+  m_defaultScale: 2
+  m_LastWindowPixelSize: {x: 1786, y: 862}
+  m_ClearInEditMode: 1
+  m_NoCameraWarning: 1
+  m_LowResolutionForAspectRatios: 01000000000000000000
+  m_XRRenderMode: 0
+  m_RenderTexture: {fileID: 0}
+--- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -632,14 +557,14 @@ MonoBehaviour:
   m_MaxSize: {x: 10000, y: 10000}
   m_TitleContent:
     m_Text: Project
-    m_Image: {fileID: -5467254957812901981, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: -5179483145760003458, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 8
-    y: 587
-    width: 978
-    height: 404
+    x: 0
+    y: 528
+    width: 1128
+    height: 250
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -654,21 +579,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/tst/John
+    - Assets/prefabs/Heba
     m_Globs: []
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/tst/John
+  - Assets/prefabs/Heba
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\John Cambareri\Documents\GitHub\SuperVandalWorld\SuperVandalWorld
+  m_LastProjectPath: /Users/hebaaljabrine/Desktop/PLEASE/SuperVandalWorld/SuperVandalWorld
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 6a440000
-    m_LastClickedID: 17514
-    m_ExpandedIDs: 0000000000440000024400000444000006440000084400000a4400000c4400000e4400001044000000ca9a3b
+    scrollPos: {x: 0, y: 47.997803}
+    m_SelectedIDs: e24c0000
+    m_LastClickedID: 19682
+    m_ExpandedIDs: 00000000bc4c0000be4c0000c04c0000c24c0000c44c0000c64c0000c84c0000ca4c0000cc4c0000ce4c000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -684,7 +609,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 12}
+      m_ClientGUIView: {fileID: 10}
     m_SearchString: 
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
@@ -696,7 +621,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000000440000024400000444000006440000084400000a4400000c4400000e44000010440000
+    m_ExpandedIDs: 00000000bc4c0000be4c0000c04c0000c24c0000c44c0000c64c0000c84c0000ca4c0000cc4c0000ce4c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -723,8 +648,8 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c6230000a4430000ae3f0000b83c00007e4600007246000064430000383d0000f43c00006e400000
+    m_HadKeyboardFocusLastEvent: 0
+    m_ExpandedInstanceIDs: c6230000a4430000ae3f0000b83c00007e4600007246000064430000383d0000f43c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -740,7 +665,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 12}
+      m_ClientGUIView: {fileID: 10}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -752,7 +677,7 @@ MonoBehaviour:
     m_GridSize: 64
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 271
---- !u!114 &19
+--- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -768,16 +693,16 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Console
-    m_Image: {fileID: -4327648978806127646, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: -4950941429401207979, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 987
-    y: 587
-    width: 1109
-    height: 404
+    x: 0
+    y: 528
+    width: 1128
+    height: 250
   m_ViewDataDictionary: {fileID: 0}
---- !u!114 &20
+--- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -793,14 +718,14 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Inspector
-    m_Image: {fileID: -2667387946076563598, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: -440750813802333266, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 860.00006
-    y: 79.42857
-    width: 235.57141
-    height: 1073.5715
+    x: 1129
+    y: 76
+    width: 310
+    height: 702
   m_ViewDataDictionary: {fileID: 0}
   m_ObjectsLockedBeforeSerialization: []
   m_InstanceIDsLockedBeforeSerialization: 
@@ -815,7 +740,7 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_PreviewWindow: {fileID: 0}
---- !u!114 &21
+--- !u!114 &18
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -835,18 +760,18 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 2098
-    y: 81
-    width: 453
-    height: 910
+    x: 1129
+    y: 76
+    width: 310
+    height: 702
   m_ViewDataDictionary: {fileID: 0}
   m_Spl:
-    ID: 242
+    ID: 181
     splitterInitialOffset: 516
     currentActiveSplitter: -1
     realSizes:
-    - 491
-    - 349
+    - 369.5
+    - 262.5
     relativeSizes:
     - 0.58498025
     - 0.41501975
@@ -856,7 +781,7 @@ MonoBehaviour:
     maxSizes:
     - 0
     - 0
-    lastTotalSize: 840
+    lastTotalSize: 632
     splitSize: 6
     xOffset: 0
     m_Version: 1
@@ -866,15 +791,15 @@ MonoBehaviour:
     oldSplitSize: 0
   m_TestTypeToolbarIndex: 0
   m_PlayModeTestListGUI:
-    m_Window: {fileID: 21}
+    m_Window: {fileID: 18}
     newResultList:
     - id: 1003
       uniqueId: '[SuperVandalWorld][suite]'
       name: SuperVandalWorld
       fullName: SuperVandalWorld
-      resultStatus: 1
-      duration: 50.92012
-      messages: 
+      resultStatus: 2
+      duration: 0.4304479
+      messages: One or more child tests had errors
       output: 
       stacktrace: 
       notRunnable: 0
@@ -888,9 +813,9 @@ MonoBehaviour:
       uniqueId: '[Tests.dll][suite]'
       name: Tests.dll
       fullName: C:/Users/adave/Documents/GitHub/SuperVandalWorld/SuperVandalWorld/Library/ScriptAssemblies/Tests.dll
-      resultStatus: 1
-      duration: 50.88496
-      messages: 
+      resultStatus: 2
+      duration: 0.3920794
+      messages: One or more child tests had errors
       output: 
       stacktrace: 
       notRunnable: 0
@@ -904,9 +829,9 @@ MonoBehaviour:
       uniqueId: Tests.dll/[Tests][suite]
       name: Tests
       fullName: Tests
-      resultStatus: 1
-      duration: 50.868298
-      messages: 
+      resultStatus: 2
+      duration: 0.367749
+      messages: One or more child tests had errors
       output: 
       stacktrace: 
       notRunnable: 0
@@ -920,8 +845,8 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/[Tests][Tests.CameraTest][suite]
       name: CameraTest
       fullName: Tests.CameraTest
-      resultStatus: 1
-      duration: 0.7367772
+      resultStatus: 0
+      duration: 0.5842875
       messages: 
       output: 
       stacktrace: 
@@ -936,8 +861,8 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/CameraTest/[Tests][Tests.CameraTest.Camera_Set_To_Follow_Player]
       name: Camera_Set_To_Follow_Player
       fullName: Tests.CameraTest.Camera_Set_To_Follow_Player
-      resultStatus: 1
-      duration: 0.643819
+      resultStatus: 0
+      duration: 0.468685
       messages: 
       output: 'Player (UnityEngine.GameObject)
 
@@ -957,8 +882,8 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/CameraTest/[Tests][Tests.CameraTest.Camera_Speed_Set]
       name: Camera_Speed_Set
       fullName: Tests.CameraTest.Camera_Speed_Set
-      resultStatus: 1
-      duration: 0.0331694
+      resultStatus: 0
+      duration: 0.0319529
       messages: 
       output: '10
 
@@ -976,8 +901,8 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/CameraTest/[Tests][Tests.CameraTest.Camera_X_Offset_Set]
       name: Camera_X_Offset_Set
       fullName: Tests.CameraTest.Camera_X_Offset_Set
-      resultStatus: 1
-      duration: 0.0215757
+      resultStatus: 0
+      duration: 0.0297921
       messages: 
       output: '45
 
@@ -995,8 +920,8 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/CameraTest/[Tests][Tests.CameraTest.Camera_Y_Offset_Set]
       name: Camera_Y_Offset_Set
       fullName: Tests.CameraTest.Camera_Y_Offset_Set
-      resultStatus: 1
-      duration: 0.0141987
+      resultStatus: 0
+      duration: 0.0230324
       messages: 
       output: '25
 
@@ -1014,9 +939,9 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/[Tests][Tests.CharacterMovementTests][suite]
       name: CharacterMovementTests
       fullName: Tests.CharacterMovementTests
-      resultStatus: 1
-      duration: 50.858185
-      messages: 
+      resultStatus: 0
+      duration: 5.435455
+      messages: One or more child tests had errors
       output: 
       stacktrace: 
       notRunnable: 0
@@ -1026,120 +951,47 @@ MonoBehaviour:
       categories: []
       parentId: 1030
       parentUniqueId: Tests.dll/[Tests][suite]
-    - id: 1021
+    - id: 1016
       uniqueId: Tests.dll/Tests/CharacterMovementTests/[Tests][Tests.CharacterMovementTests.jump_stress_test]
       name: jump_stress_test
       fullName: Tests.CharacterMovementTests.jump_stress_test
-      resultStatus: 1
-      duration: 50.260307
-      messages: 
+      resultStatus: 0
+      duration: 5.4014754
+      messages: "  Player has broken through the platform with a speed of 150\n 
+        Expected: True\n  But was:  False\n"
       output: 'Jumping
 
         Jump force = 15
 
         Jumping
 
-        Jump
-        force = 150
-
-        Jumping
-
-        Jump force = 1500
-
-        Jumping
-
-        Jump
-        force = 15000
-
-        Jumping
-
-        Jump force = 150000
-
-        Jumping
-
-        Jump
-        force = 1500000
-
-        Jumping
-
-        Jump force = 1.5E+07
-
-        Jumping
-
-        Jump
-        force = 1.5E+08
-
-        Jumping
-
-        Jump force = 1.5E+09
-
-        Jumping
-
-        Jump
-        force = 1.5E+10
-
-        Jumping
-
-        Jump force = 1.5E+11
-
-        Jumping
-
-        Jump
-        force = 1.5E+12
-
-        Jumping
-
-        Jump force = 1.5E+13
-
-        Jumping
-
-        Jump
-        force = 1.5E+14
-
-        Jumping
-
-        Jump force = 1.5E+15
-
-        Jumping
-
-        Jump
-        force = 1.5E+16
-
-        Jumping
-
-        Jump force = 1.5E+17
-
-        Jumping
-
-        Jump
-        force = 1.5E+18
-
-        Jumping
-
-        Jump force = 1.5E+19
-
-        Jumping
-
-        Jump
-        force = 1.5E+20
+        Jump force
+        = 150
 
 '
-      stacktrace: 
+      stacktrace: 'at Tests.CharacterMovementTests+<jump_stress_test>d__6.MoveNext
+        () [0x001ac] in /Users/hebaaljabrine/Desktop/PLEASE/SuperVandalWorld/SuperVandalWorld/Assets/tst/John/CharacterMovementTests.cs:88
+
+        at
+        UnityEngine.TestTools.TestEnumerator+<Execute>d__5.MoveNext () [0x00038]
+        in /Users/hebaaljabrine/Desktop/PLEASE/SuperVandalWorld/SuperVandalWorld/Library/PackageCache/com.unity.test-framework@1.1.16/UnityEngine.TestRunner/NUnitExtensions/Attributes/TestEnumerator.cs:31
+
+'
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1017
+      parentId: 1012
       parentUniqueId: Tests.dll/Tests/[Tests][Tests.CharacterMovementTests][suite]
     - id: 1015
       uniqueId: Tests.dll/Tests/CharacterMovementTests/[Tests][Tests.CharacterMovementTests.jump_test]
       name: jump_test
       fullName: Tests.CharacterMovementTests.jump_test
-      resultStatus: 1
-      duration: 2.1893492
-      messages: 
+      resultStatus: 0
+      duration: 0
+      messages: Cancelled by user
       output: 'Jumping
 
 '
@@ -1156,8 +1008,8 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/CharacterMovementTests/[Tests][Tests.CharacterMovementTests.movement_test_left]
       name: movement_test_left
       fullName: Tests.CharacterMovementTests.movement_test_left
-      resultStatus: 1
-      duration: 2.258727
+      resultStatus: 0
+      duration: 4.884236
       messages: 
       output: 
       stacktrace: 
@@ -1173,8 +1025,8 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/CharacterMovementTests/[Tests][Tests.CharacterMovementTests.movement_test_right]
       name: movement_test_right
       fullName: Tests.CharacterMovementTests.movement_test_right
-      resultStatus: 1
-      duration: 2.2717967
+      resultStatus: 0
+      duration: 3.979295
       messages: 
       output: 
       stacktrace: 
@@ -1190,8 +1042,8 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/[Tests][Tests.daEnemyTest][suite]
       name: daEnemyTest
       fullName: Tests.daEnemyTest
-      resultStatus: 1
-      duration: 20.281355
+      resultStatus: 0
+      duration: 16.900623
       messages: 
       output: 
       stacktrace: 
@@ -1206,8 +1058,8 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/daEnemyTest/[Tests][Tests.daEnemyTest.enemySpeedIsSet]
       name: enemySpeedIsSet
       fullName: Tests.daEnemyTest.enemySpeedIsSet
-      resultStatus: 1
-      duration: 1.188535
+      resultStatus: 0
+      duration: 1.2463764
       messages: 
       output: 
       stacktrace: 
@@ -1223,8 +1075,8 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/daEnemyTest/[Tests][Tests.daEnemyTest.enemyStressTest]
       name: enemyStressTest
       fullName: Tests.daEnemyTest.enemyStressTest
-      resultStatus: 1
-      duration: 16.04688
+      resultStatus: 0
+      duration: 16.869709
       messages: 
       output: 
       stacktrace: 
@@ -1240,8 +1092,8 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/daEnemyTest/[Tests][Tests.daEnemyTest.isEnemyMoving]
       name: isEnemyMoving
       fullName: Tests.daEnemyTest.isEnemyMoving
-      resultStatus: 1
-      duration: 1.019501
+      resultStatus: 0
+      duration: 1.0353906
       messages: 
       output: 
       stacktrace: 
@@ -1257,8 +1109,8 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/daEnemyTest/[Tests][Tests.daEnemyTest.movingTowardsPlayer]
       name: movingTowardsPlayer
       fullName: Tests.daEnemyTest.movingTowardsPlayer
-      resultStatus: 1
-      duration: 2.0161002
+      resultStatus: 0
+      duration: 2.047557
       messages: 
       output: 
       stacktrace: 
@@ -1274,8 +1126,8 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/[Tests][Tests.MovingPlatformStressTest][suite]
       name: MovingPlatformStressTest
       fullName: Tests.MovingPlatformStressTest
-      resultStatus: 2
-      duration: 26.963129
+      resultStatus: 0
+      duration: 181.14415
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -1290,75 +1142,11 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/MovingPlatformStressTest/[Tests][Tests.MovingPlatformStressTest.MovingPlatformNumberStressTest]
       name: MovingPlatformNumberStressTest
       fullName: Tests.MovingPlatformStressTest.MovingPlatformNumberStressTest
-      resultStatus: 2
-      duration: 26.938879
-      messages: 'Unhandled log message: ''[Exception] NullReferenceException: Object
-        reference not set to an instance of an object''. Use UnityEngine.TestTools.LogAssert.Expect'
-      output: 'NullReferenceException: Object reference not set to an instance of
-        an object
-
-        GUI Error: You are pushing more GUIClips than you are
-        popping. Make sure they are balanced.
-
-        NullReferenceException: Object
-        reference not set to an instance of an object
-
-        NullReferenceException:
-        Object reference not set to an instance of an object
-
-        GUI Error:
-        You are pushing more GUIClips than you are popping. Make sure they are balanced.
-
-        NullReferenceException:
-        Object reference not set to an instance of an object
-
-'
-      stacktrace: 'UnityEditor.IMGUI.Controls.TreeViewController.IsItemDragSelectedOrSelected
-        (UnityEditor.IMGUI.Controls.TreeViewItem item) (at <701f6580abad44cfb237a543dcd0d94b>:0)
-
-        UnityEditor.IMGUI.Controls.TreeViewController.DoItemGUI
-        (UnityEditor.IMGUI.Controls.TreeViewItem item, System.Int32 row, System.Single
-        rowWidth, System.Boolean hasFocus) (at <701f6580abad44cfb237a543dcd0d94b>:0)
-
-        UnityEditor.IMGUI.Controls.TreeViewController.IterateVisibleItems
-        (System.Int32 firstRow, System.Int32 numVisibleRows, System.Single rowWidth,
-        System.Boolean hasFocus) (at <701f6580abad44cfb237a543dcd0d94b>:0)
-
-        UnityEditor.IMGUI.Controls.TreeViewController.OnGUI
-        (UnityEngine.Rect rect, System.Int32 keyboardControlID) (at <701f6580abad44cfb237a543dcd0d94b>:0)
-
-        UnityEditor.SceneHierarchy.DoTreeView
-        (System.Single searchPathHeight) (at <701f6580abad44cfb237a543dcd0d94b>:0)
-
-        UnityEditor.SceneHierarchy.OnGUI
-        (UnityEngine.Rect rect) (at <701f6580abad44cfb237a543dcd0d94b>:0)
-
-        UnityEditor.SceneHierarchyWindow.DoSceneHierarchy
-        () (at <701f6580abad44cfb237a543dcd0d94b>:0)
-
-        UnityEditor.SceneHierarchyWindow.OnGUI
-        () (at <701f6580abad44cfb237a543dcd0d94b>:0)
-
-        UnityEditor.HostView.InvokeOnGUI
-        (UnityEngine.Rect onGUIPosition, UnityEngine.Rect viewRect) (at <701f6580abad44cfb237a543dcd0d94b>:0)
-
-        UnityEditor.DockArea.DrawView
-        (UnityEngine.Rect viewRect, UnityEngine.Rect dockAreaRect) (at <701f6580abad44cfb237a543dcd0d94b>:0)
-
-        UnityEditor.DockArea.OldOnGUI
-        () (at <701f6580abad44cfb237a543dcd0d94b>:0)
-
-        UnityEngine.UIElements.IMGUIContainer.DoOnGUI
-        (UnityEngine.Event evt, UnityEngine.Matrix4x4 parentTransform, UnityEngine.Rect
-        clippingRect, System.Boolean isComputingLayout, UnityEngine.Rect layoutSize,
-        System.Action onGUIHandler, System.Boolean canAffectFocus) (at <9c9fa79efe9e479a8cbe7a6f99f673d3>:0)
-
-        UnityEngine.GUIUtility:ProcessEvent(Int32,
-        IntPtr, Boolean&)
-
-
-
-'
+      resultStatus: 0
+      duration: 181.1078
+      messages: Test exceeded Timeout value of 180000ms
+      output: 
+      stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -1371,10 +1159,21 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/[Tests][Tests.pickupPointTest][suite]
       name: pickupPointTest
       fullName: Tests.pickupPointTest
-      resultStatus: 1
-      duration: 0.2324886
-      messages: 
-      output: 
+      resultStatus: 0
+      duration: 0.2942329
+      messages: One or more child tests had errors
+      output: 'There are no audio listeners in the scene. Please ensure there is
+        always one audio listener in the scene
+
+        MissingComponentException:
+        There is no ''Rigidbody2D'' attached to the "Missing Prefab (Dummy)" game
+        object, but a script is trying to access it.
+
+        You probably need to
+        add a Rigidbody2D to the game object "Missing Prefab (Dummy)". Or your script
+        needs to check if the component is attached before using it.
+
+'
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
@@ -1387,11 +1186,34 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/pickupPointTest/[Tests][Tests.pickupPointTest.AddPointsForItemsBeforePowerUps]
       name: AddPointsForItemsBeforePowerUps
       fullName: Tests.pickupPointTest.AddPointsForItemsBeforePowerUps
-      resultStatus: 1
-      duration: 0.18438
-      messages: 
-      output: 
-      stacktrace: 
+      resultStatus: 0
+      duration: 0.2186125
+      messages: 'Unhandled log message: ''[Exception] MissingComponentException:
+        There is no ''Rigidbody2D'' attached to the "Missing Prefab (Dummy)" game
+        object, but a script is trying to access it.
+
+        You probably need to
+        add a Rigidbody2D to the game object "Missing Prefab (Dummy)". Or your script
+        needs to check if the component is attached before using it.''. Use UnityEngine.TestTools.LogAssert.Expect'
+      output: 'There are no audio listeners in the scene. Please ensure there is
+        always one audio listener in the scene
+
+        MissingComponentException:
+        There is no ''Rigidbody2D'' attached to the "Missing Prefab (Dummy)" game
+        object, but a script is trying to access it.
+
+        You probably need to
+        add a Rigidbody2D to the game object "Missing Prefab (Dummy)". Or your script
+        needs to check if the component is attached before using it.
+
+'
+      stacktrace: 'UnityEngine.Rigidbody2D.get_velocity () (at <f4648b3144df498a90da4ede637bd05b>:0)
+
+        Character_Movement.Update
+        () (at <ff4f8596460745d490a2de5848bba9eb>:0)
+
+
+'
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -1404,11 +1226,34 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/pickupPointTest/[Tests][Tests.pickupPointTest.AddPointsForPowerupsBeforeItems]
       name: AddPointsForPowerupsBeforeItems
       fullName: Tests.pickupPointTest.AddPointsForPowerupsBeforeItems
-      resultStatus: 1
-      duration: 0.0130192
-      messages: 
-      output: 
-      stacktrace: 
+      resultStatus: 0
+      duration: 0.0250403
+      messages: 'Unhandled log message: ''[Exception] MissingComponentException:
+        There is no ''Rigidbody2D'' attached to the "Missing Prefab (Dummy)" game
+        object, but a script is trying to access it.
+
+        You probably need to
+        add a Rigidbody2D to the game object "Missing Prefab (Dummy)". Or your script
+        needs to check if the component is attached before using it.''. Use UnityEngine.TestTools.LogAssert.Expect'
+      output: 'There are no audio listeners in the scene. Please ensure there is
+        always one audio listener in the scene
+
+        MissingComponentException:
+        There is no ''Rigidbody2D'' attached to the "Missing Prefab (Dummy)" game
+        object, but a script is trying to access it.
+
+        You probably need to
+        add a Rigidbody2D to the game object "Missing Prefab (Dummy)". Or your script
+        needs to check if the component is attached before using it.
+
+'
+      stacktrace: 'UnityEngine.Rigidbody2D.get_velocity () (at <f4648b3144df498a90da4ede637bd05b>:0)
+
+        Character_Movement.Update
+        () (at <ff4f8596460745d490a2de5848bba9eb>:0)
+
+
+'
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -1421,11 +1266,31 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/pickupPointTest/[Tests][Tests.pickupPointTest.PickUpItemAddsPointsToScore]
       name: PickUpItemAddsPointsToScore
       fullName: Tests.pickupPointTest.PickUpItemAddsPointsToScore
-      resultStatus: 1
-      duration: 0.0146882
-      messages: 
-      output: 
-      stacktrace: 
+      resultStatus: 0
+      duration: 0.0104483
+      messages: 'Unhandled log message: ''[Exception] MissingComponentException:
+        There is no ''Rigidbody2D'' attached to the "Missing Prefab (Dummy)" game
+        object, but a script is trying to access it.
+
+        You probably need to
+        add a Rigidbody2D to the game object "Missing Prefab (Dummy)". Or your script
+        needs to check if the component is attached before using it.''. Use UnityEngine.TestTools.LogAssert.Expect'
+      output: 'MissingComponentException: There is no ''Rigidbody2D'' attached to
+        the "Missing Prefab (Dummy)" game object, but a script is trying to access
+        it.
+
+        You probably need to add a Rigidbody2D to the game object "Missing
+        Prefab (Dummy)". Or your script needs to check if the component is attached
+        before using it.
+
+'
+      stacktrace: 'UnityEngine.Rigidbody2D.get_velocity () (at <f4648b3144df498a90da4ede637bd05b>:0)
+
+        Character_Movement.Update
+        () (at <ff4f8596460745d490a2de5848bba9eb>:0)
+
+
+'
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -1438,11 +1303,31 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/pickupPointTest/[Tests][Tests.pickupPointTest.PickUpPowerUpsAddsPointsToScore]
       name: PickUpPowerUpsAddsPointsToScore
       fullName: Tests.pickupPointTest.PickUpPowerUpsAddsPointsToScore
-      resultStatus: 1
-      duration: 0.0122143
-      messages: 
-      output: 
-      stacktrace: 
+      resultStatus: 0
+      duration: 0.0103573
+      messages: 'Unhandled log message: ''[Exception] MissingComponentException:
+        There is no ''Rigidbody2D'' attached to the "Missing Prefab (Dummy)" game
+        object, but a script is trying to access it.
+
+        You probably need to
+        add a Rigidbody2D to the game object "Missing Prefab (Dummy)". Or your script
+        needs to check if the component is attached before using it.''. Use UnityEngine.TestTools.LogAssert.Expect'
+      output: 'MissingComponentException: There is no ''Rigidbody2D'' attached to
+        the "Missing Prefab (Dummy)" game object, but a script is trying to access
+        it.
+
+        You probably need to add a Rigidbody2D to the game object "Missing
+        Prefab (Dummy)". Or your script needs to check if the component is attached
+        before using it.
+
+'
+      stacktrace: 'UnityEngine.Rigidbody2D.get_velocity () (at <f4648b3144df498a90da4ede637bd05b>:0)
+
+        Character_Movement.Update
+        () (at <ff4f8596460745d490a2de5848bba9eb>:0)
+
+
+'
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -1455,10 +1340,18 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/[Tests][Tests.pickUpsStressTest][suite]
       name: pickUpsStressTest
       fullName: Tests.pickUpsStressTest
-      resultStatus: 2
-      duration: 74.25079
+      resultStatus: 0
+      duration: 0.2486533
       messages: One or more child tests had errors
-      output: 
+      output: 'MissingComponentException: There is no ''Rigidbody2D'' attached to
+        the "Missing Prefab (Dummy)" game object, but a script is trying to access
+        it.
+
+        You probably need to add a Rigidbody2D to the game object "Missing
+        Prefab (Dummy)". Or your script needs to check if the component is attached
+        before using it.
+
+'
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
@@ -1471,61 +1364,56 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/pickUpsStressTest/[Tests][Tests.pickUpsStressTest.stressSpawnDiamonds]
       name: stressSpawnDiamonds
       fullName: Tests.pickUpsStressTest.stressSpawnDiamonds
-      resultStatus: 2
-      duration: 74.232956
-      messages: "  Expected: 32000\r\n  But was:  21601\r\n"
-      output: '<color=green>Passed</color> at 1000 diamonds
+      resultStatus: 0
+      duration: 0.2388833
+      messages: 'Unhandled log message: ''[Exception] MissingComponentException:
+        There is no ''Rigidbody2D'' attached to the "Missing Prefab (Dummy)" game
+        object, but a script is trying to access it.
 
-        Current FPS
-        = <color=green> 659.0654</color>
+        You probably need to
+        add a Rigidbody2D to the game object "Missing Prefab (Dummy)". Or your script
+        needs to check if the component is attached before using it.''. Use UnityEngine.TestTools.LogAssert.Expect'
+      output: 'There are no audio listeners in the scene. Please ensure there is
+        always one audio listener in the scene
 
-        Diamonds Spawned: 1000
+        There are no audio listeners
+        in the scene. Please ensure there is always one audio listener in the scene
 
-        <color=green>Passed</color>
-        at 2000 diamonds
+        There
+        are no audio listeners in the scene. Please ensure there is always one audio
+        listener in the scene
 
-        Current FPS = <color=green> 418.9535</color>
+        There are no audio listeners in the scene.
+        Please ensure there is always one audio listener in the scene
 
-        Diamonds
-        Spawned: 2000
+        There
+        are no audio listeners in the scene. Please ensure there is always one audio
+        listener in the scene
 
-        <color=green>Passed</color> at 4000 diamonds
+        There are no audio listeners in the scene.
+        Please ensure there is always one audio listener in the scene
 
-        Current
-        FPS = <color=green> 328.224</color>
+        There
+        are no audio listeners in the scene. Please ensure there is always one audio
+        listener in the scene
 
-        Diamonds Spawned: 4000
+        There are no audio listeners in the scene.
+        Please ensure there is always one audio listener in the scene
 
-        <color=green>Passed</color>
-        at 8000 diamonds
+        MissingComponentException:
+        There is no ''Rigidbody2D'' attached to the "Missing Prefab (Dummy)" game
+        object, but a script is trying to access it.
 
-        Current FPS = <color=green> 170.9899</color>
-
-        Diamonds
-        Spawned: 8000
-
-        <color=green>Passed</color> at 16000 diamonds
-
-        Current
-        FPS = <color=green> 92.03442</color>
-
-        Diamonds Spawned: 16000
-
-        <color=red>Failed</color>
-        at 32000 diamonds
-
-        Current FPS = <color=red> 58.91051</color>
-
-        Expected:
-        32000, Actual: 21601
+        You probably need to
+        add a Rigidbody2D to the game object "Missing Prefab (Dummy)". Or your script
+        needs to check if the component is attached before using it.
 
 '
-      stacktrace: 'at Tests.pickUpsStressTest+<stressSpawnDiamonds>d__3.MoveNext
-        () [0x00346] in C:\Users\Keller\Desktop\SuperVandalWorld\SuperVandalWorld\Assets\tst\Keller\pickUpStressTest.cs:92
+      stacktrace: 'UnityEngine.Rigidbody2D.get_velocity () (at <f4648b3144df498a90da4ede637bd05b>:0)
 
-        at
-        UnityEngine.TestTools.TestEnumerator+<Execute>d__5.MoveNext () [0x00038]
-        in <97c8cb43cff047edb0082d417f07b856>:0
+        Character_Movement.Update
+        () (at <ff4f8596460745d490a2de5848bba9eb>:0)
+
 
 '
       notRunnable: 0
@@ -1540,10 +1428,21 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/[Tests][Tests.PlatformMovementTest][suite]
       name: PlatformMovementTest
       fullName: Tests.PlatformMovementTest
-      resultStatus: 1
-      duration: 0.5381539
-      messages: 
-      output: 
+      resultStatus: 0
+      duration: 0.2562437
+      messages: One or more child tests had errors
+      output: 'There are no audio listeners in the scene. Please ensure there is
+        always one audio listener in the scene
+
+        MissingComponentException:
+        There is no ''Rigidbody2D'' attached to the "Missing Prefab (Dummy)" game
+        object, but a script is trying to access it.
+
+        You probably need to
+        add a Rigidbody2D to the game object "Missing Prefab (Dummy)". Or your script
+        needs to check if the component is attached before using it.
+
+'
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
@@ -1556,11 +1455,34 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/PlatformMovementTest/[Tests][Tests.PlatformMovementTest.MovingPlatformSpeed]
       name: MovingPlatformSpeed
       fullName: Tests.PlatformMovementTest.MovingPlatformSpeed
-      resultStatus: 1
-      duration: 0.1308337
-      messages: 
-      output: 
-      stacktrace: 
+      resultStatus: 0
+      duration: 0.2300805
+      messages: 'Unhandled log message: ''[Exception] MissingComponentException:
+        There is no ''Rigidbody2D'' attached to the "Missing Prefab (Dummy)" game
+        object, but a script is trying to access it.
+
+        You probably need to
+        add a Rigidbody2D to the game object "Missing Prefab (Dummy)". Or your script
+        needs to check if the component is attached before using it.''. Use UnityEngine.TestTools.LogAssert.Expect'
+      output: 'There are no audio listeners in the scene. Please ensure there is
+        always one audio listener in the scene
+
+        MissingComponentException:
+        There is no ''Rigidbody2D'' attached to the "Missing Prefab (Dummy)" game
+        object, but a script is trying to access it.
+
+        You probably need to
+        add a Rigidbody2D to the game object "Missing Prefab (Dummy)". Or your script
+        needs to check if the component is attached before using it.
+
+'
+      stacktrace: 'UnityEngine.Rigidbody2D.get_velocity () (at <f4648b3144df498a90da4ede637bd05b>:0)
+
+        Character_Movement.Update
+        () (at <ff4f8596460745d490a2de5848bba9eb>:0)
+
+
+'
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -1569,13 +1491,13 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1022
       parentUniqueId: Tests.dll/Tests/[Tests][Tests.PlatformMovementTest][suite]
-    - id: 1009
+    - id: 1012
       uniqueId: Tests.dll/Tests/[Tests][Tests.SquareTest][suite]
       name: SquareTest
       fullName: Tests.SquareTest
-      resultStatus: 1
-      duration: 14.990219
-      messages: 
+      resultStatus: 2
+      duration: 0.3613538
+      messages: One or more child tests had errors
       output: 
       stacktrace: 
       notRunnable: 0
@@ -1583,14 +1505,14 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1030
+      parentId: 1039
       parentUniqueId: Tests.dll/[Tests][suite]
-    - id: 1011
+    - id: 1014
       uniqueId: Tests.dll/Tests/SquareTest/[Tests][Tests.SquareTest.SquareTestBoundary1]
       name: SquareTestBoundary1
       fullName: Tests.SquareTest.SquareTestBoundary1
-      resultStatus: 1
-      duration: 4.6880703
+      resultStatus: 0
+      duration: 0
       messages: 
       output: 
       stacktrace: 
@@ -1600,14 +1522,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1009
+      parentId: 1012
       parentUniqueId: Tests.dll/Tests/[Tests][Tests.SquareTest][suite]
-    - id: 1012
+    - id: 1015
       uniqueId: Tests.dll/Tests/SquareTest/[Tests][Tests.SquareTest.SquareTestBoundary2]
       name: SquareTestBoundary2
       fullName: Tests.SquareTest.SquareTestBoundary2
-      resultStatus: 1
-      duration: 7.517307
+      resultStatus: 0
+      duration: 0
       messages: 
       output: 
       stacktrace: 
@@ -1617,14 +1539,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1009
+      parentId: 1012
       parentUniqueId: Tests.dll/Tests/[Tests][Tests.SquareTest][suite]
-    - id: 1010
+    - id: 1013
       uniqueId: Tests.dll/Tests/SquareTest/[Tests][Tests.SquareTest.SquareTestInitialCondition]
       name: SquareTestInitialCondition
       fullName: Tests.SquareTest.SquareTestInitialCondition
-      resultStatus: 1
-      duration: 0.0119787
+      resultStatus: 0
+      duration: 0
       messages: 
       output: 
       stacktrace: 
@@ -1634,1911 +1556,61 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1009
+      parentId: 1012
       parentUniqueId: Tests.dll/Tests/[Tests][Tests.SquareTest][suite]
-    - id: 1013
+    - id: 1016
       uniqueId: Tests.dll/Tests/SquareTest/[Tests][Tests.SquareTest.SquareTestStress]
       name: SquareTestStress
       fullName: Tests.SquareTest.SquareTestStress
-      resultStatus: 1
-      duration: 2.7606175
-      messages: 
-      output: 'ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT
-        CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
-
-        ASSERT CHECK
+      resultStatus: 2
+      duration: 0.327661
+      messages: 'Unhandled log message: ''[Exception] MissingComponentException:
+        There is no ''Rigidbody2D'' attached to the "Missing Prefab (Dummy)" game
+        object, but a script is trying to access it.
+
+        You probably need to
+        add a Rigidbody2D to the game object "Missing Prefab (Dummy)". Or your script
+        needs to check if the component is attached before using it.''. Use UnityEngine.TestTools.LogAssert.Expect'
+      output: 'MissingComponentException: There is no ''Rigidbody2D'' attached to
+        the "Missing Prefab (Dummy)" game object, but a script is trying to access
+        it.
+
+        You probably need to add a Rigidbody2D to the game object "Missing
+        Prefab (Dummy)". Or your script needs to check if the component is attached
+        before using it.
 
 '
-      stacktrace: 
+      stacktrace: 'UnityEngine.Rigidbody2D.get_velocity () (at <f4648b3144df498a90da4ede637bd05b>:0)
+
+        Character_Movement.Update
+        () (at <e80a4f071f714d89bdfa472411b76540>:0)
+
+
+'
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1009
+      parentId: 1012
       parentUniqueId: Tests.dll/Tests/[Tests][Tests.SquareTest][suite]
     - id: 1001
       uniqueId: Tests.dll/Tests/[Tests][Tests.UITest][suite]
       name: UITest
       fullName: Tests.UITest
-      resultStatus: 1
-      duration: 5.9809847
-      messages: 
-      output: 
+      resultStatus: 0
+      duration: 0.3293716
+      messages: One or more child tests had errors
+      output: 'MissingComponentException: There is no ''Rigidbody2D'' attached to
+        the "Missing Prefab (Dummy)" game object, but a script is trying to access
+        it.
+
+        You probably need to add a Rigidbody2D to the game object "Missing
+        Prefab (Dummy)". Or your script needs to check if the component is attached
+        before using it.
+
+'
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
@@ -3551,11 +1623,58 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/UITest/[Tests][Tests.UITest.PauseFunctionTest]
       name: PauseFunctionTest
       fullName: Tests.UITest.PauseFunctionTest
-      resultStatus: 1
-      duration: 0.7003296
-      messages: 
-      output: 
-      stacktrace: 
+      resultStatus: 0
+      duration: 0.2411009
+      messages: 'Unhandled log message: ''[Exception] MissingComponentException:
+        There is no ''Rigidbody2D'' attached to the "Missing Prefab (Dummy)" game
+        object, but a script is trying to access it.
+
+        You probably need to
+        add a Rigidbody2D to the game object "Missing Prefab (Dummy)". Or your script
+        needs to check if the component is attached before using it.''. Use UnityEngine.TestTools.LogAssert.Expect'
+      output: 'There are no audio listeners in the scene. Please ensure there is
+        always one audio listener in the scene
+
+        There are no audio listeners
+        in the scene. Please ensure there is always one audio listener in the scene
+
+        There
+        are no audio listeners in the scene. Please ensure there is always one audio
+        listener in the scene
+
+        There are no audio listeners in the scene.
+        Please ensure there is always one audio listener in the scene
+
+        There
+        are no audio listeners in the scene. Please ensure there is always one audio
+        listener in the scene
+
+        There are no audio listeners in the scene.
+        Please ensure there is always one audio listener in the scene
+
+        There
+        are no audio listeners in the scene. Please ensure there is always one audio
+        listener in the scene
+
+        There are no audio listeners in the scene.
+        Please ensure there is always one audio listener in the scene
+
+        MissingComponentException:
+        There is no ''Rigidbody2D'' attached to the "Missing Prefab (Dummy)" game
+        object, but a script is trying to access it.
+
+        You probably need to
+        add a Rigidbody2D to the game object "Missing Prefab (Dummy)". Or your script
+        needs to check if the component is attached before using it.
+
+'
+      stacktrace: 'UnityEngine.Rigidbody2D.get_velocity () (at <f4648b3144df498a90da4ede637bd05b>:0)
+
+        Character_Movement.Update
+        () (at <ff4f8596460745d490a2de5848bba9eb>:0)
+
+
+'
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -3568,11 +1687,34 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/UITest/[Tests][Tests.UITest.ScoreTest]
       name: ScoreTest
       fullName: Tests.UITest.ScoreTest
-      resultStatus: 1
-      duration: 0.0275728
-      messages: 
-      output: 
-      stacktrace: 
+      resultStatus: 0
+      duration: 0.0415369
+      messages: 'Unhandled log message: ''[Exception] MissingComponentException:
+        There is no ''Rigidbody2D'' attached to the "Missing Prefab (Dummy)" game
+        object, but a script is trying to access it.
+
+        You probably need to
+        add a Rigidbody2D to the game object "Missing Prefab (Dummy)". Or your script
+        needs to check if the component is attached before using it.''. Use UnityEngine.TestTools.LogAssert.Expect'
+      output: 'There are no audio listeners in the scene. Please ensure there is
+        always one audio listener in the scene
+
+        MissingComponentException:
+        There is no ''Rigidbody2D'' attached to the "Missing Prefab (Dummy)" game
+        object, but a script is trying to access it.
+
+        You probably need to
+        add a Rigidbody2D to the game object "Missing Prefab (Dummy)". Or your script
+        needs to check if the component is attached before using it.
+
+'
+      stacktrace: 'UnityEngine.Rigidbody2D.get_velocity () (at <f4648b3144df498a90da4ede637bd05b>:0)
+
+        Character_Movement.Update
+        () (at <ff4f8596460745d490a2de5848bba9eb>:0)
+
+
+'
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -3585,11 +1727,31 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/UITest/[Tests][Tests.UITest.SoundStressTest]
       name: SoundStressTest
       fullName: Tests.UITest.SoundStressTest
-      resultStatus: 1
-      duration: 3.1673799
-      messages: 
-      output: 
-      stacktrace: 
+      resultStatus: 0
+      duration: 0.0108451
+      messages: 'Unhandled log message: ''[Exception] MissingComponentException:
+        There is no ''Rigidbody2D'' attached to the "Missing Prefab (Dummy)" game
+        object, but a script is trying to access it.
+
+        You probably need to
+        add a Rigidbody2D to the game object "Missing Prefab (Dummy)". Or your script
+        needs to check if the component is attached before using it.''. Use UnityEngine.TestTools.LogAssert.Expect'
+      output: 'MissingComponentException: There is no ''Rigidbody2D'' attached to
+        the "Missing Prefab (Dummy)" game object, but a script is trying to access
+        it.
+
+        You probably need to add a Rigidbody2D to the game object "Missing
+        Prefab (Dummy)". Or your script needs to check if the component is attached
+        before using it.
+
+'
+      stacktrace: 'UnityEngine.Rigidbody2D.get_velocity () (at <f4648b3144df498a90da4ede637bd05b>:0)
+
+        Character_Movement.Update
+        () (at <ff4f8596460745d490a2de5848bba9eb>:0)
+
+
+'
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -3602,11 +1764,31 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/UITest/[Tests][Tests.UITest.UIStressTest]
       name: UIStressTest
       fullName: Tests.UITest.UIStressTest
-      resultStatus: 1
-      duration: 2.0478692
-      messages: 
-      output: 
-      stacktrace: 
+      resultStatus: 0
+      duration: 0.0137695
+      messages: 'Unhandled log message: ''[Exception] MissingComponentException:
+        There is no ''Rigidbody2D'' attached to the "Missing Prefab (Dummy)" game
+        object, but a script is trying to access it.
+
+        You probably need to
+        add a Rigidbody2D to the game object "Missing Prefab (Dummy)". Or your script
+        needs to check if the component is attached before using it.''. Use UnityEngine.TestTools.LogAssert.Expect'
+      output: 'MissingComponentException: There is no ''Rigidbody2D'' attached to
+        the "Missing Prefab (Dummy)" game object, but a script is trying to access
+        it.
+
+        You probably need to add a Rigidbody2D to the game object "Missing
+        Prefab (Dummy)". Or your script needs to check if the component is attached
+        before using it.
+
+'
+      stacktrace: 'UnityEngine.Rigidbody2D.get_velocity () (at <f4648b3144df498a90da4ede637bd05b>:0)
+
+        Character_Movement.Update
+        () (at <ff4f8596460745d490a2de5848bba9eb>:0)
+
+
+'
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -3619,11 +1801,31 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/UITest/[Tests][Tests.UITest.VolumeTest]
       name: VolumeTest
       fullName: Tests.UITest.VolumeTest
-      resultStatus: 1
-      duration: 0.0101686
-      messages: 
-      output: 
-      stacktrace: 
+      resultStatus: 0
+      duration: 0.0092061
+      messages: 'Unhandled log message: ''[Exception] MissingComponentException:
+        There is no ''Rigidbody2D'' attached to the "Missing Prefab (Dummy)" game
+        object, but a script is trying to access it.
+
+        You probably need to
+        add a Rigidbody2D to the game object "Missing Prefab (Dummy)". Or your script
+        needs to check if the component is attached before using it.''. Use UnityEngine.TestTools.LogAssert.Expect'
+      output: 'MissingComponentException: There is no ''Rigidbody2D'' attached to
+        the "Missing Prefab (Dummy)" game object, but a script is trying to access
+        it.
+
+        You probably need to add a Rigidbody2D to the game object "Missing
+        Prefab (Dummy)". Or your script needs to check if the component is attached
+        before using it.
+
+'
+      stacktrace: 'UnityEngine.Rigidbody2D.get_velocity () (at <f4648b3144df498a90da4ede637bd05b>:0)
+
+        Character_Movement.Update
+        () (at <ff4f8596460745d490a2de5848bba9eb>:0)
+
+
+'
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -3632,105 +1834,48 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1001
       parentUniqueId: Tests.dll/Tests/[Tests][Tests.UITest][suite]
-    m_ResultText: 'jump_stress_test (50.260s)
+    m_ResultText: 'SquareTestStress (0.328s)
 
       ---
 
-      Jumping
+      Unhandled log message:
+      ''[Exception] MissingComponentException: There is no ''Rigidbody2D'' attached
+      to the "Missing Prefab (Dummy)" game object, but a script is trying to access
+      it.
 
-      Jump
-      force = 15
+      You probably need to add a Rigidbody2D to the game object "Missing
+      Prefab (Dummy)". Or your script needs to check if the component is attached
+      before using it.''. Use UnityEngine.TestTools.LogAssert.Expect
 
-      Jumping
+      ---
 
-      Jump force = 150
+      UnityEngine.Rigidbody2D.get_velocity
+      () (at <f4648b3144df498a90da4ede637bd05b>:0)
 
-      Jumping
+      Character_Movement.Update
+      () (at <e80a4f071f714d89bdfa472411b76540>:0)
 
-      Jump
-      force = 1500
+      ---
 
-      Jumping
+      MissingComponentException:
+      There is no ''Rigidbody2D'' attached to the "Missing Prefab (Dummy)" game object,
+      but a script is trying to access it.
 
-      Jump force = 15000
+      You probably need to add a Rigidbody2D
+      to the game object "Missing Prefab (Dummy)". Or your script needs to check
+      if the component is attached before using it.'
+    m_ResultStacktrace: 'UnityEngine.Rigidbody2D.get_velocity () (at <f4648b3144df498a90da4ede637bd05b>:0)
 
-      Jumping
+      Character_Movement.Update
+      () (at <e80a4f071f714d89bdfa472411b76540>:0)
 
-      Jump
-      force = 150000
 
-      Jumping
-
-      Jump force = 1500000
-
-      Jumping
-
-      Jump
-      force = 1.5E+07
-
-      Jumping
-
-      Jump force = 1.5E+08
-
-      Jumping
-
-      Jump
-      force = 1.5E+09
-
-      Jumping
-
-      Jump force = 1.5E+10
-
-      Jumping
-
-      Jump
-      force = 1.5E+11
-
-      Jumping
-
-      Jump force = 1.5E+12
-
-      Jumping
-
-      Jump
-      force = 1.5E+13
-
-      Jumping
-
-      Jump force = 1.5E+14
-
-      Jumping
-
-      Jump
-      force = 1.5E+15
-
-      Jumping
-
-      Jump force = 1.5E+16
-
-      Jumping
-
-      Jump
-      force = 1.5E+17
-
-      Jumping
-
-      Jump force = 1.5E+18
-
-      Jumping
-
-      Jump
-      force = 1.5E+19
-
-      Jumping
-
-      Jump force = 1.5E+20'
-    m_ResultStacktrace: 
+'
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: c9861bd8
-      m_LastClickedID: -669284663
-      m_ExpandedIDs: c973899ac337b2b498906ddc5dfc4bdfe557abf795fbf000761f4b11e1b063178359db41e6daa968ffffff7f
+      m_SelectedIDs: 0058d9b1
+      m_LastClickedID: -1311156224
+      m_ExpandedIDs: 5dfc4bdfe557abf78302573d8359db41ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -3757,7 +1902,7 @@ MonoBehaviour:
       availableCategories:
       - Uncategorized
   m_EditModeTestListGUI:
-    m_Window: {fileID: 21}
+    m_Window: {fileID: 18}
     newResultList:
     - id: 1000
       uniqueId: '[SuperVandalWorld][suite]'
@@ -3807,7 +1952,35 @@ MonoBehaviour:
       selectedCategoryMask: 0
       availableCategories:
       - Uncategorized
---- !u!114 &22
+--- !u!114 &19
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12071, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Animation
+    m_Image: {fileID: -3237396543322336831, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 1129
+    y: 76
+    width: 310
+    height: 702
+  m_ViewDataDictionary: {fileID: 0}
+  m_LockTracker:
+    m_IsLocked: 0
+  m_LastSelectedObjectID: 16596
+--- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3827,10 +2000,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 2007
-    y: 73
-    width: 552
-    height: 1286
+    x: 2091
+    y: 81
+    width: 460
+    height: 1270
   m_ViewDataDictionary: {fileID: 0}
   m_PreviewResizer:
     m_CachedPref: 50
@@ -3838,7 +2011,7 @@ MonoBehaviour:
     m_PrefName: Preview_TilemapBrushInspector
   m_Palette: {fileID: 5713101419344279301, guid: b0186b213b3ff05489000e4ca7c9417e, type: 3}
   m_DrawGizmos: 0
---- !u!114 &23
+--- !u!114 &21
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
