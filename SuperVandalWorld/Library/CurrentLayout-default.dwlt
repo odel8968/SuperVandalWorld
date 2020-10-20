@@ -15,16 +15,67 @@ MonoBehaviour:
   m_PixelRect:
     serializedVersion: 2
     x: 0
-    y: 42
+    y: 43
     width: 2560
-    height: 1358
+    height: 1357
   m_ShowMode: 4
-  m_Title: Project
-  m_RootView: {fileID: 2}
+  m_Title: Game
+  m_RootView: {fileID: 4}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: AnimationWindow
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 1140
+    y: 0
+    width: 867
+    height: 490
+  m_MinSize: {x: 102, y: 121}
+  m_MaxSize: {x: 4002, y: 4021}
+  m_ActualView: {fileID: 21}
+  m_Panes:
+  - {fileID: 21}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &3
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 12}
+  - {fileID: 2}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 817
+    width: 2007
+    height: 490
+  m_MinSize: {x: 333, y: 271}
+  m_MaxSize: {x: 14003, y: 10021}
+  vertical: 0
+  controlID: 2732
+--- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -37,22 +88,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 3}
   - {fileID: 5}
-  - {fileID: 4}
+  - {fileID: 7}
+  - {fileID: 6}
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
     width: 2560
-    height: 1358
+    height: 1357
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
   m_TopViewHeight: 30
   m_UseBottomView: 1
   m_BottomViewHeight: 20
---- !u!114 &3
+--- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -74,10 +125,10 @@ MonoBehaviour:
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
   m_LoadedToolbars:
-  - {fileID: 21}
-  m_MainToolbar: {fileID: 21}
+  - {fileID: 23}
+  m_MainToolbar: {fileID: 23}
   m_LastLoadedLayoutName: 
---- !u!114 &4
+--- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -93,61 +144,11 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 1338
+    y: 1337
     width: 2560
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
---- !u!114 &5
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Children:
-  - {fileID: 6}
-  - {fileID: 11}
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 30
-    width: 2560
-    height: 1308
-  m_MinSize: {x: 504, y: 492}
-  m_MaxSize: {x: 14002, y: 14042}
-  vertical: 0
-  controlID: 62
---- !u!114 &6
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Children:
-  - {fileID: 7}
-  - {fileID: 10}
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 2007
-    height: 1308
-  m_MinSize: {x: 403, y: 492}
-  m_MaxSize: {x: 10001, y: 14042}
-  vertical: 1
-  controlID: 133
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -162,18 +163,68 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Children:
   - {fileID: 8}
+  - {fileID: 13}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 30
+    width: 2560
+    height: 1307
+  m_MinSize: {x: 678, y: 492}
+  m_MaxSize: {x: 18004, y: 14042}
+  vertical: 0
+  controlID: 303
+--- !u!114 &8
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
   - {fileID: 9}
+  - {fileID: 3}
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
     width: 2007
-    height: 818
-  m_MinSize: {x: 403, y: 221}
-  m_MaxSize: {x: 8003, y: 4021}
+    height: 1307
+  m_MinSize: {x: 402, y: 492}
+  m_MaxSize: {x: 14003, y: 14042}
+  vertical: 1
+  controlID: 24
+--- !u!114 &9
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 10}
+  - {fileID: 11}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 2007
+    height: 817
+  m_MinSize: {x: 402, y: 221}
+  m_MaxSize: {x: 8002, y: 4021}
   vertical: 0
-  controlID: 134
---- !u!114 &8
+  controlID: 25
+--- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -191,15 +242,15 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 416
-    height: 818
+    height: 817
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 13}
+  m_ActualView: {fileID: 15}
   m_Panes:
-  - {fileID: 13}
+  - {fileID: 15}
   m_Selected: 0
   m_LastSelected: 0
---- !u!114 &9
+--- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -217,16 +268,16 @@ MonoBehaviour:
     x: 416
     y: 0
     width: 1591
-    height: 818
+    height: 817
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 12}
+  m_ActualView: {fileID: 14}
   m_Panes:
-  - {fileID: 12}
   - {fileID: 14}
+  - {fileID: 16}
   m_Selected: 0
   m_LastSelected: 1
---- !u!114 &10
+--- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -242,18 +293,18 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 818
-    width: 2007
+    y: 0
+    width: 1140
     height: 490
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
-  m_ActualView: {fileID: 15}
+  m_ActualView: {fileID: 17}
   m_Panes:
-  - {fileID: 15}
-  - {fileID: 16}
+  - {fileID: 17}
+  - {fileID: 18}
   m_Selected: 0
   m_LastSelected: 1
---- !u!114 &11
+--- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -263,7 +314,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: TestRunnerWindow
+  m_Name: InspectorWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -271,18 +322,17 @@ MonoBehaviour:
     x: 2007
     y: 0
     width: 553
-    height: 1308
-  m_MinSize: {x: 101, y: 121}
+    height: 1307
+  m_MinSize: {x: 276, y: 71}
   m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 18}
+  m_ActualView: {fileID: 19}
   m_Panes:
-  - {fileID: 17}
-  - {fileID: 18}
   - {fileID: 19}
   - {fileID: 20}
-  m_Selected: 1
-  m_LastSelected: 0
---- !u!114 &12
+  - {fileID: 22}
+  m_Selected: 0
+  m_LastSelected: 2
+--- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -303,9 +353,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 416
-    y: 72
+    y: 73
     width: 1589
-    height: 797
+    height: 796
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
   m_WindowGUID: 8fde1c7c9ac16d04fb45d7d761e25119
@@ -318,9 +368,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 11.439994, y: -2.1120183, z: 1473.1936}
+    m_Target: {x: 130.07234, y: -0.70160043, z: 987.9094}
     speed: 2
-    m_Value: {x: 11.439994, y: -2.1120183, z: 1473.1936}
+    m_Value: {x: 130.07234, y: -0.70160043, z: 987.9094}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -371,9 +421,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 31.225422
+    m_Target: 20.661787
     speed: 2
-    m_Value: 31.225422
+    m_Value: 20.661787
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -398,7 +448,7 @@ MonoBehaviour:
   m_SceneVisActive: 1
   m_LastLockedObject: {fileID: 0}
   m_ViewIsLockedToObject: 0
---- !u!114 &13
+--- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -419,16 +469,16 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 72
+    y: 73
     width: 415
-    height: 797
+    height: 796
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 7c8bffff968bfffff892ffff0699ffff2099ffff82a0ffff80aaffff9aaaffff20b2ffffbeb8ffffd8b8ffff10c0ffffc4c6ffffdec6ffffe6cdffff82d7ffff9cd7ffff9edeffff08e6ffffcc5d00005860000070610000
+      m_SelectedIDs: 68a5fdff
+      m_LastClickedID: -154264
+      m_ExpandedIDs: ac8ffdff6cabfdff7ab1fdff94b1fdffe203feff9c05feff160bfeffe213fefff813feff504dfeffe455fefffe55feff0a61fefff069feff0a6afeff82bbfeff06c4feff20c4feff3e30ffff4a39ffff6439ffff1a41ffffc042ffffc04affffda4affffa854ffff565effff705effffb267ffff9071ffff6272ffff6878ffff8278ffffecc3ffff02caffff1ccaffff8ed1ffffbed7ffffd8d7ffff78dfffff08e6ffffa4760000808400001ab200008cc80000aad50000bce00000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -444,7 +494,7 @@ MonoBehaviour:
         m_IsRenaming: 0
         m_OriginalEventType: 11
         m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 8}
+        m_ClientGUIView: {fileID: 10}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -452,7 +502,7 @@ MonoBehaviour:
       m_IsLocked: 0
     m_CurrentSortingName: TransformSorting
   m_WindowGUID: b8c0478367d084f4490c2edf623b0f98
---- !u!114 &14
+--- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -473,9 +523,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 416
-    y: 72
+    y: 73
     width: 1589
-    height: 797
+    height: 796
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
   m_SerializedViewValues: []
@@ -483,7 +533,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 1589, y: 776}
+  m_TargetSize: {x: 1589, y: 775}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -500,8 +550,8 @@ MonoBehaviour:
     vZoomLockedByDefault: 0
     m_HBaseRangeMin: -794.5
     m_HBaseRangeMax: 794.5
-    m_VBaseRangeMin: -388
-    m_VBaseRangeMax: 388
+    m_VBaseRangeMin: -387.5
+    m_VBaseRangeMax: 387.5
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -520,9 +570,9 @@ MonoBehaviour:
       x: 0
       y: 21
       width: 1589
-      height: 776
+      height: 775
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 794.5, y: 388}
+    m_Translation: {x: 794.5, y: 387.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
@@ -530,18 +580,18 @@ MonoBehaviour:
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
       x: -794.5
-      y: -388
+      y: -387.5
       width: 1589
-      height: 776
+      height: 775
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 1589, y: 797}
+  m_LastWindowPixelSize: {x: 1589, y: 796}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
   m_XRRenderMode: 0
   m_RenderTexture: {fileID: 0}
---- !u!114 &15
+--- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -563,7 +613,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 890
-    width: 2006
+    width: 1139
     height: 469
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
@@ -579,21 +629,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/tst/Justin
+    - Assets/prefabs/Justin/Sprites/Environment Sprites/Tile Sprites/Level 2
     m_Globs: []
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/tst/Justin
+  - Assets/prefabs/Justin/Sprites/Environment Sprites/Tile Sprites/Level 2
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\John Cambareri\Documents\GitHub\SuperVandalWorld\SuperVandalWorld
+  m_LastProjectPath: C:\Users\Justin\Desktop\NewClone\SuperVandalWorld\SuperVandalWorld
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 35}
-    m_SelectedIDs: ac4b0000
-    m_LastClickedID: 19372
-    m_ExpandedIDs: 00000000664b0000684b00006a4b00006c4b00006e4b0000704b0000724b0000744b0000764b0000784b000000ca9a3b
+    m_SelectedIDs: 44570000
+    m_LastClickedID: 22340
+    m_ExpandedIDs: 00000000664b0000684b00006a4b00006c4b00006e4b0000704b0000724b0000744b0000764b0000784b0000904b000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -609,7 +659,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 10}
+      m_ClientGUIView: {fileID: 12}
     m_SearchString: 
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
@@ -649,7 +699,7 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c6230000a4430000ae3f0000b83c00007e4600007246000064430000383d0000f43c0000
+    m_ExpandedInstanceIDs: c6230000a4430000ae3f0000b83c00007e4600007246000064430000383d0000f43c0000e0e00000f8e00000fce0000000e1000004e10000f4e00000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -665,7 +715,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 10}
+      m_ClientGUIView: {fileID: 12}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -677,7 +727,7 @@ MonoBehaviour:
     m_GridSize: 64
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 271
---- !u!114 &16
+--- !u!114 &18
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -702,7 +752,7 @@ MonoBehaviour:
     width: 1128
     height: 250
   m_ViewDataDictionary: {fileID: 0}
---- !u!114 &17
+--- !u!114 &19
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -723,9 +773,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 2007
-    y: 72
+    y: 73
     width: 552
-    height: 1287
+    height: 1286
   m_ViewDataDictionary: {fileID: 0}
   m_ObjectsLockedBeforeSerialization: []
   m_InstanceIDsLockedBeforeSerialization: 
@@ -740,7 +790,7 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_PreviewWindow: {fileID: 0}
---- !u!114 &18
+--- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -761,16 +811,16 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 2007
-    y: 72
+    y: 73
     width: 552
-    height: 1287
+    height: 1286
   m_ViewDataDictionary: {fileID: 0}
   m_Spl:
-    ID: 181
+    ID: 184
     splitterInitialOffset: 516
     currentActiveSplitter: -1
     realSizes:
-    - 712
+    - 711
     - 505
     relativeSizes:
     - 0.58498025
@@ -781,7 +831,7 @@ MonoBehaviour:
     maxSizes:
     - 0
     - 0
-    lastTotalSize: 1217
+    lastTotalSize: 1216
     splitSize: 6
     xOffset: 0
     m_Version: 1
@@ -791,14 +841,14 @@ MonoBehaviour:
     oldSplitSize: 0
   m_TestTypeToolbarIndex: 0
   m_PlayModeTestListGUI:
-    m_Window: {fileID: 18}
+    m_Window: {fileID: 20}
     newResultList:
     - id: 1003
       uniqueId: '[SuperVandalWorld][suite]'
       name: SuperVandalWorld
       fullName: SuperVandalWorld
       resultStatus: 2
-      duration: 42.97953
+      duration: 32.292732
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -814,7 +864,7 @@ MonoBehaviour:
       name: Tests.dll
       fullName: C:/Users/adave/Documents/GitHub/SuperVandalWorld/SuperVandalWorld/Library/ScriptAssemblies/Tests.dll
       resultStatus: 2
-      duration: 42.948196
+      duration: 32.27165
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -830,7 +880,7 @@ MonoBehaviour:
       name: Tests
       fullName: Tests
       resultStatus: 2
-      duration: 42.9282
+      duration: 32.264187
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -939,7 +989,7 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/[Tests][Tests.CharacterMovementTests][suite]
       name: CharacterMovementTests
       fullName: Tests.CharacterMovementTests
-      resultStatus: 2
+      resultStatus: 0
       duration: 42.923355
       messages: One or more child tests had errors
       output: 
@@ -956,14 +1006,11 @@ MonoBehaviour:
       name: jump_stress_test
       fullName: Tests.CharacterMovementTests.jump_stress_test
       resultStatus: 2
-      duration: 42.892963
-      messages: "  Player has broken through the platform with a speed of 1.5E+17\r\n 
-        Expected: True\r\n  But was:  False\r\n"
+      duration: 0
+      messages: Cancelled by user
       output: 'Jumping
 
         Jump force = 15
-
-        Jumping
 
         Jumping
 
@@ -1039,15 +1086,20 @@ MonoBehaviour:
 
         Jumping
 
-'
-      stacktrace: 'at Tests.CharacterMovementTests+<jump_stress_test>d__6.MoveNext
-        () [0x0029a] in C:\Users\John Cambareri\Documents\GitHub\SuperVandalWorld\SuperVandalWorld\Assets\tst\John\CharacterMovementTests.cs:98
+        Jump
+        force = 1.5E+18
 
-        at
-        UnityEngine.TestTools.TestEnumerator+<Execute>d__5.MoveNext () [0x00038]
-        in <def80c3c71174f0ea69facc89d14e13e>:0
+        Jumping
+
+        Jump force = 1.5E+19
+
+        Jumping
+
+        Jump
+        force = 1.5E+20
 
 '
+      stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -1198,7 +1250,7 @@ MonoBehaviour:
       name: FallThroughFloorStress
       fullName: Tests.FallThroughFloorStress
       resultStatus: 2
-      duration: 65.30347
+      duration: 65.26338
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -1214,12 +1266,12 @@ MonoBehaviour:
       name: FallThroughFloorStressTest
       fullName: Tests.FallThroughFloorStress.FallThroughFloorStressTest
       resultStatus: 2
-      duration: 65.283745
+      duration: 65.24051
       messages: "  Expected: True\r\n  But was:  False\r\n"
       output: 'Failed at 80 Platform speed
 
-        Player falls through Ground at
-        80 Platform speed
+        Player falls through Ground
+        at 80 Platform speed
 
 '
       stacktrace: 'at Tests.FallThroughFloorStress+<FallThroughFloorStressTest>d__3.MoveNext
@@ -1242,8 +1294,8 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/[Tests][Tests.MovingPlatformStressTest][suite]
       name: MovingPlatformStressTest
       fullName: Tests.MovingPlatformStressTest
-      resultStatus: 0
-      duration: 181.14415
+      resultStatus: 2
+      duration: 32.26108
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -1259,10 +1311,21 @@ MonoBehaviour:
       name: MovingPlatformNumberStressTest
       fullName: Tests.MovingPlatformStressTest.MovingPlatformNumberStressTest
       resultStatus: 2
-      duration: 0
-      messages: Cancelled by user
-      output: 
-      stacktrace: 
+      duration: 32.24162
+      messages: "  Expected: 1024\r\n  But was:  356\r\n"
+      output: 'Failed at 356 Moving Rock Platforms
+
+        Current FPS = 26.77964
+
+'
+      stacktrace: 'at Tests.MovingPlatformStressTest+<MovingPlatformNumberStressTest>d__3.MoveNext
+        () [0x0025c] in C:\Users\Justin\Desktop\NewClone\SuperVandalWorld\SuperVandalWorld\Assets\tst\Justin\MovingPlatformStressTest.cs:97
+
+        at
+        UnityEngine.TestTools.TestEnumerator+<Execute>d__5.MoveNext () [0x00038]
+        in C:\Users\Justin\Desktop\NewClone\SuperVandalWorld\SuperVandalWorld\Library\PackageCache\com.unity.test-framework@1.1.16\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:31
+
+'
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -1950,31 +2013,24 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1001
       parentUniqueId: Tests.dll/Tests/[Tests][Tests.UITest][suite]
-    m_ResultText: "jump_stress_test (42.893s)\n---\nPlayer has broken through the
-      platform with a speed of 1.5E+17\r\n  Expected: True\r\n  But was:  False\n---\nat
-      Tests.CharacterMovementTests+<jump_stress_test>d__6.MoveNext () [0x0029a] in
-      C:\\Users\\John Cambareri\\Documents\\GitHub\\SuperVandalWorld\\SuperVandalWorld\\Assets\\tst\\John\\CharacterMovementTests.cs:98\r\nat
+    m_ResultText: "MovingPlatformNumberStressTest (32.242s)\n---\nExpected: 1024\r\n 
+      But was:  356\n---\nat Tests.MovingPlatformStressTest+<MovingPlatformNumberStressTest>d__3.MoveNext
+      () [0x0025c] in C:\\Users\\Justin\\Desktop\\NewClone\\SuperVandalWorld\\SuperVandalWorld\\Assets\\tst\\Justin\\MovingPlatformStressTest.cs:97\r\nat
       UnityEngine.TestTools.TestEnumerator+<Execute>d__5.MoveNext () [0x00038] in
-      <def80c3c71174f0ea69facc89d14e13e>:0\n---\nJumping\r\nJump force = 15\r\nJumping\r\nJumping\r\nJump
-      force = 150\r\nJumping\r\nJump force = 1500\r\nJumping\r\nJump force = 15000\r\nJumping\r\nJump
-      force = 150000\r\nJumping\r\nJump force = 1500000\r\nJumping\r\nJump force
-      = 1.5E+07\r\nJumping\r\nJump force = 1.5E+08\r\nJumping\r\nJump force = 1.5E+09\r\nJumping\r\nJump
-      force = 1.5E+10\r\nJumping\r\nJump force = 1.5E+11\r\nJumping\r\nJump force
-      = 1.5E+12\r\nJumping\r\nJump force = 1.5E+13\r\nJumping\r\nJump force = 1.5E+14\r\nJumping\r\nJump
-      force = 1.5E+15\r\nJumping\r\nJump force = 1.5E+16\r\nJumping\r\nJump force
-      = 1.5E+17\r\nJumping"
-    m_ResultStacktrace: 'at Tests.CharacterMovementTests+<jump_stress_test>d__6.MoveNext
-      () [0x0029a] in C:\Users\John Cambareri\Documents\GitHub\SuperVandalWorld\SuperVandalWorld\Assets\tst\John\CharacterMovementTests.cs:98
+      C:\\Users\\Justin\\Desktop\\NewClone\\SuperVandalWorld\\SuperVandalWorld\\Library\\PackageCache\\com.unity.test-framework@1.1.16\\UnityEngine.TestRunner\\NUnitExtensions\\Attributes\\TestEnumerator.cs:31\n---\nFailed
+      at 356 Moving Rock Platforms\r\nCurrent FPS = 26.77964"
+    m_ResultStacktrace: 'at Tests.MovingPlatformStressTest+<MovingPlatformNumberStressTest>d__3.MoveNext
+      () [0x0025c] in C:\Users\Justin\Desktop\NewClone\SuperVandalWorld\SuperVandalWorld\Assets\tst\Justin\MovingPlatformStressTest.cs:97
 
       at
       UnityEngine.TestTools.TestEnumerator+<Execute>d__5.MoveNext () [0x00038] in
-      <def80c3c71174f0ea69facc89d14e13e>:0
+      C:\Users\Justin\Desktop\NewClone\SuperVandalWorld\SuperVandalWorld\Library\PackageCache\com.unity.test-framework@1.1.16\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:31
 
 '
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: c9861bd8
-      m_LastClickedID: -669284663
+      m_SelectedIDs: b3525cde
+      m_LastClickedID: -564374861
       m_ExpandedIDs: c337b2b420712cd05dfc4bdfe557abf795fbf000e1b063178302573d8359db41ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
@@ -2002,7 +2058,7 @@ MonoBehaviour:
       availableCategories:
       - Uncategorized
   m_EditModeTestListGUI:
-    m_Window: {fileID: 18}
+    m_Window: {fileID: 20}
     newResultList:
     - id: 1000
       uniqueId: '[SuperVandalWorld][suite]'
@@ -2052,7 +2108,7 @@ MonoBehaviour:
       selectedCategoryMask: 0
       availableCategories:
       - Uncategorized
---- !u!114 &19
+--- !u!114 &21
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2072,15 +2128,15 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1129
-    y: 76
-    width: 310
-    height: 702
+    x: 1140
+    y: 890
+    width: 865
+    height: 469
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 32160
---- !u!114 &20
+  m_LastSelectedObjectID: -154264
+--- !u!114 &22
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2100,18 +2156,18 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 2091
-    y: 81
-    width: 460
-    height: 1270
+    x: 2007
+    y: 73
+    width: 552
+    height: 1286
   m_ViewDataDictionary: {fileID: 0}
   m_PreviewResizer:
     m_CachedPref: 50
     m_ControlHash: 1964396721
     m_PrefName: Preview_TilemapBrushInspector
-  m_Palette: {fileID: 5713101419344279301, guid: b0186b213b3ff05489000e4ca7c9417e, type: 3}
+  m_Palette: {fileID: 4914733372615852719, guid: 4c595496acd2b1c428f07881f8e955c2, type: 3}
   m_DrawGizmos: 0
---- !u!114 &21
+--- !u!114 &23
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

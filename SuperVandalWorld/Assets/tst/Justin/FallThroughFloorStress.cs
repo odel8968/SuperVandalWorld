@@ -16,7 +16,7 @@ namespace Tests
         {
 
             SceneManager.sceneLoaded += SceneManager_sceneLoaded;
-            SceneManager.LoadScene("Level 1", LoadSceneMode.Single);
+            SceneManager.LoadScene("Level 3", LoadSceneMode.Single);
         }
 
         private void SceneManager_sceneLoaded(Scene arg0, LoadSceneMode arg1)
@@ -33,7 +33,7 @@ namespace Tests
 
             //Rigidbody2D platformRB;
 
-            GameObject testplatform = GameObject.Find("RockTilePlatform");
+            GameObject testplatform = GameObject.Find("StatSnowPlatform");
             GameObject player = GameObject.Find("Player");
             GameObject platform = null;
 
