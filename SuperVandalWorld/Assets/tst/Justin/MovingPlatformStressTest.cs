@@ -9,11 +9,9 @@ namespace Tests
 {
     public class MovingPlatformStressTest
     {
-        private bool sceneLoaded;
-        private int stressValue = 2000;
-        int actualValue = 0;
 
-
+        bool sceneLoaded;
+       
         [OneTimeSetUp]
         public void loadedLevel()
         {
@@ -32,22 +30,70 @@ namespace Tests
         public IEnumerator MovingPlatformNumberStressTest()
         {
             yield return new WaitWhile(()=>sceneLoaded == false);
+
+            int stressValue = 1;
+            int actualValue = 0;
+            float curFPS = 1.0f / Time.deltaTime;
+            float tFPS = 30;
+            bool breaklp = false;
+
+
             GameObject testplatform = GameObject.Find("MovingRockPlatform_0");
             
-            for(int i = 0; i<stressValue; i++)
+            //Outer loop to double number of platforms spawned
+            for(int outlp = 0; outlp < 20; outlp++)
             {
-            GameObject platform = UnityEngine.Object.Instantiate(testplatform, Vector3.zero, Quaternion.identity) as GameObject;
+                //Inner loop spawn platforms and increment # to stress
+                for(int innerlp = 0; innerlp < stressValue; innerlp ++)
+                {
+                    //Instantiate platform objects that move
+                    GameObject platform = UnityEngine.Object.Instantiate(testplatform, Vector3.zero, Quaternion.identity) as GameObject;
+                    platform.name = "testPlatform";
+                    platform.transform.position = new Vector3(Random.Range(0,10f), Random.Range(5f,20f), 0f);
+                    actualValue++;
 
-            platform.transform.position = new Vector3(Random.Range(0,10f), Random.Range(5f,20f), 0f);
+                    //Get current framerate
+                    curFPS = 1.0f / Time.deltaTime;
 
-            actualValue ++;
+                    //if current framerate drops below target frame rate, break out of loop
+                    if(curFPS < tFPS && Time.time > 1)
+                    {
+                        Debug.Log("Failed at " + actualValue + " Moving Rock Platforms");
+                        Debug.Log("Current FPS = " + curFPS);
+                        breaklp = true;
+                        break;
+                    }
 
-            yield return new WaitForSeconds(.01f);
+                    yield return new WaitForSeconds(.01f);
 
-            }
+
+                }
+
+                //break out of outer loop
+                if(breaklp)
+                {
+                    break;
+                }
+
+                //Delete objects created for test
+                var PlatformObj = GameObject.FindGameObjectsWithTag("MovingPlatform");
+                foreach (var obj in PlatformObj)
+                {
+                    if(obj.name.Contains("testPlatform") )
+                    {
+                        UnityEngine.Object.Destroy(obj);
+                    }
+                }
+
+                //mulitply stress value
+                actualValue = 0;
+                stressValue *=2;
+                yield return new WaitForSeconds(1.0f);
             
 
-            Debug.Log("Expected: " + stressValue + ", Actual; " + actualValue);
+            }
+
+            yield return null;
             Assert.AreEqual(stressValue, actualValue);
 
 
