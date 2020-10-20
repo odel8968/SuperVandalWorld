@@ -6,7 +6,8 @@ public class Item : pickupsManager
 {
     public int scoreValue;
 
-    public static void collisionItem(Collider2D other){
+    public static void collisionItem(Collider2D other)
+    {
         //on trigger with pickup
 
         removeAsset(other);
