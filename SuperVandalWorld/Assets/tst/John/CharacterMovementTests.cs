@@ -63,5 +63,29 @@ namespace Tests
             }
             Assert.AreNotEqual(Player.transform.position.x, initialpos);
         }
+
+        [UnityTest]
+        public IEnumerator jump_stress_test()
+        {
+            yield return new WaitWhile(() => sceneLoaded == false);
+            var Player = GameObject.Find("Player").GetComponent<Character_Movement>();
+            var testPlatform = GameObject.Find("MovingRockPlatform_0");
+
+            GameObject platform = UnityEngine.Object.Instantiate(testPlatform, Vector3.zero, Quaternion.identity) as GameObject;
+
+            platform.transform.position = new Vector3(Player.transform.position.x, Player.transform.position.y + 10f, 0f);
+            platform.GetComponent<MovingPlatform>().setSpeed = 0f;
+
+            Player.jumpForce = 15f;
+            for (int i = 0; i < 20; i++)
+            {
+                Player.Jump(true);
+                Debug.Log("Jump force = " + Player.jumpForce);
+                yield return new WaitForSeconds(2.5f);
+                if (Player.transform.position.y > platform.transform.position.y) break; //if player goes through the platform, exit the loop
+                Player.jumpForce *= 10;
+            }
+            Assert.IsTrue(Player.transform.position.y < platform.transform.position.y, "Player has broken through the platform with a speed of " + Player.jumpForce);
+        }
     }
 }

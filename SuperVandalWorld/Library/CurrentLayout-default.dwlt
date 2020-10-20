@@ -19,9 +19,9 @@ MonoBehaviour:
     width: 2544
     height: 981
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Game
   m_RootView: {fileID: 3}
-  m_MinSize: {x: 875, y: 542}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 0
 --- !u!114 &2
@@ -72,7 +72,7 @@ MonoBehaviour:
     y: 0
     width: 2544
     height: 981
-  m_MinSize: {x: 875, y: 542}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
   m_TopViewHeight: 30
@@ -145,10 +145,10 @@ MonoBehaviour:
     y: 30
     width: 2544
     height: 931
-  m_MinSize: {x: 706, y: 492}
-  m_MaxSize: {x: 18004, y: 14042}
+  m_MinSize: {x: 703, y: 492}
+  m_MaxSize: {x: 18001, y: 14042}
   vertical: 0
-  controlID: 282
+  controlID: 106
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -170,10 +170,10 @@ MonoBehaviour:
     y: 0
     width: 2090
     height: 931
-  m_MinSize: {x: 605, y: 492}
-  m_MaxSize: {x: 14003, y: 14042}
+  m_MinSize: {x: 603, y: 492}
+  m_MaxSize: {x: 14001, y: 14042}
   vertical: 1
-  controlID: 283
+  controlID: 107
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -196,10 +196,10 @@ MonoBehaviour:
     y: 0
     width: 2090
     height: 506
-  m_MinSize: {x: 605, y: 221}
-  m_MaxSize: {x: 12005, y: 4021}
+  m_MinSize: {x: 603, y: 221}
+  m_MaxSize: {x: 12003, y: 4021}
   vertical: 0
-  controlID: 284
+  controlID: 108
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -245,8 +245,8 @@ MonoBehaviour:
     y: 0
     width: 703
     height: 506
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -273,10 +273,10 @@ MonoBehaviour:
     y: 506
     width: 2090
     height: 425
-  m_MinSize: {x: 333, y: 271}
-  m_MaxSize: {x: 14003, y: 10021}
+  m_MinSize: {x: 331, y: 271}
+  m_MaxSize: {x: 14001, y: 10021}
   vertical: 0
-  controlID: 183
+  controlID: 130
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -322,8 +322,8 @@ MonoBehaviour:
     y: 0
     width: 1111
     height: 425
-  m_MinSize: {x: 102, y: 121}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -348,8 +348,8 @@ MonoBehaviour:
     y: 0
     width: 454
     height: 931
-  m_MinSize: {x: 101, y: 121}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 21}
   m_Panes:
   - {fileID: 20}
@@ -476,7 +476,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 5cfbffff02400000
+      m_ExpandedIDs: 9ce9ffffb8e9ffffc2f0ffff26f8ffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -654,21 +654,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/tst/Keller
+    - Assets/tst/John
     m_Globs: []
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/tst/Keller
+  - Assets/tst/John
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\Keller\Desktop\SuperVandalWorld\SuperVandalWorld
+  m_LastProjectPath: C:\Users\John Cambareri\Documents\GitHub\SuperVandalWorld\SuperVandalWorld
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 3a430000
-    m_LastClickedID: 17210
-    m_ExpandedIDs: 000000003a4300003c4300003e43000040430000424300004443000046430000484300004a430000
+    m_SelectedIDs: 6a440000
+    m_LastClickedID: 17514
+    m_ExpandedIDs: 0000000000440000024400000444000006440000084400000a4400000c4400000e4400001044000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -696,7 +696,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000003a4300003c4300003e43000040430000424300004443000046430000484300004a430000
+    m_ExpandedIDs: 0000000000440000024400000444000006440000084400000a4400000c4400000e44000010440000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -723,7 +723,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000a4430000ae3f0000b83c00007e4600007246000064430000383d0000f43c00006e400000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -841,7 +841,7 @@ MonoBehaviour:
     height: 910
   m_ViewDataDictionary: {fileID: 0}
   m_Spl:
-    ID: 218
+    ID: 242
     splitterInitialOffset: 516
     currentActiveSplitter: -1
     realSizes:
@@ -872,9 +872,9 @@ MonoBehaviour:
       uniqueId: '[SuperVandalWorld][suite]'
       name: SuperVandalWorld
       fullName: SuperVandalWorld
-      resultStatus: 2
-      duration: 74.28302
-      messages: One or more child tests had errors
+      resultStatus: 1
+      duration: 50.92012
+      messages: 
       output: 
       stacktrace: 
       notRunnable: 0
@@ -888,9 +888,9 @@ MonoBehaviour:
       uniqueId: '[Tests.dll][suite]'
       name: Tests.dll
       fullName: C:/Users/adave/Documents/GitHub/SuperVandalWorld/SuperVandalWorld/Library/ScriptAssemblies/Tests.dll
-      resultStatus: 2
-      duration: 74.26308
-      messages: One or more child tests had errors
+      resultStatus: 1
+      duration: 50.88496
+      messages: 
       output: 
       stacktrace: 
       notRunnable: 0
@@ -904,9 +904,9 @@ MonoBehaviour:
       uniqueId: Tests.dll/[Tests][suite]
       name: Tests
       fullName: Tests
-      resultStatus: 2
-      duration: 74.25392
-      messages: One or more child tests had errors
+      resultStatus: 1
+      duration: 50.868298
+      messages: 
       output: 
       stacktrace: 
       notRunnable: 0
@@ -1015,7 +1015,7 @@ MonoBehaviour:
       name: CharacterMovementTests
       fullName: Tests.CharacterMovementTests
       resultStatus: 1
-      duration: 6.7265763
+      duration: 50.858185
       messages: 
       output: 
       stacktrace: 
@@ -1026,6 +1026,113 @@ MonoBehaviour:
       categories: []
       parentId: 1030
       parentUniqueId: Tests.dll/[Tests][suite]
+    - id: 1021
+      uniqueId: Tests.dll/Tests/CharacterMovementTests/[Tests][Tests.CharacterMovementTests.jump_stress_test]
+      name: jump_stress_test
+      fullName: Tests.CharacterMovementTests.jump_stress_test
+      resultStatus: 1
+      duration: 50.260307
+      messages: 
+      output: 'Jumping
+
+        Jump force = 15
+
+        Jumping
+
+        Jump
+        force = 150
+
+        Jumping
+
+        Jump force = 1500
+
+        Jumping
+
+        Jump
+        force = 15000
+
+        Jumping
+
+        Jump force = 150000
+
+        Jumping
+
+        Jump
+        force = 1500000
+
+        Jumping
+
+        Jump force = 1.5E+07
+
+        Jumping
+
+        Jump
+        force = 1.5E+08
+
+        Jumping
+
+        Jump force = 1.5E+09
+
+        Jumping
+
+        Jump
+        force = 1.5E+10
+
+        Jumping
+
+        Jump force = 1.5E+11
+
+        Jumping
+
+        Jump
+        force = 1.5E+12
+
+        Jumping
+
+        Jump force = 1.5E+13
+
+        Jumping
+
+        Jump
+        force = 1.5E+14
+
+        Jumping
+
+        Jump force = 1.5E+15
+
+        Jumping
+
+        Jump
+        force = 1.5E+16
+
+        Jumping
+
+        Jump force = 1.5E+17
+
+        Jumping
+
+        Jump
+        force = 1.5E+18
+
+        Jumping
+
+        Jump force = 1.5E+19
+
+        Jumping
+
+        Jump
+        force = 1.5E+20
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1017
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.CharacterMovementTests][suite]
     - id: 1015
       uniqueId: Tests.dll/Tests/CharacterMovementTests/[Tests][Tests.CharacterMovementTests.jump_test]
       name: jump_test
@@ -3525,32 +3632,105 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1001
       parentUniqueId: Tests.dll/Tests/[Tests][Tests.UITest][suite]
-    m_ResultText: "stressSpawnDiamonds (74.233s)\n---\nExpected: 32000\r\n  But was: 
-      21601\n---\nat Tests.pickUpsStressTest+<stressSpawnDiamonds>d__3.MoveNext ()
-      [0x00346] in C:\\Users\\Keller\\Desktop\\SuperVandalWorld\\SuperVandalWorld\\Assets\\tst\\Keller\\pickUpStressTest.cs:92\nat
-      UnityEngine.TestTools.TestEnumerator+<Execute>d__5.MoveNext () [0x00038] in
-      <97c8cb43cff047edb0082d417f07b856>:0\n---\n<color=green>Passed</color> at 1000
-      diamonds\nCurrent FPS = <color=green> 659.0654</color>\nDiamonds Spawned: 1000\n<color=green>Passed</color>
-      at 2000 diamonds\nCurrent FPS = <color=green> 418.9535</color>\nDiamonds Spawned:
-      2000\n<color=green>Passed</color> at 4000 diamonds\nCurrent FPS = <color=green>
-      328.224</color>\nDiamonds Spawned: 4000\n<color=green>Passed</color> at 8000
-      diamonds\nCurrent FPS = <color=green> 170.9899</color>\nDiamonds Spawned: 8000\n<color=green>Passed</color>
-      at 16000 diamonds\nCurrent FPS = <color=green> 92.03442</color>\nDiamonds Spawned:
-      16000\n<color=red>Failed</color> at 32000 diamonds\nCurrent FPS = <color=red>
-      58.91051</color>\nExpected: 32000, Actual: 21601"
-    m_ResultStacktrace: 'at Tests.pickUpsStressTest+<stressSpawnDiamonds>d__3.MoveNext
-      () [0x00346] in C:\Users\Keller\Desktop\SuperVandalWorld\SuperVandalWorld\Assets\tst\Keller\pickUpStressTest.cs:92
+    m_ResultText: 'jump_stress_test (50.260s)
 
-      at
-      UnityEngine.TestTools.TestEnumerator+<Execute>d__5.MoveNext () [0x00038] in
-      <97c8cb43cff047edb0082d417f07b856>:0
+      ---
 
-'
+      Jumping
+
+      Jump
+      force = 15
+
+      Jumping
+
+      Jump force = 150
+
+      Jumping
+
+      Jump
+      force = 1500
+
+      Jumping
+
+      Jump force = 15000
+
+      Jumping
+
+      Jump
+      force = 150000
+
+      Jumping
+
+      Jump force = 1500000
+
+      Jumping
+
+      Jump
+      force = 1.5E+07
+
+      Jumping
+
+      Jump force = 1.5E+08
+
+      Jumping
+
+      Jump
+      force = 1.5E+09
+
+      Jumping
+
+      Jump force = 1.5E+10
+
+      Jumping
+
+      Jump
+      force = 1.5E+11
+
+      Jumping
+
+      Jump force = 1.5E+12
+
+      Jumping
+
+      Jump
+      force = 1.5E+13
+
+      Jumping
+
+      Jump force = 1.5E+14
+
+      Jumping
+
+      Jump
+      force = 1.5E+15
+
+      Jumping
+
+      Jump force = 1.5E+16
+
+      Jumping
+
+      Jump
+      force = 1.5E+17
+
+      Jumping
+
+      Jump force = 1.5E+18
+
+      Jumping
+
+      Jump
+      force = 1.5E+19
+
+      Jumping
+
+      Jump force = 1.5E+20'
+    m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 39eb793e
-      m_LastClickedID: 1048177465
-      m_ExpandedIDs: c973899a98906ddc5dfc4bdfe557abf795fbf000761f4b11e1b063178359db41e6daa968ffffff7f
+      m_SelectedIDs: c9861bd8
+      m_LastClickedID: -669284663
+      m_ExpandedIDs: c973899ac337b2b498906ddc5dfc4bdfe557abf795fbf000761f4b11e1b063178359db41e6daa968ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
