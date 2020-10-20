@@ -13,14 +13,12 @@ public class pickupsManager : MonoBehaviour
         }
     }
 
-    public static void LogInfo(Collider2D other)
-    {
+    public static void LogInfo(Collider2D other){
         Debug.Log("Collision with " + other.gameObject.name);
         
     }
     
-    public static int updateScore(Collider2D other)
-    {
+    public static int updateScore(Collider2D other){
 
         int addPoints = 0;
 
@@ -50,14 +48,12 @@ public class pickupsManager : MonoBehaviour
         }   
     }
 
-    public static void removeAsset(Collider2D other)
-    {
+    public static void removeAsset(Collider2D other){
         //remove asset from level via destroy function
         Destroy(other.gameObject);
     }
 
-    public static void triggerSound(Collider2D other)
-    {
+    public static void triggerSound(Collider2D other){
         //call Sound managers function to play sound
 
     }
