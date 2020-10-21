@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 6135640305494707418}
   - component: {fileID: 6135640305494707417}
   - component: {fileID: 6135640305494707398}
+  - component: {fileID: 868055309}
+  - component: {fileID: 4781655262646239189}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -102,7 +104,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 4f4335a6a7b3aba45bb8a9d9190faea6, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
@@ -165,3 +167,30 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &868055309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6135640305494707396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bdcd75a583d28f43a18d854059458ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 0
+  axeProj: {fileID: 501964488055383182, guid: dbcc84b69d0928743ac61fbd7b9c0308, type: 3}
+  abilityKey: 106
+--- !u!114 &4781655262646239189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6135640305494707396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91711c9a51612914ba86beb4c4d561f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

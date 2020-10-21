@@ -7,12 +7,14 @@ public class EnvHazard : EnvObject
 {
     public float restartDelay = 2f;
 
-    public Character_Movement playerMovement;
+    Character_Movement playerMovement;
+
 
     // Start is called before the first frame update
     void Start()
     {
         playerAlive = true;
+        playerMovement = FindObjectOfType<Character_Movement>();
     }
 
     public override void OnCollisionEnter2D(Collision2D collision)
@@ -27,7 +29,15 @@ public class EnvHazard : EnvObject
             Debug.Log("You Died");
             playerAlive = false;
             Invoke("ResetLevel", restartDelay);
+            Invoke("ReEnablePlayerMovement", restartDelay);
+            
+            
         }
+    }
+
+    void ReEnablePlayerMovement()
+    {
+         playerMovement.enabled = true;
     }
 
 }

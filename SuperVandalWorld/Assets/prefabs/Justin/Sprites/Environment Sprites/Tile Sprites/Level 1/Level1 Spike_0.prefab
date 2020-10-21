@@ -129,5 +129,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0516dbb0f217fd40bd484fee54abb4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerPrefab: {fileID: 0}
+  camPrefab: {fileID: 0}
   restartDelay: 2
   playerMovement: {fileID: 0}
