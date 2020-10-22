@@ -1,19 +1,38 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Globalization;
+using System.Runtime.InteropServices;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class PauseMenu : MonoBehaviour
 {
 	GameObject[] pauseObjects;
+	GameObject[] helpObjects;
 
-	//public float volumeSlider = 1.0f;
+	GameObject player;
+
+	public Rigidbody rb;
+
 
 	void Start()
 	{
 		Time.timeScale = 1;
 		pauseObjects = GameObject.FindGameObjectsWithTag("ShowOnPause");
+		helpObjects = GameObject.FindGameObjectsWithTag("ShowOnHelp");
+		player = GameObject.Find("Player");
+
+		
+		rb = player.GetComponent<Rigidbody>();
+
+		//rb.isKinematic = false;
+		//rb.detectCollisions = false;
+
+		foreach (GameObject g in helpObjects)
+		{
+			g.SetActive(false);
+		}
+
 		hidePaused();
 	}
 
@@ -71,7 +90,34 @@ public class PauseMenu : MonoBehaviour
 
 	public void HelpMenu()
 	{
-		Debug.Log("Help command received");
+		Debug.Log("Help menu opened");
+
+		foreach (GameObject g in pauseObjects)
+		{
+			g.SetActive(false);
+		}
+
+		foreach (GameObject g in helpObjects)
+		{
+			g.SetActive(true);
+		}
+	}
+
+	public void CloseHelpMenu()
+	{
+		Debug.Log("Help menu closed");
+
+		foreach (GameObject g in pauseObjects)
+		{
+			g.SetActive(true);
+		}
+
+		foreach (GameObject g in helpObjects)
+		{
+			g.SetActive(false);
+		}
+
+		//player.GetComponent<Rigidbody>().detectCollisions = false;
 	}
 
 	public void QuitGame()
