@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3675281043182309290}
   - component: {fileID: 3675281043182309289}
   m_Layer: 11
-  m_Name: ForestLog
+  m_Name: H.ForestLog
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -97,5 +97,5 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.6}
-  m_Size: {x: 10.21875, y: 3}
+  m_Size: {x: 10, y: 3}
   m_Direction: 1
