@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
-    x: 0
-    y: 43
+    x: 8
+    y: 50
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Game
   m_RootView: {fileID: 5}
   m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
@@ -43,8 +43,8 @@ MonoBehaviour:
     y: 0
     width: 483
     height: 592
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -69,8 +69,8 @@ MonoBehaviour:
     y: 0
     width: 633
     height: 355
-  m_MinSize: {x: 102, y: 121}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 23}
@@ -101,7 +101,7 @@ MonoBehaviour:
   m_MinSize: {x: 333, y: 271}
   m_MaxSize: {x: 14003, y: 10021}
   vertical: 0
-  controlID: 90
+  controlID: 173
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -197,10 +197,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 881, y: 492}
-  m_MaxSize: {x: 18004, y: 14042}
+  m_MinSize: {x: 703, y: 492}
+  m_MaxSize: {x: 18003, y: 14042}
   vertical: 0
-  controlID: 260
+  controlID: 171
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -222,10 +222,10 @@ MonoBehaviour:
     y: 0
     width: 1492
     height: 947
-  m_MinSize: {x: 605, y: 492}
+  m_MinSize: {x: 603, y: 492}
   m_MaxSize: {x: 14003, y: 14042}
   vertical: 1
-  controlID: 205
+  controlID: 172
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -248,10 +248,10 @@ MonoBehaviour:
     y: 0
     width: 1492
     height: 592
-  m_MinSize: {x: 605, y: 221}
-  m_MaxSize: {x: 12005, y: 4021}
+  m_MinSize: {x: 603, y: 221}
+  m_MaxSize: {x: 12003, y: 4021}
   vertical: 0
-  controlID: 206
+  controlID: 151
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -340,7 +340,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: InspectorWindow
+  m_Name: TestRunnerWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -349,15 +349,15 @@ MonoBehaviour:
     y: 0
     width: 428
     height: 947
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 20}
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 21}
   m_Panes:
   - {fileID: 20}
   - {fileID: 21}
   - {fileID: 22}
-  m_Selected: 0
-  m_LastSelected: 2
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -378,8 +378,8 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 859
-    y: 665
+    x: 867
+    y: 672
     width: 631
     height: 334
   m_ViewDataDictionary: {fileID: 0}
@@ -403,8 +403,8 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 0
-    y: 73
+    x: 8
+    y: 80
     width: 489
     height: 571
   m_ViewDataDictionary: {fileID: 0}
@@ -413,7 +413,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 6ed4ffff80d4ffff94d4ffff18ddffff36e3ffff22e5ffffe0560000
+      m_ExpandedIDs: e4ddffff00deffff02e5ffffd4ebfffff0ebfffffaf2ffffb0faffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -457,8 +457,8 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 490
-    y: 73
+    x: 498
+    y: 80
     width: 517
     height: 571
   m_ViewDataDictionary: {fileID: 0}
@@ -475,7 +475,7 @@ MonoBehaviour:
   m_Position:
     m_Target: {x: 1.5766251, y: 2.020102, z: -0.526255}
     speed: 2
-    m_Value: {x: 1.9663063, y: 1.5177419, z: -0.40517968}
+    m_Value: {x: 1.5766251, y: 2.020102, z: -0.526255}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -528,7 +528,7 @@ MonoBehaviour:
   m_Size:
     m_Target: 28.129019
     speed: 2
-    m_Value: 26.91772
+    m_Value: 28.129019
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -573,8 +573,8 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1009
-    y: 73
+    x: 1017
+    y: 80
     width: 481
     height: 571
   m_ViewDataDictionary: {fileID: 0}
@@ -662,8 +662,8 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 0
-    y: 665
+    x: 8
+    y: 672
     width: 858
     height: 334
   m_ViewDataDictionary: {fileID: 0}
@@ -680,35 +680,35 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/tst/Heba
+    - Assets/tst/John
     m_Globs: []
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/tst/Heba
+  - Assets/tst/John
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\davey\Desktop\cs383GameFiles\SuperVandalWorld\SuperVandalWorld
+  m_LastProjectPath: C:\Users\John Cambareri\Documents\GitHub\SuperVandalWorld\SuperVandalWorld
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 74}
-    m_SelectedIDs: fe460000
-    m_LastClickedID: 18174
-    m_ExpandedIDs: 000000006e46000070460000724600007446000076460000784600007a4600007c4600007e46000000ca9a3b
+    m_SelectedIDs: 10440000
+    m_LastClickedID: 17424
+    m_ExpandedIDs: 00000000c4430000c6430000c8430000ca430000cc430000ce430000d0430000d2430000d443000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Ben
-      m_OriginalName: Ben
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 18170
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 13}
     m_SearchString: 
@@ -722,7 +722,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000006e46000070460000724600007446000076460000784600007a4600007c4600007e460000
+    m_ExpandedIDs: 00000000c4430000c6430000c8430000ca430000cc430000ce430000d0430000d2430000d4430000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -749,7 +749,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000a4430000ae3f0000b83c00007e4600007246000064430000383d0000f43c00000c420000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -798,8 +798,8 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1492
-    y: 73
+    x: 1500
+    y: 80
     width: 427
     height: 926
   m_ViewDataDictionary: {fileID: 0}
@@ -836,18 +836,18 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 975.5
-    y: 30
-    width: 463.5
-    height: 829
+    x: 1500
+    y: 80
+    width: 427
+    height: 926
   m_ViewDataDictionary: {fileID: 0}
   m_Spl:
-    ID: 7260
+    ID: 311
     splitterInitialOffset: 516
     currentActiveSplitter: -1
     realSizes:
-    - 444
-    - 315
+    - 501
+    - 355
     relativeSizes:
     - 0.58498025
     - 0.41501975
@@ -857,7 +857,7 @@ MonoBehaviour:
     maxSizes:
     - 0
     - 0
-    lastTotalSize: 759
+    lastTotalSize: 856
     splitSize: 6
     xOffset: 0
     m_Version: 1
@@ -874,7 +874,7 @@ MonoBehaviour:
       name: SuperVandalWorld
       fullName: SuperVandalWorld
       resultStatus: 2
-      duration: 13.191058
+      duration: 0.8993432
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -890,7 +890,7 @@ MonoBehaviour:
       name: Tests.dll
       fullName: C:/Users/adave/Documents/GitHub/SuperVandalWorld/SuperVandalWorld/Library/ScriptAssemblies/Tests.dll
       resultStatus: 2
-      duration: 13.139856
+      duration: 0.8618309
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -906,7 +906,7 @@ MonoBehaviour:
       name: Tests
       fullName: Tests
       resultStatus: 2
-      duration: 13.123371
+      duration: 0.8459724
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -1016,7 +1016,7 @@ MonoBehaviour:
       name: CharacterMovementTests
       fullName: Tests.CharacterMovementTests
       resultStatus: 2
-      duration: 5.5660486
+      duration: 0.8364644
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -1032,25 +1032,19 @@ MonoBehaviour:
       name: jump_stress_test
       fullName: Tests.CharacterMovementTests.jump_stress_test
       resultStatus: 2
-      duration: 5.525888
-      messages: "  Player has broken through the platform with a speed of 150\n 
-        Expected: True\n  But was:  False\n"
-      output: 'Jumping
-
-        Jump force = 15
-
-        Jumping
-
-        Jump force
-        = 150
+      duration: 0.8069898
+      messages: 'Unhandled log message: ''[Exception] NullReferenceException: Object
+        reference not set to an instance of an object''. Use UnityEngine.TestTools.LogAssert.Expect'
+      output: 'NullReferenceException: Object reference not set to an instance of
+        an object
 
 '
-      stacktrace: 'at Tests.CharacterMovementTests+<jump_stress_test>d__6.MoveNext
-        () [0x001ac] in /Users/hebaaljabrine/Desktop/PLEASE/SuperVandalWorld/SuperVandalWorld/Assets/tst/John/CharacterMovementTests.cs:88
+      stacktrace: 'KeepBetweenLevels.FindStartPos () (at Assets/src/Justin/KeepBetweenLevels.cs:60)
 
-        at
-        UnityEngine.TestTools.TestEnumerator+<Execute>d__5.MoveNext () [0x00038]
-        in <def80c3c71174f0ea69facc89d14e13e>:0
+        KeepBetweenLevels.OnLevelWasLoaded
+        (System.Int32 level) (at Assets/src/Justin/KeepBetweenLevels.cs:29)
+
+        
 
 '
       notRunnable: 0
@@ -1920,24 +1914,39 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1001
       parentUniqueId: Tests.dll/Tests/[Tests][Tests.UITest][suite]
-    m_ResultText: "SquareTestStress (13.069s)\n---\nExpected: True\n  But was:  False\n---\nat
-      Tests.SquareTest+<SquareTestStress>d__6.MoveNext () [0x0016a] in /Users/hebaaljabrine/Desktop/PLEASE/SuperVandalWorld/SuperVandalWorld/Assets/tst/Heba/SquareTest.cs:102\nat
-      UnityEngine.TestTools.TestEnumerator+<Execute>d__5.MoveNext () [0x00038] in
-      /Users/hebaaljabrine/Desktop/PLEASE/SuperVandalWorld/SuperVandalWorld/Library/PackageCache/com.unity.test-framework@1.1.16/UnityEngine.TestRunner/NUnitExtensions/Attributes/TestEnumerator.cs:31\n---\nASSERT
-      CHECK: 130 -- 32.74267 -- 28"
-    m_ResultStacktrace: 'at Tests.SquareTest+<SquareTestStress>d__6.MoveNext () [0x0016a]
-      in /Users/hebaaljabrine/Desktop/PLEASE/SuperVandalWorld/SuperVandalWorld/Assets/tst/Heba/SquareTest.cs:102
+    m_ResultText: 'jump_stress_test (0.807s)
 
-      at
-      UnityEngine.TestTools.TestEnumerator+<Execute>d__5.MoveNext () [0x00038] in
-      /Users/hebaaljabrine/Desktop/PLEASE/SuperVandalWorld/SuperVandalWorld/Library/PackageCache/com.unity.test-framework@1.1.16/UnityEngine.TestRunner/NUnitExtensions/Attributes/TestEnumerator.cs:31
+      ---
+
+      Unhandled log message:
+      ''[Exception] NullReferenceException: Object reference not set to an instance
+      of an object''. Use UnityEngine.TestTools.LogAssert.Expect
+
+      ---
+
+      KeepBetweenLevels.FindStartPos
+      () (at Assets/src/Justin/KeepBetweenLevels.cs:60)
+
+      KeepBetweenLevels.OnLevelWasLoaded
+      (System.Int32 level) (at Assets/src/Justin/KeepBetweenLevels.cs:29)
+
+      ---
+
+      NullReferenceException:
+      Object reference not set to an instance of an object'
+    m_ResultStacktrace: 'KeepBetweenLevels.FindStartPos () (at Assets/src/Justin/KeepBetweenLevels.cs:60)
+
+      KeepBetweenLevels.OnLevelWasLoaded
+      (System.Int32 level) (at Assets/src/Justin/KeepBetweenLevels.cs:29)
+
+      
 
 '
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 0058d9b1
-      m_LastClickedID: -1311156224
-      m_ExpandedIDs: c973899a20712cd05dfc4bdfe557abf78302573d8359db41ffffff7f
+      m_SelectedIDs: c9861bd8
+      m_LastClickedID: -669284663
+      m_ExpandedIDs: c973899ac337b2b420712cd05dfc4bdfe557abf78302573d8359db41ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
