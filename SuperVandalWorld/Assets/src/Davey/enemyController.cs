@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class enemyController : MonoBehaviour {
+public class enemyController : MonoBehaviour 
+{
 
     // Choose the enemy and player ridgid body
     private Rigidbody2D rb;
@@ -18,7 +19,8 @@ public class enemyController : MonoBehaviour {
     // Set position of enemy at launch
     [HideInInspector]
     public Vector2 initPos;
-    void Start() {
+    void Start() 
+    {
         initPos = transform.position;
         rb = GetComponent<Rigidbody2D>();
         player = GameObject.Find("Player");
@@ -26,30 +28,37 @@ public class enemyController : MonoBehaviour {
     }
 
     // Track and follow player location
-    void Update() {
+    void Update() 
+    {
         // Check if the enemy is visibly on the scene
-        if (rnr.isVisible) {
+        if (rnr.isVisible) 
+        {
             // Debug.Log("The enemy is visible!!!");
             enemyMovement();
-        } else {
+        } 
+        else 
+        {
             // Debug.Log("The enemy is not visible.");
             move.x = 0;
             transform.position += move * Time.deltaTime;
         }
     }
 
-    void enemyMovement() {
+    void enemyMovement() 
+    {
 
         // Find the difference in location of the player and the enemy
         float diff = player.transform.position.x - transform.position.x;
 
         // If the difference is greater than zero move right
-        if (diff > 0) {
+        if (diff > 0) 
+        {
             move.x = enemySpeed * Mathf.Min(diff, 1.0f);
         }
 
         // If the difference is less than zero move left
-        if (diff < 0) {
+        if (diff < 0) 
+        {
             move.x = -(enemySpeed * Mathf.Min(-diff, 1.0f));
         }
 
