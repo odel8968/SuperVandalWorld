@@ -71,11 +71,15 @@ namespace Tests
         {
             yield return new WaitWhile(() => sceneLoaded == false);
 
-            var square = GameObject.Find("Square").GetComponent<Square>();
+            GameObject enemyPrefab = GameObject.Find("Square");
+            //var square = GameObject.Find("Square").GetComponent<Square>();
+            var square = GameObject.Instantiate(enemyPrefab, new Vector3(10, 5, 0), Quaternion.identity).GetComponent<Square>();
+            square.moveTime = 1;
 
-            var posX = square.transform.position.x;
-            const int limit = 10;
-            var limitX = posX + square.speed * square.moveTime + limit;
+            //var posX = square.transform.position.x;
+            //const int limit = 10;
+            //var limitX = posX + square.speed * square.moveTime + limit;
+            var limitX = 28f; // beginning of wall
 
 
             yield return new WaitWhile(
@@ -85,7 +89,7 @@ namespace Tests
 
                     if (square.curTime < 0.01f)
                     {
-                        square.speed += 1f;
+                        square.speed += 10f;
                         //Debug.Log("ASSERT CHECK: " + square.speed + " -- " + square.transform.position.x);
                     }
 
