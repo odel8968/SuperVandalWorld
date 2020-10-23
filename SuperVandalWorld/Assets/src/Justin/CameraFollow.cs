@@ -12,14 +12,20 @@ public class CameraFollow : MonoBehaviour
 
     void Start()
     {
-        followObject =  GameObject.Find("Player");  
+        
         threshold = calculateThreshold();
-        rb = followObject.GetComponent<Rigidbody2D>();
+        
     }
 
     void FixedUpdate()
     {
+        if(!followObject)
+        {
+            followObject = GameObject.FindGameObjectWithTag("Player");
+            rb = followObject.GetComponent<Rigidbody2D>();
+        }
         followPlayer();
+        
 
     }
 

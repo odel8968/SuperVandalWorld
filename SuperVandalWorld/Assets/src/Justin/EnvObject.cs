@@ -39,6 +39,7 @@ public class EnvObject : MonoBehaviour
 
    void FixedUpdate()
    {
+
            /*load next level if n is pressed
            used for testing - remove from final product*/
            if(Input.GetKey("n"))
