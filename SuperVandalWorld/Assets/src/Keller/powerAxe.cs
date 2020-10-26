@@ -12,26 +12,33 @@ public class powerAxe : PowerUp
     public KeyCode abilityKey = KeyCode.J;
 
 
-    public void addAxeForce(GameObject axe){
+    public void addAxeForce(GameObject axe)
+    {
         axe.GetComponent<Rigidbody2D>().velocity = new Vector2(projVel, 1.5f * projVel);
     }
 
-    public void removeProjectile(GameObject axe){
+    public void removeProjectile(GameObject axe)
+    {
  
         Destroy(axe, 5.0f);
     }
 
-    void OnCollisionEnter(Collision col){
+    void OnCollisionEnter(Collision col)
+    {
         Debug.Log(col.gameObject.tag);
         Destroy(col.gameObject);
     }
 
-    void Update(){
+    void Update()
+    {
         GameObject proj = null;
 
-        if(Input.GetKeyDown(abilityKey)){
-            if(proj == null){
-                if(Time.time >= projNextTime){
+        if(Input.GetKeyDown(abilityKey))
+        {
+            if(proj == null)
+            {
+                if(Time.time >= projNextTime)
+                {
                     projNextTime = Time.time + projDelay;
 
                     proj = GameObject.Instantiate(axeProj, transform.position, transform.rotation);
@@ -41,7 +48,5 @@ public class powerAxe : PowerUp
             }      
         }   
     }
-
-
 
 }

@@ -12,20 +12,25 @@ namespace Tests
         private bool sceneLoaded;
 
         [OneTimeSetUp]
-        public void loadedLevel(){
+        public void loadedLevel()
+        {
             SceneManager.sceneLoaded += SceneManager_sceneLoaded;
             SceneManager.LoadScene("Level 1", LoadSceneMode.Single);
         }
 
-        private void SceneManager_sceneLoaded(Scene arg0, LoadSceneMode arg1){
+        private void SceneManager_sceneLoaded(Scene arg0, LoadSceneMode arg1)
+        {
             sceneLoaded = true;
         }
 
-        public static int updateScore(GameObject other, int numItems, int currentScore){
+        public static int updateScore(GameObject other, int numItems, int currentScore)
+        {
 
             string pickUpType = other.gameObject.tag;
-            for(int i=0; i < numItems; i++){
-                switch(other.gameObject.tag){
+            for(int i=0; i < numItems; i++)
+            {
+                switch(other.gameObject.tag)
+                {
                     case "Item":
                     {
                         var obj = other.GetComponent<Item>();
@@ -47,7 +52,8 @@ namespace Tests
                 }   
 
                 //if score would be negative, make it 0
-                if(currentScore < 0){
+                if(currentScore < 0)
+                {
                     currentScore = 0;
                 }
             }
@@ -83,7 +89,8 @@ namespace Tests
 
 
         [UnityTest]
-        public IEnumerator PickUpPowerUpsAddsPointsToScore(){
+        public IEnumerator PickUpPowerUpsAddsPointsToScore()
+        {
             //arrange
             int score = 0;
             var multiJump = GameObject.Find("MultiJump");
@@ -103,7 +110,8 @@ namespace Tests
         }
 
         [UnityTest]
-        public IEnumerator AddPointsForItemsBeforePowerUps(){
+        public IEnumerator AddPointsForItemsBeforePowerUps()
+        {
 
             //arrange
             int score = 0;
@@ -135,7 +143,8 @@ namespace Tests
         }
 
         [UnityTest]
-        public IEnumerator AddPointsForPowerupsBeforeItems(){
+        public IEnumerator AddPointsForPowerupsBeforeItems()
+        {
 
             //arrange
             int score = 0;

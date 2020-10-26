@@ -12,12 +12,14 @@ namespace Tests
          private bool sceneLoaded;
 
         [OneTimeSetUp]
-        public void loadedLevel(){
+        public void loadedLevel()
+        {
             SceneManager.sceneLoaded += SceneManager_sceneLoaded;
             SceneManager.LoadScene("Level 1", LoadSceneMode.Single);
         }
 
-        private void SceneManager_sceneLoaded(Scene arg0, LoadSceneMode arg1){
+        private void SceneManager_sceneLoaded(Scene arg0, LoadSceneMode arg1)
+        {
             sceneLoaded = true;
         }
 
@@ -39,9 +41,10 @@ namespace Tests
             GameObject diamond = GameObject.Find("Diamond");
 
             //nested for loops for doubling spawn amount
-            for(int i = 0; i < 20; i++){
-                for(int j = 0; j < MaxTested; j++){
-                    
+            for(int i = 0; i < 20; i++)
+            {
+                for(int j = 0; j < MaxTested; j++)
+                {    
                     //instantiate game object and change name for testing purposes. Spawn in a random pattern. 
                     proj = GameObject.Instantiate(diamond, Vector3.zero, Quaternion.identity);
                     proj.name = "testDiamond";
@@ -52,7 +55,8 @@ namespace Tests
                     
                     /*check if current fps is less than minimum acceptable fps value and that
                       the scene has been active for longer than 1 second. */
-                    if(currentFPS < minFPS && Time.time > 1){
+                    if(currentFPS < minFPS && Time.time > 1)
+                    {
                         Debug.Log("<color=red>Failed</color> at " + MaxTested + " diamonds");
                         Debug.Log("Current FPS = <color=red> " + currentFPS + "</color>");
                         breakLoop = true;
@@ -60,13 +64,15 @@ namespace Tests
                     }
 
                     //Pause for 0.2 seconds every time 200 diamonds are instantiated
-                    if(actualNum % 200 == 0){
+                    if(actualNum % 200 == 0)
+                    {
                         yield return new WaitForSeconds(.2f);
                     }
                 }
 
                 //If fps dropped below acceptable values, break out of both for loops
-                if(breakLoop){
+                if(breakLoop)
+                {
                     break;
                 }
 
@@ -77,8 +83,10 @@ namespace Tests
 
                 //delete all diamonds spawned during last test
                 var DiamondObjs = GameObject.FindGameObjectsWithTag("Item");
-                foreach(var item in DiamondObjs){
-                    if(item.name.Contains("testDiamond")){
+                foreach(var item in DiamondObjs)
+                {
+                    if(item.name.Contains("testDiamond"))
+                    {
                         UnityEngine.Object.Destroy(item);
                     }   
                 }
