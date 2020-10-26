@@ -6,18 +6,32 @@ public class PowerUp : pickupsManager
 {
     
     public int scoreValue;
+    public int healthChange;
     public static void collisionPowerUp(Collider2D other)
     {
         //on trigger with pickup
 
         Character_Movement.hasAbility = enableAbility(Character_Movement.hasAbility);
         //Character_Movement.currentAbility = changeAbility(Character_Movement.currentAbility, other);
+        if(Character_Movement.hasAbility)
+        {
+            /*
+            if(Character_Movement.abilityName.Contains(other.GameObject.name))
+            {
+                changeAbility(other);
+            }
+            */
+            removeAsset(other);
+            LogInfo(other);
+        }
+        else if(!Character_Movement.hasAbility)
+        {
+            removeAsset(other);
+            updateScore(other);
+            triggerSound(other);
+            LogInfo(other);
 
-        removeAsset(other);
-        updateScore(other);
-        triggerSound(other);
-        LogInfo(other);
-        
+        }
     }
 
     //enable use of ability for character
@@ -37,20 +51,15 @@ public class PowerUp : pickupsManager
         return value;
     }
 
-    public static void changeAbility(string str, Collider2D other)
+    public static void changeAbility(Collider2D other)
     {
-        if(other.gameObject.name.Contains(str))
-        {
-            removeAsset(other);
-            updateScore(other);
-            LogInfo(other);
-        }
-        else
-        {
-            removeAsset(other);
-            updateScore(other);
-            triggerSound(other);
-            LogInfo(other);
-        }
+        //Character_Movement.abilityName = other.gameObject.name;
     }
+
+    public int changeHealthValue(Collider2D other)
+    {
+        var obj = other.GetComponent<PowerUp>();
+        return obj.healthChange;
+    }
+
 }
