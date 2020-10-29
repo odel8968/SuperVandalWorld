@@ -33,7 +33,7 @@ namespace Tests
             
             yield return new WaitWhile(() => sceneLoaded == false);
 
-            var enemy = GameObject.Find("Test_Enemy_Square").GetComponent<enemyController>();
+            var enemy = GameObject.Find("Test_Enemy_Square").GetComponent<daEnemy>();
             var speed = enemy.enemySpeed;
 
             yield return new WaitForSeconds(1f);
@@ -48,7 +48,7 @@ namespace Tests
 
             yield return new WaitWhile(() => sceneLoaded == false);
 
-            var enemy = GameObject.Find("Test_Enemy_Square").GetComponent<enemyController>();
+            var enemy = GameObject.Find("Test_Enemy_Square").GetComponent<daEnemy>();
             Vector2 enemySPos = enemy.initPos;
 
             yield return new WaitForSeconds(1f);
@@ -70,7 +70,7 @@ namespace Tests
 
             yield return new WaitWhile(() => sceneLoaded == false);
 
-            var enemy = GameObject.Find("Test_Enemy_Square").GetComponent<enemyController>();
+            var enemy = GameObject.Find("Test_Enemy_Square").GetComponent<daEnemy>();
             var player = GameObject.Find("Player").GetComponent<Character_Movement>();
 
             float initDist = Vector2.Distance(player.transform.position, enemy.transform.position);
@@ -99,7 +99,7 @@ namespace Tests
 
             yield return new WaitWhile(() => sceneLoaded == false);
 
-            var enemy = GameObject.Find("Test_Enemy_Square").GetComponent<enemyController>();
+            var enemy = GameObject.Find("Test_Enemy_Square").GetComponent<daEnemy>();
             var speed = 0f;
 
             WaitForSeconds wait = new WaitForSeconds(1f) ;
