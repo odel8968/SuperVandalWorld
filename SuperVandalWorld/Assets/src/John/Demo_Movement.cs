@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class Demo_Movement : Character_Movement
 {
-    private int seed;
+    public int seed;
     private int timer = 0;
     private bool left = false;
     private bool first_iteration = true;
     public Player_Movement Player;
+    private bool over_spikes = false;
 
     public override void Move()
     {
@@ -28,7 +29,7 @@ public class Demo_Movement : Character_Movement
             rb.velocity = new Vector2(-speed, rb.velocity.y);
         }
         
-        timer++;
+        //timer++;
         /*if (timer > 100)
         {
             left = !left;
@@ -39,8 +40,21 @@ public class Demo_Movement : Character_Movement
         if (isGrounded)
         {
             jumps_taken = 0;
-            Jump(isGrounded);
+            timer++;
+            if (timer > 50)
+            {
+                Jump(isGrounded);
+                timer = 0;
+            }
         }
+
+        /*if (seed > 0)
+        {
+            RayCastHit2D spike = Physics2D.BoxCast(bc.bounds.center, bc.bounds.size, 0f, Vector2.down, 5f, groundLayer);
+            if (spike.collider.GameObject.Find("LvlSpikes")){
+
+            }
+        }*/
 
         if (Input.anyKey)
         {
