@@ -15,6 +15,8 @@ public class Character_Movement : MonoBehaviour
     protected bool isGrounded = false;
     public float checkGroundRadius;
     public LayerMask groundLayer; //For this to work, all ground needs to be on its own layer
+    public string abilityName;
+    private KeyCode ability = KeyCode.K;
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +26,7 @@ public class Character_Movement : MonoBehaviour
         hasAbility = false;
         jumps_taken = 0;
         jumps_allowed = 1;
+        abilityName = string.Empty;
     }
 
     // Update is called once per frame
