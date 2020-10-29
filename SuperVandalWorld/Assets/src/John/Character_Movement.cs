@@ -35,7 +35,8 @@ public class Character_Movement : MonoBehaviour
         Move();
     }
 
-    public virtual void Move()
+    public virtual void Move() { }
+    /*public virtual void Move()
     {
         float x = Input.GetAxisRaw("Horizontal");
         float moveBy = x * speed;
@@ -48,7 +49,7 @@ public class Character_Movement : MonoBehaviour
                 jumps_taken = 0;
             Jump(isGrounded);
         }
-    }
+    }*/
 
     public void Jump(bool is_grounded)
     {
