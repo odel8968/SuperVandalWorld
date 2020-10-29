@@ -21,10 +21,10 @@ MonoBehaviour:
     y: 30
     width: 1440
     height: 850
-  m_MinSize: {x: 678, y: 342}
-  m_MaxSize: {x: 12003, y: 8042}
+  m_MinSize: {x: 837, y: 492}
+  m_MaxSize: {x: 14001, y: 14042}
   vertical: 0
-  controlID: 6692
+  controlID: 115
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -33,23 +33,31 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12003, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 687acdc95675db149bf5de5771ecac18, type: 3}
+  m_Name: SpriteEditorWindow
   m_EditorClassIdentifier: 
-  m_MinSize: {x: 100, y: 100}
+  m_MinSize: {x: 360, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
-    m_Text: Console
-    m_Image: {fileID: -4950941429401207979, guid: 0000000000000000d000000000000000, type: 0}
+    m_Text: Sprite Editor
+    m_Image: {fileID: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 0
-    y: 563
-    width: 974.5
-    height: 296
+    x: 382.5
+    y: 30
+    width: 603
+    height: 388
   m_ViewDataDictionary: {fileID: 0}
+  m_ShowAlpha: 0
+  m_MipLevel: 0
+  m_Zoom: 0.4673077
+  m_ScrollPosition: {x: 0, y: 0}
+  m_ResetOnNextRepaint: 0
+  m_SelectedAssetPath: Assets/prefabs/Heba/SEnemy.psb
+  m_SelectedSpriteRectGUID: 0974b9680c94e4b76b43d697ab42e608
+  m_LastUsedModuleTypeName: UnityEditor.U2D.Animation.SkinningModule
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -64,17 +72,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Children:
   - {fileID: 4}
-  - {fileID: 12}
+  - {fileID: 10}
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 975.5
+    width: 987.5
     height: 850
-  m_MinSize: {x: 402, y: 342}
-  m_MaxSize: {x: 8002, y: 8042}
+  m_MinSize: {x: 562, y: 492}
+  m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 6693
+  controlID: 116
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -94,12 +102,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 975.5
-    height: 533
-  m_MinSize: {x: 402, y: 221}
+    width: 987.5
+    height: 409
+  m_MinSize: {x: 562, y: 221}
   m_MaxSize: {x: 8002, y: 4021}
   vertical: 0
-  controlID: 6739
+  controlID: 117
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -117,8 +125,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 327.5
-    height: 533
+    width: 382.5
+    height: 409
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 6}
@@ -147,30 +155,30 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 30
-    width: 326.5
-    height: 512
+    y: 19
+    width: 381.5
+    height: 388
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: 86d90000
       m_LastClickedID: 0
-      m_ExpandedIDs: b874feffd274feffd87bfeff2a85feff4485feff528cfeff0c93feff2693feff349afeff74a1feff8ea1feff92a8feffaaaefeffc4aefefff6b5feff36befeff50befeff56c5feffa0ccfeffbaccfeffc0d3feffe8dafeff02dbfeff10e2feff22e8feff3ce8feff3aeffeff46f5feff60f5feff5efcfeff1003ffff2a03ffff300affff3c16ffff5616ffff5c1dffff5425ffff6e25ffff9c2cffff282dffff042fffff9a47ffffb047ffffbe4effff1055ffff2655ffffde63ffffc46effffda6effffe475ffffa67cffffbc7cffff9a83fffff289ffff0c8afffffe90ffff0e97ffff2897ffff149effff5cfbffffb23c0000e63e0000a4e70000f6070100120901008a2d0100587b0100448001008697010098a301001ca5010058a7010038ec0100dc110200
+      m_ExpandedIDs: 10e0ffff0c470000044b0000304c0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: Cube
-        m_OriginalName: Cube
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -102914
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 5}
       m_SearchString: 
@@ -190,24 +198,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: GameView
+  m_Name: SpriteEditorWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 327.5
+    x: 382.5
     y: 0
-    width: 648
-    height: 533
-  m_MinSize: {x: 202, y: 221}
+    width: 605
+    height: 409
+  m_MinSize: {x: 362, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 9}
+  m_ActualView: {fileID: 2}
   m_Panes:
   - {fileID: 8}
   - {fileID: 9}
-  - {fileID: 10}
-  - {fileID: 11}
-  m_Selected: 1
+  - {fileID: 2}
+  m_Selected: 2
   m_LastSelected: 0
 --- !u!114 &8
 MonoBehaviour:
@@ -229,14 +236,14 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 327.5
+    x: 382.5
     y: 30
-    width: 646
-    height: 512
+    width: 603
+    height: 388
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
   m_WindowGUID: 8fde1c7c9ac16d04fb45d7d761e25119
-  m_Gizmos: 0
+  m_Gizmos: 1
   m_OverrideSceneCullingMask: 6917529027641081856
   m_SceneIsLit: 1
   m_SceneLighting: 1
@@ -245,9 +252,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 26.516392, y: 1.7684326, z: 1208.6094}
+    m_Target: {x: 486.20038, y: 0.9301582, z: -16.170805}
     speed: 2
-    m_Value: {x: 26.516392, y: 1.7684326, z: 1208.6094}
+    m_Value: {x: 486.20038, y: 0.9301582, z: -16.170805}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -298,9 +305,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 25.357399
+    m_Target: 18.935795
     speed: 2
-    m_Value: 25.357399
+    m_Value: 18.935795
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -345,10 +352,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 327.5
-    y: 30
-    width: 646
-    height: 512
+    x: 264
+    y: 75
+    width: 583
+    height: 331
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
   m_SerializedViewValues: []
@@ -356,7 +363,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 646, y: 491}
+  m_TargetSize: {x: 583, y: 310}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -371,10 +378,10 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -161.5
-    m_HBaseRangeMax: 161.5
-    m_VBaseRangeMin: -122.75
-    m_VBaseRangeMax: 122.75
+    m_HBaseRangeMin: -145.75
+    m_HBaseRangeMax: 145.75
+    m_VBaseRangeMin: -77.5
+    m_VBaseRangeMax: 77.5
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -392,23 +399,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 646
-      height: 491
+      width: 583
+      height: 310
     m_Scale: {x: 2, y: 2}
-    m_Translation: {x: 323, y: 245.5}
+    m_Translation: {x: 291.5, y: 155}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -161.5
-      y: -122.75
-      width: 323
-      height: 245.5
+      x: -145.75
+      y: -77.5
+      width: 291.5
+      height: 155
     m_MinimalGUI: 1
   m_defaultScale: 2
-  m_LastWindowPixelSize: {x: 1292, y: 1024}
+  m_LastWindowPixelSize: {x: 1166, y: 662}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -422,137 +429,27 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 687acdc95675db149bf5de5771ecac18, type: 3}
-  m_Name: SpriteEditorWindow
-  m_EditorClassIdentifier: 
-  m_MinSize: {x: 360, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Sprite Editor
-    m_Image: {fileID: 0}
-    m_Tooltip: 
-  m_Pos:
-    serializedVersion: 2
-    x: 331
-    y: 30
-    width: 653
-    height: 512
-  m_ViewDataDictionary: {fileID: 0}
-  m_ShowAlpha: 0
-  m_MipLevel: 0
-  m_Zoom: -1
-  m_ScrollPosition: {x: 0, y: 0}
-  m_ResetOnNextRepaint: 0
-  m_SelectedAssetPath: Assets/prefabs/Heba/Plunkah.png
-  m_SelectedSpriteRectGUID: 5e97eb03825dee720800000000000000
-  m_LastUsedModuleTypeName: UnityEditor.U2D.Sprites.SpriteFrameModule
---- !u!114 &11
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12914, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Animator
-    m_Image: {fileID: 1711060831702674872, guid: 0000000000000000d000000000000000, type: 0}
-    m_Tooltip: 
-  m_Pos:
-    serializedVersion: 2
-    x: 279
-    y: 30
-    width: 550
-    height: 512
-  m_ViewDataDictionary: {fileID: 0}
-  m_ViewTransforms:
-    m_KeySerializationHelper:
-    - {fileID: -4701045478230692827, guid: 39e91316861744cc8bc22cdb8917a3c9, type: 2}
-    - {fileID: 2324918327260822959, guid: 8dee39f2df4514f0b887fe35923d8237, type: 2}
-    m_ValueSerializationHelper:
-    - e00: 1
-      e01: 0
-      e02: 0
-      e03: 0
-      e10: 0
-      e11: 1
-      e12: 0
-      e13: 0
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-    - e00: 1
-      e01: 0
-      e02: 0
-      e03: 0
-      e10: 0
-      e11: 1
-      e12: 0
-      e13: 0
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-  m_PreviewAnimator: {fileID: 0}
-  m_AnimatorController: {fileID: 9100000, guid: 8dee39f2df4514f0b887fe35923d8237, type: 2}
-  m_BreadCrumbs:
-  - m_Target: {fileID: 2324918327260822959, guid: 8dee39f2df4514f0b887fe35923d8237, type: 2}
-    m_ScrollPosition: {x: 0, y: 0}
-  stateMachineGraph: {fileID: 0}
-  stateMachineGraphGUI: {fileID: 0}
-  blendTreeGraph: {fileID: 0}
-  blendTreeGraphGUI: {fileID: 0}
-  m_AutoLiveLink: 1
-  m_MiniTool: 0
-  m_LockTracker:
-    m_IsLocked: 0
-  m_CurrentEditor: 0
-  m_LayerEditor:
-    m_SelectedLayerIndex: 0
---- !u!114 &12
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ConsoleWindow
+  m_Name: ProjectBrowser
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 533
-    width: 975.5
-    height: 317
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 2}
+    y: 409
+    width: 987.5
+    height: 441
+  m_MinSize: {x: 231, y: 271}
+  m_MaxSize: {x: 10001, y: 10021}
+  m_ActualView: {fileID: 11}
   m_Panes:
+  - {fileID: 11}
+  - {fileID: 12}
   - {fileID: 13}
-  - {fileID: 2}
-  m_Selected: 1
-  m_LastSelected: 0
---- !u!114 &13
+  m_Selected: 0
+  m_LastSelected: 1
+--- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -573,9 +470,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 563
-    width: 974.5
-    height: 296
+    y: 439
+    width: 986.5
+    height: 420
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -601,10 +498,10 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 68430000
-    m_LastClickedID: 17256
-    m_ExpandedIDs: 000000000c4300000e43000010430000124300001443000016430000184300001a4300001c4300001e43000000ca9a3b
+    scrollPos: {x: 0, y: 41.999634}
+    m_SelectedIDs: d24d0000
+    m_LastClickedID: 19922
+    m_ExpandedIDs: 00000000aa4d0000ac4d0000ae4d0000b04d0000b24d0000b44d0000b64d0000b84d0000ba4d000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -620,7 +517,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 12}
+      m_ClientGUIView: {fileID: 10}
     m_SearchString: 
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
@@ -632,7 +529,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000000c4300000e43000010430000124300001443000016430000184300001a4300001c4300001e43000000ca9a3b
+    m_ExpandedIDs: 00000000aa4d0000ac4d0000ae4d0000b04d0000b24d0000b44d0000b64d0000b84d0000ba4d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -687,7 +584,60 @@ MonoBehaviour:
     m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 64
   m_SkipHiddenPackages: 0
-  m_DirectoriesAreaWidth: 110
+  m_DirectoriesAreaWidth: 257.85715
+--- !u!114 &12
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12071, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Animation
+    m_Image: {fileID: -3237396543322336831, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 0
+    y: 427
+    width: 848
+    height: 359
+  m_ViewDataDictionary: {fileID: 0}
+  m_LockTracker:
+    m_IsLocked: 0
+  m_LastSelectedObjectID: 19504
+--- !u!114 &13
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12003, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Console
+    m_Image: {fileID: -4950941429401207979, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 0
+    y: 427
+    width: 848
+    height: 359
+  m_ViewDataDictionary: {fileID: 0}
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -703,9 +653,9 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 975.5
+    x: 987.5
     y: 0
-    width: 464.5
+    width: 452.5
     height: 850
   m_MinSize: {x: 275, y: 50}
   m_MaxSize: {x: 4000, y: 4000}
@@ -714,7 +664,6 @@ MonoBehaviour:
   - {fileID: 15}
   - {fileID: 16}
   - {fileID: 17}
-  - {fileID: 18}
   m_Selected: 0
   m_LastSelected: 1
 --- !u!114 &15
@@ -737,9 +686,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 975.5
+    x: 987.5
     y: 30
-    width: 463.5
+    width: 451.5
     height: 829
   m_ViewDataDictionary: {fileID: 0}
   m_ObjectsLockedBeforeSerialization: []
@@ -749,7 +698,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
+  m_LastVerticalScrollValue: 616.99835
   m_AssetGUID: 
   m_InstanceID: 0
   m_LockTracker:
@@ -775,18 +724,18 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 975.5
-    y: 30
-    width: 463.5
-    height: 829
+    x: 849
+    y: 75
+    width: 590
+    height: 711
   m_ViewDataDictionary: {fileID: 0}
   m_Spl:
-    ID: 7260
+    ID: 199
     splitterInitialOffset: 516
     currentActiveSplitter: -1
     realSizes:
-    - 444
-    - 315
+    - 375
+    - 266
     relativeSizes:
     - 0.58498025
     - 0.41501975
@@ -796,7 +745,7 @@ MonoBehaviour:
     maxSizes:
     - 0
     - 0
-    lastTotalSize: 759
+    lastTotalSize: 641
     splitSize: 6
     xOffset: 0
     m_Version: 1
@@ -812,8 +761,8 @@ MonoBehaviour:
       uniqueId: '[SuperVandalWorld][suite]'
       name: SuperVandalWorld
       fullName: SuperVandalWorld
-      resultStatus: 2
-      duration: 13.191058
+      resultStatus: 0
+      duration: 0.4789798
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -828,8 +777,8 @@ MonoBehaviour:
       uniqueId: '[Tests.dll][suite]'
       name: Tests.dll
       fullName: C:/Users/adave/Documents/GitHub/SuperVandalWorld/SuperVandalWorld/Library/ScriptAssemblies/Tests.dll
-      resultStatus: 2
-      duration: 13.139856
+      resultStatus: 0
+      duration: 0.4151933
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -844,8 +793,8 @@ MonoBehaviour:
       uniqueId: Tests.dll/[Tests][suite]
       name: Tests
       fullName: Tests
-      resultStatus: 2
-      duration: 13.123371
+      resultStatus: 0
+      duration: 0.3972948
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -861,8 +810,8 @@ MonoBehaviour:
       name: CameraTest
       fullName: Tests.CameraTest
       resultStatus: 0
-      duration: 1.3155769
-      messages: 
+      duration: 0.4150238
+      messages: One or more child tests had errors
       output: 
       stacktrace: 
       notRunnable: 0
@@ -877,14 +826,27 @@ MonoBehaviour:
       name: Camera_Set_To_Follow_Player
       fullName: Tests.CameraTest.Camera_Set_To_Follow_Player
       resultStatus: 0
-      duration: 0.8857844
-      messages: 
-      output: 'Player (UnityEngine.GameObject)
+      duration: 0.2743189
+      messages: 'Unhandled log message: ''[Exception] NullReferenceException: Object
+        reference not set to an instance of an object''. Use UnityEngine.TestTools.LogAssert.Expect'
+      output: 'NullReferenceException: Object reference not set to an instance of
+        an object
 
-        Player (UnityEngine.GameObject)
+        NullReferenceException: Object reference not set to an
+        instance of an object
+
+        DontDestroyOnLoad only works for root GameObjects
+        or components on root GameObjects.
 
 '
-      stacktrace: 
+      stacktrace: 'KeepBetweenLevels.FindStartPos () (at Assets/src/Justin/KeepBetweenLevels.cs:60)
+
+        KeepBetweenLevels.OnLevelWasLoaded
+        (System.Int32 level) (at Assets/src/Justin/KeepBetweenLevels.cs:29)
+
+
+
+'
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -898,7 +860,7 @@ MonoBehaviour:
       name: Camera_Speed_Set
       fullName: Tests.CameraTest.Camera_Speed_Set
       resultStatus: 0
-      duration: 0.0603654
+      duration: 0.0855106
       messages: 
       output: '10
 
@@ -917,7 +879,7 @@ MonoBehaviour:
       name: Camera_X_Offset_Set
       fullName: Tests.CameraTest.Camera_X_Offset_Set
       resultStatus: 0
-      duration: 0.1386262
+      duration: 0.0184875
       messages: 
       output: '45
 
@@ -936,7 +898,7 @@ MonoBehaviour:
       name: Camera_Y_Offset_Set
       fullName: Tests.CameraTest.Camera_Y_Offset_Set
       resultStatus: 0
-      duration: 0.093202
+      duration: 0.0108483
       messages: 
       output: '25
 
@@ -954,8 +916,8 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/[Tests][Tests.CharacterMovementTests][suite]
       name: CharacterMovementTests
       fullName: Tests.CharacterMovementTests
-      resultStatus: 2
-      duration: 5.5660486
+      resultStatus: 0
+      duration: 4.5402923
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -970,26 +932,26 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/CharacterMovementTests/[Tests][Tests.CharacterMovementTests.jump_stress_test]
       name: jump_stress_test
       fullName: Tests.CharacterMovementTests.jump_stress_test
-      resultStatus: 2
-      duration: 5.525888
-      messages: "  Player has broken through the platform with a speed of 150\n 
-        Expected: True\n  But was:  False\n"
-      output: 'Jumping
+      resultStatus: 0
+      duration: 0.1769871
+      messages: 'Unhandled log message: ''[Exception] NullReferenceException: Object
+        reference not set to an instance of an object''. Use UnityEngine.TestTools.LogAssert.Expect'
+      output: 'NullReferenceException: Object reference not set to an instance of
+        an object
 
-        Jump force = 15
+        NullReferenceException: Object reference not set to an
+        instance of an object
 
-        Jumping
-
-        Jump force
-        = 150
+        DontDestroyOnLoad only works for root GameObjects
+        or components on root GameObjects.
 
 '
-      stacktrace: 'at Tests.CharacterMovementTests+<jump_stress_test>d__6.MoveNext
-        () [0x001ac] in /Users/hebaaljabrine/Desktop/PLEASE/SuperVandalWorld/SuperVandalWorld/Assets/tst/John/CharacterMovementTests.cs:88
+      stacktrace: 'KeepBetweenLevels.FindStartPos () (at Assets/src/Justin/KeepBetweenLevels.cs:60)
 
-        at
-        UnityEngine.TestTools.TestEnumerator+<Execute>d__5.MoveNext () [0x00038]
-        in <def80c3c71174f0ea69facc89d14e13e>:0
+        KeepBetweenLevels.OnLevelWasLoaded
+        (System.Int32 level) (at Assets/src/Justin/KeepBetweenLevels.cs:29)
+
+
 
 '
       notRunnable: 0
@@ -1005,9 +967,31 @@ MonoBehaviour:
       name: jump_test
       fullName: Tests.CharacterMovementTests.jump_test
       resultStatus: 0
-      duration: 0
-      messages: Cancelled by user
+      duration: 2.0278933
+      messages: 
       output: 'Jumping
+
+        Jumping
+
+        Jumping
+
+        Jumping
+
+        Jumping
+
+        Jumping
+
+        Jumping
+
+        Jumping
+
+        Jumping
+
+        Jumping
+
+        Jumping
+
+        Jumping
 
 '
       stacktrace: 
@@ -1024,9 +1008,31 @@ MonoBehaviour:
       name: movement_test_left
       fullName: Tests.CharacterMovementTests.movement_test_left
       resultStatus: 0
-      duration: 4.884236
+      duration: 1.1969773
       messages: 
-      output: 
+      output: 'Jumping
+
+        Jumping
+
+        Jumping
+
+        Jumping
+
+        Jumping
+
+        Jumping
+
+        Jumping
+
+        Jumping
+
+        Jumping
+
+        Jumping
+
+        Jumping
+
+'
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
@@ -1041,7 +1047,7 @@ MonoBehaviour:
       name: movement_test_right
       fullName: Tests.CharacterMovementTests.movement_test_right
       resultStatus: 0
-      duration: 3.979295
+      duration: 1.1320852
       messages: 
       output: 
       stacktrace: 
@@ -1057,9 +1063,9 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/[Tests][Tests.daEnemyTest][suite]
       name: daEnemyTest
       fullName: Tests.daEnemyTest
-      resultStatus: 1
-      duration: 16.806282
-      messages: 
+      resultStatus: 0
+      duration: 0.2222062
+      messages: One or more child tests had errors
       output: 
       stacktrace: 
       notRunnable: 0
@@ -1074,10 +1080,27 @@ MonoBehaviour:
       name: enemySpeedIsSet
       fullName: Tests.daEnemyTest.enemySpeedIsSet
       resultStatus: 0
-      duration: 1.2463764
-      messages: 
-      output: 
-      stacktrace: 
+      duration: 0.1725745
+      messages: 'Unhandled log message: ''[Exception] NullReferenceException: Object
+        reference not set to an instance of an object''. Use UnityEngine.TestTools.LogAssert.Expect'
+      output: 'NullReferenceException: Object reference not set to an instance of
+        an object
+
+        NullReferenceException: Object reference not set to an
+        instance of an object
+
+        DontDestroyOnLoad only works for root GameObjects
+        or components on root GameObjects.
+
+'
+      stacktrace: 'KeepBetweenLevels.FindStartPos () (at Assets/src/Justin/KeepBetweenLevels.cs:60)
+
+        KeepBetweenLevels.OnLevelWasLoaded
+        (System.Int32 level) (at Assets/src/Justin/KeepBetweenLevels.cs:29)
+
+
+
+'
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -1090,15 +1113,15 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/daEnemyTest/[Tests][Tests.daEnemyTest.enemyStressTest]
       name: enemyStressTest
       fullName: Tests.daEnemyTest.enemyStressTest
-      resultStatus: 1
-      duration: 16.761967
-      messages: 
-      output: 'Jumping
-
-        Jumping
-
-'
-      stacktrace: 
+      resultStatus: 0
+      duration: 0.0250275
+      messages: 'System.NullReferenceException : Object reference not set to an instance
+        of an object'
+      output: 
+      stacktrace: "  at Tests.daEnemyTest+<enemyStressTest>d__8.MoveNext () [0x00050]
+        in D:\\Github\\SuperVandalWorld\\SuperVandalWorld\\Assets\\tst\\Davey\\daEnemyTest.cs:102
+        \r\n  at UnityEngine.TestTools.TestEnumerator+<Execute>d__5.MoveNext () [0x00038]
+        in <def80c3c71174f0ea69facc89d14e13e>:0 "
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -1112,10 +1135,14 @@ MonoBehaviour:
       name: isEnemyMoving
       fullName: Tests.daEnemyTest.isEnemyMoving
       resultStatus: 0
-      duration: 1.0353906
-      messages: 
+      duration: 0.0091639
+      messages: 'System.NullReferenceException : Object reference not set to an instance
+        of an object'
       output: 
-      stacktrace: 
+      stacktrace: "  at Tests.daEnemyTest+<isEnemyMoving>d__6.MoveNext () [0x00050]
+        in D:\\Github\\SuperVandalWorld\\SuperVandalWorld\\Assets\\tst\\Davey\\daEnemyTest.cs:51
+        \r\n  at UnityEngine.TestTools.TestEnumerator+<Execute>d__5.MoveNext () [0x00038]
+        in <def80c3c71174f0ea69facc89d14e13e>:0 "
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -1129,10 +1156,14 @@ MonoBehaviour:
       name: movingTowardsPlayer
       fullName: Tests.daEnemyTest.movingTowardsPlayer
       resultStatus: 0
-      duration: 2.047557
-      messages: 
+      duration: 0.0083815
+      messages: 'System.NullReferenceException : Object reference not set to an instance
+        of an object'
       output: 
-      stacktrace: 
+      stacktrace: "  at Tests.daEnemyTest+<movingTowardsPlayer>d__7.MoveNext () [0x00050]
+        in D:\\Github\\SuperVandalWorld\\SuperVandalWorld\\Assets\\tst\\Davey\\daEnemyTest.cs:73
+        \r\n  at UnityEngine.TestTools.TestEnumerator+<Execute>d__5.MoveNext () [0x00038]
+        in <def80c3c71174f0ea69facc89d14e13e>:0 "
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -1145,8 +1176,8 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/[Tests][Tests.FallThroughFloorStress][suite]
       name: FallThroughFloorStress
       fullName: Tests.FallThroughFloorStress
-      resultStatus: 2
-      duration: 15.782187
+      resultStatus: 0
+      duration: 0.1756823
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -1161,25 +1192,26 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/FallThroughFloorStress/[Tests][Tests.FallThroughFloorStress.FallThroughFloorStressTest]
       name: FallThroughFloorStressTest
       fullName: Tests.FallThroughFloorStress.FallThroughFloorStressTest
-      resultStatus: 2
-      duration: 15.721684
-      messages: "  Expected: True\n  But was:  False\n"
-      output: 'Jumping
+      resultStatus: 0
+      duration: 0.1705884
+      messages: 'Unhandled log message: ''[Exception] NullReferenceException: Object
+        reference not set to an instance of an object''. Use UnityEngine.TestTools.LogAssert.Expect'
+      output: 'NullReferenceException: Object reference not set to an instance of
+        an object
 
-        Jump pressed; but not grounded.
+        NullReferenceException: Object reference not set to an
+        instance of an object
 
-        Failed at
-        10 Platform speed
-
-        Player falls through Ground at 10 Platform speed
+        DontDestroyOnLoad only works for root GameObjects
+        or components on root GameObjects.
 
 '
-      stacktrace: 'at Tests.FallThroughFloorStress+<FallThroughFloorStressTest>d__3.MoveNext
-        () [0x001c9] in /Users/hebaaljabrine/Desktop/PLEASE/SuperVandalWorld/SuperVandalWorld/Assets/tst/Justin/FallThroughFloorStress.cs:85
+      stacktrace: 'KeepBetweenLevels.FindStartPos () (at Assets/src/Justin/KeepBetweenLevels.cs:60)
 
-        at
-        UnityEngine.TestTools.TestEnumerator+<Execute>d__5.MoveNext () [0x00038]
-        in /Users/hebaaljabrine/Desktop/PLEASE/SuperVandalWorld/SuperVandalWorld/Library/PackageCache/com.unity.test-framework@1.1.16/UnityEngine.TestRunner/NUnitExtensions/Attributes/TestEnumerator.cs:31
+        KeepBetweenLevels.OnLevelWasLoaded
+        (System.Int32 level) (at Assets/src/Justin/KeepBetweenLevels.cs:29)
+
+
 
 '
       notRunnable: 0
@@ -1194,8 +1226,8 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/[Tests][Tests.MovingPlatformStressTest][suite]
       name: MovingPlatformStressTest
       fullName: Tests.MovingPlatformStressTest
-      resultStatus: 2
-      duration: 10.151183
+      resultStatus: 0
+      duration: 0.1905737
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -1210,20 +1242,26 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/MovingPlatformStressTest/[Tests][Tests.MovingPlatformStressTest.MovingPlatformNumberStressTest]
       name: MovingPlatformNumberStressTest
       fullName: Tests.MovingPlatformStressTest.MovingPlatformNumberStressTest
-      resultStatus: 2
-      duration: 10.116034
-      messages: "  Expected: 128\n  But was:  16\n"
-      output: 'Failed at 16 Moving Rock Platforms
+      resultStatus: 0
+      duration: 0.1746508
+      messages: 'Unhandled log message: ''[Exception] NullReferenceException: Object
+        reference not set to an instance of an object''. Use UnityEngine.TestTools.LogAssert.Expect'
+      output: 'NullReferenceException: Object reference not set to an instance of
+        an object
 
-        Current FPS = 27.65198
+        NullReferenceException: Object reference not set to an
+        instance of an object
+
+        DontDestroyOnLoad only works for root GameObjects
+        or components on root GameObjects.
 
 '
-      stacktrace: 'at Tests.MovingPlatformStressTest+<MovingPlatformNumberStressTest>d__3.MoveNext
-        () [0x0025c] in /Users/hebaaljabrine/Desktop/PLEASE/SuperVandalWorld/SuperVandalWorld/Assets/tst/Justin/MovingPlatformStressTest.cs:97
+      stacktrace: 'KeepBetweenLevels.FindStartPos () (at Assets/src/Justin/KeepBetweenLevels.cs:60)
 
-        at
-        UnityEngine.TestTools.TestEnumerator+<Execute>d__5.MoveNext () [0x00038]
-        in <def80c3c71174f0ea69facc89d14e13e>:0
+        KeepBetweenLevels.OnLevelWasLoaded
+        (System.Int32 level) (at Assets/src/Justin/KeepBetweenLevels.cs:29)
+
+
 
 '
       notRunnable: 0
@@ -1239,20 +1277,9 @@ MonoBehaviour:
       name: pickupPointTest
       fullName: Tests.pickupPointTest
       resultStatus: 0
-      duration: 0.2942329
+      duration: 0.2379946
       messages: One or more child tests had errors
-      output: 'There are no audio listeners in the scene. Please ensure there is
-        always one audio listener in the scene
-
-        MissingComponentException:
-        There is no ''Rigidbody2D'' attached to the "Missing Prefab (Dummy)" game
-        object, but a script is trying to access it.
-
-        You probably need to
-        add a Rigidbody2D to the game object "Missing Prefab (Dummy)". Or your script
-        needs to check if the component is attached before using it.
-
-'
+      output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
@@ -1266,30 +1293,24 @@ MonoBehaviour:
       name: AddPointsForItemsBeforePowerUps
       fullName: Tests.pickupPointTest.AddPointsForItemsBeforePowerUps
       resultStatus: 0
-      duration: 0.2186125
-      messages: 'Unhandled log message: ''[Exception] MissingComponentException:
-        There is no ''Rigidbody2D'' attached to the "Missing Prefab (Dummy)" game
-        object, but a script is trying to access it.
+      duration: 0.1793468
+      messages: 'Unhandled log message: ''[Exception] NullReferenceException: Object
+        reference not set to an instance of an object''. Use UnityEngine.TestTools.LogAssert.Expect'
+      output: 'NullReferenceException: Object reference not set to an instance of
+        an object
 
-        You probably need to
-        add a Rigidbody2D to the game object "Missing Prefab (Dummy)". Or your script
-        needs to check if the component is attached before using it.''. Use UnityEngine.TestTools.LogAssert.Expect'
-      output: 'There are no audio listeners in the scene. Please ensure there is
-        always one audio listener in the scene
+        NullReferenceException: Object reference not set to an
+        instance of an object
 
-        MissingComponentException:
-        There is no ''Rigidbody2D'' attached to the "Missing Prefab (Dummy)" game
-        object, but a script is trying to access it.
-
-        You probably need to
-        add a Rigidbody2D to the game object "Missing Prefab (Dummy)". Or your script
-        needs to check if the component is attached before using it.
+        DontDestroyOnLoad only works for root GameObjects
+        or components on root GameObjects.
 
 '
-      stacktrace: 'UnityEngine.Rigidbody2D.get_velocity () (at <f4648b3144df498a90da4ede637bd05b>:0)
+      stacktrace: 'KeepBetweenLevels.FindStartPos () (at Assets/src/Justin/KeepBetweenLevels.cs:60)
 
-        Character_Movement.Update
-        () (at <ff4f8596460745d490a2de5848bba9eb>:0)
+        KeepBetweenLevels.OnLevelWasLoaded
+        (System.Int32 level) (at Assets/src/Justin/KeepBetweenLevels.cs:29)
+
 
 
 '
@@ -1306,33 +1327,16 @@ MonoBehaviour:
       name: AddPointsForPowerupsBeforeItems
       fullName: Tests.pickupPointTest.AddPointsForPowerupsBeforeItems
       resultStatus: 0
-      duration: 0.0250403
-      messages: 'Unhandled log message: ''[Exception] MissingComponentException:
-        There is no ''Rigidbody2D'' attached to the "Missing Prefab (Dummy)" game
-        object, but a script is trying to access it.
-
-        You probably need to
-        add a Rigidbody2D to the game object "Missing Prefab (Dummy)". Or your script
-        needs to check if the component is attached before using it.''. Use UnityEngine.TestTools.LogAssert.Expect'
-      output: 'There are no audio listeners in the scene. Please ensure there is
-        always one audio listener in the scene
-
-        MissingComponentException:
-        There is no ''Rigidbody2D'' attached to the "Missing Prefab (Dummy)" game
-        object, but a script is trying to access it.
-
-        You probably need to
-        add a Rigidbody2D to the game object "Missing Prefab (Dummy)". Or your script
-        needs to check if the component is attached before using it.
-
-'
-      stacktrace: 'UnityEngine.Rigidbody2D.get_velocity () (at <f4648b3144df498a90da4ede637bd05b>:0)
-
-        Character_Movement.Update
-        () (at <ff4f8596460745d490a2de5848bba9eb>:0)
-
-
-'
+      duration: 0.020456
+      messages: 'System.NullReferenceException : Object reference not set to an instance
+        of an object'
+      output: 
+      stacktrace: "  at Tests.pickupPointTest.updateScore (UnityEngine.GameObject
+        other, System.Int32 numItems, System.Int32 currentScore) [0x00000] in D:\\Github\\SuperVandalWorld\\SuperVandalWorld\\Assets\\tst\\Keller\\pickupScoreTest.cs:29
+        \r\n  at Tests.pickupPointTest+<AddPointsForPowerupsBeforeItems>d__7.MoveNext
+        () [0x000ae] in D:\\Github\\SuperVandalWorld\\SuperVandalWorld\\Assets\\tst\\Keller\\pickupScoreTest.cs:164
+        \r\n  at UnityEngine.TestTools.TestEnumerator+<Execute>d__5.MoveNext () [0x00038]
+        in <def80c3c71174f0ea69facc89d14e13e>:0 "
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -1346,30 +1350,10 @@ MonoBehaviour:
       name: PickUpItemAddsPointsToScore
       fullName: Tests.pickupPointTest.PickUpItemAddsPointsToScore
       resultStatus: 0
-      duration: 0.0104483
-      messages: 'Unhandled log message: ''[Exception] MissingComponentException:
-        There is no ''Rigidbody2D'' attached to the "Missing Prefab (Dummy)" game
-        object, but a script is trying to access it.
-
-        You probably need to
-        add a Rigidbody2D to the game object "Missing Prefab (Dummy)". Or your script
-        needs to check if the component is attached before using it.''. Use UnityEngine.TestTools.LogAssert.Expect'
-      output: 'MissingComponentException: There is no ''Rigidbody2D'' attached to
-        the "Missing Prefab (Dummy)" game object, but a script is trying to access
-        it.
-
-        You probably need to add a Rigidbody2D to the game object "Missing
-        Prefab (Dummy)". Or your script needs to check if the component is attached
-        before using it.
-
-'
-      stacktrace: 'UnityEngine.Rigidbody2D.get_velocity () (at <f4648b3144df498a90da4ede637bd05b>:0)
-
-        Character_Movement.Update
-        () (at <ff4f8596460745d490a2de5848bba9eb>:0)
-
-
-'
+      duration: 0.0131396
+      messages: 
+      output: 
+      stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -1383,30 +1367,16 @@ MonoBehaviour:
       name: PickUpPowerUpsAddsPointsToScore
       fullName: Tests.pickupPointTest.PickUpPowerUpsAddsPointsToScore
       resultStatus: 0
-      duration: 0.0103573
-      messages: 'Unhandled log message: ''[Exception] MissingComponentException:
-        There is no ''Rigidbody2D'' attached to the "Missing Prefab (Dummy)" game
-        object, but a script is trying to access it.
-
-        You probably need to
-        add a Rigidbody2D to the game object "Missing Prefab (Dummy)". Or your script
-        needs to check if the component is attached before using it.''. Use UnityEngine.TestTools.LogAssert.Expect'
-      output: 'MissingComponentException: There is no ''Rigidbody2D'' attached to
-        the "Missing Prefab (Dummy)" game object, but a script is trying to access
-        it.
-
-        You probably need to add a Rigidbody2D to the game object "Missing
-        Prefab (Dummy)". Or your script needs to check if the component is attached
-        before using it.
-
-'
-      stacktrace: 'UnityEngine.Rigidbody2D.get_velocity () (at <f4648b3144df498a90da4ede637bd05b>:0)
-
-        Character_Movement.Update
-        () (at <ff4f8596460745d490a2de5848bba9eb>:0)
-
-
-'
+      duration: 0.0070956
+      messages: 'System.NullReferenceException : Object reference not set to an instance
+        of an object'
+      output: 
+      stacktrace: "  at Tests.pickupPointTest.updateScore (UnityEngine.GameObject
+        other, System.Int32 numItems, System.Int32 currentScore) [0x00000] in D:\\Github\\SuperVandalWorld\\SuperVandalWorld\\Assets\\tst\\Keller\\pickupScoreTest.cs:29
+        \r\n  at Tests.pickupPointTest+<PickUpPowerUpsAddsPointsToScore>d__5.MoveNext
+        () [0x0006b] in D:\\Github\\SuperVandalWorld\\SuperVandalWorld\\Assets\\tst\\Keller\\pickupScoreTest.cs:103
+        \r\n  at UnityEngine.TestTools.TestEnumerator+<Execute>d__5.MoveNext () [0x00038]
+        in <def80c3c71174f0ea69facc89d14e13e>:0 "
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -1419,8 +1389,8 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/[Tests][Tests.pickUpsStressTest][suite]
       name: pickUpsStressTest
       fullName: Tests.pickUpsStressTest
-      resultStatus: 2
-      duration: 0.8732845
+      resultStatus: 0
+      duration: 0.185032
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -1435,21 +1405,26 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/pickUpsStressTest/[Tests][Tests.pickUpsStressTest.stressSpawnDiamonds]
       name: stressSpawnDiamonds
       fullName: Tests.pickUpsStressTest.stressSpawnDiamonds
-      resultStatus: 2
-      duration: 0.8240919
-      messages: "  Expected: 1000\n  But was:  201\n"
-      output: '<color=red>Failed</color> at 1000 diamonds
+      resultStatus: 0
+      duration: 0.179691
+      messages: 'Unhandled log message: ''[Exception] NullReferenceException: Object
+        reference not set to an instance of an object''. Use UnityEngine.TestTools.LogAssert.Expect'
+      output: 'NullReferenceException: Object reference not set to an instance of
+        an object
 
-        Current FPS =
-        <color=red> 35.86888</color>
+        NullReferenceException: Object reference not set to an
+        instance of an object
+
+        DontDestroyOnLoad only works for root GameObjects
+        or components on root GameObjects.
 
 '
-      stacktrace: 'at Tests.pickUpsStressTest+<stressSpawnDiamonds>d__3.MoveNext
-        () [0x002f0] in /Users/hebaaljabrine/Desktop/PLEASE/SuperVandalWorld/SuperVandalWorld/Assets/tst/Keller/pickUpStressTest.cs:92
+      stacktrace: 'KeepBetweenLevels.FindStartPos () (at Assets/src/Justin/KeepBetweenLevels.cs:60)
 
-        at
-        UnityEngine.TestTools.TestEnumerator+<Execute>d__5.MoveNext () [0x00038]
-        in /Users/hebaaljabrine/Desktop/PLEASE/SuperVandalWorld/SuperVandalWorld/Library/PackageCache/com.unity.test-framework@1.1.16/UnityEngine.TestRunner/NUnitExtensions/Attributes/TestEnumerator.cs:31
+        KeepBetweenLevels.OnLevelWasLoaded
+        (System.Int32 level) (at Assets/src/Justin/KeepBetweenLevels.cs:29)
+
+
 
 '
       notRunnable: 0
@@ -1465,20 +1440,9 @@ MonoBehaviour:
       name: PlatformMovementTest
       fullName: Tests.PlatformMovementTest
       resultStatus: 0
-      duration: 0.2562437
+      duration: 0.1893103
       messages: One or more child tests had errors
-      output: 'There are no audio listeners in the scene. Please ensure there is
-        always one audio listener in the scene
-
-        MissingComponentException:
-        There is no ''Rigidbody2D'' attached to the "Missing Prefab (Dummy)" game
-        object, but a script is trying to access it.
-
-        You probably need to
-        add a Rigidbody2D to the game object "Missing Prefab (Dummy)". Or your script
-        needs to check if the component is attached before using it.
-
-'
+      output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
@@ -1492,30 +1456,24 @@ MonoBehaviour:
       name: MovingPlatformSpeed
       fullName: Tests.PlatformMovementTest.MovingPlatformSpeed
       resultStatus: 0
-      duration: 0.2300805
-      messages: 'Unhandled log message: ''[Exception] MissingComponentException:
-        There is no ''Rigidbody2D'' attached to the "Missing Prefab (Dummy)" game
-        object, but a script is trying to access it.
+      duration: 0.1738271
+      messages: 'Unhandled log message: ''[Exception] NullReferenceException: Object
+        reference not set to an instance of an object''. Use UnityEngine.TestTools.LogAssert.Expect'
+      output: 'NullReferenceException: Object reference not set to an instance of
+        an object
 
-        You probably need to
-        add a Rigidbody2D to the game object "Missing Prefab (Dummy)". Or your script
-        needs to check if the component is attached before using it.''. Use UnityEngine.TestTools.LogAssert.Expect'
-      output: 'There are no audio listeners in the scene. Please ensure there is
-        always one audio listener in the scene
+        NullReferenceException: Object reference not set to an
+        instance of an object
 
-        MissingComponentException:
-        There is no ''Rigidbody2D'' attached to the "Missing Prefab (Dummy)" game
-        object, but a script is trying to access it.
-
-        You probably need to
-        add a Rigidbody2D to the game object "Missing Prefab (Dummy)". Or your script
-        needs to check if the component is attached before using it.
+        DontDestroyOnLoad only works for root GameObjects
+        or components on root GameObjects.
 
 '
-      stacktrace: 'UnityEngine.Rigidbody2D.get_velocity () (at <f4648b3144df498a90da4ede637bd05b>:0)
+      stacktrace: 'KeepBetweenLevels.FindStartPos () (at Assets/src/Justin/KeepBetweenLevels.cs:60)
 
-        Character_Movement.Update
-        () (at <ff4f8596460745d490a2de5848bba9eb>:0)
+        KeepBetweenLevels.OnLevelWasLoaded
+        (System.Int32 level) (at Assets/src/Justin/KeepBetweenLevels.cs:29)
+
 
 
 '
@@ -1531,8 +1489,8 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/[Tests][Tests.SquareTest][suite]
       name: SquareTest
       fullName: Tests.SquareTest
-      resultStatus: 2
-      duration: 13.112004
+      resultStatus: 0
+      duration: 0.3910073
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -1548,10 +1506,27 @@ MonoBehaviour:
       name: SquareTestBoundary1
       fullName: Tests.SquareTest.SquareTestBoundary1
       resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
+      duration: 0.180397
+      messages: 'Unhandled log message: ''[Exception] NullReferenceException: Object
+        reference not set to an instance of an object''. Use UnityEngine.TestTools.LogAssert.Expect'
+      output: 'NullReferenceException: Object reference not set to an instance of
+        an object
+
+        NullReferenceException: Object reference not set to an
+        instance of an object
+
+        DontDestroyOnLoad only works for root GameObjects
+        or components on root GameObjects.
+
+'
+      stacktrace: 'KeepBetweenLevels.FindStartPos () (at Assets/src/Justin/KeepBetweenLevels.cs:60)
+
+        KeepBetweenLevels.OnLevelWasLoaded
+        (System.Int32 level) (at Assets/src/Justin/KeepBetweenLevels.cs:29)
+
+
+
+'
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -1565,9 +1540,75 @@ MonoBehaviour:
       name: SquareTestBoundary2
       fullName: Tests.SquareTest.SquareTestBoundary2
       resultStatus: 0
-      duration: 0
+      duration: 7.523563
       messages: 
-      output: 
+      output: 'Jumping
+
+        Jumping
+
+        Jumping
+
+        Jumping
+
+        Jumping
+
+        Jumping
+
+        Jumping
+
+        Jumping
+
+        Jumping
+
+        Jumping
+
+        Jumping
+
+        Jumping
+
+        Jumping
+
+        Jumping
+
+        Jumping
+
+        Jumping
+
+        Jumping
+
+        Jumping
+
+        Jumping
+
+        Jumping
+
+        Jumping
+
+        Jumping
+
+        Jumping
+
+        Jumping
+
+        Jumping
+
+        Jumping
+
+        Jumping
+
+        Jumping
+
+        Jumping
+
+        Jumping
+
+        Jumping
+
+        Jumping
+
+        Jumping
+
+'
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
@@ -1582,9 +1623,13 @@ MonoBehaviour:
       name: SquareTestInitialCondition
       fullName: Tests.SquareTest.SquareTestInitialCondition
       resultStatus: 0
-      duration: 0
+      duration: 0.0097868
       messages: 
-      output: 
+      output: 'Jumping
+
+        Jumping
+
+'
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
@@ -1598,18 +1643,57 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/SquareTest/[Tests][Tests.SquareTest.SquareTestStress]
       name: SquareTestStress
       fullName: Tests.SquareTest.SquareTestStress
-      resultStatus: 2
-      duration: 13.06889
-      messages: "  Expected: True\n  But was:  False\n"
-      output: 'ASSERT CHECK: 130 -- 32.74267 -- 28
+      resultStatus: 0
+      duration: 0.1512051
+      messages: 'Unhandled log message: ''[Exception] NullReferenceException: Object
+        reference not set to an instance of an object''. Use UnityEngine.TestTools.LogAssert.Expect'
+      output: 'NullReferenceException: Object reference not set to an instance of
+        an object
+
+        NullReferenceException: Object reference not set to an
+        instance of an object
+
+        There are no audio listeners in the scene.
+        Please ensure there is always one audio listener in the scene
+
+        There
+        are no audio listeners in the scene. Please ensure there is always one audio
+        listener in the scene
+
+        There are no audio listeners in the scene.
+        Please ensure there is always one audio listener in the scene
+
+        There
+        are no audio listeners in the scene. Please ensure there is always one audio
+        listener in the scene
+
+        There are no audio listeners in the scene.
+        Please ensure there is always one audio listener in the scene
+
+        There
+        are no audio listeners in the scene. Please ensure there is always one audio
+        listener in the scene
+
+        There are no audio listeners in the scene.
+        Please ensure there is always one audio listener in the scene
+
+        There
+        are no audio listeners in the scene. Please ensure there is always one audio
+        listener in the scene
+
+        There are no audio listeners in the scene.
+        Please ensure there is always one audio listener in the scene
+
+        There
+        are no audio listeners in the scene. Please ensure there is always one audio
+        listener in the scene
+
+        There are no audio listeners in the scene.
+        Please ensure there is always one audio listener in the scene
 
 '
-      stacktrace: 'at Tests.SquareTest+<SquareTestStress>d__6.MoveNext () [0x0016a]
-        in /Users/hebaaljabrine/Desktop/PLEASE/SuperVandalWorld/SuperVandalWorld/Assets/tst/Heba/SquareTest.cs:102
+      stacktrace: 'PauseMenu.Start () (at <ab9077ea09914f06909a357783dc2a2d>:0)
 
-        at
-        UnityEngine.TestTools.TestEnumerator+<Execute>d__5.MoveNext () [0x00038]
-        in /Users/hebaaljabrine/Desktop/PLEASE/SuperVandalWorld/SuperVandalWorld/Library/PackageCache/com.unity.test-framework@1.1.16/UnityEngine.TestRunner/NUnitExtensions/Attributes/TestEnumerator.cs:31
 
 '
       notRunnable: 0
@@ -1625,17 +1709,9 @@ MonoBehaviour:
       name: UITest
       fullName: Tests.UITest
       resultStatus: 0
-      duration: 0.3293716
+      duration: 1.9576911
       messages: One or more child tests had errors
-      output: 'MissingComponentException: There is no ''Rigidbody2D'' attached to
-        the "Missing Prefab (Dummy)" game object, but a script is trying to access
-        it.
-
-        You probably need to add a Rigidbody2D to the game object "Missing
-        Prefab (Dummy)". Or your script needs to check if the component is attached
-        before using it.
-
-'
+      output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
@@ -1649,54 +1725,24 @@ MonoBehaviour:
       name: PauseFunctionTest
       fullName: Tests.UITest.PauseFunctionTest
       resultStatus: 0
-      duration: 0.2411009
-      messages: 'Unhandled log message: ''[Exception] MissingComponentException:
-        There is no ''Rigidbody2D'' attached to the "Missing Prefab (Dummy)" game
-        object, but a script is trying to access it.
+      duration: 0.2691064
+      messages: 'Unhandled log message: ''[Exception] NullReferenceException: Object
+        reference not set to an instance of an object''. Use UnityEngine.TestTools.LogAssert.Expect'
+      output: 'NullReferenceException: Object reference not set to an instance of
+        an object
 
-        You probably need to
-        add a Rigidbody2D to the game object "Missing Prefab (Dummy)". Or your script
-        needs to check if the component is attached before using it.''. Use UnityEngine.TestTools.LogAssert.Expect'
-      output: 'There are no audio listeners in the scene. Please ensure there is
-        always one audio listener in the scene
+        NullReferenceException: Object reference not set to an
+        instance of an object
 
-        There are no audio listeners
-        in the scene. Please ensure there is always one audio listener in the scene
-
-        There
-        are no audio listeners in the scene. Please ensure there is always one audio
-        listener in the scene
-
-        There are no audio listeners in the scene.
-        Please ensure there is always one audio listener in the scene
-
-        There
-        are no audio listeners in the scene. Please ensure there is always one audio
-        listener in the scene
-
-        There are no audio listeners in the scene.
-        Please ensure there is always one audio listener in the scene
-
-        There
-        are no audio listeners in the scene. Please ensure there is always one audio
-        listener in the scene
-
-        There are no audio listeners in the scene.
-        Please ensure there is always one audio listener in the scene
-
-        MissingComponentException:
-        There is no ''Rigidbody2D'' attached to the "Missing Prefab (Dummy)" game
-        object, but a script is trying to access it.
-
-        You probably need to
-        add a Rigidbody2D to the game object "Missing Prefab (Dummy)". Or your script
-        needs to check if the component is attached before using it.
+        DontDestroyOnLoad only works for root GameObjects
+        or components on root GameObjects.
 
 '
-      stacktrace: 'UnityEngine.Rigidbody2D.get_velocity () (at <f4648b3144df498a90da4ede637bd05b>:0)
+      stacktrace: 'KeepBetweenLevels.FindStartPos () (at Assets/src/Justin/KeepBetweenLevels.cs:60)
 
-        Character_Movement.Update
-        () (at <ff4f8596460745d490a2de5848bba9eb>:0)
+        KeepBetweenLevels.OnLevelWasLoaded
+        (System.Int32 level) (at Assets/src/Justin/KeepBetweenLevels.cs:29)
+
 
 
 '
@@ -1713,33 +1759,10 @@ MonoBehaviour:
       name: ScoreTest
       fullName: Tests.UITest.ScoreTest
       resultStatus: 0
-      duration: 0.0415369
-      messages: 'Unhandled log message: ''[Exception] MissingComponentException:
-        There is no ''Rigidbody2D'' attached to the "Missing Prefab (Dummy)" game
-        object, but a script is trying to access it.
-
-        You probably need to
-        add a Rigidbody2D to the game object "Missing Prefab (Dummy)". Or your script
-        needs to check if the component is attached before using it.''. Use UnityEngine.TestTools.LogAssert.Expect'
-      output: 'There are no audio listeners in the scene. Please ensure there is
-        always one audio listener in the scene
-
-        MissingComponentException:
-        There is no ''Rigidbody2D'' attached to the "Missing Prefab (Dummy)" game
-        object, but a script is trying to access it.
-
-        You probably need to
-        add a Rigidbody2D to the game object "Missing Prefab (Dummy)". Or your script
-        needs to check if the component is attached before using it.
-
-'
-      stacktrace: 'UnityEngine.Rigidbody2D.get_velocity () (at <f4648b3144df498a90da4ede637bd05b>:0)
-
-        Character_Movement.Update
-        () (at <ff4f8596460745d490a2de5848bba9eb>:0)
-
-
-'
+      duration: 0.0894179
+      messages: 
+      output: 
+      stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -1753,30 +1776,32 @@ MonoBehaviour:
       name: SoundStressTest
       fullName: Tests.UITest.SoundStressTest
       resultStatus: 0
-      duration: 0.0108451
-      messages: 'Unhandled log message: ''[Exception] MissingComponentException:
-        There is no ''Rigidbody2D'' attached to the "Missing Prefab (Dummy)" game
-        object, but a script is trying to access it.
+      duration: 1.542921
+      messages: 
+      output: 'Jumping
 
-        You probably need to
-        add a Rigidbody2D to the game object "Missing Prefab (Dummy)". Or your script
-        needs to check if the component is attached before using it.''. Use UnityEngine.TestTools.LogAssert.Expect'
-      output: 'MissingComponentException: There is no ''Rigidbody2D'' attached to
-        the "Missing Prefab (Dummy)" game object, but a script is trying to access
-        it.
+        Jumping
 
-        You probably need to add a Rigidbody2D to the game object "Missing
-        Prefab (Dummy)". Or your script needs to check if the component is attached
-        before using it.
+        Jumping
+
+        Jumping
+
+        Jumping
+
+        Jumping
+
+        Jumping
+
+        Jumping
+
+        Jumping
+
+        Jumping
+
+        Jumping
 
 '
-      stacktrace: 'UnityEngine.Rigidbody2D.get_velocity () (at <f4648b3144df498a90da4ede637bd05b>:0)
-
-        Character_Movement.Update
-        () (at <ff4f8596460745d490a2de5848bba9eb>:0)
-
-
-'
+      stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -1790,28 +1815,14 @@ MonoBehaviour:
       name: UIStressTest
       fullName: Tests.UITest.UIStressTest
       resultStatus: 0
-      duration: 0.0137695
-      messages: 'Unhandled log message: ''[Exception] MissingComponentException:
-        There is no ''Rigidbody2D'' attached to the "Missing Prefab (Dummy)" game
-        object, but a script is trying to access it.
+      duration: 0.0161867
+      messages: "  Expected: 2147483647\r\n  But was:  -2147483648\r\n"
+      output: 
+      stacktrace: 'at Tests.UITest+<UIStressTest>d__7.MoveNext () [0x0014a] in D:\Github\SuperVandalWorld\SuperVandalWorld\Assets\tst\Ben\UITest.cs:172
 
-        You probably need to
-        add a Rigidbody2D to the game object "Missing Prefab (Dummy)". Or your script
-        needs to check if the component is attached before using it.''. Use UnityEngine.TestTools.LogAssert.Expect'
-      output: 'MissingComponentException: There is no ''Rigidbody2D'' attached to
-        the "Missing Prefab (Dummy)" game object, but a script is trying to access
-        it.
-
-        You probably need to add a Rigidbody2D to the game object "Missing
-        Prefab (Dummy)". Or your script needs to check if the component is attached
-        before using it.
-
-'
-      stacktrace: 'UnityEngine.Rigidbody2D.get_velocity () (at <f4648b3144df498a90da4ede637bd05b>:0)
-
-        Character_Movement.Update
-        () (at <ff4f8596460745d490a2de5848bba9eb>:0)
-
+        at
+        UnityEngine.TestTools.TestEnumerator+<Execute>d__5.MoveNext () [0x00038]
+        in <def80c3c71174f0ea69facc89d14e13e>:0
 
 '
       notRunnable: 0
@@ -1827,30 +1838,10 @@ MonoBehaviour:
       name: VolumeTest
       fullName: Tests.UITest.VolumeTest
       resultStatus: 0
-      duration: 0.0092061
-      messages: 'Unhandled log message: ''[Exception] MissingComponentException:
-        There is no ''Rigidbody2D'' attached to the "Missing Prefab (Dummy)" game
-        object, but a script is trying to access it.
-
-        You probably need to
-        add a Rigidbody2D to the game object "Missing Prefab (Dummy)". Or your script
-        needs to check if the component is attached before using it.''. Use UnityEngine.TestTools.LogAssert.Expect'
-      output: 'MissingComponentException: There is no ''Rigidbody2D'' attached to
-        the "Missing Prefab (Dummy)" game object, but a script is trying to access
-        it.
-
-        You probably need to add a Rigidbody2D to the game object "Missing
-        Prefab (Dummy)". Or your script needs to check if the component is attached
-        before using it.
-
-'
-      stacktrace: 'UnityEngine.Rigidbody2D.get_velocity () (at <f4648b3144df498a90da4ede637bd05b>:0)
-
-        Character_Movement.Update
-        () (at <ff4f8596460745d490a2de5848bba9eb>:0)
-
-
-'
+      duration: 0.0139173
+      messages: 
+      output: 
+      stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -1859,24 +1850,73 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1001
       parentUniqueId: Tests.dll/Tests/[Tests][Tests.UITest][suite]
-    m_ResultText: "SquareTestStress (13.069s)\n---\nExpected: True\n  But was:  False\n---\nat
-      Tests.SquareTest+<SquareTestStress>d__6.MoveNext () [0x0016a] in /Users/hebaaljabrine/Desktop/PLEASE/SuperVandalWorld/SuperVandalWorld/Assets/tst/Heba/SquareTest.cs:102\nat
-      UnityEngine.TestTools.TestEnumerator+<Execute>d__5.MoveNext () [0x00038] in
-      /Users/hebaaljabrine/Desktop/PLEASE/SuperVandalWorld/SuperVandalWorld/Library/PackageCache/com.unity.test-framework@1.1.16/UnityEngine.TestRunner/NUnitExtensions/Attributes/TestEnumerator.cs:31\n---\nASSERT
-      CHECK: 130 -- 32.74267 -- 28"
-    m_ResultStacktrace: 'at Tests.SquareTest+<SquareTestStress>d__6.MoveNext () [0x0016a]
-      in /Users/hebaaljabrine/Desktop/PLEASE/SuperVandalWorld/SuperVandalWorld/Assets/tst/Heba/SquareTest.cs:102
+    m_ResultText: 'SquareTestStress (0.151s)
 
-      at
-      UnityEngine.TestTools.TestEnumerator+<Execute>d__5.MoveNext () [0x00038] in
-      /Users/hebaaljabrine/Desktop/PLEASE/SuperVandalWorld/SuperVandalWorld/Library/PackageCache/com.unity.test-framework@1.1.16/UnityEngine.TestRunner/NUnitExtensions/Attributes/TestEnumerator.cs:31
+      ---
+
+      Unhandled log message:
+      ''[Exception] NullReferenceException: Object reference not set to an instance
+      of an object''. Use UnityEngine.TestTools.LogAssert.Expect
+
+      ---
+
+      PauseMenu.Start
+      () (at <ab9077ea09914f06909a357783dc2a2d>:0)
+
+      ---
+
+      NullReferenceException:
+      Object reference not set to an instance of an object
+
+      NullReferenceException:
+      Object reference not set to an instance of an object
+
+      There are no audio
+      listeners in the scene. Please ensure there is always one audio listener in
+      the scene
+
+      There are no audio listeners in the scene. Please ensure there
+      is always one audio listener in the scene
+
+      There are no audio listeners
+      in the scene. Please ensure there is always one audio listener in the scene
+
+      There
+      are no audio listeners in the scene. Please ensure there is always one audio
+      listener in the scene
+
+      There are no audio listeners in the scene. Please
+      ensure there is always one audio listener in the scene
+
+      There are no
+      audio listeners in the scene. Please ensure there is always one audio listener
+      in the scene
+
+      There are no audio listeners in the scene. Please ensure
+      there is always one audio listener in the scene
+
+      There are no audio listeners
+      in the scene. Please ensure there is always one audio listener in the scene
+
+      There
+      are no audio listeners in the scene. Please ensure there is always one audio
+      listener in the scene
+
+      There are no audio listeners in the scene. Please
+      ensure there is always one audio listener in the scene
+
+      There are no
+      audio listeners in the scene. Please ensure there is always one audio listener
+      in the scene'
+    m_ResultStacktrace: 'PauseMenu.Start () (at <ab9077ea09914f06909a357783dc2a2d>:0)
+
 
 '
     m_TestListState:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 0058d9b1
       m_LastClickedID: -1311156224
-      m_ExpandedIDs: c973899a20712cd05dfc4bdfe557abf78302573d8359db41ffffff7f
+      m_ExpandedIDs: c973899ac337b2b420712cd05dfc4bdfe557abf795fbf000ab3ce1198302573d8359db41e6daa968ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1973,42 +2013,14 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 831
-    y: 30
-    width: 608
-    height: 829
+    x: 1492
+    y: 73
+    width: 427
+    height: 926
   m_ViewDataDictionary: {fileID: 0}
   m_PreviewResizer:
     m_CachedPref: 50
     m_ControlHash: 1964396721
     m_PrefName: Preview_TilemapBrushInspector
-  m_Palette: {fileID: 5713101419344279301, guid: b0186b213b3ff05489000e4ca7c9417e, type: 3}
+  m_Palette: {fileID: 4914733372615852719, guid: 4c595496acd2b1c428f07881f8e955c2, type: 3}
   m_DrawGizmos: 0
---- !u!114 &18
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12071, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Animation
-    m_Image: {fileID: -3237396543322336831, guid: 0000000000000000d000000000000000, type: 0}
-    m_Tooltip: 
-  m_Pos:
-    serializedVersion: 2
-    x: 1088.5
-    y: 30
-    width: 350.5
-    height: 829
-  m_ViewDataDictionary: {fileID: 0}
-  m_LockTracker:
-    m_IsLocked: 0
-  m_LastSelectedObjectID: -98538
