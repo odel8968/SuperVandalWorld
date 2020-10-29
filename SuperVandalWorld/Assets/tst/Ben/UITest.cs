@@ -7,6 +7,8 @@ using UnityEngine;
 using UnityEngine.TestTools;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System;
+using System.Diagnostics;
 //using System.Media;
 //using System.Net;
 
@@ -143,19 +145,38 @@ namespace Tests
 
             var menu = GameObject.Find("UI").GetComponent<PauseMenu>();
 
-            int count = 1000;
+            int count = 100;
             int i = 0;
 
-     
+
+            var gobject = GameObject.Find("Score").GetComponent<UIManager>();
+            var score = gobject.getScore();
+            int scoreAdd = 0;
+            double totalScore = 0;
+            Assert.AreEqual(score, 0);
+
+            
+            gobject.resetScore();
+            score = gobject.getScore();
+            Assert.AreEqual(score, 0);
+
+            yield return null;
+
             while (i < count)
             {
-                menu.pauseControl();
+                scoreAdd = (int) Math.Pow(2, i);
+                gobject.addScore(scoreAdd);
+                totalScore += scoreAdd;
 
-                yield return new WaitForEndOfFrame();
+                score = gobject.getScore();
+                Assert.AreEqual(score, (int)totalScore);
+                
 
                 i++;
             }
-            //yield return new WaitForSecondsRealtime(2);
+
+            UnityEngine.Debug.Log("Score : ");
+            UnityEngine.Debug.Log(score);
 
             Assert.That(i, Is.EqualTo(count));
         }

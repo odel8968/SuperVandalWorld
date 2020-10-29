@@ -60,6 +60,7 @@ public class PauseMenu : MonoBehaviour
 		{
 			Time.timeScale = 1;
 			SoundManager.instance.PlaySound("mClose");
+			CloseHelpMenu();
 			hidePaused();
 		}
 	}
