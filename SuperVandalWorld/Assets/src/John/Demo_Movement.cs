@@ -32,5 +32,10 @@ public class Demo_Movement : Character_Movement
             jumps_taken = 0;
             Jump(isGrounded);
         }
+
+        if (Input.anyKey)
+        {
+            Destroy(this.gameObject);
+        }
     }
 }
