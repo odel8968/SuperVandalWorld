@@ -11,26 +11,34 @@ public class UIManager : MonoBehaviour
 
     public static UIManager instance;
 
+    SoundManager soundManager;
+
 
     void Awake()
     {
         if (instance == null)
             instance = this;
         else
-            Debug.Log("Multiple sound managers created");
+            Debug.Log("Multiple UI managers created");
     }
 
-    public void addScore(int _score)
+    void Start()
+    {
+        soundManager = GameObject.Find("SoundManager").GetComponent<SoundManager>();
+    }
+
+    public void AddScore(int _score)
     {
         score = score + _score;
+        //soundManager.PlaySound("mClose");
     }
 
-    public void resetScore()
+    public void ResetScore()
     {
         score = 0;
     }
 
-    public int getScore()
+    public int GetScore()
     {
         return score;
     }

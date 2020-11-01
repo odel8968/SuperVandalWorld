@@ -13,6 +13,7 @@ TagManager:
   - StartPos
   - ShowOnHelp
   - daEnemy
+  - MainMenu
   layers:
   - Default
   - TransparentFX

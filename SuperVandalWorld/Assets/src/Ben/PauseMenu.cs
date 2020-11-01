@@ -9,10 +9,12 @@ public class PauseMenu : MonoBehaviour
 {
 	GameObject[] pauseObjects;
 	GameObject[] helpObjects;
+	GameObject[] mainMenuObjects;
 
 	GameObject player;
+	SoundManager soundManager;
 
-	public Rigidbody rb;
+	Rigidbody2D rb;
 
 
 	void Start()
@@ -20,13 +22,17 @@ public class PauseMenu : MonoBehaviour
 		Time.timeScale = 1;
 		pauseObjects = GameObject.FindGameObjectsWithTag("ShowOnPause");
 		helpObjects = GameObject.FindGameObjectsWithTag("ShowOnHelp");
+		mainMenuObjects = GameObject.FindGameObjectsWithTag("MainMenu");
+
 		player = GameObject.Find("Player");
 
-		
-		rb = player.GetComponent<Rigidbody>();
+		soundManager = GameObject.Find("SoundManager").GetComponent<SoundManager>();
 
-		//rb.isKinematic = false;
-		//rb.detectCollisions = false;
+		rb = GameObject.Find("Player").GetComponent<Rigidbody2D>();
+
+		//rb.gravityScale = 0;
+		//rb.collisionDetectionMode = CollisionDetectionMode2D.Discrete;
+		//rb.bodyType = RigidbodyType2D.Kinematic;
 
 		foreach (GameObject g in helpObjects)
 		{
@@ -34,6 +40,8 @@ public class PauseMenu : MonoBehaviour
 		}
 
 		hidePaused();
+		MainMenu();
+		Time.timeScale = 0;
 	}
 
 	// Update is called once per frame
@@ -53,14 +61,15 @@ public class PauseMenu : MonoBehaviour
 		if (Time.timeScale == 1)
 		{
 			Time.timeScale = 0;
-			SoundManager.instance.PlaySound("mOpen");
+			soundManager.PlaySound("MenuOpen");
 			showPaused();
 		}
 		else if (Time.timeScale == 0)
 		{
 			Time.timeScale = 1;
-			SoundManager.instance.PlaySound("mClose");
+			soundManager.PlaySound("MenuClose");
 			CloseHelpMenu();
+			CloseMainMenu();
 			hidePaused();
 		}
 	}
@@ -118,7 +127,41 @@ public class PauseMenu : MonoBehaviour
 			g.SetActive(false);
 		}
 
-		//player.GetComponent<Rigidbody>().detectCollisions = false;
+	}
+
+	public void MainMenu()
+	{
+		Debug.Log("Main menu opened");
+
+		foreach (GameObject g in pauseObjects)
+		{
+			g.SetActive(false);
+		}
+
+		foreach (GameObject g in mainMenuObjects)
+		{
+			g.SetActive(true);
+		}
+	}
+
+	public void CloseMainMenu()
+	{
+		Debug.Log("Main menu closed");
+
+		//foreach (GameObject g in pauseObjects)
+		//{
+			//g.SetActive(true);
+		//}
+
+		foreach (GameObject g in mainMenuObjects)
+		{
+			g.SetActive(false);
+		}
+
+		Time.timeScale = 1;
+		soundManager.StopSound("Theme1");
+
+
 	}
 
 	public void QuitGame()
@@ -130,6 +173,6 @@ public class PauseMenu : MonoBehaviour
 	public void SetVolume(float newVolume)
     {
 		AudioListener.volume = newVolume;
-		//Debug.Log(newVolume);
+		Debug.Log(newVolume);
 	}
 }

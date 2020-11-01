@@ -64,17 +64,17 @@ namespace Tests
             yield return new WaitWhile(() => sceneLoaded == false);
 
             var gobject = GameObject.Find("Score").GetComponent<UIManager>();
-            var score = gobject.getScore();
+            var score = gobject.GetScore();
             Assert.AreEqual(score, 0);
 
-            gobject.addScore(15);
+            gobject.AddScore(15);
 
-            score = gobject.getScore();
+            score = gobject.GetScore();
             Assert.AreEqual(score, 15);
 
 
-            gobject.resetScore();
-            score = gobject.getScore();
+            gobject.ResetScore();
+            score = gobject.GetScore();
             Assert.AreEqual(score, 0);
 
             yield return null;
@@ -110,7 +110,7 @@ namespace Tests
 
         }
 
-        [UnityTest]
+        /*[UnityTest]
         public IEnumerator SoundStressTest()
         {
 
@@ -135,7 +135,7 @@ namespace Tests
             //yield return new WaitForSecondsRealtime(2);
 
             Assert.That(i, Is.EqualTo(count));
-        }
+        }*/
 
         [UnityTest]
         public IEnumerator UIStressTest()
@@ -150,14 +150,14 @@ namespace Tests
 
 
             var gobject = GameObject.Find("Score").GetComponent<UIManager>();
-            var score = gobject.getScore();
+            var score = gobject.GetScore();
             int scoreAdd = 0;
             double totalScore = 0;
             Assert.AreEqual(score, 0);
 
             
-            gobject.resetScore();
-            score = gobject.getScore();
+            gobject.ResetScore();
+            score = gobject.GetScore();
             Assert.AreEqual(score, 0);
 
             yield return null;
@@ -165,10 +165,10 @@ namespace Tests
             while (i < count)
             {
                 scoreAdd = (int) Math.Pow(2, i);
-                gobject.addScore(scoreAdd);
+                gobject.AddScore(scoreAdd);
                 totalScore += scoreAdd;
 
-                score = gobject.getScore();
+                score = gobject.GetScore();
                 Assert.AreEqual(score, (int)totalScore);
                 
 
