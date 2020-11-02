@@ -15,67 +15,16 @@ MonoBehaviour:
   m_PixelRect:
     serializedVersion: 2
     x: 0
-    y: 42.285717
-    width: 2194.286
-    height: 1152
+    y: 0
+    width: 1440
+    height: 900
   m_ShowMode: 4
-  m_Title: Game
-  m_RootView: {fileID: 4}
+  m_Title: Test Runner
+  m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
-  m_Maximized: 1
+  m_Maximized: 0
 --- !u!114 &2
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ConsoleWindow
-  m_EditorClassIdentifier: 
-  m_Children: []
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 734
-    width: 553
-    height: 368
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 15}
-  m_Panes:
-  - {fileID: 15}
-  m_Selected: 0
-  m_LastSelected: 0
---- !u!114 &3
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Children:
-  - {fileID: 13}
-  - {fileID: 2}
-  m_Position:
-    serializedVersion: 2
-    x: 1641
-    y: 0
-    width: 553
-    height: 1102
-  m_MinSize: {x: 276, y: 192}
-  m_MaxSize: {x: 4001, y: 8042}
-  vertical: 1
-  controlID: 138
---- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -88,22 +37,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
+  - {fileID: 3}
   - {fileID: 5}
-  - {fileID: 7}
-  - {fileID: 6}
+  - {fileID: 4}
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 2194
-    height: 1152
+    width: 1440
+    height: 900
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
   m_TopViewHeight: 30
   m_UseBottomView: 1
   m_BottomViewHeight: 20
---- !u!114 &5
+--- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -120,15 +69,15 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 2194
+    width: 1440
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
   m_LoadedToolbars:
-  - {fileID: 24}
-  m_MainToolbar: {fileID: 24}
+  - {fileID: 22}
+  m_MainToolbar: {fileID: 22}
   m_LastLoadedLayoutName: 
---- !u!114 &6
+--- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -144,11 +93,61 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 1132
-    width: 2194
+    y: 880
+    width: 1440
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
+--- !u!114 &5
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 6}
+  - {fileID: 11}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 30
+    width: 1440
+    height: 850
+  m_MinSize: {x: 503, y: 492}
+  m_MaxSize: {x: 14001, y: 14042}
+  vertical: 0
+  controlID: 73
+--- !u!114 &6
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 7}
+  - {fileID: 10}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 986
+    height: 850
+  m_MinSize: {x: 403, y: 492}
+  m_MaxSize: {x: 10001, y: 14042}
+  vertical: 1
+  controlID: 74
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -163,68 +162,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Children:
   - {fileID: 8}
-  - {fileID: 3}
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 30
-    width: 2194
-    height: 1102
-  m_MinSize: {x: 679, y: 492}
-  m_MaxSize: {x: 14002, y: 14042}
-  vertical: 0
-  controlID: 142
---- !u!114 &8
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Children:
   - {fileID: 9}
-  - {fileID: 12}
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1641
-    height: 1102
-  m_MinSize: {x: 403, y: 492}
-  m_MaxSize: {x: 10001, y: 14042}
-  vertical: 1
-  controlID: 143
---- !u!114 &9
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Children:
-  - {fileID: 10}
-  - {fileID: 11}
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1641
-    height: 656
+    width: 986
+    height: 487.5
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 144
---- !u!114 &10
+  controlID: 75
+--- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -241,16 +190,16 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 402
-    height: 656
+    width: 331
+    height: 487.5
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 16}
+  m_ActualView: {fileID: 14}
   m_Panes:
-  - {fileID: 16}
+  - {fileID: 14}
   m_Selected: 0
   m_LastSelected: 0
---- !u!114 &11
+--- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -265,20 +214,20 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 402
+    x: 331
     y: 0
-    width: 1239
-    height: 656
+    width: 655
+    height: 487.5
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 17}
+  m_ActualView: {fileID: 15}
   m_Panes:
-  - {fileID: 17}
-  - {fileID: 18}
-  - {fileID: 14}
+  - {fileID: 15}
+  - {fileID: 16}
+  - {fileID: 12}
   m_Selected: 0
   m_LastSelected: 1
---- !u!114 &12
+--- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -294,18 +243,19 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 656
-    width: 1641
-    height: 446
+    y: 487.5
+    width: 986
+    height: 362.5
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
-  m_ActualView: {fileID: 19}
+  m_ActualView: {fileID: 17}
   m_Panes:
-  - {fileID: 19}
-  - {fileID: 23}
+  - {fileID: 17}
+  - {fileID: 21}
+  - {fileID: 13}
   m_Selected: 0
-  m_LastSelected: 0
---- !u!114 &13
+  m_LastSelected: 2
+--- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -315,25 +265,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: InspectorWindow
+  m_Name: TestRunnerWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 0
+    x: 986
     y: 0
-    width: 553
-    height: 734
-  m_MinSize: {x: 275, y: 50}
+    width: 454
+    height: 850
+  m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 20}
+  m_ActualView: {fileID: 19}
   m_Panes:
+  - {fileID: 18}
+  - {fileID: 19}
   - {fileID: 20}
-  - {fileID: 21}
-  - {fileID: 22}
-  m_Selected: 0
-  m_LastSelected: 1
---- !u!114 &14
+  m_Selected: 1
+  m_LastSelected: 0
+--- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -353,20 +303,20 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 264
+    x: 331
     y: 75
-    width: 583
-    height: 331
+    width: 653
+    height: 399
   m_ViewDataDictionary: {fileID: 0}
   m_ShowAlpha: 0
   m_MipLevel: 0
-  m_Zoom: -1
+  m_Zoom: 0.18986014
   m_ScrollPosition: {x: 0, y: 0}
   m_ResetOnNextRepaint: 0
-  m_SelectedAssetPath: Assets/prefabs/Heba/Square.png
-  m_SelectedSpriteRectGUID: 471e248049b61de408e2f5e7519e56e0
+  m_SelectedAssetPath: Assets/prefabs/Heba/BOSS3.png
+  m_SelectedSpriteRectGUID: 014d7b1a75cd2410ea49f9a8e72793c0
   m_LastUsedModuleTypeName: UnityEditor.U2D.Animation.SkinningModule
---- !u!114 &15
+--- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -386,12 +336,12 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1641.143
-    y: 806.28577
-    width: 551
-    height: 347
+    x: 0
+    y: 517.5
+    width: 985
+    height: 341.5
   m_ViewDataDictionary: {fileID: 0}
---- !u!114 &16
+--- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -412,16 +362,16 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 72.571434
-    width: 401
-    height: 635
+    y: 30
+    width: 330
+    height: 466.5
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: d0f2ffff5cfbffff523c0000203d00005c3e0000ac3f0000
+      m_ExpandedIDs: 60deffff7adeffff7ae4ffff0aeaffff8ef2ffff58f3ffff5cfbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -437,7 +387,7 @@ MonoBehaviour:
         m_IsRenaming: 0
         m_OriginalEventType: 11
         m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 10}
+        m_ClientGUIView: {fileID: 8}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -445,7 +395,7 @@ MonoBehaviour:
       m_IsLocked: 0
     m_CurrentSortingName: TransformSorting
   m_WindowGUID: b8c0478367d084f4490c2edf623b0f98
---- !u!114 &17
+--- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -465,10 +415,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 402.28574
-    y: 72.571434
-    width: 1237
-    height: 635
+    x: 331
+    y: 30
+    width: 653
+    height: 466.5
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
   m_WindowGUID: 8fde1c7c9ac16d04fb45d7d761e25119
@@ -481,9 +431,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 628.8566, y: 276.11316, z: -52.281345}
+    m_Target: {x: 192.55223, y: 14.015364, z: 1090.4718}
     speed: 2
-    m_Value: {x: 628.8566, y: 276.11316, z: -52.281345}
+    m_Value: {x: 192.55223, y: 14.015364, z: 1090.4718}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -534,9 +484,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 468.28302
+    m_Target: 22.828918
     speed: 2
-    m_Value: 468.28302
+    m_Value: 22.828918
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -558,10 +508,10 @@ MonoBehaviour:
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
-  m_SceneVisActive: 1
+  m_SceneVisActive: 0
   m_LastLockedObject: {fileID: 0}
   m_ViewIsLockedToObject: 0
---- !u!114 &18
+--- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -581,10 +531,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 402.28574
-    y: 72.571434
-    width: 1237
-    height: 635
+    x: 331
+    y: 30
+    width: 653
+    height: 466.5
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
   m_SerializedViewValues: []
@@ -592,7 +542,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 1237, y: 614}
+  m_TargetSize: {x: 653, y: 445.5}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -607,10 +557,10 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -353.4286
-    m_HBaseRangeMax: 353.4286
-    m_VBaseRangeMin: -175.42857
-    m_VBaseRangeMax: 175.42857
+    m_HBaseRangeMin: -163.25
+    m_HBaseRangeMax: 163.25
+    m_VBaseRangeMin: -111.375
+    m_VBaseRangeMax: 111.375
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -628,29 +578,29 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 1237
-      height: 614
-    m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 618.5, y: 307}
+      width: 653
+      height: 445.5
+    m_Scale: {x: 2, y: 2}
+    m_Translation: {x: 326.5, y: 222.75}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -618.5
-      y: -307
-      width: 1237
-      height: 614
+      x: -163.25
+      y: -111.375
+      width: 326.5
+      height: 222.75
     m_MinimalGUI: 1
-  m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 2164.75, y: 1111.25}
+  m_defaultScale: 2
+  m_LastWindowPixelSize: {x: 1306, y: 933}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
   m_XRRenderMode: 0
   m_RenderTexture: {fileID: 0}
---- !u!114 &19
+--- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -671,9 +621,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 728.5715
-    width: 1640
-    height: 425
+    y: 517.5
+    width: 985
+    height: 341.5
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -688,21 +638,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/src/Ben
+    - Assets/Scenes
     m_Globs: []
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/src/Ben
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: D:\Github\SuperVandalWorld\SuperVandalWorld
+  m_LastProjectPath: /Users/hebaaljabrine/Desktop/PLEASE/SuperVandalWorld/SuperVandalWorld
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 127}
-    m_SelectedIDs: 5c460000
-    m_LastClickedID: 18012
-    m_ExpandedIDs: 00000000284600002a4600002c4600002e460000304600003246000034460000364600003846000000ca9a3b
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 12460000
+    m_LastClickedID: 17938
+    m_ExpandedIDs: 00000000d4450000d6450000d8450000da450000dc450000de45000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -718,7 +668,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 12}
+      m_ClientGUIView: {fileID: 10}
     m_SearchString: 
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
@@ -730,7 +680,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000284600002a4600002c4600002e4600003046000032460000344600003646000038460000
+    m_ExpandedIDs: 00000000d4450000d6450000d8450000da450000dc450000de450000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -757,7 +707,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000a4430000ae3f0000b83c00007e4600007246000064430000383d0000f43c00000c420000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -774,7 +724,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 12}
+      m_ClientGUIView: {fileID: 0}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -786,7 +736,7 @@ MonoBehaviour:
     m_GridSize: 64
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 257.85715
---- !u!114 &20
+--- !u!114 &18
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -806,10 +756,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1641.143
-    y: 72.571434
-    width: 551
-    height: 713
+    x: 986
+    y: 75
+    width: 453
+    height: 711
   m_ViewDataDictionary: {fileID: 0}
   m_ObjectsLockedBeforeSerialization: []
   m_InstanceIDsLockedBeforeSerialization: 
@@ -824,7 +774,7 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_PreviewWindow: {fileID: 0}
---- !u!114 &21
+--- !u!114 &19
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -844,18 +794,18 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1641.7144
-    y: 72.571434
-    width: 551.57166
-    height: 713.2857
+    x: 986
+    y: 30
+    width: 453
+    height: 829
   m_ViewDataDictionary: {fileID: 0}
   m_Spl:
-    ID: 10572
+    ID: 217
     splitterInitialOffset: 516
     currentActiveSplitter: -1
     realSizes:
-    - 375.99997
-    - 266.85715
+    - 444
+    - 315
     relativeSizes:
     - 0.58498025
     - 0.41501975
@@ -865,7 +815,7 @@ MonoBehaviour:
     maxSizes:
     - 0
     - 0
-    lastTotalSize: 642.8571
+    lastTotalSize: 759
     splitSize: 6
     xOffset: 0
     m_Version: 1
@@ -875,14 +825,14 @@ MonoBehaviour:
     oldSplitSize: 0
   m_TestTypeToolbarIndex: 0
   m_PlayModeTestListGUI:
-    m_Window: {fileID: 21}
+    m_Window: {fileID: 19}
     newResultList:
     - id: 1003
       uniqueId: '[SuperVandalWorld][suite]'
       name: SuperVandalWorld
       fullName: SuperVandalWorld
       resultStatus: 2
-      duration: 0.5628831
+      duration: 0.5383087
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -898,7 +848,7 @@ MonoBehaviour:
       name: Tests.dll
       fullName: C:/Users/adave/Documents/GitHub/SuperVandalWorld/SuperVandalWorld/Library/ScriptAssemblies/Tests.dll
       resultStatus: 2
-      duration: 0.5350598
+      duration: 0.480817
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -914,7 +864,7 @@ MonoBehaviour:
       name: Tests
       fullName: Tests
       resultStatus: 2
-      duration: 0.5232695
+      duration: 0.4644357
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -929,8 +879,8 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/[Tests][Tests.CameraTest][suite]
       name: CameraTest
       fullName: Tests.CameraTest
-      resultStatus: 0
-      duration: 0.4150238
+      resultStatus: 2
+      duration: 0.5528396
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -945,8 +895,8 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/CameraTest/[Tests][Tests.CameraTest.Camera_Set_To_Follow_Player]
       name: Camera_Set_To_Follow_Player
       fullName: Tests.CameraTest.Camera_Set_To_Follow_Player
-      resultStatus: 0
-      duration: 0.2743189
+      resultStatus: 2
+      duration: 0.3056316
       messages: 'Unhandled log message: ''[Exception] NullReferenceException: Object
         reference not set to an instance of an object''. Use UnityEngine.TestTools.LogAssert.Expect'
       output: 'NullReferenceException: Object reference not set to an instance of
@@ -965,7 +915,6 @@ MonoBehaviour:
         (System.Int32 level) (at Assets/src/Justin/KeepBetweenLevels.cs:29)
 
 
-
 '
       notRunnable: 0
       ignoredOrSkipped: 0
@@ -979,8 +928,8 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/CameraTest/[Tests][Tests.CameraTest.Camera_Speed_Set]
       name: Camera_Speed_Set
       fullName: Tests.CameraTest.Camera_Speed_Set
-      resultStatus: 0
-      duration: 0.0855106
+      resultStatus: 1
+      duration: 0.1391425
       messages: 
       output: '10
 
@@ -998,10 +947,12 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/CameraTest/[Tests][Tests.CameraTest.Camera_X_Offset_Set]
       name: Camera_X_Offset_Set
       fullName: Tests.CameraTest.Camera_X_Offset_Set
-      resultStatus: 0
-      duration: 0.0184875
+      resultStatus: 1
+      duration: 0.0435544
       messages: 
-      output: '45
+      output: 'Jumping
+
+        45
 
 '
       stacktrace: 
@@ -1017,8 +968,8 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/CameraTest/[Tests][Tests.CameraTest.Camera_Y_Offset_Set]
       name: Camera_Y_Offset_Set
       fullName: Tests.CameraTest.Camera_Y_Offset_Set
-      resultStatus: 0
-      duration: 0.0108483
+      resultStatus: 1
+      duration: 0.0365306
       messages: 
       output: '25
 
@@ -1052,8 +1003,8 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/CharacterMovementTests/[Tests][Tests.CharacterMovementTests.jump_stress_test]
       name: jump_stress_test
       fullName: Tests.CharacterMovementTests.jump_stress_test
-      resultStatus: 0
-      duration: 0.1769871
+      resultStatus: 2
+      duration: 0.2109334
       messages: 'Unhandled log message: ''[Exception] NullReferenceException: Object
         reference not set to an instance of an object''. Use UnityEngine.TestTools.LogAssert.Expect'
       output: 'NullReferenceException: Object reference not set to an instance of
@@ -1072,7 +1023,6 @@ MonoBehaviour:
         (System.Int32 level) (at Assets/src/Justin/KeepBetweenLevels.cs:29)
 
 
-
 '
       notRunnable: 0
       ignoredOrSkipped: 0
@@ -1086,28 +1036,10 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/CharacterMovementTests/[Tests][Tests.CharacterMovementTests.jump_test]
       name: jump_test
       fullName: Tests.CharacterMovementTests.jump_test
-      resultStatus: 0
-      duration: 2.0278933
+      resultStatus: 1
+      duration: 2.0718167
       messages: 
       output: 'Jumping
-
-        Jumping
-
-        Jumping
-
-        Jumping
-
-        Jumping
-
-        Jumping
-
-        Jumping
-
-        Jumping
-
-        Jumping
-
-        Jumping
 
         Jumping
 
@@ -1127,16 +1059,10 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/CharacterMovementTests/[Tests][Tests.CharacterMovementTests.movement_test_left]
       name: movement_test_left
       fullName: Tests.CharacterMovementTests.movement_test_left
-      resultStatus: 0
-      duration: 1.1969773
-      messages: 
+      resultStatus: 2
+      duration: 0
+      messages: Cancelled by user
       output: 'Jumping
-
-        Jumping
-
-        Jumping
-
-        Jumping
 
         Jumping
 
@@ -1609,8 +1535,8 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/[Tests][Tests.SquareTest][suite]
       name: SquareTest
       fullName: Tests.SquareTest
-      resultStatus: 0
-      duration: 0.3910073
+      resultStatus: 2
+      duration: 0.4556711
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -1626,7 +1552,42 @@ MonoBehaviour:
       name: SquareTestBoundary1
       fullName: Tests.SquareTest.SquareTestBoundary1
       resultStatus: 0
-      duration: 0.180397
+      duration: 0.4269983
+      messages: 'Unhandled log message: ''[Exception] NullReferenceException: Object
+        reference not set to an instance of an object''. Use UnityEngine.TestTools.LogAssert.Expect'
+      output: 'NullReferenceException: Object reference not set to an instance of
+        an object
+
+        NullReferenceException: Object reference not set to an
+        instance of an object
+
+        DontDestroyOnLoad only works for root GameObjects
+        or components on root GameObjects.
+
+        Jumping
+
+'
+      stacktrace: 'KeepBetweenLevels.FindStartPos () (at Assets/src/Justin/KeepBetweenLevels.cs:60)
+
+        KeepBetweenLevels.OnLevelWasLoaded
+        (System.Int32 level) (at Assets/src/Justin/KeepBetweenLevels.cs:29)
+
+
+'
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1012
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.SquareTest][suite]
+    - id: 1015
+      uniqueId: Tests.dll/Tests/SquareTest/[Tests][Tests.SquareTest.SquareTestBoundary2]
+      name: SquareTestBoundary2
+      fullName: Tests.SquareTest.SquareTestBoundary2
+      resultStatus: 0
+      duration: 0.3160456
       messages: 'Unhandled log message: ''[Exception] NullReferenceException: Object
         reference not set to an instance of an object''. Use UnityEngine.TestTools.LogAssert.Expect'
       output: 'NullReferenceException: Object reference not set to an instance of
@@ -1645,91 +1606,7 @@ MonoBehaviour:
         (System.Int32 level) (at Assets/src/Justin/KeepBetweenLevels.cs:29)
 
 
-
 '
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1012
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.SquareTest][suite]
-    - id: 1015
-      uniqueId: Tests.dll/Tests/SquareTest/[Tests][Tests.SquareTest.SquareTestBoundary2]
-      name: SquareTestBoundary2
-      fullName: Tests.SquareTest.SquareTestBoundary2
-      resultStatus: 0
-      duration: 7.523563
-      messages: 
-      output: 'Jumping
-
-        Jumping
-
-        Jumping
-
-        Jumping
-
-        Jumping
-
-        Jumping
-
-        Jumping
-
-        Jumping
-
-        Jumping
-
-        Jumping
-
-        Jumping
-
-        Jumping
-
-        Jumping
-
-        Jumping
-
-        Jumping
-
-        Jumping
-
-        Jumping
-
-        Jumping
-
-        Jumping
-
-        Jumping
-
-        Jumping
-
-        Jumping
-
-        Jumping
-
-        Jumping
-
-        Jumping
-
-        Jumping
-
-        Jumping
-
-        Jumping
-
-        Jumping
-
-        Jumping
-
-        Jumping
-
-        Jumping
-
-        Jumping
-
-'
-      stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -1763,56 +1640,71 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/SquareTest/[Tests][Tests.SquareTest.SquareTestStress]
       name: SquareTestStress
       fullName: Tests.SquareTest.SquareTestStress
-      resultStatus: 0
-      duration: 0.1512051
+      resultStatus: 2
+      duration: 0.1707373
       messages: 'Unhandled log message: ''[Exception] NullReferenceException: Object
         reference not set to an instance of an object''. Use UnityEngine.TestTools.LogAssert.Expect'
       output: 'NullReferenceException: Object reference not set to an instance of
         an object
 
-        NullReferenceException: Object reference not set to an
-        instance of an object
+        Active Scene is ''1''.
 
-        There are no audio listeners in the scene.
-        Please ensure there is always one audio listener in the scene
+        Main menu opened
 
-        There
-        are no audio listeners in the scene. Please ensure there is always one audio
-        listener in the scene
+        NullReferenceException:
+        Object reference not set to an instance of an object
 
-        There are no audio listeners in the scene.
-        Please ensure there is always one audio listener in the scene
+        There are no
+        audio listeners in the scene. Please ensure there is always one audio listener
+        in the scene
 
-        There
-        are no audio listeners in the scene. Please ensure there is always one audio
-        listener in the scene
+        There are no audio listeners in the scene. Please ensure
+        there is always one audio listener in the scene
 
-        There are no audio listeners in the scene.
-        Please ensure there is always one audio listener in the scene
+        There are no audio
+        listeners in the scene. Please ensure there is always one audio listener
+        in the scene
 
-        There
-        are no audio listeners in the scene. Please ensure there is always one audio
-        listener in the scene
+        There are no audio listeners in the scene. Please ensure
+        there is always one audio listener in the scene
 
-        There are no audio listeners in the scene.
-        Please ensure there is always one audio listener in the scene
+        There are no audio
+        listeners in the scene. Please ensure there is always one audio listener
+        in the scene
 
-        There
-        are no audio listeners in the scene. Please ensure there is always one audio
-        listener in the scene
+        There are no audio listeners in the scene. Please ensure
+        there is always one audio listener in the scene
 
-        There are no audio listeners in the scene.
-        Please ensure there is always one audio listener in the scene
+        There are no audio
+        listeners in the scene. Please ensure there is always one audio listener
+        in the scene
 
-        There
-        are no audio listeners in the scene. Please ensure there is always one audio
-        listener in the scene
+        There are no audio listeners in the scene. Please ensure
+        there is always one audio listener in the scene
 
-        There are no audio listeners in the scene.
-        Please ensure there is always one audio listener in the scene
+        There are no audio
+        listeners in the scene. Please ensure there is always one audio listener
+        in the scene
+
+        There are no audio listeners in the scene. Please ensure
+        there is always one audio listener in the scene
+
+        There are no audio
+        listeners in the scene. Please ensure there is always one audio listener
+        in the scene
+
+        There are no audio listeners in the scene. Please ensure
+        there is always one audio listener in the scene
+
+        There are no audio
+        listeners in the scene. Please ensure there is always one audio listener
+        in the scene
 
 '
-      stacktrace: 'PauseMenu.Start () (at <ab9077ea09914f06909a357783dc2a2d>:0)
+      stacktrace: 'KeepBetweenLevels.FindStartPos () (at Assets/src/Justin/KeepBetweenLevels.cs:60)
+
+        KeepBetweenLevels.OnLevelWasLoaded
+        (System.Int32 level) (at Assets/src/Justin/KeepBetweenLevels.cs:29)
 
 
 '
@@ -1828,8 +1720,8 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/[Tests][Tests.UITest][suite]
       name: UITest
       fullName: Tests.UITest
-      resultStatus: 2
-      duration: 0.5185663
+      resultStatus: 0
+      duration: 1.9576911
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -1844,14 +1736,18 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/UITest/[Tests][Tests.UITest.PauseFunctionTest]
       name: PauseFunctionTest
       fullName: Tests.UITest.PauseFunctionTest
-      resultStatus: 2
-      duration: 0.2949786
+      resultStatus: 0
+      duration: 0.2691064
       messages: 'Unhandled log message: ''[Exception] NullReferenceException: Object
         reference not set to an instance of an object''. Use UnityEngine.TestTools.LogAssert.Expect'
       output: 'NullReferenceException: Object reference not set to an instance of
         an object
 
-        Active Scene is ''1''.
+        NullReferenceException: Object reference not set to an
+        instance of an object
+
+        DontDestroyOnLoad only works for root GameObjects
+        or components on root GameObjects.
 
 '
       stacktrace: 'KeepBetweenLevels.FindStartPos () (at Assets/src/Justin/KeepBetweenLevels.cs:60)
@@ -1874,8 +1770,8 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/UITest/[Tests][Tests.UITest.ScoreTest]
       name: ScoreTest
       fullName: Tests.UITest.ScoreTest
-      resultStatus: 1
-      duration: 0.1144493
+      resultStatus: 0
+      duration: 0.0894179
       messages: 
       output: 
       stacktrace: 
@@ -1891,15 +1787,15 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/UITest/[Tests][Tests.UITest.UIStressTest]
       name: UIStressTest
       fullName: Tests.UITest.UIStressTest
-      resultStatus: 2
-      duration: 0.0488615
+      resultStatus: 0
+      duration: 0.0161867
       messages: "  Expected: 2147483647\r\n  But was:  -2147483648\r\n"
       output: 
-      stacktrace: 'at Tests.UITest+<UIStressTest>d__6.MoveNext () [0x0014a] in D:\Github\SuperVandalWorld\SuperVandalWorld\Assets\tst\Ben\UITest.cs:172
+      stacktrace: 'at Tests.UITest+<UIStressTest>d__7.MoveNext () [0x0014a] in D:\Github\SuperVandalWorld\SuperVandalWorld\Assets\tst\Ben\UITest.cs:172
 
         at
         UnityEngine.TestTools.TestEnumerator+<Execute>d__5.MoveNext () [0x00038]
-        in <7815469e325a49868d8623db1cc173d4>:0
+        in <def80c3c71174f0ea69facc89d14e13e>:0
 
 '
       notRunnable: 0
@@ -1914,16 +1810,10 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/UITest/[Tests][Tests.UITest.VolumeTest]
       name: VolumeTest
       fullName: Tests.UITest.VolumeTest
-      resultStatus: 1
-      duration: 0.0341918
+      resultStatus: 0
+      duration: 0.0139173
       messages: 
-      output: '0.5
-
-        0
-
-        1
-
-'
+      output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
@@ -1933,17 +1823,89 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1001
       parentUniqueId: Tests.dll/Tests/[Tests][Tests.UITest][suite]
-    m_ResultText: 'UITest (0.519s)
+    m_ResultText: 'SquareTestStress (0.171s)
 
       ---
 
-      One or more child tests had
-      errors'
-    m_ResultStacktrace: 
+      Unhandled log message:
+      ''[Exception] NullReferenceException: Object reference not set to an instance
+      of an object''. Use UnityEngine.TestTools.LogAssert.Expect
+
+      ---
+
+      KeepBetweenLevels.FindStartPos
+      () (at Assets/src/Justin/KeepBetweenLevels.cs:60)
+
+      KeepBetweenLevels.OnLevelWasLoaded
+      (System.Int32 level) (at Assets/src/Justin/KeepBetweenLevels.cs:29)
+
+      ---
+
+      NullReferenceException:
+      Object reference not set to an instance of an object
+
+      Active Scene is
+      ''1''.
+
+      Main menu opened
+
+      NullReferenceException: Object reference
+      not set to an instance of an object
+
+      There are no audio listeners in
+      the scene. Please ensure there is always one audio listener in the scene
+
+      There
+      are no audio listeners in the scene. Please ensure there is always one audio
+      listener in the scene
+
+      There are no audio listeners in the scene. Please
+      ensure there is always one audio listener in the scene
+
+      There are no
+      audio listeners in the scene. Please ensure there is always one audio listener
+      in the scene
+
+      There are no audio listeners in the scene. Please ensure
+      there is always one audio listener in the scene
+
+      There are no audio listeners
+      in the scene. Please ensure there is always one audio listener in the scene
+
+      There
+      are no audio listeners in the scene. Please ensure there is always one audio
+      listener in the scene
+
+      There are no audio listeners in the scene. Please
+      ensure there is always one audio listener in the scene
+
+      There are no
+      audio listeners in the scene. Please ensure there is always one audio listener
+      in the scene
+
+      There are no audio listeners in the scene. Please ensure
+      there is always one audio listener in the scene
+
+      There are no audio listeners
+      in the scene. Please ensure there is always one audio listener in the scene
+
+      There
+      are no audio listeners in the scene. Please ensure there is always one audio
+      listener in the scene
+
+      There are no audio listeners in the scene. Please
+      ensure there is always one audio listener in the scene'
+    m_ResultStacktrace: 'KeepBetweenLevels.FindStartPos () (at Assets/src/Justin/KeepBetweenLevels.cs:60)
+
+      KeepBetweenLevels.OnLevelWasLoaded
+      (System.Int32 level) (at Assets/src/Justin/KeepBetweenLevels.cs:29)
+
+
+'
     m_TestListState:
-      scrollPos: {x: 0, y: 188}
-      m_SelectedIDs: e6daa968
-      m_LastClickedID: 1755962086
+      scrollPos: {x: 0, y: 120}
+      m_SelectedIDs: 0058d9b1
+      m_LastClickedID: -1311156224
       m_ExpandedIDs: c973899ac337b2b420712cd05dfc4bdfe557abf795fbf000ab3ce1198302573d8359db41e6daa968ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
@@ -1971,7 +1933,7 @@ MonoBehaviour:
       availableCategories:
       - Uncategorized
   m_EditModeTestListGUI:
-    m_Window: {fileID: 21}
+    m_Window: {fileID: 19}
     newResultList:
     - id: 1000
       uniqueId: '[SuperVandalWorld][suite]'
@@ -2021,7 +1983,7 @@ MonoBehaviour:
       selectedCategoryMask: 0
       availableCategories:
       - Uncategorized
---- !u!114 &22
+--- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2052,7 +2014,7 @@ MonoBehaviour:
     m_PrefName: Preview_TilemapBrushInspector
   m_Palette: {fileID: 4914733372615852719, guid: 4c595496acd2b1c428f07881f8e955c2, type: 3}
   m_DrawGizmos: 0
---- !u!114 &23
+--- !u!114 &21
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2073,14 +2035,14 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 427
-    width: 848
-    height: 359
+    y: 495
+    width: 985
+    height: 291
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 16300
---- !u!114 &24
+  m_LastSelectedObjectID: 30278
+--- !u!114 &22
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
