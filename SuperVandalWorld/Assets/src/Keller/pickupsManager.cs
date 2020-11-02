@@ -59,10 +59,4 @@ public class pickupsManager : MonoBehaviour
         //remove asset from level via destroy function
         Destroy(other.gameObject);
     }
-
-    public static void triggerSound(Collider2D other)
-    {
-        //call Sound managers function to play sound
-
-    }
 }

@@ -28,7 +28,6 @@ public class PowerUp : pickupsManager
         {
             removeAsset(other);
             updateScore(other);
-            triggerSound(other);
             LogInfo(other);
 
         }
