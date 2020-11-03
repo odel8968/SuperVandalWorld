@@ -4,7 +4,11 @@ Super Vandal World
 
 Description:
 
-      Play through the 2D world as Joe Vandal as he embarks on his quest to become the newest mascot! After embarking on his journey, navigate through the world and it’s many perils by evading enemies and collecting jewels and power-ups. Joe will travel through worlds enveloped by plant life, snowy plains, and spanning wastelands. Will Joe be up to the task of journeying to see the Mascot King and taking his place as the next mascot. 
+      Play through the 2D world as Joe Vandal as he embarks on his quest to become the newest mascot! 
+      After embarking on his journey, navigate through the world and it’s many perils by evading enemies 
+      and collecting jewels and power-ups. Joe will travel through worlds enveloped by plant life, snowy 
+      plains, and spanning wastelands. Will Joe be up to the task of journeying to see the Mascot King 
+      and taking his place as the next mascot. 
 
 Controls:
 	
