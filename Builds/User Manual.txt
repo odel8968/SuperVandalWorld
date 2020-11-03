@@ -20,7 +20,7 @@ Controls:
 
 Installation: 
 
-	1. Navigate to https://github.com/odel8968/SuperVandalWorld/Builds. 
+	1. Navigate to https://drive.google.com/drive/folders/1cYzWnZBObkRY7xB3I4CC2X-OuF3gca8Z?usp=sharing. 
 	2. Select the build corresponding to your Operating System(i.e. Windows, Mac OS X, Linux).
 	3. Download file. 
 	4. Open location where you downloaded the game file.
