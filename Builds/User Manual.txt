@@ -1,0 +1,24 @@
+2020 Because it’s a Disaster
+Super Vandal World
+
+
+Description:
+
+      Play through the 2D world as Joe Vandal as he embarks on his quest to become the newest mascot! After embarking on his journey, navigate through the world and it’s many perils by evading enemies and collecting jewels and power-ups. Joe will travel through worlds enveloped by plant life, snowy plains, and spanning wastelands. Will Joe be up to the task of journeying to see the Mascot King and taking his place as the next mascot. 
+
+Controls:
+	
+	Move Left		A or Left Arrow
+	Move Right		D or Right Arrow
+	Jump			Space Bar
+	Use Ability		J
+	Pause			Esc 
+
+Installation: 
+
+	1. Navigate to https://github.com/odel8968/SuperVandalWorld/Builds. 
+	2. Select the build corresponding to your Operating System(i.e. Windows, Mac OS X, Linux).
+	3. Download file. 
+	4. Open location where you downloaded the game file.
+	5. Run the executable file to launch the game. 
+	
