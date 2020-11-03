@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6135640305494707417}
   - component: {fileID: 6135640305494707398}
   - component: {fileID: 868055309}
-  - component: {fileID: 2936412110777473740}
+  - component: {fileID: 5937640506092767329}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -137,12 +137,10 @@ MonoBehaviour:
   bc: {fileID: 0}
   speed: 10
   jumpForce: 12
-  jumps_allowed: 0
   checkGroundRadius: 0.1
   groundLayer:
     serializedVersion: 2
     m_Bits: 2048
-  abilityName: 
 --- !u!61 &6135640305494707398
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -182,10 +180,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreValue: 0
-  healthChange: 0
   axeProj: {fileID: 501964488055383182, guid: dbcc84b69d0928743ac61fbd7b9c0308, type: 3}
   abilityKey: 106
---- !u!114 &2936412110777473740
+--- !u!114 &5937640506092767329
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -194,16 +191,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 6135640305494707396}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c7dd7b7bd7e6f14ea70cd5d9d317133, type: 3}
+  m_Script: {fileID: 11500000, guid: 68714fd3be683f049ae5a3d7a20d3b57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 0}
-  bc: {fileID: 0}
-  speed: 10
-  jumpForce: 12
-  jumps_allowed: 0
-  checkGroundRadius: 0.1
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 2048
-  abilityName: 
