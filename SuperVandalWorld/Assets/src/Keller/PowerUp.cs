@@ -10,6 +10,8 @@ public class PowerUp : pickupsManager
     public static void collisionPowerUp(Collider2D other)
     {
         //on trigger with pickup
+        var ui = GameObject.Find("Score").GetComponent<UIManager>();
+        var soundManager = GameObject.Find("SoundManager").GetComponent<SoundManager>();
 
         Character_Movement.hasAbility = enableAbility(Character_Movement.hasAbility);
         //Character_Movement.currentAbility = changeAbility(Character_Movement.currentAbility, other);
@@ -21,16 +23,17 @@ public class PowerUp : pickupsManager
                 changeAbility(other);
             }
             */
-            removeAsset(other);
             LogInfo(other);
         }
         else if(!Character_Movement.hasAbility)
         {
-            removeAsset(other);
-            updateScore(other);
+            
             LogInfo(other);
 
         }
+        removeAsset(other);
+        ui.AddScore(updateScore(other));
+        soundManager.PlaySound("PowerUp");
     }
 
     //enable use of ability for character
