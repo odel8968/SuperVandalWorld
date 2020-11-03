@@ -37,7 +37,7 @@ public class Enemy : MonoBehaviour
             curTime = 0;
         }
         moveVelocity = new Vector2(direction, 0) * speed;
-        animator.SetFloat("velocity", moveVelocity.x);
+        //animator.SetFloat("velocity", moveVelocity.x);
     }
 
     void FixedUpdate()

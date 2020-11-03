@@ -20,9 +20,9 @@ MonoBehaviour:
     x: 0
     y: 30
     width: 1440
-    height: 720
-  m_MinSize: {x: 679, y: 492}
-  m_MaxSize: {x: 14002, y: 14042}
+    height: 723
+  m_MinSize: {x: 678, y: 342}
+  m_MaxSize: {x: 12003, y: 8042}
   vertical: 0
   controlID: -1
 --- !u!114 &2
@@ -45,10 +45,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 331
+    x: 201
     y: 75
-    width: 653
-    height: 392
+    width: 787
+    height: 431
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
   m_SerializedViewValues: []
@@ -56,7 +56,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 653, y: 371}
+  m_TargetSize: {x: 787, y: 410}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -71,10 +71,10 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -163.25
-    m_HBaseRangeMax: 163.25
-    m_VBaseRangeMin: -92.75
-    m_VBaseRangeMax: 92.75
+    m_HBaseRangeMin: -196.75
+    m_HBaseRangeMax: 196.75
+    m_VBaseRangeMin: -102.5
+    m_VBaseRangeMax: 102.5
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -92,23 +92,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 653
-      height: 371
+      width: 787
+      height: 410
     m_Scale: {x: 2, y: 2}
-    m_Translation: {x: 326.5, y: 185.5}
+    m_Translation: {x: 393.5, y: 205}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -163.25
-      y: -92.75
-      width: 326.5
-      height: 185.5
+      x: -196.75
+      y: -102.5
+      width: 393.5
+      height: 205
     m_MinimalGUI: 1
   m_defaultScale: 2
-  m_LastWindowPixelSize: {x: 1306, y: 784}
+  m_LastWindowPixelSize: {x: 1574, y: 862}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -133,10 +133,10 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 986
-    height: 720
-  m_MinSize: {x: 403, y: 492}
-  m_MaxSize: {x: 10001, y: 14042}
+    width: 990
+    height: 723
+  m_MinSize: {x: 403, y: 342}
+  m_MaxSize: {x: 8003, y: 8042}
   vertical: 1
   controlID: -1
 --- !u!114 &4
@@ -158,8 +158,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 986
-    height: 413
+    width: 990
+    height: 452
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
@@ -174,15 +174,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: SceneHierarchyWindow
+  m_Name: 
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 331
-    height: 413
+    width: 201
+    height: 452
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 6}
@@ -212,15 +212,15 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 75
-    width: 330
-    height: 392
+    width: 200
+    height: 431
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 184a0000
+      m_SelectedIDs: 6a330000
       m_LastClickedID: 0
-      m_ExpandedIDs: e45dffffec67ffff5c6fffff0eb3ffff64beffffe6c6ffffaac7ffff38ceffff82d2ffff0ed9ffff14dbffff546100008e6200008a630000fc640000846b0000c86c000094730200
+      m_ExpandedIDs: a4d4ffff58ddffff244b000016700000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -259,18 +259,18 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 331
+    x: 201
     y: 0
-    width: 655
-    height: 413
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+    width: 789
+    height: 452
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 2}
   m_Panes:
   - {fileID: 8}
-  - {fileID: 2}
   - {fileID: 9}
-  m_Selected: 1
+  - {fileID: 2}
+  m_Selected: 2
   m_LastSelected: 0
 --- !u!114 &8
 MonoBehaviour:
@@ -292,10 +292,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 331
-    y: 75
-    width: 653
-    height: 392
+    x: 202
+    y: 19
+    width: 961
+    height: 431
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
   m_WindowGUID: 8fde1c7c9ac16d04fb45d7d761e25119
@@ -308,9 +308,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 39.636528, y: 13.264535, z: -4.304959}
+    m_Target: {x: 6.3546686, y: 18.920322, z: -17.977766}
     speed: 2
-    m_Value: {x: 39.636528, y: 13.264535, z: -4.304959}
+    m_Value: {x: 6.3546686, y: 18.920322, z: -17.977766}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -361,9 +361,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 32.42449
+    m_Target: 33.24447
     speed: 2
-    m_Value: 32.42449
+    m_Value: 33.24447
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -385,7 +385,7 @@ MonoBehaviour:
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
-  m_SceneVisActive: 0
+  m_SceneVisActive: 1
   m_LastLockedObject: {fileID: 0}
   m_ViewIsLockedToObject: 0
 --- !u!114 &9
@@ -418,8 +418,8 @@ MonoBehaviour:
   m_Zoom: 0.18986014
   m_ScrollPosition: {x: 0, y: 0}
   m_ResetOnNextRepaint: 0
-  m_SelectedAssetPath: Assets/prefabs/Heba/Plunkah.png
-  m_SelectedSpriteRectGUID: 0605ae922c8a34f25b93a88c1cc0f923
+  m_SelectedAssetPath: Assets/prefabs/Heba/BOSS3.png
+  m_SelectedSpriteRectGUID: 574f4ce8d96294ec3b36198dbd1a3d62
   m_LastUsedModuleTypeName: UnityEditor.U2D.Animation.SkinningModule
 --- !u!114 &10
 MonoBehaviour:
@@ -431,23 +431,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ProjectBrowser
+  m_Name: ConsoleWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 413
-    width: 986
-    height: 307
-  m_MinSize: {x: 231, y: 271}
-  m_MaxSize: {x: 10001, y: 10021}
-  m_ActualView: {fileID: 11}
+    y: 452
+    width: 990
+    height: 271
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 11}
   - {fileID: 12}
   - {fileID: 13}
-  m_Selected: 0
+  m_Selected: 2
   m_LastSelected: 1
 --- !u!114 &11
 MonoBehaviour:
@@ -470,9 +470,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 488
-    width: 985
-    height: 286
+    y: 527
+    width: 989
+    height: 250
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -487,21 +487,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/src/Justin
     m_Globs: []
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/src/Justin
   m_LastFoldersGridSize: -1
   m_LastProjectPath: /Users/hebaaljabrine/Desktop/PLEASE/SuperVandalWorld/SuperVandalWorld
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 102.00073}
-    m_SelectedIDs: 0a4a0000
-    m_LastClickedID: 18954
-    m_ExpandedIDs: 00000000e0490000e2490000e4490000e6490000e8490000ea4900000c4a000000ca9a3b
+    scrollPos: {x: 0, y: 158}
+    m_SelectedIDs: 00500000
+    m_LastClickedID: 20480
+    m_ExpandedIDs: 00000000ce4f0000d04f0000d24f0000d44f0000d64f0000d84f0000da4f000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -529,7 +529,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000e0490000e2490000e4490000e6490000e8490000ea4900000c4a000000ca9a3b
+    m_ExpandedIDs: 00000000ce4f0000d04f0000d24f0000d44f0000d64f0000d84f0000da4f000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -554,10 +554,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 184a0000
-    m_LastClickedInstanceID: 18968
+    m_SelectedInstanceIDs: 6a330000
+    m_LastClickedInstanceID: 13162
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c6230000a4430000ae3f0000b83c00007e4600007246000064430000383d0000f43c00000c420000
+    m_ExpandedInstanceIDs: c6230000a4430000ae3f0000b83c00007e4600007246000064430000383d0000f43c00000c42000084460000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -573,7 +573,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 10}
+      m_ClientGUIView: {fileID: 0}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -606,13 +606,13 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 488
-    width: 985
-    height: 286
+    y: 527
+    width: 989
+    height: 250
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 26822
+  m_LastSelectedObjectID: 26684
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -634,9 +634,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 488
-    width: 985
-    height: 286
+    y: 527
+    width: 989
+    height: 250
   m_ViewDataDictionary: {fileID: 0}
 --- !u!114 &14
 MonoBehaviour:
@@ -653,19 +653,18 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 986
+    x: 990
     y: 0
-    width: 454
-    height: 720
+    width: 450
+    height: 723
   m_MinSize: {x: 275, y: 50}
   m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
   - {fileID: 16}
-  - {fileID: 17}
   m_Selected: 0
-  m_LastSelected: 1
+  m_LastSelected: 0
 --- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -686,10 +685,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 986
+    x: 990
     y: 75
-    width: 453
-    height: 699
+    width: 449
+    height: 702
   m_ViewDataDictionary: {fileID: 0}
   m_ObjectsLockedBeforeSerialization: []
   m_InstanceIDsLockedBeforeSerialization: 
@@ -705,1215 +704,6 @@ MonoBehaviour:
     m_IsLocked: 0
   m_PreviewWindow: {fileID: 0}
 --- !u!114 &16
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 13401, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Test Runner
-    m_Image: {fileID: 0}
-    m_Tooltip: 
-  m_Pos:
-    serializedVersion: 2
-    x: 986
-    y: 30
-    width: 453
-    height: 829
-  m_ViewDataDictionary: {fileID: 0}
-  m_Spl:
-    ID: 527
-    splitterInitialOffset: 516
-    currentActiveSplitter: -1
-    realSizes:
-    - 444
-    - 315
-    relativeSizes:
-    - 0.58498025
-    - 0.41501975
-    minSizes:
-    - 32
-    - 32
-    maxSizes:
-    - 0
-    - 0
-    lastTotalSize: 759
-    splitSize: 6
-    xOffset: 0
-    m_Version: 1
-    oldRealSizes: 
-    oldMinSizes: 
-    oldMaxSizes: 
-    oldSplitSize: 0
-  m_TestTypeToolbarIndex: 0
-  m_PlayModeTestListGUI:
-    m_Window: {fileID: 16}
-    newResultList:
-    - id: 1003
-      uniqueId: '[SuperVandalWorld][suite]'
-      name: SuperVandalWorld
-      fullName: SuperVandalWorld
-      resultStatus: 2
-      duration: 0.5383087
-      messages: One or more child tests had errors
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 
-      parentUniqueId: 
-    - id: 1029
-      uniqueId: '[Tests.dll][suite]'
-      name: Tests.dll
-      fullName: C:/Users/adave/Documents/GitHub/SuperVandalWorld/SuperVandalWorld/Library/ScriptAssemblies/Tests.dll
-      resultStatus: 2
-      duration: 0.480817
-      messages: One or more child tests had errors
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1000
-      parentUniqueId: '[SuperVandalWorld][suite]'
-    - id: 1030
-      uniqueId: Tests.dll/[Tests][suite]
-      name: Tests
-      fullName: Tests
-      resultStatus: 2
-      duration: 0.4644357
-      messages: One or more child tests had errors
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1029
-      parentUniqueId: '[Tests.dll][suite]'
-    - id: 1017
-      uniqueId: Tests.dll/Tests/[Tests][Tests.CameraTest][suite]
-      name: CameraTest
-      fullName: Tests.CameraTest
-      resultStatus: 2
-      duration: 0.5528396
-      messages: One or more child tests had errors
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1030
-      parentUniqueId: Tests.dll/[Tests][suite]
-    - id: 1018
-      uniqueId: Tests.dll/Tests/CameraTest/[Tests][Tests.CameraTest.Camera_Set_To_Follow_Player]
-      name: Camera_Set_To_Follow_Player
-      fullName: Tests.CameraTest.Camera_Set_To_Follow_Player
-      resultStatus: 2
-      duration: 0.3056316
-      messages: 'Unhandled log message: ''[Exception] NullReferenceException: Object
-        reference not set to an instance of an object''. Use UnityEngine.TestTools.LogAssert.Expect'
-      output: 'NullReferenceException: Object reference not set to an instance of
-        an object
-
-        NullReferenceException: Object reference not set to an
-        instance of an object
-
-        DontDestroyOnLoad only works for root GameObjects
-        or components on root GameObjects.
-
-'
-      stacktrace: 'KeepBetweenLevels.FindStartPos () (at Assets/src/Justin/KeepBetweenLevels.cs:60)
-
-        KeepBetweenLevels.OnLevelWasLoaded
-        (System.Int32 level) (at Assets/src/Justin/KeepBetweenLevels.cs:29)
-
-
-'
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1017
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.CameraTest][suite]
-    - id: 1021
-      uniqueId: Tests.dll/Tests/CameraTest/[Tests][Tests.CameraTest.Camera_Speed_Set]
-      name: Camera_Speed_Set
-      fullName: Tests.CameraTest.Camera_Speed_Set
-      resultStatus: 1
-      duration: 0.1391425
-      messages: 
-      output: '10
-
-'
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1017
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.CameraTest][suite]
-    - id: 1019
-      uniqueId: Tests.dll/Tests/CameraTest/[Tests][Tests.CameraTest.Camera_X_Offset_Set]
-      name: Camera_X_Offset_Set
-      fullName: Tests.CameraTest.Camera_X_Offset_Set
-      resultStatus: 1
-      duration: 0.0435544
-      messages: 
-      output: 'Jumping
-
-        45
-
-'
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1017
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.CameraTest][suite]
-    - id: 1020
-      uniqueId: Tests.dll/Tests/CameraTest/[Tests][Tests.CameraTest.Camera_Y_Offset_Set]
-      name: Camera_Y_Offset_Set
-      fullName: Tests.CameraTest.Camera_Y_Offset_Set
-      resultStatus: 1
-      duration: 0.0365306
-      messages: 
-      output: '25
-
-'
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1017
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.CameraTest][suite]
-    - id: 1014
-      uniqueId: Tests.dll/Tests/[Tests][Tests.CharacterMovementTests][suite]
-      name: CharacterMovementTests
-      fullName: Tests.CharacterMovementTests
-      resultStatus: 0
-      duration: 4.5402923
-      messages: One or more child tests had errors
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1030
-      parentUniqueId: Tests.dll/[Tests][suite]
-    - id: 1016
-      uniqueId: Tests.dll/Tests/CharacterMovementTests/[Tests][Tests.CharacterMovementTests.jump_stress_test]
-      name: jump_stress_test
-      fullName: Tests.CharacterMovementTests.jump_stress_test
-      resultStatus: 2
-      duration: 0.2109334
-      messages: 'Unhandled log message: ''[Exception] NullReferenceException: Object
-        reference not set to an instance of an object''. Use UnityEngine.TestTools.LogAssert.Expect'
-      output: 'NullReferenceException: Object reference not set to an instance of
-        an object
-
-        NullReferenceException: Object reference not set to an
-        instance of an object
-
-        DontDestroyOnLoad only works for root GameObjects
-        or components on root GameObjects.
-
-'
-      stacktrace: 'KeepBetweenLevels.FindStartPos () (at Assets/src/Justin/KeepBetweenLevels.cs:60)
-
-        KeepBetweenLevels.OnLevelWasLoaded
-        (System.Int32 level) (at Assets/src/Justin/KeepBetweenLevels.cs:29)
-
-
-'
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1012
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.CharacterMovementTests][suite]
-    - id: 1015
-      uniqueId: Tests.dll/Tests/CharacterMovementTests/[Tests][Tests.CharacterMovementTests.jump_test]
-      name: jump_test
-      fullName: Tests.CharacterMovementTests.jump_test
-      resultStatus: 1
-      duration: 2.0718167
-      messages: 
-      output: 'Jumping
-
-        Jumping
-
-        Jumping
-
-'
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1014
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.CharacterMovementTests][suite]
-    - id: 1017
-      uniqueId: Tests.dll/Tests/CharacterMovementTests/[Tests][Tests.CharacterMovementTests.movement_test_left]
-      name: movement_test_left
-      fullName: Tests.CharacterMovementTests.movement_test_left
-      resultStatus: 2
-      duration: 0
-      messages: Cancelled by user
-      output: 'Jumping
-
-        Jumping
-
-        Jumping
-
-        Jumping
-
-        Jumping
-
-        Jumping
-
-        Jumping
-
-        Jumping
-
-'
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1014
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.CharacterMovementTests][suite]
-    - id: 1016
-      uniqueId: Tests.dll/Tests/CharacterMovementTests/[Tests][Tests.CharacterMovementTests.movement_test_right]
-      name: movement_test_right
-      fullName: Tests.CharacterMovementTests.movement_test_right
-      resultStatus: 0
-      duration: 1.1320852
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1014
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.CharacterMovementTests][suite]
-    - id: 1005
-      uniqueId: Tests.dll/Tests/[Tests][Tests.daEnemyTest][suite]
-      name: daEnemyTest
-      fullName: Tests.daEnemyTest
-      resultStatus: 0
-      duration: 0.2222062
-      messages: One or more child tests had errors
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1030
-      parentUniqueId: Tests.dll/[Tests][suite]
-    - id: 1006
-      uniqueId: Tests.dll/Tests/daEnemyTest/[Tests][Tests.daEnemyTest.enemySpeedIsSet]
-      name: enemySpeedIsSet
-      fullName: Tests.daEnemyTest.enemySpeedIsSet
-      resultStatus: 0
-      duration: 0.1725745
-      messages: 'Unhandled log message: ''[Exception] NullReferenceException: Object
-        reference not set to an instance of an object''. Use UnityEngine.TestTools.LogAssert.Expect'
-      output: 'NullReferenceException: Object reference not set to an instance of
-        an object
-
-        NullReferenceException: Object reference not set to an
-        instance of an object
-
-        DontDestroyOnLoad only works for root GameObjects
-        or components on root GameObjects.
-
-'
-      stacktrace: 'KeepBetweenLevels.FindStartPos () (at Assets/src/Justin/KeepBetweenLevels.cs:60)
-
-        KeepBetweenLevels.OnLevelWasLoaded
-        (System.Int32 level) (at Assets/src/Justin/KeepBetweenLevels.cs:29)
-
-
-
-'
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1005
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.daEnemyTest][suite]
-    - id: 1009
-      uniqueId: Tests.dll/Tests/daEnemyTest/[Tests][Tests.daEnemyTest.enemyStressTest]
-      name: enemyStressTest
-      fullName: Tests.daEnemyTest.enemyStressTest
-      resultStatus: 0
-      duration: 0.0250275
-      messages: 'System.NullReferenceException : Object reference not set to an instance
-        of an object'
-      output: 
-      stacktrace: "  at Tests.daEnemyTest+<enemyStressTest>d__8.MoveNext () [0x00050]
-        in D:\\Github\\SuperVandalWorld\\SuperVandalWorld\\Assets\\tst\\Davey\\daEnemyTest.cs:102
-        \r\n  at UnityEngine.TestTools.TestEnumerator+<Execute>d__5.MoveNext () [0x00038]
-        in <def80c3c71174f0ea69facc89d14e13e>:0 "
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1005
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.daEnemyTest][suite]
-    - id: 1007
-      uniqueId: Tests.dll/Tests/daEnemyTest/[Tests][Tests.daEnemyTest.isEnemyMoving]
-      name: isEnemyMoving
-      fullName: Tests.daEnemyTest.isEnemyMoving
-      resultStatus: 0
-      duration: 0.0091639
-      messages: 'System.NullReferenceException : Object reference not set to an instance
-        of an object'
-      output: 
-      stacktrace: "  at Tests.daEnemyTest+<isEnemyMoving>d__6.MoveNext () [0x00050]
-        in D:\\Github\\SuperVandalWorld\\SuperVandalWorld\\Assets\\tst\\Davey\\daEnemyTest.cs:51
-        \r\n  at UnityEngine.TestTools.TestEnumerator+<Execute>d__5.MoveNext () [0x00038]
-        in <def80c3c71174f0ea69facc89d14e13e>:0 "
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1005
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.daEnemyTest][suite]
-    - id: 1008
-      uniqueId: Tests.dll/Tests/daEnemyTest/[Tests][Tests.daEnemyTest.movingTowardsPlayer]
-      name: movingTowardsPlayer
-      fullName: Tests.daEnemyTest.movingTowardsPlayer
-      resultStatus: 0
-      duration: 0.0083815
-      messages: 'System.NullReferenceException : Object reference not set to an instance
-        of an object'
-      output: 
-      stacktrace: "  at Tests.daEnemyTest+<movingTowardsPlayer>d__7.MoveNext () [0x00050]
-        in D:\\Github\\SuperVandalWorld\\SuperVandalWorld\\Assets\\tst\\Davey\\daEnemyTest.cs:73
-        \r\n  at UnityEngine.TestTools.TestEnumerator+<Execute>d__5.MoveNext () [0x00038]
-        in <def80c3c71174f0ea69facc89d14e13e>:0 "
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1005
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.daEnemyTest][suite]
-    - id: 1027
-      uniqueId: Tests.dll/Tests/[Tests][Tests.FallThroughFloorStress][suite]
-      name: FallThroughFloorStress
-      fullName: Tests.FallThroughFloorStress
-      resultStatus: 0
-      duration: 0.1756823
-      messages: One or more child tests had errors
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1041
-      parentUniqueId: Tests.dll/[Tests][suite]
-    - id: 1028
-      uniqueId: Tests.dll/Tests/FallThroughFloorStress/[Tests][Tests.FallThroughFloorStress.FallThroughFloorStressTest]
-      name: FallThroughFloorStressTest
-      fullName: Tests.FallThroughFloorStress.FallThroughFloorStressTest
-      resultStatus: 0
-      duration: 0.1705884
-      messages: 'Unhandled log message: ''[Exception] NullReferenceException: Object
-        reference not set to an instance of an object''. Use UnityEngine.TestTools.LogAssert.Expect'
-      output: 'NullReferenceException: Object reference not set to an instance of
-        an object
-
-        NullReferenceException: Object reference not set to an
-        instance of an object
-
-        DontDestroyOnLoad only works for root GameObjects
-        or components on root GameObjects.
-
-'
-      stacktrace: 'KeepBetweenLevels.FindStartPos () (at Assets/src/Justin/KeepBetweenLevels.cs:60)
-
-        KeepBetweenLevels.OnLevelWasLoaded
-        (System.Int32 level) (at Assets/src/Justin/KeepBetweenLevels.cs:29)
-
-
-
-'
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1027
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.FallThroughFloorStress][suite]
-    - id: 1024
-      uniqueId: Tests.dll/Tests/[Tests][Tests.MovingPlatformStressTest][suite]
-      name: MovingPlatformStressTest
-      fullName: Tests.MovingPlatformStressTest
-      resultStatus: 0
-      duration: 0.1905737
-      messages: One or more child tests had errors
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1036
-      parentUniqueId: Tests.dll/[Tests][suite]
-    - id: 1025
-      uniqueId: Tests.dll/Tests/MovingPlatformStressTest/[Tests][Tests.MovingPlatformStressTest.MovingPlatformNumberStressTest]
-      name: MovingPlatformNumberStressTest
-      fullName: Tests.MovingPlatformStressTest.MovingPlatformNumberStressTest
-      resultStatus: 0
-      duration: 0.1746508
-      messages: 'Unhandled log message: ''[Exception] NullReferenceException: Object
-        reference not set to an instance of an object''. Use UnityEngine.TestTools.LogAssert.Expect'
-      output: 'NullReferenceException: Object reference not set to an instance of
-        an object
-
-        NullReferenceException: Object reference not set to an
-        instance of an object
-
-        DontDestroyOnLoad only works for root GameObjects
-        or components on root GameObjects.
-
-'
-      stacktrace: 'KeepBetweenLevels.FindStartPos () (at Assets/src/Justin/KeepBetweenLevels.cs:60)
-
-        KeepBetweenLevels.OnLevelWasLoaded
-        (System.Int32 level) (at Assets/src/Justin/KeepBetweenLevels.cs:29)
-
-
-
-'
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1024
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.MovingPlatformStressTest][suite]
-    - id: 1024
-      uniqueId: Tests.dll/Tests/[Tests][Tests.pickupPointTest][suite]
-      name: pickupPointTest
-      fullName: Tests.pickupPointTest
-      resultStatus: 0
-      duration: 0.2379946
-      messages: One or more child tests had errors
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1030
-      parentUniqueId: Tests.dll/[Tests][suite]
-    - id: 1028
-      uniqueId: Tests.dll/Tests/pickupPointTest/[Tests][Tests.pickupPointTest.AddPointsForItemsBeforePowerUps]
-      name: AddPointsForItemsBeforePowerUps
-      fullName: Tests.pickupPointTest.AddPointsForItemsBeforePowerUps
-      resultStatus: 0
-      duration: 0.1793468
-      messages: 'Unhandled log message: ''[Exception] NullReferenceException: Object
-        reference not set to an instance of an object''. Use UnityEngine.TestTools.LogAssert.Expect'
-      output: 'NullReferenceException: Object reference not set to an instance of
-        an object
-
-        NullReferenceException: Object reference not set to an
-        instance of an object
-
-        DontDestroyOnLoad only works for root GameObjects
-        or components on root GameObjects.
-
-'
-      stacktrace: 'KeepBetweenLevels.FindStartPos () (at Assets/src/Justin/KeepBetweenLevels.cs:60)
-
-        KeepBetweenLevels.OnLevelWasLoaded
-        (System.Int32 level) (at Assets/src/Justin/KeepBetweenLevels.cs:29)
-
-
-
-'
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1025
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.pickupPointTest][suite]
-    - id: 1029
-      uniqueId: Tests.dll/Tests/pickupPointTest/[Tests][Tests.pickupPointTest.AddPointsForPowerupsBeforeItems]
-      name: AddPointsForPowerupsBeforeItems
-      fullName: Tests.pickupPointTest.AddPointsForPowerupsBeforeItems
-      resultStatus: 0
-      duration: 0.020456
-      messages: 'System.NullReferenceException : Object reference not set to an instance
-        of an object'
-      output: 
-      stacktrace: "  at Tests.pickupPointTest.updateScore (UnityEngine.GameObject
-        other, System.Int32 numItems, System.Int32 currentScore) [0x00000] in D:\\Github\\SuperVandalWorld\\SuperVandalWorld\\Assets\\tst\\Keller\\pickupScoreTest.cs:29
-        \r\n  at Tests.pickupPointTest+<AddPointsForPowerupsBeforeItems>d__7.MoveNext
-        () [0x000ae] in D:\\Github\\SuperVandalWorld\\SuperVandalWorld\\Assets\\tst\\Keller\\pickupScoreTest.cs:164
-        \r\n  at UnityEngine.TestTools.TestEnumerator+<Execute>d__5.MoveNext () [0x00038]
-        in <def80c3c71174f0ea69facc89d14e13e>:0 "
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1025
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.pickupPointTest][suite]
-    - id: 1025
-      uniqueId: Tests.dll/Tests/pickupPointTest/[Tests][Tests.pickupPointTest.PickUpItemAddsPointsToScore]
-      name: PickUpItemAddsPointsToScore
-      fullName: Tests.pickupPointTest.PickUpItemAddsPointsToScore
-      resultStatus: 0
-      duration: 0.0131396
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1024
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.pickupPointTest][suite]
-    - id: 1027
-      uniqueId: Tests.dll/Tests/pickupPointTest/[Tests][Tests.pickupPointTest.PickUpPowerUpsAddsPointsToScore]
-      name: PickUpPowerUpsAddsPointsToScore
-      fullName: Tests.pickupPointTest.PickUpPowerUpsAddsPointsToScore
-      resultStatus: 0
-      duration: 0.0070956
-      messages: 'System.NullReferenceException : Object reference not set to an instance
-        of an object'
-      output: 
-      stacktrace: "  at Tests.pickupPointTest.updateScore (UnityEngine.GameObject
-        other, System.Int32 numItems, System.Int32 currentScore) [0x00000] in D:\\Github\\SuperVandalWorld\\SuperVandalWorld\\Assets\\tst\\Keller\\pickupScoreTest.cs:29
-        \r\n  at Tests.pickupPointTest+<PickUpPowerUpsAddsPointsToScore>d__5.MoveNext
-        () [0x0006b] in D:\\Github\\SuperVandalWorld\\SuperVandalWorld\\Assets\\tst\\Keller\\pickupScoreTest.cs:103
-        \r\n  at UnityEngine.TestTools.TestEnumerator+<Execute>d__5.MoveNext () [0x00038]
-        in <def80c3c71174f0ea69facc89d14e13e>:0 "
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1025
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.pickupPointTest][suite]
-    - id: 1028
-      uniqueId: Tests.dll/Tests/[Tests][Tests.pickUpsStressTest][suite]
-      name: pickUpsStressTest
-      fullName: Tests.pickUpsStressTest
-      resultStatus: 0
-      duration: 0.185032
-      messages: One or more child tests had errors
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1036
-      parentUniqueId: Tests.dll/[Tests][suite]
-    - id: 1029
-      uniqueId: Tests.dll/Tests/pickUpsStressTest/[Tests][Tests.pickUpsStressTest.stressSpawnDiamonds]
-      name: stressSpawnDiamonds
-      fullName: Tests.pickUpsStressTest.stressSpawnDiamonds
-      resultStatus: 0
-      duration: 0.179691
-      messages: 'Unhandled log message: ''[Exception] NullReferenceException: Object
-        reference not set to an instance of an object''. Use UnityEngine.TestTools.LogAssert.Expect'
-      output: 'NullReferenceException: Object reference not set to an instance of
-        an object
-
-        NullReferenceException: Object reference not set to an
-        instance of an object
-
-        DontDestroyOnLoad only works for root GameObjects
-        or components on root GameObjects.
-
-'
-      stacktrace: 'KeepBetweenLevels.FindStartPos () (at Assets/src/Justin/KeepBetweenLevels.cs:60)
-
-        KeepBetweenLevels.OnLevelWasLoaded
-        (System.Int32 level) (at Assets/src/Justin/KeepBetweenLevels.cs:29)
-
-
-
-'
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1028
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.pickUpsStressTest][suite]
-    - id: 1022
-      uniqueId: Tests.dll/Tests/[Tests][Tests.PlatformMovementTest][suite]
-      name: PlatformMovementTest
-      fullName: Tests.PlatformMovementTest
-      resultStatus: 0
-      duration: 0.1893103
-      messages: One or more child tests had errors
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1030
-      parentUniqueId: Tests.dll/[Tests][suite]
-    - id: 1023
-      uniqueId: Tests.dll/Tests/PlatformMovementTest/[Tests][Tests.PlatformMovementTest.MovingPlatformSpeed]
-      name: MovingPlatformSpeed
-      fullName: Tests.PlatformMovementTest.MovingPlatformSpeed
-      resultStatus: 0
-      duration: 0.1738271
-      messages: 'Unhandled log message: ''[Exception] NullReferenceException: Object
-        reference not set to an instance of an object''. Use UnityEngine.TestTools.LogAssert.Expect'
-      output: 'NullReferenceException: Object reference not set to an instance of
-        an object
-
-        NullReferenceException: Object reference not set to an
-        instance of an object
-
-        DontDestroyOnLoad only works for root GameObjects
-        or components on root GameObjects.
-
-'
-      stacktrace: 'KeepBetweenLevels.FindStartPos () (at Assets/src/Justin/KeepBetweenLevels.cs:60)
-
-        KeepBetweenLevels.OnLevelWasLoaded
-        (System.Int32 level) (at Assets/src/Justin/KeepBetweenLevels.cs:29)
-
-
-
-'
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1022
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.PlatformMovementTest][suite]
-    - id: 1012
-      uniqueId: Tests.dll/Tests/[Tests][Tests.SquareTest][suite]
-      name: SquareTest
-      fullName: Tests.SquareTest
-      resultStatus: 2
-      duration: 0.4556711
-      messages: One or more child tests had errors
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1039
-      parentUniqueId: Tests.dll/[Tests][suite]
-    - id: 1014
-      uniqueId: Tests.dll/Tests/SquareTest/[Tests][Tests.SquareTest.SquareTestBoundary1]
-      name: SquareTestBoundary1
-      fullName: Tests.SquareTest.SquareTestBoundary1
-      resultStatus: 0
-      duration: 0.4269983
-      messages: 'Unhandled log message: ''[Exception] NullReferenceException: Object
-        reference not set to an instance of an object''. Use UnityEngine.TestTools.LogAssert.Expect'
-      output: 'NullReferenceException: Object reference not set to an instance of
-        an object
-
-        NullReferenceException: Object reference not set to an
-        instance of an object
-
-        DontDestroyOnLoad only works for root GameObjects
-        or components on root GameObjects.
-
-        Jumping
-
-'
-      stacktrace: 'KeepBetweenLevels.FindStartPos () (at Assets/src/Justin/KeepBetweenLevels.cs:60)
-
-        KeepBetweenLevels.OnLevelWasLoaded
-        (System.Int32 level) (at Assets/src/Justin/KeepBetweenLevels.cs:29)
-
-
-'
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1012
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.SquareTest][suite]
-    - id: 1015
-      uniqueId: Tests.dll/Tests/SquareTest/[Tests][Tests.SquareTest.SquareTestBoundary2]
-      name: SquareTestBoundary2
-      fullName: Tests.SquareTest.SquareTestBoundary2
-      resultStatus: 0
-      duration: 0.3160456
-      messages: 'Unhandled log message: ''[Exception] NullReferenceException: Object
-        reference not set to an instance of an object''. Use UnityEngine.TestTools.LogAssert.Expect'
-      output: 'NullReferenceException: Object reference not set to an instance of
-        an object
-
-        NullReferenceException: Object reference not set to an
-        instance of an object
-
-        DontDestroyOnLoad only works for root GameObjects
-        or components on root GameObjects.
-
-'
-      stacktrace: 'KeepBetweenLevels.FindStartPos () (at Assets/src/Justin/KeepBetweenLevels.cs:60)
-
-        KeepBetweenLevels.OnLevelWasLoaded
-        (System.Int32 level) (at Assets/src/Justin/KeepBetweenLevels.cs:29)
-
-
-'
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1012
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.SquareTest][suite]
-    - id: 1013
-      uniqueId: Tests.dll/Tests/SquareTest/[Tests][Tests.SquareTest.SquareTestInitialCondition]
-      name: SquareTestInitialCondition
-      fullName: Tests.SquareTest.SquareTestInitialCondition
-      resultStatus: 0
-      duration: 0.0097868
-      messages: 
-      output: 'Jumping
-
-        Jumping
-
-'
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1012
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.SquareTest][suite]
-    - id: 1016
-      uniqueId: Tests.dll/Tests/SquareTest/[Tests][Tests.SquareTest.SquareTestStress]
-      name: SquareTestStress
-      fullName: Tests.SquareTest.SquareTestStress
-      resultStatus: 2
-      duration: 0.1707373
-      messages: 'Unhandled log message: ''[Exception] NullReferenceException: Object
-        reference not set to an instance of an object''. Use UnityEngine.TestTools.LogAssert.Expect'
-      output: 'NullReferenceException: Object reference not set to an instance of
-        an object
-
-        Active Scene is ''1''.
-
-        Main menu opened
-
-        NullReferenceException:
-        Object reference not set to an instance of an object
-
-        There are no
-        audio listeners in the scene. Please ensure there is always one audio listener
-        in the scene
-
-        There are no audio listeners in the scene. Please ensure
-        there is always one audio listener in the scene
-
-        There are no audio
-        listeners in the scene. Please ensure there is always one audio listener
-        in the scene
-
-        There are no audio listeners in the scene. Please ensure
-        there is always one audio listener in the scene
-
-        There are no audio
-        listeners in the scene. Please ensure there is always one audio listener
-        in the scene
-
-        There are no audio listeners in the scene. Please ensure
-        there is always one audio listener in the scene
-
-        There are no audio
-        listeners in the scene. Please ensure there is always one audio listener
-        in the scene
-
-        There are no audio listeners in the scene. Please ensure
-        there is always one audio listener in the scene
-
-        There are no audio
-        listeners in the scene. Please ensure there is always one audio listener
-        in the scene
-
-        There are no audio listeners in the scene. Please ensure
-        there is always one audio listener in the scene
-
-        There are no audio
-        listeners in the scene. Please ensure there is always one audio listener
-        in the scene
-
-        There are no audio listeners in the scene. Please ensure
-        there is always one audio listener in the scene
-
-        There are no audio
-        listeners in the scene. Please ensure there is always one audio listener
-        in the scene
-
-'
-      stacktrace: 'KeepBetweenLevels.FindStartPos () (at Assets/src/Justin/KeepBetweenLevels.cs:60)
-
-        KeepBetweenLevels.OnLevelWasLoaded
-        (System.Int32 level) (at Assets/src/Justin/KeepBetweenLevels.cs:29)
-
-
-'
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1012
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.SquareTest][suite]
-    - id: 1001
-      uniqueId: Tests.dll/Tests/[Tests][Tests.UITest][suite]
-      name: UITest
-      fullName: Tests.UITest
-      resultStatus: 0
-      duration: 1.9576911
-      messages: One or more child tests had errors
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1030
-      parentUniqueId: Tests.dll/[Tests][suite]
-    - id: 1002
-      uniqueId: Tests.dll/Tests/UITest/[Tests][Tests.UITest.PauseFunctionTest]
-      name: PauseFunctionTest
-      fullName: Tests.UITest.PauseFunctionTest
-      resultStatus: 0
-      duration: 0.2691064
-      messages: 'Unhandled log message: ''[Exception] NullReferenceException: Object
-        reference not set to an instance of an object''. Use UnityEngine.TestTools.LogAssert.Expect'
-      output: 'NullReferenceException: Object reference not set to an instance of
-        an object
-
-        NullReferenceException: Object reference not set to an
-        instance of an object
-
-        DontDestroyOnLoad only works for root GameObjects
-        or components on root GameObjects.
-
-'
-      stacktrace: 'KeepBetweenLevels.FindStartPos () (at Assets/src/Justin/KeepBetweenLevels.cs:60)
-
-        KeepBetweenLevels.OnLevelWasLoaded
-        (System.Int32 level) (at Assets/src/Justin/KeepBetweenLevels.cs:29)
-
-
-
-'
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.UITest][suite]
-    - id: 1003
-      uniqueId: Tests.dll/Tests/UITest/[Tests][Tests.UITest.ScoreTest]
-      name: ScoreTest
-      fullName: Tests.UITest.ScoreTest
-      resultStatus: 0
-      duration: 0.0894179
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.UITest][suite]
-    - id: 1006
-      uniqueId: Tests.dll/Tests/UITest/[Tests][Tests.UITest.UIStressTest]
-      name: UIStressTest
-      fullName: Tests.UITest.UIStressTest
-      resultStatus: 0
-      duration: 0.0161867
-      messages: "  Expected: 2147483647\r\n  But was:  -2147483648\r\n"
-      output: 
-      stacktrace: 'at Tests.UITest+<UIStressTest>d__7.MoveNext () [0x0014a] in D:\Github\SuperVandalWorld\SuperVandalWorld\Assets\tst\Ben\UITest.cs:172
-
-        at
-        UnityEngine.TestTools.TestEnumerator+<Execute>d__5.MoveNext () [0x00038]
-        in <def80c3c71174f0ea69facc89d14e13e>:0
-
-'
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.UITest][suite]
-    - id: 1004
-      uniqueId: Tests.dll/Tests/UITest/[Tests][Tests.UITest.VolumeTest]
-      name: VolumeTest
-      fullName: Tests.UITest.VolumeTest
-      resultStatus: 0
-      duration: 0.0139173
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.UITest][suite]
-    m_ResultText: 'SquareTestStress (0.171s)
-
-      ---
-
-      Unhandled log message:
-      ''[Exception] NullReferenceException: Object reference not set to an instance
-      of an object''. Use UnityEngine.TestTools.LogAssert.Expect
-
-      ---
-
-      KeepBetweenLevels.FindStartPos
-      () (at Assets/src/Justin/KeepBetweenLevels.cs:60)
-
-      KeepBetweenLevels.OnLevelWasLoaded
-      (System.Int32 level) (at Assets/src/Justin/KeepBetweenLevels.cs:29)
-
-      ---
-
-      NullReferenceException:
-      Object reference not set to an instance of an object
-
-      Active Scene is
-      ''1''.
-
-      Main menu opened
-
-      NullReferenceException: Object reference
-      not set to an instance of an object
-
-      There are no audio listeners in
-      the scene. Please ensure there is always one audio listener in the scene
-
-      There
-      are no audio listeners in the scene. Please ensure there is always one audio
-      listener in the scene
-
-      There are no audio listeners in the scene. Please
-      ensure there is always one audio listener in the scene
-
-      There are no
-      audio listeners in the scene. Please ensure there is always one audio listener
-      in the scene
-
-      There are no audio listeners in the scene. Please ensure
-      there is always one audio listener in the scene
-
-      There are no audio listeners
-      in the scene. Please ensure there is always one audio listener in the scene
-
-      There
-      are no audio listeners in the scene. Please ensure there is always one audio
-      listener in the scene
-
-      There are no audio listeners in the scene. Please
-      ensure there is always one audio listener in the scene
-
-      There are no
-      audio listeners in the scene. Please ensure there is always one audio listener
-      in the scene
-
-      There are no audio listeners in the scene. Please ensure
-      there is always one audio listener in the scene
-
-      There are no audio listeners
-      in the scene. Please ensure there is always one audio listener in the scene
-
-      There
-      are no audio listeners in the scene. Please ensure there is always one audio
-      listener in the scene
-
-      There are no audio listeners in the scene. Please
-      ensure there is always one audio listener in the scene'
-    m_ResultStacktrace: 'KeepBetweenLevels.FindStartPos () (at Assets/src/Justin/KeepBetweenLevels.cs:60)
-
-      KeepBetweenLevels.OnLevelWasLoaded
-      (System.Int32 level) (at Assets/src/Justin/KeepBetweenLevels.cs:29)
-
-
-'
-    m_TestListState:
-      scrollPos: {x: 0, y: 120}
-      m_SelectedIDs: 0058d9b1
-      m_LastClickedID: -1311156224
-      m_ExpandedIDs: c973899ac337b2b420712cd05dfc4bdfe557abf795fbf000ab3ce1198302573d8359db41e6daa968ffffff7f
-      m_RenameOverlay:
-        m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
-        m_EditFieldRect:
-          serializedVersion: 2
-          x: 0
-          y: 0
-          width: 0
-          height: 0
-        m_UserData: 0
-        m_IsWaitingForDelay: 0
-        m_IsRenaming: 0
-        m_OriginalEventType: 11
-        m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 0}
-      m_SearchString: 
-    m_TestRunnerUIFilter:
-      PassedHidden: 0
-      FailedHidden: 0
-      NotRunHidden: 0
-      m_SearchString: 
-      selectedCategoryMask: 0
-      availableCategories:
-      - Uncategorized
-  m_EditModeTestListGUI:
-    m_Window: {fileID: 16}
-    newResultList:
-    - id: 1000
-      uniqueId: '[SuperVandalWorld][suite]'
-      name: SuperVandalWorld
-      fullName: SuperVandalWorld
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 
-      parentUniqueId: 
-    m_ResultText: 
-    m_ResultStacktrace: 
-    m_TestListState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 5dfc4bdfffffff7f
-      m_RenameOverlay:
-        m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
-        m_EditFieldRect:
-          serializedVersion: 2
-          x: 0
-          y: 0
-          width: 0
-          height: 0
-        m_UserData: 0
-        m_IsWaitingForDelay: 0
-        m_IsRenaming: 0
-        m_OriginalEventType: 11
-        m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 0}
-      m_SearchString: 
-    m_TestRunnerUIFilter:
-      PassedHidden: 0
-      FailedHidden: 0
-      NotRunHidden: 0
-      m_SearchString: 
-      selectedCategoryMask: 0
-      availableCategories:
-      - Uncategorized
---- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
