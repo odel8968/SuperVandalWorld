@@ -19,9 +19,9 @@ MonoBehaviour:
     width: 2560
     height: 997
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Scene
   m_RootView: {fileID: 5}
-  m_MinSize: {x: 875, y: 542}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 333, y: 271}
   m_MaxSize: {x: 14003, y: 10021}
   vertical: 0
-  controlID: 194
+  controlID: 188
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -123,7 +123,7 @@ MonoBehaviour:
     y: 0
     width: 2560
     height: 997
-  m_MinSize: {x: 875, y: 542}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
   m_TopViewHeight: 30
@@ -199,7 +199,7 @@ MonoBehaviour:
   m_MinSize: {x: 881, y: 492}
   m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
-  controlID: 192
+  controlID: 118
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -224,7 +224,7 @@ MonoBehaviour:
   m_MinSize: {x: 605, y: 492}
   m_MaxSize: {x: 14003, y: 14042}
   vertical: 1
-  controlID: 193
+  controlID: 165
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -250,7 +250,7 @@ MonoBehaviour:
   m_MinSize: {x: 605, y: 221}
   m_MaxSize: {x: 12005, y: 4021}
   vertical: 0
-  controlID: 29
+  controlID: 166
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -387,9 +387,9 @@ MonoBehaviour:
   m_MipLevel: 0
   m_Zoom: 0.18986014
   m_ScrollPosition: {x: 0, y: 0}
-  m_ResetOnNextRepaint: 0
+  m_ResetOnNextRepaint: 1
   m_SelectedAssetPath: Assets/prefabs/Heba/BOSS3.png
-  m_SelectedSpriteRectGUID: 9616d23d2327ea945afaecd4a0a094d1
+  m_SelectedSpriteRectGUID: 7aa107c206df2874c8436ae993f9c41e
   m_LastUsedModuleTypeName: UnityEditor.U2D.Animation.SkinningModule
 --- !u!114 &16
 MonoBehaviour:
@@ -444,9 +444,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 8c370000
+      m_SelectedIDs: 72490000
       m_LastClickedID: 0
-      m_ExpandedIDs: 24d2ffffb2d3ffff9addffff
+      m_ExpandedIDs: d6f1ffff5cfbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -506,9 +506,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 5.7421136, y: 0.32826644, z: -21.250324}
+    m_Target: {x: 12.933048, y: 7.3890085, z: -25.584623}
     speed: 2
-    m_Value: {x: 5.7421136, y: 0.32826644, z: -21.250324}
+    m_Value: {x: 12.933048, y: 7.3890085, z: -25.584623}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -559,9 +559,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 12.318167
+    m_Target: 36.68496
     speed: 2
-    m_Value: 12.318167
+    m_Value: 36.68496
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -713,21 +713,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/src/Justin
+    - Assets/Scenes
     m_Globs: []
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/src/Justin
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Keller\Desktop\SuperVandalWorld\SuperVandalWorld
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 74}
-    m_SelectedIDs: f84f0000
-    m_LastClickedID: 20472
-    m_ExpandedIDs: 00000000c64f0000c84f0000ca4f0000cc4f0000ce4f0000d04f0000d24f0000
+    m_SelectedIDs: dc430000
+    m_LastClickedID: 17372
+    m_ExpandedIDs: 000000009a4300009c4300009e430000a0430000a2430000a4430000a6430000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -755,7 +755,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000c64f0000c84f0000ca4f0000cc4f0000ce4f0000d04f0000d24f0000
+    m_ExpandedIDs: 000000009a4300009c4300009e430000a0430000a2430000a4430000a6430000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
