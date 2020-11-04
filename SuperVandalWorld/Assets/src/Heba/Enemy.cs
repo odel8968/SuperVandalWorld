@@ -16,7 +16,8 @@ public class Enemy : MonoBehaviour
     Character_Movement playerMovement;
     bool playerAlive;
     public float restartDelay = 2f;
-        
+    
+    public bool PlayerAlive {get {return playerAlive;} set {playerAlive = value;}}
 
     // Start is called before the first frame update
     void Start()
@@ -37,7 +38,7 @@ public class Enemy : MonoBehaviour
             curTime = 0;
         }
         moveVelocity = new Vector2(direction, 0) * speed;
-        //animator.SetFloat("velocity", moveVelocity.x);
+        animator.SetFloat("velocity", moveVelocity.x);
     }
 
     void FixedUpdate()
