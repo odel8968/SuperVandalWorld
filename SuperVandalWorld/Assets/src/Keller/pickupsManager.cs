@@ -4,65 +4,27 @@ using UnityEngine;
 
 public class pickupsManager : MonoBehaviour
 {    
-    void OnTriggerEnter2D(Collider2D other)
+    void OnTriggerEnter2D(Collider2D col)
     {
-        if(other.gameObject.CompareTag("Item"))
+        var gObject = col.gameObject;
+        if(gObject.CompareTag("Item"))
         {
-            Item.collisionItem(other);
+            Item.collisionItem(col);
         }
-        if(other.gameObject.CompareTag("PowerUp"))
+        if(gObject.CompareTag("PowerUp"))
         {
-            PowerUp.collisionPowerUp(other);
+            PowerUp.collisionPowerUp(col);
         }
-    }
-
-    public static void LogInfo(Collider2D other)
-    {
-        Debug.Log("Collision with " + other.gameObject.name);
-        
     }
     
-    public static int updateScore(Collider2D other)
+    public virtual int updateScore(GameObject gObject)
     {
-
-        int addPoints = 0;
-
-        string pickUpType = other.gameObject.tag;
-        switch(other.gameObject.tag)
-        {
-            case "Item":
-            {
-                var obj = other.GetComponent<Item>();
-                addPoints = obj.scoreValue;
-
-                //Debug.Log("Adding " + addPoints + " to score");    
-                return addPoints;
-            }
-            
-            case "PowerUp":
-            {
-                var obj = other.GetComponent<PowerUp>();
-                addPoints = obj.scoreValue;
-
-                //Debug.Log("Adding " + addPoints + " to score");    
-                return addPoints;
-            }
-            default:
-            {
-                return addPoints;
-            }
-        }   
+        return 0;
     }
 
     public static void removeAsset(Collider2D other)
     {
         //remove asset from level via destroy function
         Destroy(other.gameObject);
-    }
-
-    public static void triggerSound(Collider2D other)
-    {
-        //call Sound managers function to play sound
-
     }
 }

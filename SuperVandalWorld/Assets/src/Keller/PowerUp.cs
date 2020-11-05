@@ -4,62 +4,73 @@ using UnityEngine;
 
 public class PowerUp : pickupsManager
 {
-    
     public int scoreValue;
     public int healthChange;
-    public static void collisionPowerUp(Collider2D other)
+    public static void collisionPowerUp(Collider2D col)
     {
         //on trigger with pickup
+        PowerUp gObject = col.gameObject.GetComponent<PowerUp>();
+        Character_Movement player = GameObject.Find("Player").GetComponent<Character_Movement>();
+        SoundManager sounds = GameObject.Find("SoundManager").GetComponent<SoundManager>();
+        UIManager score = GameObject.Find("Score").GetComponent<UIManager>();
+        
 
-        Character_Movement.hasAbility = enableAbility(Character_Movement.hasAbility);
         //Character_Movement.currentAbility = changeAbility(Character_Movement.currentAbility, other);
-        if(Character_Movement.hasAbility)
+        if(player.hasAbility)
         {
-            /*
-            if(Character_Movement.abilityName.Contains(other.GameObject.name))
+            if(!checkAbilityNames(gObject, player))
             {
-                changeAbility(other);
+                //changeAbility(gObject, player);
+                if(gObject.name.Contains("Axe"))
+                {
+                    GameObject.Find("Player").GetComponent<powerAxe>().enabled = true;
+                    player.abilityName = (gObject.name);
+                }
+                else if(gObject.name.Contains("Jump"))
+                {
+                    GameObject.Find("Player").GetComponent<multiJump>().enabled = true;
+                    player.abilityName = (gObject.name);
+                }
             }
-            */
-            removeAsset(other);
-            LogInfo(other);
+            Debug.Log(player.abilityName);
         }
-        else if(!Character_Movement.hasAbility)
+        else if(!player.hasAbility)
         {
-            removeAsset(other);
-            updateScore(other);
-            triggerSound(other);
-            LogInfo(other);
-
+            if(gObject.name.Contains("Axe"))
+            {
+                GameObject.Find("Player").GetComponent<powerAxe>().enabled = true;
+            }
+            else if(gObject.name.Contains("Jump"))
+            {
+                GameObject.Find("Player").GetComponent<multiJump>().enabled = true;
+            }
         }
+        score.AddScore(updateScore(gObject));
+        sounds.PlaySound("PowerUp");
+        removeAsset(col);
     }
 
-    //enable use of ability for character
-    public static bool enableAbility(bool value)
+    private static bool checkAbilityNames(PowerUp pwr, Character_Movement player)
     {
-        if(value == false)
+        if(player.abilityName.Contains(pwr.name))
         {
-            value = true;
-            Debug.Log("Ablitiy has been enabled");
-            Debug.Log(value);
+            return true;
         }
         else
         {
-            Debug.Log("Ability already enabled");
+            return false;
         }
-
-        return value;
     }
 
-    public static void changeAbility(Collider2D other)
-    {
-        //Character_Movement.abilityName = other.gameObject.name;
-    }
-
-    public int changeHealthValue(Collider2D other)
+    private int changeHealthValue(Collider2D other)
     {
         var obj = other.GetComponent<PowerUp>();
         return obj.healthChange;
     }
 
+    private static int updateScore(PowerUp other)
+    {
+        var obj = other.GetComponent<PowerUp>();
+        return obj.scoreValue;
+    }
 }

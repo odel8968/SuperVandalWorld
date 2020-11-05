@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 7207021538386827043}
   - component: {fileID: 2476961373696719433}
-  - component: {fileID: 3896454650458783474}
   - component: {fileID: 7059533511537390103}
-  m_Layer: 0
+  - component: {fileID: 8430965006144351246}
+  m_Layer: 9
   m_Name: powerAxePickUp
   m_TagString: PowerUp
   m_Icon: {fileID: 0}
@@ -84,22 +84,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &3896454650458783474
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4449662471034104751}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7bdcd75a583d28f43a18d854059458ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreValue: 1000
-  healthChange: 1
-  axeProj: {fileID: 501964488055383182, guid: dbcc84b69d0928743ac61fbd7b9c0308, type: 3}
-  abilityKey: 106
 --- !u!58 &7059533511537390103
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -116,3 +100,17 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 1.6
+--- !u!114 &8430965006144351246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4449662471034104751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5b1019b71f7f33448876993ae61a9cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 1000
+  healthChange: 1

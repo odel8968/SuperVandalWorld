@@ -8,7 +8,7 @@ public class Character_Movement : MonoBehaviour
     public BoxCollider2D bc;
     public float speed;
     public float jumpForce;
-    public static bool hasAbility;
+    public bool hasAbility;
     public static int MAX_JUMPS = 2;
     protected int jumps_taken;
     public int jumps_allowed;
@@ -16,7 +16,7 @@ public class Character_Movement : MonoBehaviour
     public float checkGroundRadius;
     public LayerMask groundLayer; //For this to work, all ground needs to be on its own layer
     public string abilityName;
-    private KeyCode ability = KeyCode.K;
+    public KeyCode ability = KeyCode.J;
     protected SoundManager soundManager;
     protected SpriteRenderer spriteRenderer;
     protected bool isFlipped;
