@@ -28,6 +28,8 @@ namespace Tests
         public IEnumerator SquareTestInitialCondition()
         {
             yield return new WaitWhile(() => sceneLoaded == false);
+            GameObject.FindGameObjectWithTag("MainMenu").SetActive(false);
+            Time.timeScale = 1;
 
             // Use the Assert class to test conditions
             var square = GameObject.Find("Square").GetComponent<Square>();
@@ -41,6 +43,8 @@ namespace Tests
         public IEnumerator SquareTestBoundary1()
         {
             yield return new WaitWhile(() => sceneLoaded == false);
+            GameObject.FindGameObjectWithTag("MainMenu").SetActive(false);
+            Time.timeScale = 1;
 
             // Use the Assert class to test conditions
             var square = GameObject.Find("Square").GetComponent<Square>();
@@ -56,6 +60,8 @@ namespace Tests
         public IEnumerator SquareTestBoundary2()
         {
             yield return new WaitWhile(() => sceneLoaded == false);
+            GameObject.FindGameObjectWithTag("MainMenu").SetActive(false);
+            Time.timeScale = 1;
 
             var square = GameObject.Find("Square").GetComponent<Square>();
 
@@ -70,11 +76,13 @@ namespace Tests
         public IEnumerator SquareTestStress()
         {
             yield return new WaitWhile(() => sceneLoaded == false);
+            GameObject.FindGameObjectWithTag("MainMenu").SetActive(false);
 
             GameObject enemyPrefab = GameObject.Find("Square");
             //var square = GameObject.Find("Square").GetComponent<Square>();
             var square = GameObject.Instantiate(enemyPrefab, new Vector3(10, 5, 0), Quaternion.identity).GetComponent<Square>();
             square.moveTime = 1;
+            Time.timeScale = 1;
 
             //var posX = square.transform.position.x;
             //const int limit = 10;
@@ -85,6 +93,7 @@ namespace Tests
             yield return new WaitWhile(
                 () =>
                 {
+                    square.PlayerAlive = false;
                     Assert.That(square.transform.position.x, Is.LessThan(limitX));
 
                     if (square.curTime < 0.01f)

@@ -16,7 +16,14 @@ public class Enemy : MonoBehaviour
     Character_Movement playerMovement;
     bool playerAlive;
     public float restartDelay = 2f;
-        
+
+    public GameObject throwableObject;
+    public float attackDistance = 5;
+    public float attackForce = 100;
+    public float timeBetweenAttacks = 4;
+    private float curAttackTime;
+
+    public bool PlayerAlive { get { return playerAlive;} set { playerAlive = value;}}        
 
     // Start is called before the first frame update
     void Start()
@@ -30,14 +37,36 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     public void Update()
     {
-        curTime += Time.deltaTime;
-        if(curTime >= moveTime)
+        float dist = Mathf.Abs(playerMovement.transform.position.x - transform.position.x);
+        if(dist <= attackDistance)
         {
-            direction *= -1;
-            curTime = 0;
+            curAttackTime += Time.deltaTime;
+
+            if(curAttackTime >= timeBetweenAttacks)
+            {
+                GameObject obj = GameObject.Instantiate(throwableObject, transform.position, Quaternion.identity);
+                var forceVector = (playerMovement.transform.position - transform.position).normalized * attackForce;
+                obj.GetComponent<Rigidbody2D>().AddForce(forceVector);
+
+                curAttackTime = 0;
+            }
+
+            moveVelocity.x = 0;
         }
-        moveVelocity = new Vector2(direction, 0) * speed;
+        else
+        {
+            curAttackTime = timeBetweenAttacks;
+            curTime += Time.deltaTime;
+            if(curTime >= moveTime)
+            {
+                direction *= -1;
+                curTime = 0;
+            }
+            moveVelocity = new Vector2(direction, 0) * speed;
+        }
+
         animator.SetFloat("velocity", moveVelocity.x);
+
     }
 
     void FixedUpdate()

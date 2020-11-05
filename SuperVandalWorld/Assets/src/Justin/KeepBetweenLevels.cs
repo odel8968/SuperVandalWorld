@@ -57,7 +57,7 @@ public class KeepBetweenLevels : MonoBehaviour
         else*/
         
             //if object is the player, set the position to the start position
-            keepObject.transform.position = GameObject.FindWithTag("StartPos").transform.position;
+            //keepObject.transform.position = GameObject.FindWithTag("StartPos").transform.position;
         
     }
 }
