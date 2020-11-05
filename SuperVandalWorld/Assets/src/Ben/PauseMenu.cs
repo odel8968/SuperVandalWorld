@@ -40,8 +40,6 @@ public class PauseMenu : MonoBehaviour
 		}
 
 		hidePaused();
-		MainMenu();
-		Time.timeScale = 0;
 	}
 
 	// Update is called once per frame
@@ -69,7 +67,6 @@ public class PauseMenu : MonoBehaviour
 			Time.timeScale = 1;
 			soundManager.PlaySound("MenuClose");
 			CloseHelpMenu();
-			CloseMainMenu();
 			hidePaused();
 		}
 	}
@@ -126,41 +123,6 @@ public class PauseMenu : MonoBehaviour
 		{
 			g.SetActive(false);
 		}
-
-	}
-
-	public void MainMenu()
-	{
-		Debug.Log("Main menu opened");
-
-		foreach (GameObject g in pauseObjects)
-		{
-			g.SetActive(false);
-		}
-
-		foreach (GameObject g in mainMenuObjects)
-		{
-			g.SetActive(true);
-		}
-	}
-
-	public void CloseMainMenu()
-	{
-		Debug.Log("Main menu closed");
-
-		//foreach (GameObject g in pauseObjects)
-		//{
-			//g.SetActive(true);
-		//}
-
-		foreach (GameObject g in mainMenuObjects)
-		{
-			g.SetActive(false);
-		}
-
-		Time.timeScale = 1;
-		soundManager.StopSound("Theme1");
-
 
 	}
 

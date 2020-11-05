@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2504580926292158910
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2504580926292158907}
+  - component: {fileID: 2504580926292158904}
+  m_Layer: 0
+  m_Name: SoundManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2504580926292158907
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2504580926292158910}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1, y: 0.171, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2504580926292158904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2504580926292158910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4e0b126fa85a8c4ea4dbaa8ca949cdb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: Theme1
+    clip: {fileID: 8300000, guid: 29b8a338f02ce62459680791218e91b8, type: 3}
+    volume: 0.5
+  - name: MenuOpen
+    clip: {fileID: 8300000, guid: d68f69418d8934848ac0ed99cd171eb5, type: 3}
+    volume: 0.5
+  - name: MenuClose
+    clip: {fileID: 8300000, guid: 5df4f2e03b18bc74e961426145eac154, type: 3}
+    volume: 0.5
+  - name: Jump
+    clip: {fileID: 8300000, guid: f94631c653246c94383a9da1a37321cf, type: 3}
+    volume: 0.5
+  - name: PlayerDeath
+    clip: {fileID: 8300000, guid: 76d5f44d4dc7318479179e90d3269754, type: 3}
+    volume: 0.5
+  - name: PlayerHit
+    clip: {fileID: 8300000, guid: f87ac37ae16759440b096da8858ce7e0, type: 3}
+    volume: 0.5
+  - name: Theme0
+    clip: {fileID: 8300000, guid: 837e645b8dc5d3040a33b88ee0dcebdc, type: 3}
+    volume: 0.5
+  - name: Theme2
+    clip: {fileID: 8300000, guid: cb3f823a6ae9c3143bd7dd1c89047697, type: 3}
+    volume: 0.5
+  - name: Theme3
+    clip: {fileID: 8300000, guid: 343f4b78b1daa144f9a474da63678280, type: 3}
+    volume: 0.5
