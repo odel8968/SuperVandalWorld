@@ -27,7 +27,8 @@ public class daEnemy : MonoBehaviour
     public Vector2 initPos;
 
     float someScale;
-//hs
+    public float fallMultiplier = 2.5f;
+
     void Start() 
     {
         playerAlive = true;
@@ -57,6 +58,12 @@ public class daEnemy : MonoBehaviour
             move.x = 0;
             transform.position += move * Time.deltaTime;
         }
+
+        // Control falling speed
+        if (rb.velocity.y < 0)
+        {
+            rb.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier -1) * Time.deltaTime;
+        }
     }
 
     void enemyMovement() 
@@ -83,32 +90,82 @@ public class daEnemy : MonoBehaviour
         transform.position += move * Time.deltaTime;
     }
 
-    // public void OnCollisionEnter2D(Collision2D collision)
-    // {
-    //     if (playerAlive == true)
-    //     {
-    //         if (collision.collider.tag == "Player")
-    //         {
-    //             playerMvmnt.enabled = false;
-    //             enemySpeed = 0;
-    //         }
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
+        Vector3 direction = transform.position - collision.gameObject.transform.position;
+        UIManager score = GameObject.Find("Score").GetComponent<UIManager>();
 
-    //         Debug.Log("You died by an enemy.");
-            
-    //         playerAlive = false;
+        if (playerAlive == true)
+        {
+            if (collision.collider.tag == "Player")
+            {
+                // see if the obect is futher left/right or top/bottom
+                if (Mathf.Abs(direction.x) > Mathf.Abs(direction.y))
+                {
 
-    //         Invoke("ResetLevel", restartWait);
-    //         Invoke("ReEnablePlayerMovement", restartWait);
-    //     }
-    // }
+                    if(direction.x > 0)
+                    {
+                        playerMvmnt.enabled = false;
+                        enemySpeed = 0;
 
-    // void ResetLevel()
-    // {
-    //     SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-    // }
+                        Debug.Log("You died by an enemy on your right.");
+                        
+                        playerAlive = false;
 
-    // void ReEnablePlayerMovement()
-    // {
-    //     playerMvmnt.enabled = true;
-    // }
+                        Invoke("ResetLevel", restartWait);
+                        Invoke("ReEnablePlayerMovement", restartWait);
+                    }
+                    else
+                    {
+                        playerMvmnt.enabled = false;
+                        enemySpeed = 0;
+
+                        Debug.Log("You died by an enemy on your left.");
+                        
+                        playerAlive = false;
+
+                        Invoke("ResetLevel", restartWait);
+                        Invoke("ReEnablePlayerMovement", restartWait);
+                    }
+                
+                }
+                else
+                {
+
+                    if(direction.y > 0)
+                    {
+                        playerMvmnt.enabled = false;
+                        enemySpeed = 0;
+
+                        Debug.Log("You died by an enemy falling on you.");
+                        
+                        playerAlive = false;
+
+                        Invoke("ResetLevel", restartWait);
+                        Invoke("ReEnablePlayerMovement", restartWait);
+                    }
+                    else
+                    {
+                        Debug.Log("You killed an enemy.");
+                        
+                        enemySpeed = 0;
+                        playerMvmnt.enabled = true;
+                        score.AddScore(100);
+
+                        Destroy(gameObject);
+                    }
+                }
+            }
+        }
+    }
+
+    void ResetLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    void ReEnablePlayerMovement()
+    {
+        playerMvmnt.enabled = true;
+    }
 }

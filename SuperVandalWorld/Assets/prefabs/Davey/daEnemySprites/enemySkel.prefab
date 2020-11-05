@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 9001776332128913347}
   - component: {fileID: 9001776332128913348}
   - component: {fileID: 8781292963545272196}
+  - component: {fileID: 7014540463747091028}
   m_Layer: 0
   m_Name: enemySkel
-  m_TagString: Untagged
+  m_TagString: daEnemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -119,7 +120,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9001776332128913344}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -131,7 +132,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &8781292963545272196
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -147,3 +148,23 @@ MonoBehaviour:
   restartWait: 1
   enemySpeed: 4
   initPos: {x: 0, y: 0}
+  fallMultiplier: 2.5
+--- !u!95 &7014540463747091028
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9001776332128913344}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 49a18d742fbea4c4aa2b04607a1437c0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
