@@ -17,6 +17,9 @@ public class Character_Movement : MonoBehaviour
     public LayerMask groundLayer; //For this to work, all ground needs to be on its own layer
     public string abilityName;
     private KeyCode ability = KeyCode.K;
+    protected SoundManager soundManager;
+    protected SpriteRenderer spriteRenderer;
+    protected bool isFlipped;
 
     // Start is called before the first frame update
     void Start()
@@ -27,6 +30,9 @@ public class Character_Movement : MonoBehaviour
         jumps_taken = 0;
         jumps_allowed = 1;
         abilityName = string.Empty;
+        soundManager = GameObject.Find("SoundManager").GetComponent<SoundManager>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        isFlipped = false;
     }
 
     // Update is called once per frame
@@ -58,11 +64,12 @@ public class Character_Movement : MonoBehaviour
         {
             Debug.Log("Jumping");
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            soundManager.PlaySound("Jump");
             jumps_taken++;
         }
         else
         {
-            Debug.Log("Jump pressed; but not grounded.");
+            Debug.Log("Jump pressed, but no jumps remaining.");
         }
     }
 
