@@ -1,0 +1,73 @@
+2020 Because it’s a Disaster
+Super Vandal World
+
+
+Description
+
+      Play through the 2D world as Joe Vandal as he embarks on his quest to become the newest mascot! 
+      After embarking on his journey, navigate through the world and it’s many perils by evading enemies 
+      and collecting jewels and power-ups. Joe will travel through worlds enveloped by plant life, snowy 
+      plains, and spanning wastelands. Will Joe be up to the task of journeying to see the Mascot King 
+      and taking his place as the next mascot. 
+
+Controls
+	
+	Move Left		A or Left Arrow
+	Move Right		D or Right Arrow
+	Jump			Space Bar
+	Use Ability		J
+	Pause			Esc 
+
+Installation 
+
+	1. Navigate to httpsdrive.google.comdrivefolders1cYzWnZBObkRY7xB3I4CC2X-OuF3gca8Zusp=sharing. 
+	2. Select the build corresponding to your Operating System(i.e. Windows, Mac OS X, Linux).
+	3. Download file. 
+	4. Open location where you downloaded the game file.
+	5. Run the executable file to launch the game. 
+	
+Building from Source Code
+Clone from [insert repo]
+
+	PC, Mac, & Linux
+	1. Navigate to File-Build Settings
+	2. Change Platform to PC, Mac, & Linux Standalone 
+	3. Click the drop down for the target platform
+	4. Select the platform you want to deploy to. I will choose windows for this demonstration.
+	5. Select Build
+	6. Choose where you want to save the game
+	7. Sit and back and relax while the game builds.
+	8. To run the game, navigate to where you saved it and select the executable that was created. 
+
+	WebGL Build
+	1. Navigate to File-Build Settings
+	2. Change Platform to WebGL
+		2a. If needed, select install WebGL platform for unity. 
+		2b. Close and reopen build settings
+	3. Open Player Settings in bottom left of Build Settings Window
+	4. Open Publishing Settings Menu
+	5. Change Compression Format to Disabled
+	6. Close Project Settings
+	7. Select Build
+
+	Hosting on AWS S3
+	1. To run the webGL build, you need to host it. I chose to use Amazon's AWS S3 service to host the demo temporarily. 
+	2. Navigate to aws.amazon.com and login or create an account. 
+	3. After login, either click on the S3 service or search for it. 
+	4. Click Create Bucket and name it whatever you want
+	5. Turn off the setting to Block All public Access and read the warning. 
+	6. Finish creating the bucket. 
+	7. Click on the name of the bucket you created
+	8. Either select upload or drag the files inside the folder where you built the webGL build. 
+	9. Click the box to the left of the Name category to select all files. 
+	10. Scroll down and either enable bucket versioning or accept the Acknowledgement
+	11. Leave the rest of the settings how they are and click upload at the bottom of the page. 
+	12. Wait for files to finish uploading. Then click the destination link under Summary to return to the bucket. 
+	13. Select the folder uplaoded and then under actions, select make public.
+	14. Return to main bucket page and select properties. 
+	15. Scroll to the bottom and edit Static website hosting. 
+	16. Enable static website hosting. 
+	17. Type index.html for the index document and error.html for the error document. 
+	18. Click save changes. 
+	19. Scroll down and click the bucket website endpoint.
+	20. Congratulations, your game is now hosted online and accessible from the link
