@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6135640305494707417}
   - component: {fileID: 6135640305494707398}
   - component: {fileID: 868055309}
-  - component: {fileID: 5937640506092767329}
+  - component: {fileID: 6992880138374795509}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -32,7 +32,7 @@ Transform:
   m_GameObject: {fileID: 6135640305494707396}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.6978319, y: 2.657259, z: 1}
+  m_LocalScale: {x: 0.8754078, y: 0.9, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -77,8 +77,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 5d6a21e69aceb469ea18f13c0c4a514f, type: 3}
-  m_Color: {r: 0.9811321, g: 0.9729074, b: 0.06016379, a: 1}
+  m_Sprite: {fileID: 21300000, guid: eeef816e027d63a4994f205d7a61462d, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -137,10 +137,12 @@ MonoBehaviour:
   bc: {fileID: 0}
   speed: 10
   jumpForce: 12
+  jumps_allowed: 0
   checkGroundRadius: 0.1
   groundLayer:
     serializedVersion: 2
     m_Bits: 2048
+  abilityName: 
 --- !u!61 &6135640305494707398
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -158,7 +160,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 2.5, y: 5.47}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -180,9 +182,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreValue: 0
+  healthChange: 0
   axeProj: {fileID: 501964488055383182, guid: dbcc84b69d0928743ac61fbd7b9c0308, type: 3}
   abilityKey: 106
---- !u!114 &5937640506092767329
+--- !u!114 &6992880138374795509
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -191,6 +194,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 6135640305494707396}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 68714fd3be683f049ae5a3d7a20d3b57, type: 3}
+  m_Script: {fileID: 11500000, guid: 2c7dd7b7bd7e6f14ea70cd5d9d317133, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  bc: {fileID: 0}
+  speed: 10
+  jumpForce: 12
+  jumps_allowed: 0
+  checkGroundRadius: 0.1
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 2048
+  abilityName: 
