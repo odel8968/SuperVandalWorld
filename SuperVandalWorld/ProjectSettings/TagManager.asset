@@ -15,6 +15,7 @@ TagManager:
   - daEnemy
   - MainMenu
   - daBoss
+  - BossArena
   layers:
   - Default
   - TransparentFX

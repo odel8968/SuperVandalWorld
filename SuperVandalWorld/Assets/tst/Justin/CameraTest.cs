@@ -9,7 +9,7 @@ namespace Tests
 {
     public class CameraTest
     {
-        private bool sceneLoaded;
+       /* private bool sceneLoaded;
 
 
         [OneTimeSetUp]
@@ -82,7 +82,7 @@ namespace Tests
             Debug.Log(speed);
             
             Assert.AreEqual(speed, 10);
-        }
+        }*/
     }
 
 }
