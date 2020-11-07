@@ -10,10 +10,14 @@ public class FallingPlatform : EnvObject
 
     Vector2 startPos;
 
+    GameObject platformType;
+
     public float fallDelay = 1f;
     public float respawnDelay = 3f;
 
     public bool respawns = true;
+
+    public GameObject[] ropeBridge;
 
     // Start is called before the first frame update
     void Start()
@@ -24,17 +28,31 @@ public class FallingPlatform : EnvObject
         platformRB = GetComponent<Rigidbody2D>();
         //Get Collider of platform
         platColl = GetComponent<Collider2D>();
+
+        platformType = this.gameObject;
     }
 
     // Update is called once per frame
     public override void OnCollisionEnter2D(Collision2D collision)
     {
-        //Drop platform if player collides with platform
-        //Respawn platform after a delay
-        if(collision.gameObject.name.Equals("Player"))
+
+        if(platformType.tag == "Platform")
         {
-            Invoke("DropPlatform", fallDelay);
-            Invoke("RespawnPlatform", respawnDelay);
+            //Drop platform if player collides with platform
+            //Respawn platform after a delay
+            if(collision.gameObject.name.Equals("Player"))
+            {
+                Invoke("DropPlatform", fallDelay);
+                Invoke("RespawnPlatform", respawnDelay);
+            }
+        }
+
+        else if (platformType.tag == "RopeLogBridge")
+        {
+            if(collision.gameObject.name.Equals("Player"))
+            {
+                Invoke("DropBridge", fallDelay);                
+            }
         }
     }
 
@@ -44,6 +62,11 @@ public class FallingPlatform : EnvObject
         platformRB.isKinematic = false;
         //Set Collider to trigger so it falls through environment
         platColl.isTrigger = true;
+    }
+
+    void DropBridge()
+    {
+        platformRB.isKinematic = false;
     }
 
     void RespawnPlatform()
