@@ -31,6 +31,19 @@ public class EnvHazard : EnvObject
         }
     }
 
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.tag == "Player")
+        {
+            collision.transform.SetParent(transform);
+            playerMovement.enabled = false;
+            Debug.Log("You Died");
+            playerAlive = false;
+            Invoke("ResetLevel", restartDelay);
+            Invoke("ReEnablePlayerMovement", restartDelay);
+        }
+    }
+
     void ResetLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
