@@ -17,6 +17,7 @@ TagManager:
   - daBoss
   - BossArena
   - RopeLogBridge
+  - CM
   layers:
   - Default
   - TransparentFX
