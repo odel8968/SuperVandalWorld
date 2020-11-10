@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 2560
     height: 1357
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Hierarchy
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -119,10 +119,10 @@ MonoBehaviour:
     y: 30
     width: 2560
     height: 1307
-  m_MinSize: {x: 881, y: 492}
-  m_MaxSize: {x: 18002, y: 14042}
+  m_MinSize: {x: 846, y: 492}
+  m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
-  controlID: 32621
+  controlID: 134
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -145,9 +145,9 @@ MonoBehaviour:
     width: 1823
     height: 1307
   m_MinSize: {x: 605, y: 492}
-  m_MaxSize: {x: 14001, y: 14042}
+  m_MaxSize: {x: 14003, y: 14042}
   vertical: 1
-  controlID: 32599
+  controlID: 69
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -173,7 +173,7 @@ MonoBehaviour:
   m_MinSize: {x: 605, y: 221}
   m_MaxSize: {x: 12005, y: 4021}
   vertical: 0
-  controlID: 32600
+  controlID: 70
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -217,7 +217,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 201
     y: 0
-    width: 975
+    width: 591
     height: 792
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
@@ -242,9 +242,9 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1176
+    x: 792
     y: 0
-    width: 647
+    width: 1031
     height: 792
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
@@ -274,10 +274,10 @@ MonoBehaviour:
     y: 792
     width: 1823
     height: 515
-  m_MinSize: {x: 331, y: 271}
-  m_MaxSize: {x: 14001, y: 10021}
+  m_MinSize: {x: 333, y: 271}
+  m_MaxSize: {x: 14003, y: 10021}
   vertical: 0
-  controlID: 32800
+  controlID: 198
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -323,8 +323,8 @@ MonoBehaviour:
     y: 0
     width: 1120
     height: 515
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 102, y: 121}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 20}
@@ -341,7 +341,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: InspectorWindow
+  m_Name: GridPaintPaletteWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -350,15 +350,15 @@ MonoBehaviour:
     y: 0
     width: 737
     height: 1307
-  m_MinSize: {x: 276, y: 71}
+  m_MinSize: {x: 241, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 22}
+  m_ActualView: {fileID: 24}
   m_Panes:
   - {fileID: 22}
   - {fileID: 23}
   - {fileID: 24}
-  m_Selected: 0
-  m_LastSelected: 2
+  m_Selected: 2
+  m_LastSelected: 0
 --- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -379,9 +379,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1176
+    x: 792
     y: 73
-    width: 645
+    width: 1029
     height: 771
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
@@ -390,7 +390,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 645, y: 750}
+  m_TargetSize: {x: 1029, y: 750}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -405,8 +405,8 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -322.5
-    m_HBaseRangeMax: 322.5
+    m_HBaseRangeMin: -514.5
+    m_HBaseRangeMax: 514.5
     m_VBaseRangeMin: -375
     m_VBaseRangeMax: 375
     m_HAllowExceedBaseRangeMin: 1
@@ -426,23 +426,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 645
+      width: 1029
       height: 750
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 322.5, y: 375}
+    m_Translation: {x: 514.5, y: 375}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -322.5
+      x: -514.5
       y: -375
-      width: 645
+      width: 1029
       height: 750
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 645, y: 771}
+  m_LastWindowPixelSize: {x: 1029, y: 771}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -476,23 +476,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 267fffff
-      m_LastClickedID: -32986
-      m_ExpandedIDs: 2257ffff2469ffffe878ffff267fffff389dffff94a3ffff74cbfffff4d0ffff38d9ffff5cfbffffbc3b0000fa3b00005c6b0000a06b0000ba6b00000e6c0000746c0000aaae0000a4b20000883c0100
+      m_SelectedIDs: 02c0feff
+      m_LastClickedID: -81918
+      m_ExpandedIDs: 509dfeff02c0feff8ec4feffb4c7feff9ecdfefff6d1feff2ed8feffa4e2feff62e6feff40e7feff9aecfeffd606ffff4e0affff500bffff760effff6014ffffd422ffffc624ffffa425fffffe2affff8836ffff4e4bfffffc4effffa652ffff9058ffff465cffffa865ffff0069ffffb46affffd06affffbc72ffff5e73ffffa077ffff547affff8c80ffffa880ffff309effffcca5ffffe8a5ffff28b0ffff74b2ffffacb8ffff84f4ffff54fbffff9c3c0000d83c00002ea400008cbd000084da0000d2da0000eadb0000e6110100c81301001a140100b6390100083a01001c5c010078630100ca6301005c87010050b6010066b6010076b60100d8b601001eb70100
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: SwingingPlatform
-        m_OriginalName: SwingingPlatform
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -38620
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 8}
       m_SearchString: 
@@ -524,7 +524,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 201
     y: 73
-    width: 973
+    width: 589
     height: 771
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
@@ -538,9 +538,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 193.06007, y: -30.098497, z: -27.687874}
+    m_Target: {x: 463.70847, y: -15.737683, z: -160.41556}
     speed: 2
-    m_Value: {x: 193.06007, y: -30.098497, z: -27.687874}
+    m_Value: {x: 461.10016, y: -14.254522, z: -160.01472}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -591,9 +591,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 76.412025
+    m_Target: 106.36708
     speed: 2
-    m_Value: 76.412025
+    m_Value: 111.37914
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -751,21 +751,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/src/Justin
+    - Assets/prefabs/Justin/Sprites/Environment Sprites/Tile Sprites/Level 2
     m_Globs: []
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/src/Justin
+  - Assets/prefabs/Justin/Sprites/Environment Sprites/Tile Sprites/Level 2
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Justin\Desktop\SuperVandalWorld\SuperVandalWorld
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 130}
-    m_SelectedIDs: 76400000
-    m_LastClickedID: 16502
-    m_ExpandedIDs: 0000000036400000384000003a4000003c4000003e400000404000004240000046400000484000004a4000006840000000ca9a3b
+    scrollPos: {x: 0, y: 70}
+    m_SelectedIDs: 62410000
+    m_LastClickedID: 16738
+    m_ExpandedIDs: 00000000e8400000ea400000ec400000ee400000f0400000f2400000f4400000f6400000f8400000fa4000002c41000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -793,7 +793,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000036400000384000003a4000003c4000003e400000404000004240000046400000484000004a40000000ca9a3b
+    m_ExpandedIDs: 00000000e8400000ea400000ec400000ee400000f0400000f2400000f4400000f6400000f8400000fa400000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -821,7 +821,7 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c6230000a4430000ae3f0000b83c00007e4600007246000064430000383d0000f43c00000c4200000000000040500000704400005eab0000a43f0000764f010074650200
+    m_ExpandedInstanceIDs: c6230000a4430000ae3f0000b83c00007e4600007246000064430000383d0000f43c00000c4200000000000040500000704400005eab0000a43f0000764f010074650200da9d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -933,7 +933,7 @@ MonoBehaviour:
     m_CachedPref: -160
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
-  m_LastInspectedObjectInstanceID: -1
+  m_LastInspectedObjectInstanceID: -91548
   m_LastVerticalScrollValue: 0
   m_AssetGUID: 
   m_InstanceID: 0
@@ -966,7 +966,7 @@ MonoBehaviour:
     height: 1286
   m_ViewDataDictionary: {fileID: 0}
   m_Spl:
-    ID: 264
+    ID: 6449
     splitterInitialOffset: 516
     currentActiveSplitter: -1
     realSizes:
@@ -997,8 +997,8 @@ MonoBehaviour:
       uniqueId: '[SuperVandalWorld][suite]'
       name: SuperVandalWorld
       fullName: SuperVandalWorld
-      resultStatus: 2
-      duration: 7.5804787
+      resultStatus: 0
+      duration: 3.6781192
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -1013,8 +1013,8 @@ MonoBehaviour:
       uniqueId: '[Tests.dll][suite]'
       name: Tests.dll
       fullName: C:/Users/adave/Documents/GitHub/SuperVandalWorld/SuperVandalWorld/Library/ScriptAssemblies/Tests.dll
-      resultStatus: 2
-      duration: 7.5423474
+      resultStatus: 0
+      duration: 3.6506848
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -1029,8 +1029,8 @@ MonoBehaviour:
       uniqueId: Tests.dll/[Tests][suite]
       name: Tests
       fullName: Tests
-      resultStatus: 2
-      duration: 7.531623
+      resultStatus: 0
+      duration: 3.6406424
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -1041,103 +1041,6 @@ MonoBehaviour:
       categories: []
       parentId: 1029
       parentUniqueId: '[Tests.dll][suite]'
-    - id: 1017
-      uniqueId: Tests.dll/Tests/[Tests][Tests.CameraTest][suite]
-      name: CameraTest
-      fullName: Tests.CameraTest
-      resultStatus: 1
-      duration: 8.7370205
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1030
-      parentUniqueId: Tests.dll/[Tests][suite]
-    - id: 1018
-      uniqueId: Tests.dll/Tests/CameraTest/[Tests][Tests.CameraTest.Camera_Set_To_Follow_Player]
-      name: Camera_Set_To_Follow_Player
-      fullName: Tests.CameraTest.Camera_Set_To_Follow_Player
-      resultStatus: 1
-      duration: 0.5773752
-      messages: 
-      output: 'Active Scene is ''1''.
-
-        Player (UnityEngine.GameObject)
-
-        Player
-        (UnityEngine.GameObject)
-
-'
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1017
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.CameraTest][suite]
-    - id: 1021
-      uniqueId: Tests.dll/Tests/CameraTest/[Tests][Tests.CameraTest.Camera_Speed_Set]
-      name: Camera_Speed_Set
-      fullName: Tests.CameraTest.Camera_Speed_Set
-      resultStatus: 1
-      duration: 0.0676274
-      messages: 
-      output: '10
-
-'
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1017
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.CameraTest][suite]
-    - id: 1019
-      uniqueId: Tests.dll/Tests/CameraTest/[Tests][Tests.CameraTest.Camera_X_Offset_Set]
-      name: Camera_X_Offset_Set
-      fullName: Tests.CameraTest.Camera_X_Offset_Set
-      resultStatus: 1
-      duration: 0.0480626
-      messages: 
-      output: '45
-
-'
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1017
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.CameraTest][suite]
-    - id: 1020
-      uniqueId: Tests.dll/Tests/CameraTest/[Tests][Tests.CameraTest.Camera_Y_Offset_Set]
-      name: Camera_Y_Offset_Set
-      fullName: Tests.CameraTest.Camera_Y_Offset_Set
-      resultStatus: 1
-      duration: 0.0371105
-      messages: 
-      output: '25
-
-'
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1017
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.CameraTest][suite]
     - id: 1014
       uniqueId: Tests.dll/Tests/[Tests][Tests.CharacterMovementTests][suite]
       name: CharacterMovementTests
@@ -1414,7 +1317,7 @@ MonoBehaviour:
       name: MovingPlatformStressTest
       fullName: Tests.MovingPlatformStressTest
       resultStatus: 0
-      duration: 0.1905737
+      duration: 3.6362739
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -1429,28 +1332,13 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/MovingPlatformStressTest/[Tests][Tests.MovingPlatformStressTest.MovingPlatformNumberStressTest]
       name: MovingPlatformNumberStressTest
       fullName: Tests.MovingPlatformStressTest.MovingPlatformNumberStressTest
-      resultStatus: 0
-      duration: 0.1746508
-      messages: 'Unhandled log message: ''[Exception] NullReferenceException: Object
-        reference not set to an instance of an object''. Use UnityEngine.TestTools.LogAssert.Expect'
-      output: 'NullReferenceException: Object reference not set to an instance of
-        an object
-
-        NullReferenceException: Object reference not set to an
-        instance of an object
-
-        DontDestroyOnLoad only works for root GameObjects
-        or components on root GameObjects.
+      resultStatus: 2
+      duration: 0
+      messages: Cancelled by user
+      output: 'Active Scene is ''1''.
 
 '
-      stacktrace: 'KeepBetweenLevels.FindStartPos () (at Assets/src/Justin/KeepBetweenLevels.cs:60)
-
-        KeepBetweenLevels.OnLevelWasLoaded
-        (System.Int32 level) (at Assets/src/Justin/KeepBetweenLevels.cs:29)
-
-
-
-'
+      stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -1915,22 +1803,22 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1001
       parentUniqueId: Tests.dll/Tests/[Tests][Tests.UITest][suite]
-    m_ResultText: "enemyStressTest (0.042s)\n---\nSystem.ArgumentException : The
-      Object you want to instantiate is null.\n---\nat UnityEngine.Object.Instantiate[T]
-      (T original) [0x0003d] in <49f4e7e791cc4fffacd88f729e2b1e4c>:0 \r\n  at Tests.daEnemyTest+<enemyStressTest>d__8.MoveNext
-      () [0x00050] in C:\\Users\\davey\\Desktop\\cs383GameFiles\\SuperVandalWorld\\SuperVandalWorld\\Assets\\tst\\Davey\\daEnemyTest.cs:107
-      \r\n  at UnityEngine.TestTools.TestEnumerator+<Execute>d__5.MoveNext () [0x00038]
-      in <0e6a59ba521b44fba6d5f2ca6a5adff7>:0"
-    m_ResultStacktrace: "  at UnityEngine.Object.Instantiate[T] (T original) [0x0003d]
-      in <49f4e7e791cc4fffacd88f729e2b1e4c>:0 \r\n  at Tests.daEnemyTest+<enemyStressTest>d__8.MoveNext
-      () [0x00050] in C:\\Users\\davey\\Desktop\\cs383GameFiles\\SuperVandalWorld\\SuperVandalWorld\\Assets\\tst\\Davey\\daEnemyTest.cs:107
-      \r\n  at UnityEngine.TestTools.TestEnumerator+<Execute>d__5.MoveNext () [0x00038]
-      in <0e6a59ba521b44fba6d5f2ca6a5adff7>:0 "
+    m_ResultText: 'MovingPlatformNumberStressTest (0.000s)
+
+      ---
+
+      Cancelled
+      by user
+
+      ---
+
+      Active Scene is ''1''.'
+    m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 3548cfc7
-      m_LastClickedID: -942716875
-      m_ExpandedIDs: c973899ac337b2b420712cd05dfc4bdfe557abf795fbf000ab3ce1198302573d8359db41e6daa968ffffff7f
+      m_SelectedIDs: b3525cde
+      m_LastClickedID: -564374861
+      m_ExpandedIDs: c973899ac337b2b420712cd05dfc4bdfe557abf795fbf000e1b06317ab3ce1198302573d8359db41e6daa968ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 

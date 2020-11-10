@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2232970443708313986}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6, y: 3.166584, z: 0}
+  m_LocalPosition: {x: -6, y: 3.166584, z: 150}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8005190154465718569}
@@ -54,7 +54,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2387698516645009569}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7, y: -3.98, z: 0}
+  m_LocalPosition: {x: 7, y: -3.98, z: 150}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8005190154465718569}
@@ -72,7 +72,7 @@ GameObject:
   - component: {fileID: 154990520710409609}
   - component: {fileID: 329064744}
   - component: {fileID: 7139041196428265330}
-  m_Layer: 12
+  m_Layer: 11
   m_Name: MovingSnowPlatform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -87,8 +87,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3239212763675907892}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6, y: 3.2165852, z: 194.44699}
-  m_LocalScale: {x: 1.6837314, y: 1.4166504, z: 1}
+  m_LocalPosition: {x: -6, y: 3.2165852, z: 150}
+  m_LocalScale: {x: 1.8, y: 1.5, z: 1}
   m_Children: []
   m_Father: {fileID: 8005190154465718569}
   m_RootOrder: 0
@@ -132,7 +132,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 723485382147800305, guid: edafbddb4010dda4a8dcc00967a6403d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -156,6 +156,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7a09f6c5fb22804f85eacd7a7c91926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerPrefab: {fileID: 0}
+  camPrefab: {fileID: 0}
   platform: {fileID: 3239212763675907892}
   movePoints:
   - {fileID: 2064840206594325570}
@@ -172,7 +174,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 3239212763675907892}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 4f4335a6a7b3aba45bb8a9d9190faea6, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -213,7 +215,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4957795274773456864}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6, y: -11.57, z: 0}
+  m_LocalPosition: {x: -6, y: -11.57, z: 150}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8005190154465718569}
@@ -229,7 +231,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8005190154465718569}
   m_Layer: 0
-  m_Name: MovingPlatforms
+  m_Name: 3Pt_MovingPlatform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
