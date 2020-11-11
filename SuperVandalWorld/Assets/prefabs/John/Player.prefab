@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 868055309}
   - component: {fileID: 8592914385948304929}
   - component: {fileID: 6992880138374795509}
+  - component: {fileID: 7117096677724385553}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -223,3 +224,15 @@ MonoBehaviour:
     m_Bits: 2048
   abilityName: 
   ability: 106
+--- !u!114 &7117096677724385553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6135640305494707396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3224590dfd43ec4087f7f8f502f4d6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

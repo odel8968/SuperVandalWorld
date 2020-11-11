@@ -11,6 +11,7 @@ public class LevelLoader : MonoBehaviour
     public bool useIntToLoadLevel = false;*/
 
     public EnvObject envObject;
+    public bool nxtLevel = false;
 
     void OnTriggerEnter2D(Collider2D collision)
     {
@@ -19,8 +20,15 @@ public class LevelLoader : MonoBehaviour
         if(collisionGameObject.name == "Player")
         {
             envObject.LoadNextLevel();
+            nxtLevel = true;
         }
 
+    }
+
+    public bool SetToCurrentLevel()
+    {
+        nxtLevel = false;
+        return nxtLevel;
     }
 
    /* void LoadScene()

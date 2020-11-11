@@ -18,6 +18,7 @@ TagManager:
   - BossArena
   - RopeLogBridge
   - CM
+  - End
   layers:
   - Default
   - TransparentFX
