@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 873989189}
   m_Layer: 11
   m_Name: FallingSnowPlatform
-  m_TagString: Untagged
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -144,6 +144,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19eed11a88dedcb4badf5739e3ed635f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerPrefab: {fileID: 0}
+  camPrefab: {fileID: 0}
   fallDelay: 1
   respawnDelay: 3
   respawns: 1
+  ropeBridge: []
