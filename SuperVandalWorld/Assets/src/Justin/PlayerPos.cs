@@ -9,16 +9,19 @@ public class PlayerPos : MonoBehaviour
     private CheckpointManager cm;
     void Start()
     {
+        //Get the checkpointmanager object
         cm = GameObject.FindGameObjectWithTag("CM").GetComponent<CheckpointManager>();
+
+        //player's position equals the position of the last checkpoint the player triggered
         transform.position = cm.lastCheckPointPos;
     }
 
     void Update()
     {
-        //test checkpoints
+        //test checkpoints - remove for final build
         if(Input.GetKeyDown("y"))
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+           SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
 }
