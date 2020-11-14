@@ -80,8 +80,12 @@ public class SoundManager : MonoBehaviour
         Scene scene = SceneManager.GetActiveScene();
         UnityEngine.Debug.Log("Active Scene is '" + scene.buildIndex + "'.");
 
-        if(SceneManager.GetActiveScene().buildIndex == 1)
+        if (SceneManager.GetActiveScene().buildIndex == 1)
             PlaySoundLooping("Theme1");
+        else if (SceneManager.GetActiveScene().buildIndex == 2)
+            PlaySoundLooping("Theme2");
+        else if (SceneManager.GetActiveScene().buildIndex == 3)
+                PlaySoundLooping("Theme3");
     }
 
     /*void Update() //Just for testing stuff
