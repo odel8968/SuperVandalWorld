@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 4605753118997973147}
   - component: {fileID: 4605753118997973145}
   - component: {fileID: 4605753118997973144}
+  - component: {fileID: 3767387038499719617}
+  - component: {fileID: 4095976670805858022}
   m_Layer: 0
   m_Name: Checkpoint2
   m_TagString: Untagged
@@ -27,8 +29,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4605753118997973140}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 301.28, y: -20.810001, z: 5.2115746}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 301.28, y: -19.23, z: 5.2115746}
+  m_LocalScale: {x: 3, y: 3, z: 1}
   m_Children: []
   m_Father: {fileID: 4605753119426995551}
   m_RootOrder: 1
@@ -40,7 +42,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4605753118997973140}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -73,7 +75,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 67725724d4ccde24cba3cf6e75746019, type: 3}
+  m_Sprite: {fileID: -3204298918668765493, guid: fbd2ba111436b4c4b8a987120089c8d2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -101,7 +103,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 1, y: 2}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -122,6 +124,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1e858d3bf270914dbc0da4954ffe6fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &3767387038499719617
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4605753118997973140}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 033d46bbf9731764894d00e8938a0f52, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!111 &4095976670805858022
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4605753118997973140}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 271f8536ed280a347af948bf39640fbc, type: 2}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &4605753119294455553
 GameObject:
   m_ObjectHideFlags: 0
@@ -134,6 +170,7 @@ GameObject:
   - component: {fileID: 4605753119294455558}
   - component: {fileID: 4605753119294455559}
   - component: {fileID: 4605753119294455552}
+  - component: {fileID: 391526763723474534}
   m_Layer: 0
   m_Name: Checkpoint3
   m_TagString: Untagged
@@ -149,8 +186,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4605753119294455553}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 440.68, y: -21.970001, z: 5.2115746}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 441.72, y: -20.24, z: 5.2115746}
+  m_LocalScale: {x: 3, y: 3, z: 1}
   m_Children: []
   m_Father: {fileID: 4605753119426995551}
   m_RootOrder: 2
@@ -162,7 +199,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4605753119294455553}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -195,7 +232,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 67725724d4ccde24cba3cf6e75746019, type: 3}
+  m_Sprite: {fileID: -3204298918668765493, guid: fbd2ba111436b4c4b8a987120089c8d2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -223,7 +260,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 1, y: 2}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -244,6 +281,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1e858d3bf270914dbc0da4954ffe6fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!111 &391526763723474534
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4605753119294455553}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 271f8536ed280a347af948bf39640fbc, type: 2}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &4605753119426995544
 GameObject:
   m_ObjectHideFlags: 0
@@ -289,6 +341,7 @@ GameObject:
   - component: {fileID: 4605753119869260397}
   - component: {fileID: 4605753119869260371}
   - component: {fileID: 4605753119869260370}
+  - component: {fileID: 6999478470374750147}
   m_Layer: 0
   m_Name: Checkpoint1
   m_TagString: Untagged
@@ -350,7 +403,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 67725724d4ccde24cba3cf6e75746019, type: 3}
+  m_Sprite: {fileID: -3204298918668765493, guid: fbd2ba111436b4c4b8a987120089c8d2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -378,7 +431,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 1, y: 2}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -399,3 +452,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1e858d3bf270914dbc0da4954ffe6fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!111 &6999478470374750147
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4605753119869260398}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 271f8536ed280a347af948bf39640fbc, type: 2}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
