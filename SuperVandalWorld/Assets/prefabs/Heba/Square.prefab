@@ -124,6 +124,11 @@ MonoBehaviour:
   curTime: 0
   moveTime: 3
   direction: 1
+  restartDelay: 2
+  throwableObject: {fileID: 803973349216080928, guid: bcba4278a27614190b0331f394d86d65, type: 3}
+  attackDistance: 5
+  attackForce: 100
+  timeBetweenAttacks: 4
 --- !u!114 &-8047272040375343467
 MonoBehaviour:
   m_ObjectHideFlags: 0
