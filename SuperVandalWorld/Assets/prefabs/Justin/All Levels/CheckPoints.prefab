@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 4605753118997973145}
   - component: {fileID: 4605753118997973144}
   - component: {fileID: 3767387038499719617}
-  - component: {fileID: 4095976670805858022}
   m_Layer: 0
   m_Name: Checkpoint2
   m_TagString: Untagged
@@ -29,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4605753118997973140}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 301.28, y: -19.23, z: 5.2115746}
+  m_LocalPosition: {x: 303.6, y: -19.4, z: 5.2115746}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_Children: []
   m_Father: {fileID: 4605753119426995551}
@@ -132,7 +131,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4605753118997973140}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 033d46bbf9731764894d00e8938a0f52, type: 2}
   m_CullingMode: 0
@@ -143,21 +142,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!111 &4095976670805858022
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4605753118997973140}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 271f8536ed280a347af948bf39640fbc, type: 2}
-  m_Animations: []
-  m_WrapMode: 0
-  m_PlayAutomatically: 0
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!1 &4605753119294455553
 GameObject:
   m_ObjectHideFlags: 0
@@ -170,7 +154,7 @@ GameObject:
   - component: {fileID: 4605753119294455558}
   - component: {fileID: 4605753119294455559}
   - component: {fileID: 4605753119294455552}
-  - component: {fileID: 391526763723474534}
+  - component: {fileID: 7916037286672510628}
   m_Layer: 0
   m_Name: Checkpoint3
   m_TagString: Untagged
@@ -281,21 +265,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1e858d3bf270914dbc0da4954ffe6fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!111 &391526763723474534
-Animation:
+--- !u!95 &7916037286672510628
+Animator:
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4605753119294455553}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 271f8536ed280a347af948bf39640fbc, type: 2}
-  m_Animations: []
-  m_WrapMode: 0
-  m_PlayAutomatically: 0
-  m_AnimatePhysics: 0
-  m_CullingType: 0
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 033d46bbf9731764894d00e8938a0f52, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &4605753119426995544
 GameObject:
   m_ObjectHideFlags: 0
@@ -348,7 +336,7 @@ GameObject:
   m_Icon: {fileID: 419385456094870383, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4605753119869260396
 Transform:
   m_ObjectHideFlags: 0
