@@ -13,7 +13,7 @@ public class UIManager : MonoBehaviour
 
     SoundManager soundManager;
 
-
+    //Singleton pointer
     void Awake()
     {
         if (instance == null)
@@ -22,28 +22,31 @@ public class UIManager : MonoBehaviour
             Debug.Log("Multiple UI managers created");
     }
 
+    //Finds sound manager on startup
     void Start()
     {
         soundManager = GameObject.Find("SoundManager").GetComponent<SoundManager>();
     }
 
+    //Method to adjust the player's score
     public void AddScore(int _score)
     {
         score = score + _score;
-        //soundManager.PlaySound("mClose");
     }
 
+    //Method to reset the players score to 0
     public void ResetScore()
     {
         score = 0;
     }
 
+    //Method to read the player score
     public int GetScore()
     {
         return score;
     }
 
-    // Update is called once per frame
+    // Draws the current score to the screen every frame
     void Update()
     {
         scoreText.text = score.ToString();

@@ -15,9 +15,11 @@ public class PauseMenu : MonoBehaviour
 	GameObject player;
 	SoundManager soundManager;
 
-	Toggle easyToggle;
+	Toggle drBCToggle;
 
 	Rigidbody2D rb;
+
+	private bool easyMode = false;
 
 
 	void Start()
@@ -31,7 +33,7 @@ public class PauseMenu : MonoBehaviour
 
 		soundManager = GameObject.Find("SoundManager").GetComponent<SoundManager>();
 
-		easyToggle = GameObject.Find("DrBCModeToggle").GetComponent<Toggle>();
+		drBCToggle = GameObject.Find("DrBCModeToggle").GetComponent<Toggle>();
 
 		rb = GameObject.Find("Player").GetComponent<Rigidbody2D>();
 
@@ -54,7 +56,7 @@ public class PauseMenu : MonoBehaviour
 	}
 
 
-	//controls the pausing of the scene
+	//controls the pausing/unpausing of the scene and displaying/hiding the pause menu
 	public void pauseControl()
 	{
 		if (Time.timeScale == 1)
@@ -90,12 +92,8 @@ public class PauseMenu : MonoBehaviour
 		}
 	}
 
-	//loads inputted level
-	public void LoadLevel(string level)
-	{
-		//Application.LoadLevel(level);
-	}
 
+	//Hides the pause menu and displays the help menu
 	public void HelpMenu()
 	{
 		Debug.Log("Help menu opened");
@@ -111,6 +109,7 @@ public class PauseMenu : MonoBehaviour
 		}
 	}
 
+	//Hides the help menu and displays the pause menu
 	public void CloseHelpMenu()
 	{
 		Debug.Log("Help menu closed");
@@ -125,33 +124,49 @@ public class PauseMenu : MonoBehaviour
 			g.SetActive(false);
 		}
 
+		if(easyMode)
+        {
+			drBCToggle.isOn = true;
+        }
+
 	}
 
+	//Exits the application when quit button pressed
 	public void QuitGame()
     {
 		Debug.Log("Quit command received");
 		Application.Quit();
     }
 
-	public void SetVolume(float newVolume)
+	//Sets the global volume of the game from the menu slider
+	public void setVolume(float newVolume)
     {
 		AudioListener.volume = newVolume;
 		Debug.Log(newVolume);
 	}
 
-	public void DrBCMode(bool value)
+	public bool DrBCMode()
     {
-		if (easyToggle.isOn)
+		return easyMode;
+    }
+
+	//Checks the status of the easy moddle menu toggle
+	public void easyModeToggle()
+    {
+		if (drBCToggle.isOn)
 		{
 			Debug.Log("Dr BC mode enabled");
+			easyMode = true;
 		}
 
 		else
 		{
 			Debug.Log("Dr BC mode disabled");
+			easyMode = false;
 		}
 	}
 
+	//Returns to the main menu
 	public void LoadMainMenu()
     {
 		SceneManager.LoadScene(0, LoadSceneMode.Single);

@@ -14,6 +14,7 @@ public class Sound
 
     private AudioSource source;
 
+    //Sets the source as a new game object for sounds without direction
     public void SetSource(AudioSource _source)
     {
         source = _source;
@@ -21,22 +22,26 @@ public class Sound
         source.volume = volume;
     }
 
+    //Plays a sound with no directional source
     public void Play()
     {
         source.Play();
     }
 
+    //Stops the playback of a sound
     public void StopPlaying()
     {
         source.Stop();
     }
 
+    //Plays a sound and sets it to loop indefinitely
     public void PlayLooping()
     {
         source.Play();
         source.loop = true;
     }
 
+    //Plays a sound attached to a game object so that audio can be directional
     public void PlayOnObject(GameObject _go)
     {
         source = _go.AddComponent<AudioSource>();
@@ -60,7 +65,7 @@ public class SoundManager : MonoBehaviour
 
     public static SoundManager instance;
 
-
+    //Singleton
     void Awake()
     {
         if(instance == null)
@@ -69,6 +74,7 @@ public class SoundManager : MonoBehaviour
             UnityEngine.Debug.Log("Multiple sound managers created");
     }
 
+    //On start, build sound library and start playing the theme for the current level
     void Start()
     {
         for (int i = 0; i < sounds.Length; i++)
@@ -79,27 +85,18 @@ public class SoundManager : MonoBehaviour
 
         Scene scene = SceneManager.GetActiveScene();
         UnityEngine.Debug.Log("Active Scene is '" + scene.buildIndex + "'.");
-
-        if (SceneManager.GetActiveScene().buildIndex == 1)
+        
+        if(SceneManager.GetActiveScene().buildIndex == 0)
+            PlaySoundLooping("Theme0");
+        else if (SceneManager.GetActiveScene().buildIndex == 1)
             PlaySoundLooping("Theme1");
         else if (SceneManager.GetActiveScene().buildIndex == 2)
             PlaySoundLooping("Theme2");
         else if (SceneManager.GetActiveScene().buildIndex == 3)
-                PlaySoundLooping("Theme3");
+            PlaySoundLooping("Theme3");
     }
 
-    /*void Update() //Just for testing stuff
-    {
-        if (Input.GetKeyDown(KeyCode.Return))
-        {
-            PlaySound("Theme", GameObject.Find("Square"));
-            UnityEngine.Debug.Log("sound test");
-            UnityEngine.Debug.Log(GameObject.Find("Square"));
-
-            UIManager.instance.AddScore(10);
-        }
-    }*/
-
+    //Public method to play a sound by name
     public void PlaySound(string _name)
     {
         for (int i = 0; i < sounds.Length; i++)
@@ -113,6 +110,7 @@ public class SoundManager : MonoBehaviour
         }
     }
 
+    //Public method to play a sound attached to a game object
     public void PlaySound(string _name, GameObject _object)
     {
         for (int i = 0; i < sounds.Length; i++)
@@ -126,6 +124,7 @@ public class SoundManager : MonoBehaviour
         }
     }
 
+    //Public method to play a sound that loops forever
     public void PlaySoundLooping(string _name)
     {
         for (int i = 0; i < sounds.Length; i++)
@@ -139,6 +138,7 @@ public class SoundManager : MonoBehaviour
         }
     }
 
+    //Public method to stop playing a specific sound
     public void StopSound(string _name)
     {
         for (int i = 0; i < sounds.Length; i++)

@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-	SoundManager soundManager;
 
 	GameObject[] mainMenuObjects;
 	GameObject[] helpObjects;
@@ -16,11 +15,12 @@ public class MainMenu : MonoBehaviour
 	// Start is called before the first frame update
 	void Start()
 	{
-		soundManager = GameObject.Find("SoundManager").GetComponent<SoundManager>();
-		soundManager.PlaySoundLooping("Theme0");
+		Destroy(GameObject.Find("CheckpointManager"));
+		Debug.Log("Checkpoint manager removed");
 
 		mainMenuObjects = GameObject.FindGameObjectsWithTag("MainMenu");
 		helpObjects = GameObject.FindGameObjectsWithTag("ShowOnHelp");
+		CloseHelpMenu();
 	}
 
 	// Update is called once per frame
@@ -29,13 +29,13 @@ public class MainMenu : MonoBehaviour
 
 	}
 
+	//Loads into the level selected by the button group
 	public void LoadLevel()
 	{
-		//if (level1)
-		//levelSelected = 1;
 		SceneManager.LoadScene(levelSelected);
 	}
 
+	//Level 1 button switch
 	public void SetLevel1(bool value)
 	{
 		if (value)
@@ -44,6 +44,7 @@ public class MainMenu : MonoBehaviour
 		}
 	}
 
+	//Level 2 button switch
 	public void SetLevel2(bool value)
 	{
 		if (value)
@@ -52,6 +53,7 @@ public class MainMenu : MonoBehaviour
 		}
 	}
 
+	//Level 3 button switch
 	public void SetLevel3(bool value)
 	{
 		if (value)
@@ -60,6 +62,7 @@ public class MainMenu : MonoBehaviour
 		}
 	}
 
+	//Hides all the main menu objects and displays the help menu objects
 	public void HelpMenu()
 	{
 		Debug.Log("Help menu opened");
@@ -75,6 +78,7 @@ public class MainMenu : MonoBehaviour
 		}
 	}
 
+	//Hides all the help menu objects and displays the main menu objects
 	public void CloseHelpMenu()
 	{
 		Debug.Log("Help menu closed");

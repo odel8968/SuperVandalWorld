@@ -9,8 +9,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System;
 using System.Diagnostics;
-//using System.Media;
-//using System.Net;
+
 
 namespace Tests
 {
@@ -91,17 +90,17 @@ namespace Tests
 
             Assert.AreEqual(volume, 1f);
 
-            gobject.SetVolume(.5f);
+            gobject.setVolume(.5f);
             volume = AudioListener.volume;
 
             Assert.AreEqual(volume, .5f);
 
-            gobject.SetVolume(0f);
+            gobject.setVolume(0f);
             volume = AudioListener.volume;
 
             Assert.AreEqual(volume, 0f);
 
-            gobject.SetVolume(1f);
+            gobject.setVolume(1f);
             volume = AudioListener.volume;
 
             Assert.AreEqual(volume, 1f);
