@@ -21,10 +21,10 @@ MonoBehaviour:
     y: 30
     width: 2560
     height: 947
-  m_MinSize: {x: 880, y: 492}
-  m_MaxSize: {x: 18003, y: 14042}
+  m_MinSize: {x: 877, y: 492}
+  m_MaxSize: {x: 18002, y: 14042}
   vertical: 0
-  controlID: 8029
+  controlID: 1095
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -45,10 +45,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1189
+    x: 1045
     y: 73
-    width: 811
-    height: 655
+    width: 951
+    height: 546
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
   m_SerializedViewValues: []
@@ -56,7 +56,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 811, y: 634}
+  m_TargetSize: {x: 951, y: 525}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -71,10 +71,10 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -405.5
-    m_HBaseRangeMax: 405.5
-    m_VBaseRangeMin: -317
-    m_VBaseRangeMax: 317
+    m_HBaseRangeMin: -475.5
+    m_HBaseRangeMax: 475.5
+    m_VBaseRangeMin: -262.5
+    m_VBaseRangeMax: 262.5
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -92,23 +92,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 811
-      height: 634
+      width: 951
+      height: 525
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 405.5, y: 317}
+    m_Translation: {x: 475.5, y: 262.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -405.5
-      y: -317
-      width: 811
-      height: 634
+      x: -475.5
+      y: -262.5
+      width: 951
+      height: 525
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 811, y: 655}
+  m_LastWindowPixelSize: {x: 951, y: 546}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -133,12 +133,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 2002
+    width: 1998
     height: 947
-  m_MinSize: {x: 605, y: 492}
-  m_MaxSize: {x: 14003, y: 14042}
+  m_MinSize: {x: 601, y: 492}
+  m_MaxSize: {x: 14001, y: 14042}
   vertical: 1
-  controlID: 8030
+  controlID: 1096
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -159,12 +159,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 2002
-    height: 676
-  m_MinSize: {x: 605, y: 221}
-  m_MaxSize: {x: 12005, y: 4021}
+    width: 1998
+    height: 567
+  m_MinSize: {x: 601, y: 221}
+  m_MaxSize: {x: 12001, y: 4021}
   vertical: 0
-  controlID: 7962
+  controlID: 1097
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -182,10 +182,10 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 309
-    height: 676
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+    width: 304
+    height: 567
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 6}
   m_Panes:
   - {fileID: 6}
@@ -213,15 +213,15 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 73
-    width: 308
-    height: 655
+    width: 303
+    height: 546
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 22}
+      scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 681efdffbaf0ffff5cfbffff76120200
+      m_ExpandedIDs: 56d1f9ffb6bbfdffd2bbfdff76c5fdffeacdfdff06cefdffdeeaffff66f6ffffb8f9ffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -260,12 +260,12 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 309
+    x: 304
     y: 0
-    width: 880
-    height: 676
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+    width: 741
+    height: 567
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 8}
   m_Panes:
   - {fileID: 8}
@@ -292,10 +292,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 309
+    x: 304
     y: 73
-    width: 878
-    height: 655
+    width: 739
+    height: 546
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
   m_WindowGUID: 8fde1c7c9ac16d04fb45d7d761e25119
@@ -308,9 +308,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 648.0193, y: -14.800949, z: -321.27103}
+    m_Target: {x: 281.7277, y: 9.453888, z: -510.79126}
     speed: 2
-    m_Value: {x: 648.0193, y: -14.800949, z: -321.27103}
+    m_Value: {x: 281.7277, y: 9.453888, z: -510.79126}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -361,9 +361,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 24.061502
+    m_Target: 31.80002
     speed: 2
-    m_Value: 24.061502
+    m_Value: 31.80002
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -418,6 +418,7 @@ MonoBehaviour:
     - {fileID: 3986199767635603658, guid: 4f90b96e18f5a4f4db57281a6811ce19, type: 2}
     - {fileID: 4024861660596408438, guid: a6e8799d5de89c144a719bf3527ad21b, type: 2}
     - {fileID: 834111748977985312, guid: f2d92982482e048fda5a5a7cac4cee87, type: 2}
+    - {fileID: 3756872470435336947, guid: 033d46bbf9731764894d00e8938a0f52, type: 2}
     m_ValueSerializationHelper:
     - e00: 1
       e01: 0
@@ -467,10 +468,26 @@ MonoBehaviour:
       e31: 0
       e32: 0
       e33: 1
+    - e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
   m_PreviewAnimator: {fileID: 0}
-  m_AnimatorController: {fileID: 9100000, guid: f2d92982482e048fda5a5a7cac4cee87, type: 2}
+  m_AnimatorController: {fileID: 9100000, guid: 033d46bbf9731764894d00e8938a0f52, type: 2}
   m_BreadCrumbs:
-  - m_Target: {fileID: 834111748977985312, guid: f2d92982482e048fda5a5a7cac4cee87, type: 2}
+  - m_Target: {fileID: 3756872470435336947, guid: 033d46bbf9731764894d00e8938a0f52, type: 2}
     m_ScrollPosition: {x: 0, y: 0}
   stateMachineGraph: {fileID: 0}
   stateMachineGraphGUI: {fileID: 0}
@@ -498,12 +515,12 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1189
+    x: 1045
     y: 0
-    width: 813
-    height: 676
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+    width: 953
+    height: 567
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 2}
   m_Panes:
   - {fileID: 2}
@@ -527,13 +544,13 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 676
-    width: 2002
-    height: 271
-  m_MinSize: {x: 333, y: 271}
-  m_MaxSize: {x: 14003, y: 10021}
+    y: 567
+    width: 1998
+    height: 380
+  m_MinSize: {x: 331, y: 271}
+  m_MaxSize: {x: 14001, y: 10021}
   vertical: 0
-  controlID: 8031
+  controlID: 966
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -551,8 +568,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1043
-    height: 271
+    width: 1039
+    height: 380
   m_MinSize: {x: 230, y: 250}
   m_MaxSize: {x: 10000, y: 10000}
   m_ActualView: {fileID: 13}
@@ -581,9 +598,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 749
-    width: 1042
-    height: 250
+    y: 640
+    width: 1038
+    height: 359
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -598,21 +615,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/prefabs/Keller
+    - Assets/prefabs/Keller/Sounds
     m_Globs: []
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/prefabs/Keller
+  - Assets/prefabs/Keller/Sounds
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Keller\Desktop\SuperVandalWorld\SuperVandalWorld
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: c6430000
-    m_LastClickedID: 17350
-    m_ExpandedIDs: 00000000824300008443000086430000884300008a4300008c4300008e4300009043000094430000
+    scrollPos: {x: 0, y: 1}
+    m_SelectedIDs: 8c460000
+    m_LastClickedID: 18060
+    m_ExpandedIDs: 00000000003f0000023f0000043f0000063f0000083f00000a3f00000c3f00000e3f0000203f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -640,7 +657,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000824300008443000086430000884300008a4300008c4300008e4300009043000094430000
+    m_ExpandedIDs: 00000000003f0000023f0000043f0000063f0000083f00000a3f00000c3f00000e3f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -665,10 +682,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
+    m_SelectedInstanceIDs: cecaf9ff
+    m_LastClickedInstanceID: -406834
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c6230000a4430000ae3f0000b83c00007e4600007246000064430000383d0000f43c00000c4200000000000040500000704400005eab0000a43f0000764f010074650200da9d0000803f0000c24f0000
+    m_ExpandedInstanceIDs: c6230000a4430000ae3f0000b83c00007e4600007246000064430000383d0000f43c00000c42000040500000704400005eab0000a43f0000764f010074650200da9d0000803f0000c24f00001649000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -711,10 +728,10 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1043
+    x: 1039
     y: 0
     width: 959
-    height: 271
+    height: 380
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 15}
@@ -743,10 +760,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1043
-    y: 749
+    x: 1039
+    y: 640
     width: 957
-    height: 250
+    height: 359
   m_ViewDataDictionary: {fileID: 0}
 --- !u!114 &16
 MonoBehaviour:
@@ -768,14 +785,14 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 527
-    y: 647
-    width: 838
-    height: 352
+    x: 891.4286
+    y: 865.1429
+    width: 815.1428
+    height: 295.2857
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 19232
+  m_LastSelectedObjectID: -97418
 --- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -791,9 +808,9 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 2002
+    x: 1998
     y: 0
-    width: 558
+    width: 562
     height: 947
   m_MinSize: {x: 275, y: 50}
   m_MaxSize: {x: 4000, y: 4000}
@@ -801,6 +818,7 @@ MonoBehaviour:
   m_Panes:
   - {fileID: 18}
   - {fileID: 19}
+  - {fileID: 20}
   m_Selected: 0
   m_LastSelected: 1
 --- !u!114 &18
@@ -823,9 +841,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 2002
+    x: 1998
     y: 73
-    width: 557
+    width: 561
     height: 926
   m_ViewDataDictionary: {fileID: 0}
   m_ObjectsLockedBeforeSerialization: []
@@ -861,13 +879,13 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 2002
+    x: 1998
     y: 73
-    width: 557
+    width: 561
     height: 926
   m_ViewDataDictionary: {fileID: 0}
   m_Spl:
-    ID: 809
+    ID: 1117
     splitterInitialOffset: 516
     currentActiveSplitter: -1
     realSizes:
@@ -898,8 +916,8 @@ MonoBehaviour:
       uniqueId: '[SuperVandalWorld][suite]'
       name: SuperVandalWorld
       fullName: SuperVandalWorld
-      resultStatus: 0
-      duration: 3.6781192
+      resultStatus: 2
+      duration: 0.4713211
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -914,8 +932,8 @@ MonoBehaviour:
       uniqueId: '[Tests.dll][suite]'
       name: Tests.dll
       fullName: C:/Users/adave/Documents/GitHub/SuperVandalWorld/SuperVandalWorld/Library/ScriptAssemblies/Tests.dll
-      resultStatus: 0
-      duration: 3.6506848
+      resultStatus: 2
+      duration: 0.449297
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -930,8 +948,8 @@ MonoBehaviour:
       uniqueId: Tests.dll/[Tests][suite]
       name: Tests
       fullName: Tests
-      resultStatus: 0
-      duration: 3.6406424
+      resultStatus: 2
+      duration: 0.4395177
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -1252,8 +1270,8 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/[Tests][Tests.pickupPointTest][suite]
       name: pickupPointTest
       fullName: Tests.pickupPointTest
-      resultStatus: 0
-      duration: 0.2379946
+      resultStatus: 2
+      duration: 0.4343973
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -1268,28 +1286,28 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/pickupPointTest/[Tests][Tests.pickupPointTest.AddPointsForItemsBeforePowerUps]
       name: AddPointsForItemsBeforePowerUps
       fullName: Tests.pickupPointTest.AddPointsForItemsBeforePowerUps
-      resultStatus: 0
-      duration: 0.1793468
-      messages: 'Unhandled log message: ''[Exception] NullReferenceException: Object
-        reference not set to an instance of an object''. Use UnityEngine.TestTools.LogAssert.Expect'
-      output: 'NullReferenceException: Object reference not set to an instance of
-        an object
+      resultStatus: 2
+      duration: 0.2960506
+      messages: 'System.NullReferenceException : Object reference not set to an instance
+        of an object'
+      output: 'The AnimationClip ''CheckpointAnim'' used by the Animation component
+        ''Checkpoint1'' must be marked as Legacy.
 
-        NullReferenceException: Object reference not set to an
-        instance of an object
+        The AnimationClip ''CheckpointAnim''
+        used by the Animation component ''Checkpoint1'' must be marked as Legacy.
 
-        DontDestroyOnLoad only works for root GameObjects
-        or components on root GameObjects.
+        Help
+        menu closed
 
-'
-      stacktrace: 'KeepBetweenLevels.FindStartPos () (at Assets/src/Justin/KeepBetweenLevels.cs:60)
-
-        KeepBetweenLevels.OnLevelWasLoaded
-        (System.Int32 level) (at Assets/src/Justin/KeepBetweenLevels.cs:29)
-
-
+        Active Scene is ''1''.
 
 '
+      stacktrace: "  at Tests.pickupPointTest.updateScore (UnityEngine.GameObject
+        other, System.Int32 numItems, System.Int32 currentScore) [0x00000] in C:\\Users\\Keller\\Desktop\\SuperVandalWorld\\SuperVandalWorld\\Assets\\tst\\Keller\\pickupScoreTest.cs:29
+        \r\n  at Tests.pickupPointTest+<AddPointsForItemsBeforePowerUps>d__6.MoveNext
+        () [0x000f4] in C:\\Users\\Keller\\Desktop\\SuperVandalWorld\\SuperVandalWorld\\Assets\\tst\\Keller\\pickupScoreTest.cs:135
+        \r\n  at UnityEngine.TestTools.TestEnumerator+<Execute>d__5.MoveNext () [0x00038]
+        in <0e6a59ba521b44fba6d5f2ca6a5adff7>:0 "
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -1302,17 +1320,17 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/pickupPointTest/[Tests][Tests.pickupPointTest.AddPointsForPowerupsBeforeItems]
       name: AddPointsForPowerupsBeforeItems
       fullName: Tests.pickupPointTest.AddPointsForPowerupsBeforeItems
-      resultStatus: 0
-      duration: 0.020456
+      resultStatus: 2
+      duration: 0.0459116
       messages: 'System.NullReferenceException : Object reference not set to an instance
         of an object'
       output: 
       stacktrace: "  at Tests.pickupPointTest.updateScore (UnityEngine.GameObject
-        other, System.Int32 numItems, System.Int32 currentScore) [0x00000] in D:\\Github\\SuperVandalWorld\\SuperVandalWorld\\Assets\\tst\\Keller\\pickupScoreTest.cs:29
+        other, System.Int32 numItems, System.Int32 currentScore) [0x00000] in C:\\Users\\Keller\\Desktop\\SuperVandalWorld\\SuperVandalWorld\\Assets\\tst\\Keller\\pickupScoreTest.cs:29
         \r\n  at Tests.pickupPointTest+<AddPointsForPowerupsBeforeItems>d__7.MoveNext
-        () [0x000ae] in D:\\Github\\SuperVandalWorld\\SuperVandalWorld\\Assets\\tst\\Keller\\pickupScoreTest.cs:164
+        () [0x00098] in C:\\Users\\Keller\\Desktop\\SuperVandalWorld\\SuperVandalWorld\\Assets\\tst\\Keller\\pickupScoreTest.cs:163
         \r\n  at UnityEngine.TestTools.TestEnumerator+<Execute>d__5.MoveNext () [0x00038]
-        in <def80c3c71174f0ea69facc89d14e13e>:0 "
+        in <0e6a59ba521b44fba6d5f2ca6a5adff7>:0 "
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -1325,8 +1343,8 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/pickupPointTest/[Tests][Tests.pickupPointTest.PickUpItemAddsPointsToScore]
       name: PickUpItemAddsPointsToScore
       fullName: Tests.pickupPointTest.PickUpItemAddsPointsToScore
-      resultStatus: 0
-      duration: 0.0131396
+      resultStatus: 1
+      duration: 0.0533701
       messages: 
       output: 
       stacktrace: 
@@ -1342,17 +1360,17 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/pickupPointTest/[Tests][Tests.pickupPointTest.PickUpPowerUpsAddsPointsToScore]
       name: PickUpPowerUpsAddsPointsToScore
       fullName: Tests.pickupPointTest.PickUpPowerUpsAddsPointsToScore
-      resultStatus: 0
-      duration: 0.0070956
+      resultStatus: 2
+      duration: 0.0205708
       messages: 'System.NullReferenceException : Object reference not set to an instance
         of an object'
       output: 
       stacktrace: "  at Tests.pickupPointTest.updateScore (UnityEngine.GameObject
-        other, System.Int32 numItems, System.Int32 currentScore) [0x00000] in D:\\Github\\SuperVandalWorld\\SuperVandalWorld\\Assets\\tst\\Keller\\pickupScoreTest.cs:29
+        other, System.Int32 numItems, System.Int32 currentScore) [0x00000] in C:\\Users\\Keller\\Desktop\\SuperVandalWorld\\SuperVandalWorld\\Assets\\tst\\Keller\\pickupScoreTest.cs:29
         \r\n  at Tests.pickupPointTest+<PickUpPowerUpsAddsPointsToScore>d__5.MoveNext
-        () [0x0006b] in D:\\Github\\SuperVandalWorld\\SuperVandalWorld\\Assets\\tst\\Keller\\pickupScoreTest.cs:103
+        () [0x00055] in C:\\Users\\Keller\\Desktop\\SuperVandalWorld\\SuperVandalWorld\\Assets\\tst\\Keller\\pickupScoreTest.cs:102
         \r\n  at UnityEngine.TestTools.TestEnumerator+<Execute>d__5.MoveNext () [0x00038]
-        in <def80c3c71174f0ea69facc89d14e13e>:0 "
+        in <0e6a59ba521b44fba6d5f2ca6a5adff7>:0 "
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -1365,8 +1383,8 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/[Tests][Tests.pickUpsStressTest][suite]
       name: pickUpsStressTest
       fullName: Tests.pickUpsStressTest
-      resultStatus: 0
-      duration: 0.185032
+      resultStatus: 2
+      duration: 30.739185
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -1381,26 +1399,47 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/pickUpsStressTest/[Tests][Tests.pickUpsStressTest.stressSpawnDiamonds]
       name: stressSpawnDiamonds
       fullName: Tests.pickUpsStressTest.stressSpawnDiamonds
-      resultStatus: 0
-      duration: 0.179691
-      messages: 'Unhandled log message: ''[Exception] NullReferenceException: Object
-        reference not set to an instance of an object''. Use UnityEngine.TestTools.LogAssert.Expect'
-      output: 'NullReferenceException: Object reference not set to an instance of
-        an object
+      resultStatus: 2
+      duration: 26.223684
+      messages: "  Expected: 8000\r\n  But was:  6601\r\n"
+      output: 'The AnimationClip ''CheckpointAnim'' used by the Animation component
+        ''Checkpoint1'' must be marked as Legacy.
 
-        NullReferenceException: Object reference not set to an
-        instance of an object
+        The AnimationClip ''CheckpointAnim''
+        used by the Animation component ''Checkpoint1'' must be marked as Legacy.
 
-        DontDestroyOnLoad only works for root GameObjects
-        or components on root GameObjects.
+        Help
+        menu closed
+
+        Active Scene is ''1''.
+
+        <color=green>Passed</color>
+        at 1000 diamonds
+
+        Current FPS = <color=green> 159.4668</color>
+
+        <color=green>Passed</color>
+        at 2000 diamonds
+
+        Current FPS = <color=green> 154.8923</color>
+
+        <color=green>Passed</color>
+        at 4000 diamonds
+
+        Current FPS = <color=green> 79.43002</color>
+
+        <color=red>Failed</color>
+        at 8000 diamonds
+
+        Current FPS = <color=red> 58.47885</color>
 
 '
-      stacktrace: 'KeepBetweenLevels.FindStartPos () (at Assets/src/Justin/KeepBetweenLevels.cs:60)
+      stacktrace: 'at Tests.pickUpsStressTest+<stressSpawnDiamonds>d__3.MoveNext
+        () [0x002f0] in C:\Users\Keller\Desktop\SuperVandalWorld\SuperVandalWorld\Assets\tst\Keller\pickUpStressTest.cs:100
 
-        KeepBetweenLevels.OnLevelWasLoaded
-        (System.Int32 level) (at Assets/src/Justin/KeepBetweenLevels.cs:29)
-
-
+        at
+        UnityEngine.TestTools.TestEnumerator+<Execute>d__5.MoveNext () [0x00038]
+        in <0e6a59ba521b44fba6d5f2ca6a5adff7>:0
 
 '
       notRunnable: 0
@@ -1601,8 +1640,8 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/[Tests][Tests.UITest][suite]
       name: UITest
       fullName: Tests.UITest
-      resultStatus: 0
-      duration: 1.9576911
+      resultStatus: 2
+      duration: 0.6326785
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -1617,28 +1656,24 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/UITest/[Tests][Tests.UITest.PauseFunctionTest]
       name: PauseFunctionTest
       fullName: Tests.UITest.PauseFunctionTest
-      resultStatus: 0
-      duration: 0.2691064
-      messages: 'Unhandled log message: ''[Exception] NullReferenceException: Object
-        reference not set to an instance of an object''. Use UnityEngine.TestTools.LogAssert.Expect'
-      output: 'NullReferenceException: Object reference not set to an instance of
-        an object
+      resultStatus: 1
+      duration: 0.2749111
+      messages: 
+      output: 'The AnimationClip ''CheckpointAnim'' used by the Animation component
+        ''Checkpoint1'' must be marked as Legacy.
 
-        NullReferenceException: Object reference not set to an
-        instance of an object
+        The AnimationClip ''CheckpointAnim''
+        used by the Animation component ''Checkpoint1'' must be marked as Legacy.
 
-        DontDestroyOnLoad only works for root GameObjects
-        or components on root GameObjects.
+        Help
+        menu closed
 
-'
-      stacktrace: 'KeepBetweenLevels.FindStartPos () (at Assets/src/Justin/KeepBetweenLevels.cs:60)
+        Active Scene is ''1''.
 
-        KeepBetweenLevels.OnLevelWasLoaded
-        (System.Int32 level) (at Assets/src/Justin/KeepBetweenLevels.cs:29)
-
-
+        Help menu closed
 
 '
+      stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -1651,8 +1686,8 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/UITest/[Tests][Tests.UITest.ScoreTest]
       name: ScoreTest
       fullName: Tests.UITest.ScoreTest
-      resultStatus: 0
-      duration: 0.0894179
+      resultStatus: 1
+      duration: 0.044664
       messages: 
       output: 
       stacktrace: 
@@ -1668,15 +1703,15 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/UITest/[Tests][Tests.UITest.UIStressTest]
       name: UIStressTest
       fullName: Tests.UITest.UIStressTest
-      resultStatus: 0
-      duration: 0.0161867
+      resultStatus: 2
+      duration: 0.041793
       messages: "  Expected: 2147483647\r\n  But was:  -2147483648\r\n"
       output: 
-      stacktrace: 'at Tests.UITest+<UIStressTest>d__7.MoveNext () [0x0014a] in D:\Github\SuperVandalWorld\SuperVandalWorld\Assets\tst\Ben\UITest.cs:172
+      stacktrace: 'at Tests.UITest+<UIStressTest>d__6.MoveNext () [0x0014a] in D:\Github\SuperVandalWorld\SuperVandalWorld\Assets\tst\Ben\UITest.cs:172
 
         at
         UnityEngine.TestTools.TestEnumerator+<Execute>d__5.MoveNext () [0x00038]
-        in <def80c3c71174f0ea69facc89d14e13e>:0
+        in <0e6a59ba521b44fba6d5f2ca6a5adff7>:0
 
 '
       notRunnable: 0
@@ -1691,10 +1726,16 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/UITest/[Tests][Tests.UITest.VolumeTest]
       name: VolumeTest
       fullName: Tests.UITest.VolumeTest
-      resultStatus: 0
-      duration: 0.0139173
+      resultStatus: 1
+      duration: 0.0378883
       messages: 
-      output: 
+      output: '0.5
+
+        0
+
+        1
+
+'
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
@@ -1704,22 +1745,25 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1001
       parentUniqueId: Tests.dll/Tests/[Tests][Tests.UITest][suite]
-    m_ResultText: 'MovingPlatformNumberStressTest (0.000s)
-
-      ---
-
-      Cancelled
-      by user
-
-      ---
-
-      Active Scene is ''1''.'
-    m_ResultStacktrace: 
+    m_ResultText: "PickUpPowerUpsAddsPointsToScore (0.021s)\n---\nSystem.NullReferenceException
+      : Object reference not set to an instance of an object\n---\nat Tests.pickupPointTest.updateScore
+      (UnityEngine.GameObject other, System.Int32 numItems, System.Int32 currentScore)
+      [0x00000] in C:\\Users\\Keller\\Desktop\\SuperVandalWorld\\SuperVandalWorld\\Assets\\tst\\Keller\\pickupScoreTest.cs:29
+      \r\n  at Tests.pickupPointTest+<PickUpPowerUpsAddsPointsToScore>d__5.MoveNext
+      () [0x00055] in C:\\Users\\Keller\\Desktop\\SuperVandalWorld\\SuperVandalWorld\\Assets\\tst\\Keller\\pickupScoreTest.cs:102
+      \r\n  at UnityEngine.TestTools.TestEnumerator+<Execute>d__5.MoveNext () [0x00038]
+      in <0e6a59ba521b44fba6d5f2ca6a5adff7>:0"
+    m_ResultStacktrace: "  at Tests.pickupPointTest.updateScore (UnityEngine.GameObject
+      other, System.Int32 numItems, System.Int32 currentScore) [0x00000] in C:\\Users\\Keller\\Desktop\\SuperVandalWorld\\SuperVandalWorld\\Assets\\tst\\Keller\\pickupScoreTest.cs:29
+      \r\n  at Tests.pickupPointTest+<PickUpPowerUpsAddsPointsToScore>d__5.MoveNext
+      () [0x00055] in C:\\Users\\Keller\\Desktop\\SuperVandalWorld\\SuperVandalWorld\\Assets\\tst\\Keller\\pickupScoreTest.cs:102
+      \r\n  at UnityEngine.TestTools.TestEnumerator+<Execute>d__5.MoveNext () [0x00038]
+      in <0e6a59ba521b44fba6d5f2ca6a5adff7>:0 "
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: b3525cde
-      m_LastClickedID: -564374861
-      m_ExpandedIDs: c973899ac337b2b420712cd05dfc4bdfe557abf795fbf000e1b06317ab3ce1198302573d8359db41e6daa968ffffff7f
+      m_SelectedIDs: aee7299c
+      m_LastClickedID: -1674975314
+      m_ExpandedIDs: 98906ddc5dfc4bdfe557abf7ab3ce1198359db41ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1796,3 +1840,34 @@ MonoBehaviour:
       selectedCategoryMask: 0
       availableCategories:
       - Uncategorized
+--- !u!114 &20
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f683d99f24875748a6656966ca9cea0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 240, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Tile Palette
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 1997
+    y: 81
+    width: 554
+    height: 926
+  m_ViewDataDictionary: {fileID: 0}
+  m_PreviewResizer:
+    m_CachedPref: 50
+    m_ControlHash: 1964396721
+    m_PrefName: Preview_TilemapBrushInspector
+  m_Palette: {fileID: 5713101419344279301, guid: b0186b213b3ff05489000e4ca7c9417e, type: 3}
+  m_DrawGizmos: 0
