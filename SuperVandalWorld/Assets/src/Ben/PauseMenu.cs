@@ -4,6 +4,7 @@ using System.Globalization;
 using System.Runtime.InteropServices;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
@@ -13,6 +14,8 @@ public class PauseMenu : MonoBehaviour
 
 	GameObject player;
 	SoundManager soundManager;
+
+	Toggle easyToggle;
 
 	Rigidbody2D rb;
 
@@ -28,17 +31,15 @@ public class PauseMenu : MonoBehaviour
 
 		soundManager = GameObject.Find("SoundManager").GetComponent<SoundManager>();
 
+		easyToggle = GameObject.Find("DrBCModeToggle").GetComponent<Toggle>();
+
 		rb = GameObject.Find("Player").GetComponent<Rigidbody2D>();
 
 		//rb.gravityScale = 0;
 		//rb.collisionDetectionMode = CollisionDetectionMode2D.Discrete;
 		//rb.bodyType = RigidbodyType2D.Kinematic;
 
-		foreach (GameObject g in helpObjects)
-		{
-			g.SetActive(false);
-		}
-
+		CloseHelpMenu();
 		hidePaused();
 	}
 
@@ -136,5 +137,23 @@ public class PauseMenu : MonoBehaviour
     {
 		AudioListener.volume = newVolume;
 		Debug.Log(newVolume);
+	}
+
+	public void DrBCMode(bool value)
+    {
+		if (easyToggle.isOn)
+		{
+			Debug.Log("Dr BC mode enabled");
+		}
+
+		else
+		{
+			Debug.Log("Dr BC mode disabled");
+		}
+	}
+
+	public void LoadMainMenu()
+    {
+		SceneManager.LoadScene(0, LoadSceneMode.Single);
 	}
 }
