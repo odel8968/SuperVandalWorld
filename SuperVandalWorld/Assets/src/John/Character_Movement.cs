@@ -17,9 +17,13 @@ public class Character_Movement : MonoBehaviour
     public LayerMask groundLayer; //For this to work, all ground needs to be on its own layer
     public string abilityName;
     public KeyCode ability = KeyCode.J;
+    public int characterHealth;
     protected SoundManager soundManager;
     protected SpriteRenderer spriteRenderer;
     protected bool isFlipped;
+    public Sprite[] spriteArray;
+    protected bool recentlyDamaged = false;
+    protected int invulnerableTimer = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -33,12 +37,32 @@ public class Character_Movement : MonoBehaviour
         soundManager = GameObject.Find("SoundManager").GetComponent<SoundManager>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         isFlipped = false;
+        spriteRenderer.sprite = spriteArray[0];
+        characterHealth = 3;
     }
 
     // Update is called once per frame
     void Update()
     {
         Move();
+        if (!CheckIfGrounded() && spriteRenderer.sprite != spriteArray[1]) //if player is not grounded and current sprite is not jump sprite
+        {
+            spriteRenderer.sprite = spriteArray[1]; //set sprite to jump sprite
+        }
+        else if (CheckIfGrounded() && spriteRenderer.sprite == spriteArray[1]) //if player is grounded and current sprite is jump sprite
+        {
+            spriteRenderer.sprite = spriteArray[0];
+        }
+
+        if (recentlyDamaged)
+        {
+            invulnerableTimer++;
+            //insert sprite flickering effect here
+            if (invulnerableTimer >= 200)
+            {
+                recentlyDamaged = false;
+            }
+        }
     }
 
     public virtual void Move() { }
@@ -89,11 +113,23 @@ public class Character_Movement : MonoBehaviour
         jumps_allowed++;
     }
 
-    /*void OnTriggerEnter2D(Collider2D other)
+    public void takeDamage(int damageTaken)
     {
-        if (other.gameObject.tag == "Ground")
+        if (recentlyDamaged == true) return; //do nothing if the character was recently damaged
+        characterHealth -= damageTaken;
+        if (characterHealth <= 0)
         {
-            jumps_taken = 0;
+            characterDie();
+            return;
         }
-    }*/
+        invulnerableTimer = 0;
+        recentlyDamaged = true;
+        soundManager.PlaySound("PlayerHit");
+    }
+
+    public void characterDie()
+    {
+        soundManager.PlaySound("PlayerDeath");
+        //insert death sprite here
+    }
 }
