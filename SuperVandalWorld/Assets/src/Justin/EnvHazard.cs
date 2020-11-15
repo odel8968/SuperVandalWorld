@@ -20,6 +20,7 @@ public class EnvHazard : EnvObject
 
     public override void OnCollisionEnter2D(Collision2D collision)
     {
+        Debug.Log(collision.collider.tag);
         //check if the player is alive
         if(playerAlive == true)
         {

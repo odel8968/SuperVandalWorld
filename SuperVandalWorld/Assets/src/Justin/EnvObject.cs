@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class EnvObject : MonoBehaviour
 {
-        protected bool playerAlive = false;
+        protected bool playerAlive = true;
         private GameObject[] players;
         private GameObject[] mainCamera;
 
