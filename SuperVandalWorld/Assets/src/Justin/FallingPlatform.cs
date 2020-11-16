@@ -4,31 +4,43 @@ using UnityEngine;
 
 public class FallingPlatform : EnvObject 
 {
+    //Reference to Platform RigidBody
     Rigidbody2D platformRB;
 
+    //Reference to Platform Collider
     Collider2D platColl;
 
+    //Initial position of Platform
     Vector2 startPos;
 
+    //Platform Object type
     GameObject platformType;
 
+    //Variable for delay between collision and platform falling
     public float fallDelay = 1f;
+
+    //Variable for delay between platform falling and platform respawning
     public float respawnDelay = 3f;
 
+    //check for platform respawn
     public bool respawns = true;
 
+    //Array to hold elements of a bridge
     public GameObject[] ropeBridge;
 
     // Start is called before the first frame update
     void Start()
     {
+        //Get starting position of platform
         startPos = transform.position;
 
         //Get RB of platform
         platformRB = GetComponent<Rigidbody2D>();
+
         //Get Collider of platform
         platColl = GetComponent<Collider2D>();
 
+        //Get the type of game object
         platformType = this.gameObject;
     }
 
@@ -49,6 +61,7 @@ public class FallingPlatform : EnvObject
 
         else if (platformType.tag == "RopeLogBridge")
         {
+            //Drop bridge if the player collides with the bridge
             if(collision.gameObject.name.Equals("Player"))
             {
                 Invoke("DropBridge", fallDelay);                
@@ -64,14 +77,15 @@ public class FallingPlatform : EnvObject
         platColl.isTrigger = true;
     }
 
+    //Drop platform by disabling kinematic tb
     void DropBridge()
     {
         platformRB.isKinematic = false;
     }
 
+    //respawn platform at it's positon, re-enable rb and collider
     void RespawnPlatform()
     {
-        //respawn platform at it's positon, re-enable rb and collider
         platformRB.isKinematic = true;
         platColl.isTrigger = false;
         platformRB.velocity = new Vector3(0,0,0);

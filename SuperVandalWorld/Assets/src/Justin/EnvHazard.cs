@@ -2,83 +2,71 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System;
 
 public class EnvHazard : EnvObject
 {
-    //variable to use between restarting level
-    public float restartDelay = 2f;
+    //Variable to hold reference to Pause Menu
+    PauseMenu pauseObj;
 
-    //variable to hold reference to Player_Movement script
-    Player_Movement playerMovement;
+    //Variable to hold if BC mode is on or off
+    bool easyMode;
 
-    // Start is called before the first frame update
     void Start()
     {
-        //Find Player_Movement script
-        playerMovement = FindObjectOfType<Player_Movement>();
+        //Find Pause Menu script
+        pauseObj = FindObjectOfType<PauseMenu>();
     }
 
+    void Update()
+    {
+        //Check if BC mode is on or off
+        easyMode = pauseObj.DrBCMode();
+    }
+
+    //send notifications to EnvListener
+    public static event Action<string> objectCollisionNotification = delegate { };
+
+    //Dynamically bound collision function - Overriding static from parent
     public override void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log(collision.collider.tag);
-        //check if the player is alive
-        if(playerAlive == true)
+        if(collision.collider.tag == "Player")
         {
-            //check if the object that collided with the enviroment hazard is the player
-            if(collision.collider.tag == "Player")
+            //if BC mode is on, send notification to listener
+            if(easyMode == true)
             {
-                //Disable player movement
-               playerMovement.enabled = false;
-               
-               //print out message to console
-               Debug.Log("You Died");
-
-               //set playerAlive to false
-               playerAlive = false;
-
-               //reset the level after a time of the restart delay
-               Invoke("ResetLevel", restartDelay);
-
-               //re-enable the player movement after a time of the restart delay
-               Invoke("ReEnablePlayerMovement", restartDelay);
+                objectCollisionNotification("BCMODE");
+            }
+            else
+            {
+                //otherwise BC mode is off, send notification to listener
+                if(playerAlive == true)
+                {
+                    objectCollisionNotification("EnvHazard");
+                }
             }
         }
     }
 
+    //Function for trigger collisions
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        //check if the tag of the object that collided with the trigger is the player
         if(collision.tag == "Player")
         {
-            //disable player movement
-            playerMovement.enabled = false;
-
-            //print out message to console
-            Debug.Log("You Died");
-
-            //set playerAlive to false
-            playerAlive = false;
-
-            //reset the level after a time of the restart delay
-            Invoke("ResetLevel", restartDelay);
-
-            //re-enable movement after a time of the restart delay
-            Invoke("ReEnablePlayerMovement", restartDelay);
+            //if BC mode is on, send notification to listener
+            if(easyMode == true)
+            {
+                objectCollisionNotification("BCMODE");
+            }
+            else
+            {
+                //otherwise BC mode is off, send notification to listener
+                if(playerAlive == true)
+                {
+                    objectCollisionNotification("WaterHazard");
+                }
+            }
         }
-    }
-
-    //Function to reset the level
-    void ResetLevel()
-    {
-        //reload active scene
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-    }
-
-    //Function to re-enable player movement
-    void ReEnablePlayerMovement()
-    {
-        //re-enable the player's movement
-        playerMovement.enabled = true;
     }
 
 }

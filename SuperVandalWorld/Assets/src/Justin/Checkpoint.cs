@@ -7,6 +7,8 @@ public class Checkpoint : MonoBehaviour
     //reference to checkpoint manager
     private CheckpointManager cm;
     private BoxCollider2D coll;
+
+    SoundManager sounds;
   
     //variable to trigger animation
     private Animator anim;
@@ -18,6 +20,9 @@ public class Checkpoint : MonoBehaviour
         anim = GetComponent<Animator>();
         //Get box collider of checkpoints
         coll = GetComponent<BoxCollider2D>();
+
+        //Get Sound Manager
+        sounds = GameObject.Find("SoundManager").GetComponent<SoundManager>();
     }
     
     //What to do on collision with a checkpoint
@@ -34,6 +39,9 @@ public class Checkpoint : MonoBehaviour
 
             //disable checkpoint collider so it can't be hit multiple times
             coll.enabled = false;
+
+            //play sound
+            sounds.PlaySound("Checkpoint");
         }
     }
 

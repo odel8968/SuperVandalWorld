@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3377420132902869564}
   - component: {fileID: 145137602628487913}
   - component: {fileID: 659559199188566695}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Level1 Spike_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -129,5 +129,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0516dbb0f217fd40bd484fee54abb4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  restartDelay: 2
-  playerMovement: {fileID: 0}
+  playerAlive: 1
+  playerPrefab: {fileID: 0}
+  camPrefab: {fileID: 0}

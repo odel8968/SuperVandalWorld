@@ -38,7 +38,7 @@ public class CameraFollow : MonoBehaviour
         //Get target position
         targetPos = player.position;
 
-        //vertical clamp
+        //vertical clamp values that adjust the camera's Y-axis view
         if(yMinEnabled && yMaxEnabled)
         {
             targetPos.y = Mathf.Clamp(player.position.y, yMinValue, yMaxValue);
@@ -54,7 +54,7 @@ public class CameraFollow : MonoBehaviour
             targetPos.y = Mathf.Clamp(player.position.y, player.position.y, yMaxValue);
         }
 
-        //horizontal clamp
+        //horizontal clamp values that adjust the camera's X-axis view
         if(xMinEnabled && xMaxEnabled)
         {
             targetPos.x = Mathf.Clamp(player.position.x, xMinValue, xMaxValue);
@@ -78,6 +78,7 @@ public class CameraFollow : MonoBehaviour
         
     }
 
+    //Function called that adjusted the clamp values when the player enters the BossArena
     public void BossCamera()
     {
         xMinValue = xMaxValue;
