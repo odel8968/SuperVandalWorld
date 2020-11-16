@@ -20,6 +20,7 @@ public class Character_Movement : MonoBehaviour
     public int characterHealth;
     protected SoundManager soundManager;
     protected SpriteRenderer spriteRenderer;
+    protected Animator animator;
     protected bool isFlipped;
     public Sprite[] spriteArray;
     protected bool recentlyDamaged = false;
@@ -38,7 +39,9 @@ public class Character_Movement : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         isFlipped = false;
         spriteRenderer.sprite = spriteArray[0];
-        characterHealth = 3;
+        characterHealth = 1;
+        animator = GetComponent<Animator>();
+        animator.enabled = false;
     }
 
     // Update is called once per frame
@@ -103,7 +106,7 @@ public class Character_Movement : MonoBehaviour
         return RCH2D.collider != null; //null if not grounded; not null if grounded
     }
 
-    protected void IncreaseMaxJumps()
+    public void IncreaseMaxJumps()
     {
         if (jumps_allowed + 1 > MAX_JUMPS)
         {

@@ -8,6 +8,16 @@ public class Player_Movement : Character_Movement
     {
         float x = Input.GetAxisRaw("Horizontal");
         float moveBy = x * speed;
+        isGrounded = CheckIfGrounded();
+        if (x != 0 && isGrounded)
+        {
+            animator.enabled = true;
+        }
+        else
+        {
+            animator.enabled = false;
+            spriteRenderer.sprite = spriteArray[0];
+        }
         if (x < 0 && !isFlipped) {
             if (spriteRenderer != null)
             {
@@ -24,7 +34,7 @@ public class Player_Movement : Character_Movement
             }
         }
         rb.velocity = new Vector2(moveBy, rb.velocity.y);
-        isGrounded = CheckIfGrounded();
+        
         if (Input.GetKeyDown(KeyCode.Space))
         {
             isGrounded = CheckIfGrounded();
