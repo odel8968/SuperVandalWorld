@@ -17,13 +17,21 @@ public class multiJump : MonoBehaviour
     //function called when enabled by another script
     void OnEnable()
     {
-        //find player object
-        player = GameObject.Find("Player").GetComponent<Character_Movement>(); 
         //disable powerAxe powerup if enabled. 
         GameObject.Find("Player").GetComponent<powerAxe>().enabled = false;
 
         //change max jumps of player 2, allowing for a second jump in mid air
-        player.jumps_allowed = 2;
+        player.IncreaseMaxJumps();
+    }
+
+    void Start()
+    {
+        player = GameObject.Find("Player").GetComponent<Character_Movement>(); 
+    }
+
+    void OnDisable()
+    {
+        player.jumps_allowed = 1;
     }
 }
 
