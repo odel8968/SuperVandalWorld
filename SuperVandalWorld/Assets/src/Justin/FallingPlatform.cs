@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class FallingPlatform : EnvObject 
 {
@@ -26,7 +27,9 @@ public class FallingPlatform : EnvObject
     public bool respawns = true;
 
     //Array to hold elements of a bridge
-    public GameObject[] ropeBridge;
+    //public GameObject[] ropeBridge;
+
+    public static event Action<string> objectCollisionNotification = delegate { };
 
     // Start is called before the first frame update
     void Start()
@@ -55,21 +58,22 @@ public class FallingPlatform : EnvObject
             if(collision.gameObject.name.Equals("Player"))
             {
                 Invoke("DropPlatform", fallDelay);
+                objectCollisionNotification("Falling");
                 Invoke("RespawnPlatform", respawnDelay);
             }
         }
 
-        else if (platformType.tag == "RopeLogBridge")
+        /*else if (platformType.tag == "RopeLogBridge")
         {
             //Drop bridge if the player collides with the bridge
             if(collision.gameObject.name.Equals("Player"))
             {
                 Invoke("DropBridge", fallDelay);                
             }
-        }
+        }*/
     }
 
-    void DropPlatform()
+    public void DropPlatform()
     {
         //Drop platform by disabling kinematic rb
         platformRB.isKinematic = false;
@@ -77,14 +81,8 @@ public class FallingPlatform : EnvObject
         platColl.isTrigger = true;
     }
 
-    //Drop platform by disabling kinematic tb
-    void DropBridge()
-    {
-        platformRB.isKinematic = false;
-    }
-
     //respawn platform at it's positon, re-enable rb and collider
-    void RespawnPlatform()
+    public void RespawnPlatform()
     {
         platformRB.isKinematic = true;
         platColl.isTrigger = false;
@@ -92,4 +90,10 @@ public class FallingPlatform : EnvObject
         platformRB.position = startPos;
 
     }
+
+    //Drop platform by disabling kinematic tb
+    /*void DropBridge()
+    {
+        platformRB.isKinematic = false;
+    }*/
 }

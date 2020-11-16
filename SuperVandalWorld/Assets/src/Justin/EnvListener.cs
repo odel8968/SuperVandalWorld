@@ -15,6 +15,8 @@ public class EnvListener : MonoBehaviour
 
     SoundManager sounds;
 
+    FallingPlatform fallingPlatform;
+
     void Start()
     {
         //Find Player_Movement script
@@ -25,6 +27,9 @@ public class EnvListener : MonoBehaviour
 
         //Find sound manager
         sounds = GameObject.Find("SoundManager").GetComponent<SoundManager>();
+
+        //Find FallingPlatform 
+        fallingPlatform = FindObjectOfType<FallingPlatform>();
     }
 
     //on enable add subsribers to listener
@@ -32,6 +37,7 @@ public class EnvListener : MonoBehaviour
     {
             EnvHazard.objectCollisionNotification += EnvHazard_objectCollisionNotification;
             MovingPlatform.objectCollisionNotification += MovingPlatform_objectCollisionNotification;
+            FallingPlatform.objectCollisionNotification += FallingPlatform_objectCollisionNotification;
     }
 
     //switch statement for listener to determine what to do by message recieved
@@ -105,11 +111,23 @@ public class EnvListener : MonoBehaviour
         
     }
 
+    private void FallingPlatform_objectCollisionNotification(string name)
+    {
+        switch(name)
+        {
+            case "Falling":
+               Invoke("FallingPlatformSound", fallingPlatform.fallDelay);
+            break;
+                
+        }
+    }
+
     //Remove listener subscribers on disable
     private void OnDisable()
     {
         EnvHazard.objectCollisionNotification -= EnvHazard_objectCollisionNotification;
         MovingPlatform.objectCollisionNotification -= MovingPlatform_objectCollisionNotification;
+        FallingPlatform.objectCollisionNotification += FallingPlatform_objectCollisionNotification;
     }
 
     //Function to reset the level
@@ -124,6 +142,11 @@ public class EnvListener : MonoBehaviour
     {
         //re-enable the player's movement
         playerMovement.enabled = true;
+    }
+
+    void FallingPlatformSound()
+    {
+        sounds.PlaySound("FallingFP");
     }
 
 }
