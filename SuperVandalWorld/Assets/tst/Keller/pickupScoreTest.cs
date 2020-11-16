@@ -48,7 +48,7 @@ namespace Tests
                     {
                         return currentScore;
                     }
-                    break;
+                    
                 }   
 
                 //if score would be negative, make it 0

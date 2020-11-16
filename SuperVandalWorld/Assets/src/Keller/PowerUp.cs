@@ -1,66 +1,43 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class PowerUp : pickupsManager
 {
     public int scoreValue;
     public int healthChange;
-    public static void collisionPowerUp(Collider2D col)
-    {
-        //on trigger with pickup
-        PowerUp gObject = col.gameObject.GetComponent<PowerUp>();
-        Character_Movement player = GameObject.Find("Player").GetComponent<Character_Movement>();
-        SoundManager sounds = GameObject.Find("SoundManager").GetComponent<SoundManager>();
-        UIManager score = GameObject.Find("Score").GetComponent<UIManager>();
-        
+    PauseMenu pause;
+    bool bcMode;
 
-        //Character_Movement.currentAbility = changeAbility(Character_Movement.currentAbility, other);
-        if(player.hasAbility)
-        {
-            if(!checkAbilityNames(gObject, player))
-            {
-                //changeAbility(gObject, player);
-                if(gObject.name.Contains("Axe"))
-                {
-                    GameObject.Find("Player").GetComponent<powerAxe>().enabled = true;
-                    player.abilityName = (gObject.name);
-                }
-                else if(gObject.name.Contains("Jump"))
-                {
-                    GameObject.Find("Player").GetComponent<multiJump>().enabled = true;
-                    player.abilityName = (gObject.name);
-                }
-            }
-            Debug.Log(player.abilityName);
-        }
-        else if(!player.hasAbility)
-        {
-            if(gObject.name.Contains("Axe"))
-            {
-                GameObject.Find("Player").GetComponent<powerAxe>().enabled = true;
-            }
-            else if(gObject.name.Contains("Jump"))
-            {
-                GameObject.Find("Player").GetComponent<multiJump>().enabled = true;
-            }
-        }
-        score.AddScore(updateScore(gObject));
-        sounds.PlaySound("PowerUp");
-        removeAsset(col);
+    void Start()
+    {
+        pause = FindObjectOfType<PauseMenu>();
     }
 
-    private static bool checkAbilityNames(PowerUp pwr, Character_Movement player)
+    void Update()
     {
-        if(player.abilityName.Contains(pwr.name))
+        bcMode = pause.DrBCMode();
+    }
+
+    public override void OnTriggerEnter2D(Collider2D col)
+    {
+        //pass power up object to observer
+        if(bcMode && this.name == "badApple")
         {
-            return true;
+            PowerUp bc = new PowerUp();
+            bc.name = "BCMODE";
+
+            objectCollisionNotification(bc);
         }
         else
         {
-            return false;
+            objectCollisionNotification(this);
         }
-    }
+
+        //delete powerup
+        Destroy(this.gameObject);
+    } 
 
     private int changeHealthValue(Collider2D other)
     {
@@ -68,9 +45,5 @@ public class PowerUp : pickupsManager
         return obj.healthChange;
     }
 
-    private static int updateScore(PowerUp other)
-    {
-        var obj = other.GetComponent<PowerUp>();
-        return obj.scoreValue;
-    }
+    public static event Action<PowerUp> objectCollisionNotification = delegate { };
 }

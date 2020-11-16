@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 6135640305494707416}
   - component: {fileID: 6135640305494707399}
   - component: {fileID: 6135640305494707397}
-  - component: {fileID: 6135640305494707418}
   - component: {fileID: 6135640305494707417}
   - component: {fileID: 6135640305494707398}
   - component: {fileID: 868055309}
@@ -111,18 +110,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!114 &6135640305494707418
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6135640305494707396}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8861cff9a03f6594b9b7d74bda5228a5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &6135640305494707417
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -147,6 +134,8 @@ MonoBehaviour:
     m_Bits: 2048
   abilityName: 
   ability: 106
+  characterHealth: 0
+  spriteArray: []
 --- !u!61 &6135640305494707398
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -199,7 +188,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 6135640305494707397}
-  jumpUsed: 0
 --- !u!114 &6992880138374795509
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -224,6 +212,8 @@ MonoBehaviour:
     m_Bits: 2048
   abilityName: 
   ability: 106
+  characterHealth: 0
+  spriteArray: []
 --- !u!114 &7117096677724385553
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -112,5 +112,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5b1019b71f7f33448876993ae61a9cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 1000
+  scoreValue: 5000
   healthChange: 1

@@ -1,34 +1,21 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class Item : pickupsManager
 {
     public int scoreValue;
 
-    public static void collisionItem(Collider2D col)
+    public override void OnTriggerEnter2D(Collider2D col)
     {
-        //on trigger with pickup
-        Item gem = col.gameObject.GetComponent<Item>();
-
-        //find sound manager and scoreboard
-        SoundManager sounds = GameObject.Find("SoundManager").GetComponent<SoundManager>();
-        UIManager score = GameObject.Find("Score").GetComponent<UIManager>();
-
-        //call sound manager function to play item sound
-        sounds.PlaySound("PowerUp");
-
-        //call score function to udpate score
-        score.AddScore(updateScore(gem));
+        //pass gem object to observer
+        objectCollisionNotification(this);
 
         //delete item
-        removeAsset(col);
+        Destroy(this.gameObject);
     }
 
-    //get score value of item and return int
-    private static int updateScore(Item other)
-    {
-        var obj = other.GetComponent<Item>();
-        return obj.scoreValue;
-    }
+
+    public static event Action<Item> objectCollisionNotification = delegate { };
 }
