@@ -11,7 +11,7 @@ public class Character_Movement : MonoBehaviour
     public bool hasAbility;
     public static int MAX_JUMPS = 2;
     protected int jumps_taken;
-    public int jumps_allowed;
+    public static int jumps_allowed;
     protected bool isGrounded = false;
     public float checkGroundRadius;
     public LayerMask groundLayer; //For this to work, all ground needs to be on its own layer
