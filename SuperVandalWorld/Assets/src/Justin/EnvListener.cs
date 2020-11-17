@@ -93,15 +93,20 @@ public class EnvListener : MonoBehaviour
         }
     }
 
+    //based on message recieved from MovingPlatform with collision, string name, and gameobject
     private void MovingPlatform_objectCollisionNotification(Collision2D collision, string name, GameObject gm)
     {
         switch(name)
         {
+            /*If message revieved is Enter set object that collided with platform's transform to be
+            set as a child of the platforms*/
             case "Enter":
                 collision.collider.transform.SetParent(gm.transform);
                 GameObject.Find("Main Camera").transform.SetParent(gm.transform);
             break;
 
+            /*If message revieved is Enter un-set object that collided with platform's transform to be
+            set as a child of the platforms*/
             case "Exit":
                 collision.collider.transform.SetParent(null);
                 GameObject.Find("Main Camera").transform.SetParent(null);
@@ -111,10 +116,12 @@ public class EnvListener : MonoBehaviour
         
     }
 
+    //based on message recieved from MovingPlatform with collision, string name, and gameobject
     private void FallingPlatform_objectCollisionNotification(string name)
     {
         switch(name)
         {
+            //play falling sound for falling platform
             case "Falling":
                Invoke("FallingPlatformSound", fallingPlatform.fallDelay);
             break;
