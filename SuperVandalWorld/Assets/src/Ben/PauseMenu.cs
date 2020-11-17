@@ -47,20 +47,17 @@ public class PauseMenu : MonoBehaviour
 		pauseMenuItem[5] = new SliderUIElement("Volume", 40, Color.white, .4f, "ShowOnPause", sliderObject);
 
 		helpMenuItem[0] = new UIElement("Help Menu", 60, Color.yellow, .9f, "ShowOnHelp");
-		helpMenuItem[1] = new UIElement("Controls \nW / Left Arrow: Move Left \nD / Right Arrow: Move Right \nSpace Bar: Jump \nJ: Special", 35, Color.green, .65f, "ShowOnHelp");
+		helpMenuItem[1] = new UIElement("Controls \nW / Left Arrow: Move Left \nD / Right Arrow: Move Right \nSpace Bar: Jump \nJ: Special \nEscape: Pause / Menu", 35, Color.green, .65f, "ShowOnHelp");
 		helpMenuItem[2] = new InteractableUIElement("Resume", 40, Color.white, .1f, "ShowOnHelp", PauseMenu.instance.CloseHelpMenu);
 
 		volumeSlider.value = AudioListener.volume;
 		drBCToggle.isOn = easyMode;
 
 		RectTransform m_RectTransform = drBCToggle.GetComponent<RectTransform>();
-		m_RectTransform.SetInsetAndSizeFromParentEdge(RectTransform.Edge.Left, (Screen.width * .5f) - 80, 160);
-		m_RectTransform.SetInsetAndSizeFromParentEdge(RectTransform.Edge.Top, Screen.height * .75f, 20);
+		m_RectTransform.SetInsetAndSizeFromParentEdge(RectTransform.Edge.Left, (Screen.width * .4f), Screen.width * .1f);
+		m_RectTransform.SetInsetAndSizeFromParentEdge(RectTransform.Edge.Top, Screen.height * .75f, 100);
 
-		//m_RectTransform = volumeSlider.GetComponent<RectTransform>();
-		//m_RectTransform.SetInsetAndSizeFromParentEdge(RectTransform.Edge.Left, (Screen.width * .5f)-150, 300);
-		//m_RectTransform.SetInsetAndSizeFromParentEdge(RectTransform.Edge.Top, Screen.height * .6f, 20);
-
+		
 		Time.timeScale = 1;
 		pauseObjects = GameObject.FindGameObjectsWithTag("ShowOnPause");
 		helpObjects = GameObject.FindGameObjectsWithTag("ShowOnHelp");

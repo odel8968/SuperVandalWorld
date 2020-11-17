@@ -58,6 +58,7 @@ public class Sound
     }
 }
 
+
 public class SoundManager : MonoBehaviour
 {
     [SerializeField]
@@ -80,6 +81,7 @@ public class SoundManager : MonoBehaviour
         for (int i = 0; i < sounds.Length; i++)
         {
             GameObject _go = new GameObject("Sound" + i + sounds[i].name);
+            _go.transform.SetParent(this.transform);
             sounds[i].SetSource(_go.AddComponent<AudioSource>());
         }
 
