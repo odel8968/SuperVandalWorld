@@ -28,8 +28,17 @@ public class daBoss : MonoBehaviour
 
     public HealthBar healthBar;
 
+    [SerializeField]
+    Transform shootPoint;
     public GameObject bul;
-    public float bulletForce = 3f;
+    Transform tg;
+    float fireR;
+
+    [SerializeField]
+    float turnSpeed = 5;
+
+    PauseMenu easyButton;
+    bool easyMode;
 
     void Start() 
     {
@@ -46,6 +55,11 @@ public class daBoss : MonoBehaviour
 
         rnr = GetComponent<Renderer>();
         // transform.localScale = new Vector2(-someScale, transform.localScale.y);
+
+        tg = GameObject.FindGameObjectWithTag("Player").transform;
+        shootPoint = GameObject.FindGameObjectWithTag("daShootPoint").transform;
+
+        easyButton = FindObjectOfType<PauseMenu>();
     }
 
     // Track and follow player location
@@ -54,7 +68,17 @@ public class daBoss : MonoBehaviour
         // Check if the enemy is visibly on the scene
         if (rnr.isVisible) 
         {
+            fireR -= Time.deltaTime;
 
+            Vector2 direction = transform.position - tg.position;
+            Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(direction), turnSpeed * Time.deltaTime);
+
+            if (fireR <= 0)
+            {
+                fireR = 1f;
+                Shoot();
+            }
+            
         }
 
         // Control falling speed
@@ -62,11 +86,31 @@ public class daBoss : MonoBehaviour
         {
             rb.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier -1) * Time.deltaTime;
         }
+
+        easyMode = easyButton.DrBCMode();
+    }
+
+    void Shoot()
+    {
+        Instantiate(bul, shootPoint.position, shootPoint.rotation);
     }
 
     void Die()
     {
         Destroy(gameObject);
+    }
+
+    public void OnTriggerEnter2D(Collider2D collider)
+    {
+        UIManager score = GameObject.Find("Score").GetComponent<UIManager>();
+
+        if (collider.tag == "Projectile")
+        {
+            Debug.Log("You killed an enemy with a projectile!");
+            score.AddScore(10);
+
+            Destroy(gameObject);
+        }
     }
 
     public void OnCollisionEnter2D(Collision2D collision)
@@ -78,62 +122,69 @@ public class daBoss : MonoBehaviour
         {
             if (collision.collider.tag == "Player")
             {
-                // see if the obect is futher left/right or top/bottom
-                if (Mathf.Abs(direction.x) > Mathf.Abs(direction.y))
+                if (easyMode)
                 {
-
-                    if(direction.x > 0)
-                    {
-                        playerMvmnt.enabled = false;
-
-                        Debug.Log("You died by the boss on your right.");
-                        
-                        playerAlive = false;
-
-                        Invoke("ResetLevel", restartWait);
-                        Invoke("ReEnablePlayerMovement", restartWait);
-                    }
-                    else
-                    {
-                        playerMvmnt.enabled = false;
-
-                        Debug.Log("You died by the boss on your left.");
-                        
-                        playerAlive = false;
-
-                        Invoke("ResetLevel", restartWait);
-                        Invoke("ReEnablePlayerMovement", restartWait);
-                    }
-                
+                    Physics.IgnoreLayerCollision(0,10);
                 }
                 else
                 {
-
-                    if(direction.y > 0)
+                    // see if the obect is futher left/right or top/bottom
+                    if (Mathf.Abs(direction.x) > Mathf.Abs(direction.y))
                     {
-                        playerMvmnt.enabled = false;
 
-                        Debug.Log("You died by the boss falling on you.");
-                        
-                        playerAlive = false;
+                        if(direction.x > 0)
+                        {
+                            playerMvmnt.enabled = false;
 
-                        Invoke("ResetLevel", restartWait);
-                        Invoke("ReEnablePlayerMovement", restartWait);
+                            Debug.Log("You died by the boss on your right.");
+                            
+                            playerAlive = false;
+
+                            Invoke("ResetLevel", restartWait);
+                            Invoke("ReEnablePlayerMovement", restartWait);
+                        }
+                        else
+                        {
+                            playerMvmnt.enabled = false;
+
+                            Debug.Log("You died by the boss on your left.");
+                            
+                            playerAlive = false;
+
+                            Invoke("ResetLevel", restartWait);
+                            Invoke("ReEnablePlayerMovement", restartWait);
+                        }
+                    
                     }
                     else
                     {
-                        health -= 50;
-                        healthBar.SetHealth(health);
-                        Debug.Log("Boss health = " + health);
 
-                        if (health == 0)
+                        if(direction.y > 0)
                         {
-                            Debug.Log("You defeated the boss!");
+                            playerMvmnt.enabled = false;
+
+                            Debug.Log("You died by the boss falling on you.");
                             
-                            playerMvmnt.enabled = true;
-                            score.AddScore(1000);
-    
-                            Destroy(gameObject);
+                            playerAlive = false;
+
+                            Invoke("ResetLevel", restartWait);
+                            Invoke("ReEnablePlayerMovement", restartWait);
+                        }
+                        else
+                        {
+                            health -= 50;
+                            healthBar.SetHealth(health);
+                            Debug.Log("Boss health = " + health);
+
+                            if (health == 0)
+                            {
+                                Debug.Log("You defeated the boss!");
+                                
+                                playerMvmnt.enabled = true;
+                                score.AddScore(1000);
+        
+                                Destroy(gameObject);
+                            }
                         }
                     }
                 }

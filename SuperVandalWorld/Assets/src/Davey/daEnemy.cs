@@ -102,14 +102,13 @@ public class daEnemy : MonoBehaviour
     {
         UIManager score = GameObject.Find("Score").GetComponent<UIManager>();
 
-        if (collider.tag == "Projectile") {
+        if (collider.tag == "Projectile")
+        {
             Debug.Log("You killed an enemy with a projectile!");
             score.AddScore(10);
 
             Destroy(gameObject);
         }
-        
-        
     }
 
     public void OnCollisionEnter2D(Collision2D collision)
@@ -130,7 +129,7 @@ public class daEnemy : MonoBehaviour
             {
                 if (easyMode)
                 {
-                    Physics.IgnoreCollision(player.GetComponent<Collider>(), GetComponent<Collider>());
+                    Physics.IgnoreLayerCollision(0,10);
                 }
                 else
                 {    // see if the obect is futher left/right or top/bottom
