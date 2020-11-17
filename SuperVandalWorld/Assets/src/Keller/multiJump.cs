@@ -13,7 +13,6 @@ public class multiJump : MonoBehaviour
     void Start()
     {
         player = GameObject.Find("Player").GetComponent<Character_Movement>(); 
-        GameObject.Find("Player").GetComponent<multiJump>().enabled = false;
     }
 
     //called upon enable from another script
