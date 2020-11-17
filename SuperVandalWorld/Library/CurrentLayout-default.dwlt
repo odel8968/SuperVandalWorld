@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
-    x: 0
+    x: -1920
     y: 43
-    width: 2560
+    width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Game
   m_RootView: {fileID: 5}
   m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
@@ -39,9 +39,9 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1380
+    x: 1035
     y: 0
-    width: 688
+    width: 516
     height: 350
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 4000, y: 4000}
@@ -69,12 +69,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 597
-    width: 2068
+    width: 1551
     height: 350
   m_MinSize: {x: 331, y: 271}
   m_MaxSize: {x: 14001, y: 10021}
   vertical: 0
-  controlID: 52
+  controlID: 207
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -90,9 +90,9 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1082
+    x: 812
     y: 0
-    width: 986
+    width: 739
     height: 597
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
@@ -121,7 +121,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 2560
+    width: 1920
     height: 997
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -146,7 +146,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 2560
+    width: 1920
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -171,7 +171,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 977
-    width: 2560
+    width: 1920
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -194,12 +194,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
-    width: 2560
+    width: 1920
     height: 947
-  m_MinSize: {x: 880, y: 492}
-  m_MaxSize: {x: 18001, y: 14042}
+  m_MinSize: {x: 706, y: 492}
+  m_MaxSize: {x: 18002, y: 14042}
   vertical: 0
-  controlID: 19
+  controlID: 201
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -219,12 +219,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 2068
+    width: 1551
     height: 947
   m_MinSize: {x: 605, y: 492}
   m_MaxSize: {x: 14001, y: 14042}
   vertical: 1
-  controlID: 20
+  controlID: 206
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -245,12 +245,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 2068
+    width: 1551
     height: 597
   m_MinSize: {x: 605, y: 221}
   m_MaxSize: {x: 12005, y: 4021}
   vertical: 0
-  controlID: 21
+  controlID: 180
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -268,7 +268,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 357
+    width: 268
     height: 597
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
@@ -292,9 +292,9 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 357
+    x: 268
     y: 0
-    width: 725
+    width: 544
     height: 597
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
@@ -320,7 +320,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1380
+    width: 1035
     height: 350
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
@@ -340,24 +340,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: InspectorWindow
+  m_Name: TestRunnerWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 2068
+    x: 1551
     y: 0
-    width: 492
+    width: 369
     height: 947
-  m_MinSize: {x: 275, y: 50}
+  m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 21}
+  m_ActualView: {fileID: 22}
   m_Panes:
   - {fileID: 21}
   - {fileID: 22}
   - {fileID: 23}
-  m_Selected: 0
-  m_LastSelected: 2
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -378,9 +378,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1082
+    x: -1108
     y: 73
-    width: 984
+    width: 737
     height: 576
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
@@ -413,7 +413,7 @@ MonoBehaviour:
     m_VAllowExceedBaseRangeMin: 1
     m_VAllowExceedBaseRangeMax: 1
     m_ScaleWithWindow: 0
-    m_HSlider: 0
+    m_HSlider: 1
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
     m_EnableMouseInput: 1
@@ -425,23 +425,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 984
+      width: 737
       height: 555
-    m_Scale: {x: 0.5125, y: 0.5125}
-    m_Translation: {x: 492, y: 277.5}
+    m_Scale: {x: 0.38385418, y: 0.38385418}
+    m_Translation: {x: 368.49997, y: 277.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -960
-      y: -541.46344
-      width: 1920
-      height: 1082.9269
+      x: -959.9999
+      y: -722.9308
+      width: 1919.9999
+      height: 1445.8616
     m_MinimalGUI: 1
-  m_defaultScale: 0.5125
-  m_LastWindowPixelSize: {x: 984, y: 576}
+  m_defaultScale: 0.38385418
+  m_LastWindowPixelSize: {x: 737, y: 576}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -467,9 +467,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 0
+    x: -1920
     y: 73
-    width: 356
+    width: 267
     height: 576
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
@@ -477,7 +477,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 5cfbffff
+      m_ExpandedIDs: a0b1fcffbcb1fcff66bcfcffcac5fcfff0c5fcffb4cdfcffd0cdfcff62d8fcffeedffcff0ae0fcffb4eafcff3cf2fcff58f2fcff04f3ffff5cfbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -521,9 +521,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 357
+    x: -1652
     y: 73
-    width: 723
+    width: 542
     height: 576
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
@@ -537,9 +537,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 2.2900426, y: 5.6310945, z: -85.61563}
+    m_Target: {x: -0.9774289, y: 6.9363756, z: -82.1887}
     speed: 2
-    m_Value: {x: 2.2900426, y: 5.6310945, z: -85.61563}
+    m_Value: {x: -0.9774289, y: 6.9363756, z: -82.1887}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -590,9 +590,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 15.789194
+    m_Target: 37.732933
     speed: 2
-    m_Value: 15.789194
+    m_Value: 37.732933
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -637,9 +637,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 0
+    x: -1920
     y: 670
-    width: 1379
+    width: 1034
     height: 329
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
@@ -666,10 +666,10 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
+    scrollPos: {x: 0, y: 127}
     m_SelectedIDs: fe440000
     m_LastClickedID: 17662
-    m_ExpandedIDs: 00000000ce440000d0440000d2440000d4440000d6440000d8440000da440000dc440000
+    m_ExpandedIDs: 00000000ce440000d0440000d2440000d4440000d6440000d8440000da440000dc44000014450000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -801,9 +801,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1380
+    x: -885
     y: 670
-    width: 686
+    width: 514
     height: 329
   m_ViewDataDictionary: {fileID: 0}
 --- !u!114 &21
@@ -826,9 +826,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 2068
+    x: -369
     y: 73
-    width: 491
+    width: 368
     height: 926
   m_ViewDataDictionary: {fileID: 0}
   m_ObjectsLockedBeforeSerialization: []
@@ -864,18 +864,18 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1163
-    y: 75
-    width: 276
-    height: 713
+    x: -369
+    y: 73
+    width: 368
+    height: 926
   m_ViewDataDictionary: {fileID: 0}
   m_Spl:
-    ID: 835
+    ID: 267
     splitterInitialOffset: 516
     currentActiveSplitter: -1
     realSizes:
-    - 376
-    - 267
+    - 501
+    - 355
     relativeSizes:
     - 0.58498025
     - 0.41501975
@@ -885,7 +885,7 @@ MonoBehaviour:
     maxSizes:
     - 0
     - 0
-    lastTotalSize: 643
+    lastTotalSize: 856
     splitSize: 6
     xOffset: 0
     m_Version: 1
@@ -901,9 +901,9 @@ MonoBehaviour:
       uniqueId: '[SuperVandalWorld][suite]'
       name: SuperVandalWorld
       fullName: SuperVandalWorld
-      resultStatus: 2
-      duration: 6.767852
-      messages: One or more child tests had errors
+      resultStatus: 1
+      duration: 4.768848
+      messages: 
       output: 
       stacktrace: 
       notRunnable: 0
@@ -917,9 +917,9 @@ MonoBehaviour:
       uniqueId: '[Tests.dll][suite]'
       name: Tests.dll
       fullName: C:/Users/adave/Documents/GitHub/SuperVandalWorld/SuperVandalWorld/Library/ScriptAssemblies/Tests.dll
-      resultStatus: 2
-      duration: 6.730129
-      messages: One or more child tests had errors
+      resultStatus: 1
+      duration: 4.7483
+      messages: 
       output: 
       stacktrace: 
       notRunnable: 0
@@ -933,9 +933,9 @@ MonoBehaviour:
       uniqueId: Tests.dll/[Tests][suite]
       name: Tests
       fullName: Tests
-      resultStatus: 2
-      duration: 6.717093
-      messages: One or more child tests had errors
+      resultStatus: 1
+      duration: 4.7409377
+      messages: 
       output: 
       stacktrace: 
       notRunnable: 0
@@ -1255,9 +1255,9 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/[Tests][Tests.pickupPointTest][suite]
       name: pickupPointTest
       fullName: Tests.pickupPointTest
-      resultStatus: 2
-      duration: 0.4343973
-      messages: One or more child tests had errors
+      resultStatus: 1
+      duration: 4.7315216
+      messages: 
       output: 
       stacktrace: 
       notRunnable: 0
@@ -1271,28 +1271,17 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/pickupPointTest/[Tests][Tests.pickupPointTest.AddPointsForItemsBeforePowerUps]
       name: AddPointsForItemsBeforePowerUps
       fullName: Tests.pickupPointTest.AddPointsForItemsBeforePowerUps
-      resultStatus: 2
-      duration: 0.2960506
-      messages: 'System.NullReferenceException : Object reference not set to an instance
-        of an object'
-      output: 'The AnimationClip ''CheckpointAnim'' used by the Animation component
-        ''Checkpoint1'' must be marked as Legacy.
+      resultStatus: 1
+      duration: 4.663405
+      messages: 
+      output: 'Help menu closed
 
-        The AnimationClip ''CheckpointAnim''
-        used by the Animation component ''Checkpoint1'' must be marked as Legacy.
-
-        Help
-        menu closed
+        slider show
 
         Active Scene is ''1''.
 
 '
-      stacktrace: "  at Tests.pickupPointTest.updateScore (UnityEngine.GameObject
-        other, System.Int32 numItems, System.Int32 currentScore) [0x00000] in C:\\Users\\Keller\\Desktop\\SuperVandalWorld\\SuperVandalWorld\\Assets\\tst\\Keller\\pickupScoreTest.cs:29
-        \r\n  at Tests.pickupPointTest+<AddPointsForItemsBeforePowerUps>d__6.MoveNext
-        () [0x000f4] in C:\\Users\\Keller\\Desktop\\SuperVandalWorld\\SuperVandalWorld\\Assets\\tst\\Keller\\pickupScoreTest.cs:135
-        \r\n  at UnityEngine.TestTools.TestEnumerator+<Execute>d__5.MoveNext () [0x00038]
-        in <0e6a59ba521b44fba6d5f2ca6a5adff7>:0 "
+      stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -1305,17 +1294,11 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/pickupPointTest/[Tests][Tests.pickupPointTest.AddPointsForPowerupsBeforeItems]
       name: AddPointsForPowerupsBeforeItems
       fullName: Tests.pickupPointTest.AddPointsForPowerupsBeforeItems
-      resultStatus: 2
-      duration: 0.0459116
-      messages: 'System.NullReferenceException : Object reference not set to an instance
-        of an object'
+      resultStatus: 1
+      duration: 0.0152082
+      messages: 
       output: 
-      stacktrace: "  at Tests.pickupPointTest.updateScore (UnityEngine.GameObject
-        other, System.Int32 numItems, System.Int32 currentScore) [0x00000] in C:\\Users\\Keller\\Desktop\\SuperVandalWorld\\SuperVandalWorld\\Assets\\tst\\Keller\\pickupScoreTest.cs:29
-        \r\n  at Tests.pickupPointTest+<AddPointsForPowerupsBeforeItems>d__7.MoveNext
-        () [0x00098] in C:\\Users\\Keller\\Desktop\\SuperVandalWorld\\SuperVandalWorld\\Assets\\tst\\Keller\\pickupScoreTest.cs:163
-        \r\n  at UnityEngine.TestTools.TestEnumerator+<Execute>d__5.MoveNext () [0x00038]
-        in <0e6a59ba521b44fba6d5f2ca6a5adff7>:0 "
+      stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -1329,7 +1312,7 @@ MonoBehaviour:
       name: PickUpItemAddsPointsToScore
       fullName: Tests.pickupPointTest.PickUpItemAddsPointsToScore
       resultStatus: 1
-      duration: 0.0533701
+      duration: 0.0238088
       messages: 
       output: 
       stacktrace: 
@@ -1345,17 +1328,11 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/pickupPointTest/[Tests][Tests.pickupPointTest.PickUpPowerUpsAddsPointsToScore]
       name: PickUpPowerUpsAddsPointsToScore
       fullName: Tests.pickupPointTest.PickUpPowerUpsAddsPointsToScore
-      resultStatus: 2
-      duration: 0.0205708
-      messages: 'System.NullReferenceException : Object reference not set to an instance
-        of an object'
+      resultStatus: 1
+      duration: 0.0119675
+      messages: 
       output: 
-      stacktrace: "  at Tests.pickupPointTest.updateScore (UnityEngine.GameObject
-        other, System.Int32 numItems, System.Int32 currentScore) [0x00000] in C:\\Users\\Keller\\Desktop\\SuperVandalWorld\\SuperVandalWorld\\Assets\\tst\\Keller\\pickupScoreTest.cs:29
-        \r\n  at Tests.pickupPointTest+<PickUpPowerUpsAddsPointsToScore>d__5.MoveNext
-        () [0x00055] in C:\\Users\\Keller\\Desktop\\SuperVandalWorld\\SuperVandalWorld\\Assets\\tst\\Keller\\pickupScoreTest.cs:102
-        \r\n  at UnityEngine.TestTools.TestEnumerator+<Execute>d__5.MoveNext () [0x00038]
-        in <0e6a59ba521b44fba6d5f2ca6a5adff7>:0 "
+      stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -1369,7 +1346,7 @@ MonoBehaviour:
       name: pickUpsStressTest
       fullName: Tests.pickUpsStressTest
       resultStatus: 2
-      duration: 30.739185
+      duration: 40.45127
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -1385,38 +1362,38 @@ MonoBehaviour:
       name: stressSpawnDiamonds
       fullName: Tests.pickUpsStressTest.stressSpawnDiamonds
       resultStatus: 2
-      duration: 26.223684
-      messages: "  Expected: 8000\r\n  But was:  6601\r\n"
-      output: 'The AnimationClip ''CheckpointAnim'' used by the Animation component
-        ''Checkpoint1'' must be marked as Legacy.
+      duration: 35.968117
+      messages: "  Expected: 16000\r\n  But was:  4401\r\n"
+      output: 'Help menu closed
 
-        The AnimationClip ''CheckpointAnim''
-        used by the Animation component ''Checkpoint1'' must be marked as Legacy.
-
-        Help
-        menu closed
+        slider show
 
         Active Scene is ''1''.
 
         <color=green>Passed</color>
         at 1000 diamonds
 
-        Current FPS = <color=green> 159.4668</color>
+        Current FPS = <color=green> 232.6826</color>
 
         <color=green>Passed</color>
         at 2000 diamonds
 
-        Current FPS = <color=green> 154.8923</color>
+        Current FPS = <color=green> 179.6009</color>
 
         <color=green>Passed</color>
         at 4000 diamonds
 
-        Current FPS = <color=green> 79.43002</color>
+        Current FPS = <color=green> 109.0822</color>
 
-        <color=red>Failed</color>
+        <color=green>Passed</color>
         at 8000 diamonds
 
-        Current FPS = <color=red> 58.47885</color>
+        Current FPS = <color=green> 68.81413</color>
+
+        <color=red>Failed</color>
+        at 16000 diamonds
+
+        Current FPS = <color=red> 39.96435</color>
 
 '
       stacktrace: 'at Tests.pickUpsStressTest+<stressSpawnDiamonds>d__3.MoveNext
@@ -1424,7 +1401,7 @@ MonoBehaviour:
 
         at
         UnityEngine.TestTools.TestEnumerator+<Execute>d__5.MoveNext () [0x00038]
-        in <0e6a59ba521b44fba6d5f2ca6a5adff7>:0
+        in <2bdc05726c474df59c630cfd16950260>:0
 
 '
       notRunnable: 0
@@ -1725,39 +1702,13 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1001
       parentUniqueId: Tests.dll/Tests/[Tests][Tests.UITest][suite]
-    m_ResultText: 'SquareTestBoundary1 (0.176s)
-
-      ---
-
-      Unhandled log message:
-      ''[Exception] NullReferenceException: Object reference not set to an instance
-      of an object''. Use UnityEngine.TestTools.LogAssert.Expect
-
-      ---
-
-      PlayerPos.Start
-      () (at Assets/src/Justin/PlayerPos.cs:13)
-
-      ---
-
-      Help menu closed
-
-      slider
-      show
-
-      Active Scene is ''1''.
-
-      NullReferenceException: Object reference
-      not set to an instance of an object'
-    m_ResultStacktrace: 'PlayerPos.Start () (at Assets/src/Justin/PlayerPos.cs:13)
-
-
-'
+    m_ResultText: pickupPointTest (4.732s)
+    m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 375f9a9a
-      m_LastClickedID: -1701159113
-      m_ExpandedIDs: 98906ddc5dfc4bdfe557abf7ab3ce1198302573d8359db41ffffff7f
+      m_SelectedIDs: 98906ddc
+      m_LastClickedID: -596799336
+      m_ExpandedIDs: c973899a98906ddc5dfc4bdfe557abf7761f4b11ab3ce1198302573d8359db41ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 

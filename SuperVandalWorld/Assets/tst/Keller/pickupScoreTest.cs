@@ -23,25 +23,22 @@ namespace Tests
             sceneLoaded = true;
         }
 
-        public static int updateScore(GameObject other, int numItems, int currentScore)
+        public static int updateScore(string type, int value, int numItems, int currentScore)
         {
 
-            string pickUpType = other.gameObject.tag;
             for(int i=0; i < numItems; i++)
             {
-                switch(other.gameObject.tag)
+                switch(type)
                 {
                     case "Item":
                     {
-                        var obj = other.GetComponent<Item>();
-                        currentScore += obj.scoreValue;
+                        currentScore += value;
                     }
                     break;
                     
                     case "PowerUp":
                     {
-                        var obj = other.GetComponent<PowerUp>();
-                        currentScore += obj.scoreValue;
+                        currentScore += value;
                     }
                     break;
                     default:
@@ -76,10 +73,10 @@ namespace Tests
             int[] numItems = {5,3,4,2};
 
             //act
-            score = updateScore(sapphire, numItems[0], score); //collect sapphires
-            score = updateScore(emerald, numItems[1], score); //collect emeralds
-            score = updateScore(ruby, numItems[2], score); //collect rubies
-            score = updateScore(diamond, numItems[3], score); //collect diamonds
+            score = updateScore("Item", 100, numItems[0], score); //collect sapphires
+            score = updateScore("Item", 200, numItems[1], score); //collect emeralds
+            score = updateScore("Item", 400, numItems[2], score); //collect rubies
+            score = updateScore("Item", 2500, numItems[3], score); //collect diamonds
 
             yield return null;
 
@@ -99,9 +96,9 @@ namespace Tests
             int[] numPowerUps = {3,2,7};
 
             //act
-            score = updateScore(multiJump, numPowerUps[0], score); //collect sapphires
-            score = updateScore(powerAxe, numPowerUps[1], score); //collect emeralds
-            score = updateScore(badApple, numPowerUps[2], score); //collect rubies
+            score = updateScore("PowerUp", 1000, numPowerUps[0], score); //collect multiJump
+            score = updateScore("PowerUp", 1000, numPowerUps[1], score); //collect powerAxe
+            score = updateScore("PowerUp", -1000, numPowerUps[2], score); //collect badApple
 
             yield return null;
 
@@ -127,14 +124,14 @@ namespace Tests
             int[] numItems = {5,3,4,2};
 
             //act
-            score = updateScore(sapphire, numItems[0], score); //collect sapphires
-            score = updateScore(emerald, numItems[1], score); //collect emeralds
-            score = updateScore(ruby, numItems[2], score); //collect rubies
-            score = updateScore(diamond, numItems[3], score); //collect diamonds
+            score = updateScore("Item", 100, numItems[0], score); //collect sapphires
+            score = updateScore("Item", 200, numItems[1], score); //collect emeralds
+            score = updateScore("Item", 400, numItems[2], score); //collect rubies
+            score = updateScore("Item", 2500, numItems[3], score); //collect diamonds
 
-            score = updateScore(multiJump, numPowerUps[0], score); //collect sapphires
-            score = updateScore(powerAxe, numPowerUps[1], score); //collect emeralds
-            score = updateScore(badApple, numPowerUps[2], score); //collect rubies
+            score = updateScore("PowerUp", 1000, numPowerUps[0], score); //collect multiJump
+            score = updateScore("PowerUp", 1000, numPowerUps[1], score); //collect powerAxe
+            score = updateScore("PowerUp", -1000, numPowerUps[2], score); //collect badApple
             
             yield return null;
 
@@ -160,14 +157,14 @@ namespace Tests
             int[] numItems = {5,3,4,2};
 
             //act
-            score = updateScore(multiJump, numPowerUps[0], score); //collect multijump
-            score = updateScore(powerAxe, numPowerUps[1], score); //collect powerAxe
-            score = updateScore(badApple, numPowerUps[2], score); //collect badApple
+            score = updateScore("PowerUp", 1000, numPowerUps[0], score); //collect multiJump
+            score = updateScore("PowerUp", 1000, numPowerUps[1], score); //collect powerAxe
+            score = updateScore("PowerUp", -1000, numPowerUps[2], score); //collect badApple
 
-            score = updateScore(sapphire, numItems[0], score); //collect sapphires
-            score = updateScore(emerald, numItems[1], score); //collect emeralds
-            score = updateScore(ruby, numItems[2], score); //collect rubies
-            score = updateScore(diamond, numItems[3], score); //collect diamonds
+            score = updateScore("Item", 100, numItems[0], score); //collect sapphires
+            score = updateScore("Item", 200, numItems[1], score); //collect emeralds
+            score = updateScore("Item", 400, numItems[2], score); //collect rubies
+            score = updateScore("Item", 2500, numItems[3], score); //collect diamonds
 
             yield return null;
 
