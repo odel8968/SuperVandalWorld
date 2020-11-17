@@ -5,25 +5,30 @@ using UnityEngine.SceneManagement;
 
 public class pickUpListener : MonoBehaviour
 {
-    //set up singleton
-    private static pickUpListener instance;
     Character_Movement player;
     SoundManager sounds;
     UIManager score;
     private float restartDelay = 2f;
     
+    //set up singleton pattern
+    private static pickUpListener _instance;
+    public static pickUpListener Instance 
+    {
+        get
+        {
+            return _instance;
+        }
+    }
+
     void Awake()
     {
-        //only 1 instance will exist
-        if(instance == null)
+        if(_instance != null && _instance != this)
         {
-            instance = this;
-            DontDestroyOnLoad(instance);
-        }
+            Destroy(this.gameObject);
+        } 
         else
         {
-            //if more than 1 exists, destroy this
-            Destroy(gameObject);
+            _instance = this;
         }
     }
 
