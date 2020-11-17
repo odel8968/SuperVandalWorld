@@ -23,10 +23,6 @@ public class EnvObject : MonoBehaviour
         //Vector to hold starting position
         private Vector3 tempPos;
 
-        public Animator transition;
-
-        public float transitionTime = 3f;
-
    void Start()
    {
            //Find the player and camera objects
@@ -53,23 +49,23 @@ public class EnvObject : MonoBehaviour
         }
    }
 
-   void FixedUpdate()
+   /*void FixedUpdate()
    {
 
-           /*load next level if n is pressed
-           used for testing - remove from final product*/
+           load next level if n is pressed
+           used for testing - remove from final product
            if(Input.GetKey("n"))
            {
                    LoadNextLevel();
            }
 
            /*load next level if n is pressed
-           used for testing - remove from final product*/
+           used for testing - remove from final product
            if(Input.GetKey("b"))
            {
                    LoadPreviousLevel();
            }
-   }
+   }/*
 
         /*Static bound method for environment collisions. This function will be called if 
         the method is not over-ridden in other functions*/
@@ -89,24 +85,13 @@ public class EnvObject : MonoBehaviour
        //public function to load the next level 
    public void LoadNextLevel()
     {
-             StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
+             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
         //public function to load a previous level - probably removed for final product
     public void LoadPreviousLevel()
     {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
-    }
-
-    IEnumerator LoadLevel(int levelIndex)
-    {
-            transition.SetTrigger("Start");
-
-            yield return new WaitForSeconds(transitionTime);
-
-            SceneManager.LoadScene(levelIndex);
-    }
-
-    
+    }    
 
 }
