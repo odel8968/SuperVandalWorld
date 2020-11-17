@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class daBoss : MonoBehaviour
 {
+    public int health = 400;
+
     // Retrieve player movement
     public float restartWait = 1f;
     Player_Movement playerMvmnt;
@@ -24,8 +26,15 @@ public class daBoss : MonoBehaviour
     float someScale;
     public float fallMultiplier = 2.5f;
 
+    public HealthBar healthBar;
+
+    public GameObject bul;
+    public float bulletForce = 3f;
+
     void Start() 
     {
+        healthBar.SetMaxHealth(health);
+
         playerAlive = true;
         playerMvmnt = FindObjectOfType<Player_Movement>();
 
@@ -37,7 +46,6 @@ public class daBoss : MonoBehaviour
 
         rnr = GetComponent<Renderer>();
         // transform.localScale = new Vector2(-someScale, transform.localScale.y);
-
     }
 
     // Track and follow player location
@@ -46,8 +54,7 @@ public class daBoss : MonoBehaviour
         // Check if the enemy is visibly on the scene
         if (rnr.isVisible) 
         {
-            // Debug.Log("The enemy is visible!!!");
-            bossAttack();
+
         }
 
         // Control falling speed
@@ -57,30 +64,6 @@ public class daBoss : MonoBehaviour
         }
     }
 
-    // WORK IN PROGRESS:
-    // * Figure how to follow player and shoot
-    // * Make bullet asset
-    // * Attach muzzle to boss
-    public Transform target; //where we want to shoot(player? mouse?)
-    public Transform weaponMuzzle; //The empty game object which will be our weapon muzzle to shoot from
-    public GameObject bullet; //Your set-up prefab
-    public float fireRate = 1000f; //Fire every 3 seconds
-    public float shootingPower = 20f; //force of projection
- 
-    private float shootingTime; //local to store last time we shot so we can make sure its done every 3s
-  
-    private void bossAttack()
-    {
-        if (Time.time > shootingTime)
-        {
-            shootingTime = Time.time + fireRate / 1000; //set the local var. to current time of shooting
-            Vector2 myPos = new Vector2(weaponMuzzle.position.x, weaponMuzzle.position.y); //our curr position is where our muzzle points
-            GameObject projectile = Instantiate(bullet, myPos, Quaternion.identity); //create our bullet
-            Vector2 direction = myPos - (Vector2)target.position; //get the direction to the target
-            projectile.GetComponent<Rigidbody2D>().velocity = direction * shootingPower; //shoot the bullet
-        }
-    }
- 
     void Die()
     {
         Destroy(gameObject);
@@ -139,12 +122,19 @@ public class daBoss : MonoBehaviour
                     }
                     else
                     {
-                        Debug.Log("You killed the boss.");
-                        
-                        playerMvmnt.enabled = true;
-                        score.AddScore(100);
+                        health -= 50;
+                        healthBar.SetHealth(health);
+                        Debug.Log("Boss health = " + health);
 
-                        Destroy(gameObject);
+                        if (health == 0)
+                        {
+                            Debug.Log("You defeated the boss!");
+                            
+                            playerMvmnt.enabled = true;
+                            score.AddScore(1000);
+    
+                            Destroy(gameObject);
+                        }
                     }
                 }
             }

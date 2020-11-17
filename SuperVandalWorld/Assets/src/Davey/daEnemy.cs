@@ -29,6 +29,9 @@ public class daEnemy : MonoBehaviour
     float someScale;
     public float fallMultiplier = 2.5f;
 
+    PauseMenu easyButton;
+    bool easyMode;
+
     void Start() 
     {
         playerAlive = true;
@@ -41,6 +44,8 @@ public class daEnemy : MonoBehaviour
         player = GameObject.Find("Player");
 
         rnr = GetComponent<Renderer>();
+
+        easyButton = FindObjectOfType<PauseMenu>();
     }
 
     // Track and follow player location
@@ -64,6 +69,9 @@ public class daEnemy : MonoBehaviour
         {
             rb.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier -1) * Time.deltaTime;
         }
+
+        easyMode = easyButton.DrBCMode();
+
     }
 
     void enemyMovement() 
@@ -90,69 +98,96 @@ public class daEnemy : MonoBehaviour
         transform.position += move * Time.deltaTime;
     }
 
+    public void OnTriggerEnter2D(Collider2D collider)
+    {
+        UIManager score = GameObject.Find("Score").GetComponent<UIManager>();
+
+        if (collider.tag == "Projectile") {
+            Debug.Log("You killed an enemy with a projectile!");
+            score.AddScore(10);
+
+            Destroy(gameObject);
+        }
+        
+        
+    }
+
     public void OnCollisionEnter2D(Collision2D collision)
     {
         Vector3 direction = transform.position - collision.gameObject.transform.position;
         UIManager score = GameObject.Find("Score").GetComponent<UIManager>();
 
+        if (collision.collider.tag == "EnvHazard")
+        {
+            Debug.Log("Oops, enemy died from natural causes.");
+            enemySpeed = 0;
+            Destroy(gameObject);
+        }
+
         if (playerAlive == true)
         {
             if (collision.collider.tag == "Player")
             {
-                // see if the obect is futher left/right or top/bottom
-                if (Mathf.Abs(direction.x) > Mathf.Abs(direction.y))
+                if (easyMode)
                 {
-
-                    if(direction.x > 0)
-                    {
-                        playerMvmnt.enabled = false;
-                        enemySpeed = 0;
-
-                        Debug.Log("You died by an enemy on your right.");
-                        
-                        playerAlive = false;
-
-                        Invoke("ResetLevel", restartWait);
-                        Invoke("ReEnablePlayerMovement", restartWait);
-                    }
-                    else
-                    {
-                        playerMvmnt.enabled = false;
-                        enemySpeed = 0;
-
-                        Debug.Log("You died by an enemy on your left.");
-                        
-                        playerAlive = false;
-
-                        Invoke("ResetLevel", restartWait);
-                        Invoke("ReEnablePlayerMovement", restartWait);
-                    }
-                
+                    Physics.IgnoreCollision(player.GetComponent<Collider>(), GetComponent<Collider>());
                 }
                 else
-                {
-
-                    if(direction.y > 0)
+                {    // see if the obect is futher left/right or top/bottom
+                    if (Mathf.Abs(direction.x) > Mathf.Abs(direction.y))
                     {
-                        playerMvmnt.enabled = false;
-                        enemySpeed = 0;
 
-                        Debug.Log("You died by an enemy falling on you.");
-                        
-                        playerAlive = false;
+                        if(direction.x > 0)
+                        {
+                            playerMvmnt.enabled = false;
+                            enemySpeed = 0;
 
-                        Invoke("ResetLevel", restartWait);
-                        Invoke("ReEnablePlayerMovement", restartWait);
+                            Debug.Log("You died by an enemy on your right.");
+                            
+                            playerAlive = false;
+
+                            Invoke("ResetLevel", restartWait);
+                            Invoke("ReEnablePlayerMovement", restartWait);
+                        }
+                        else
+                        {
+                            playerMvmnt.enabled = false;
+                            enemySpeed = 0;
+
+                            Debug.Log("You died by an enemy on your left.");
+                            
+                            playerAlive = false;
+
+                            Invoke("ResetLevel", restartWait);
+                            Invoke("ReEnablePlayerMovement", restartWait);
+                        }
+                    
                     }
                     else
                     {
-                        Debug.Log("You killed an enemy.");
-                        
-                        enemySpeed = 0;
-                        playerMvmnt.enabled = true;
-                        score.AddScore(100);
 
-                        Destroy(gameObject);
+                        if(direction.y > 0)
+                        {
+                            playerMvmnt.enabled = false;
+                            enemySpeed = 0;
+
+                            Debug.Log("You died by an enemy falling on you.");
+                            
+                            playerAlive = false;
+
+                            Invoke("ResetLevel", restartWait);
+                            Invoke("ReEnablePlayerMovement", restartWait);
+                        }
+                        else
+                        {
+                            Debug.Log("You killed an enemy.");
+                            
+                            enemySpeed = 0;
+                            playerMvmnt.enabled = true;
+                            score.AddScore(100);
+
+                            Destroy(gameObject);
+                        }
                     }
                 }
             }
