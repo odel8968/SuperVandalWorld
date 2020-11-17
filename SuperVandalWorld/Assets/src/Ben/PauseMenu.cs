@@ -117,8 +117,8 @@ public class PauseMenu : MonoBehaviour
 			if (pauseMenuItem[i] != null)
 				pauseMenuItem[i].Show();
 		}
-		SliderUIElement test = (SliderUIElement)pauseMenuItem[5];
-		test.Show();
+		//SliderUIElement test = (SliderUIElement)pauseMenuItem[5];
+		//test.Show();
 	}
 
 	//Cycles through the pause menu objects and hides them
@@ -129,8 +129,8 @@ public class PauseMenu : MonoBehaviour
 			if (pauseMenuItem[i] != null)
 				pauseMenuItem[i].Hide();
 		}
-		SliderUIElement test = (SliderUIElement)pauseMenuItem[5];
-		test.Hide();
+		//SliderUIElement test = (SliderUIElement)pauseMenuItem[5];
+		//test.Hide();
 	}
 
 
@@ -154,10 +154,7 @@ public class PauseMenu : MonoBehaviour
 	{
 		Debug.Log("Help menu closed");
 
-		foreach (GameObject g in pauseObjects)
-		{
-			g.SetActive(true);
-		}
+		showPaused();
 
 		foreach (GameObject g in helpObjects)
 		{
@@ -287,24 +284,31 @@ public class SliderUIElement : UIElement
 
 	public SliderUIElement(string text, int fontSize, Color color, float yPosition, string tag, GameObject slider) : base(text, fontSize, color, yPosition, tag)
 	{
-		//sliderObject = new GameObject("Slider Object");
-		//Slider mySlider = sliderObject.AddComponent<Slider>();
-		//sliderObject.transform.SetParent(UI.transform);
-
 		sliderObject = slider;
-
-
 
 		RectTransform m_RectTransform = slider.GetComponent<RectTransform>();
 
 		m_RectTransform.SetInsetAndSizeFromParentEdge(RectTransform.Edge.Left, (Screen.width * .5f) - 150, 300);
 		m_RectTransform.SetInsetAndSizeFromParentEdge(RectTransform.Edge.Top, (Screen.height * (1 - yPosition)) + .15f * yPosition * screenHeight, 20);
 
-		//slider.SetActive(false);
 	}
 
 	//Displays the parent object
-	public void Show()
+
+	public override void Show()
+	{
+		textObject.SetActive(true);
+		sliderObject.SetActive(true);
+		Debug.Log("slider show");
+	}
+
+	//Hides the parent object
+	public override void Hide()
+	{
+		textObject.SetActive(false);
+		sliderObject.SetActive(false);
+	}
+	/*public void Show()
 	{
 		textObject.SetActive(true);
 		sliderObject.SetActive(true);
@@ -316,5 +320,5 @@ public class SliderUIElement : UIElement
 	{
 		textObject.SetActive(false);
 		sliderObject.SetActive(false);
-	}
+	}*/
 }

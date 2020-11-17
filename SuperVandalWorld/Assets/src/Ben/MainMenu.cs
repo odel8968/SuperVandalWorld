@@ -94,4 +94,10 @@ public class MainMenu : MonoBehaviour
 		}
 
 	}
+
+	public void QuitGame()
+	{
+		Debug.Log("Quit command received");
+		Application.Quit();
+	}
 }
