@@ -36,7 +36,7 @@ public class PowerUp : pickupsManager
         }
 
         //delete powerup
-        Destroy(this.gameObject);
+        removeAsset(this.gameObject);
     } 
 
     private int changeHealthValue(Collider2D other)

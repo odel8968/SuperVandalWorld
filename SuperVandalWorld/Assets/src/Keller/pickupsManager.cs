@@ -17,10 +17,10 @@ public class pickupsManager : MonoBehaviour
         Debug.Log("Default constructor called");
     }
     
-    public static void removeAsset(Collider2D other)
+    public static void removeAsset(GameObject gObject)
     {
         //remove asset from level via destroy function
-        Destroy(other.gameObject);
+        Destroy(gObject);
     }
     
 }

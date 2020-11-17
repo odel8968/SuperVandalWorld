@@ -12,7 +12,7 @@ public class Item : pickupsManager
         objectCollisionNotification(this);
 
         //delete item
-        Destroy(this.gameObject);
+        removeAsset(this.gameObject);
     }
 
 
