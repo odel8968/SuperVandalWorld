@@ -11,11 +11,15 @@ public class powerAxe : MonoBehaviour
     private int dmg = 1;
     public GameObject axeProj;
     Character_Movement player;
+
+    void Start()
+    {
+        GameObject.Find("Player").GetComponent<powerAxe>().enabled = false;
+    }
     void OnEnable()
     {
         player = GameObject.Find("Player").GetComponent<Character_Movement>(); 
         GameObject.Find("Player").GetComponent<multiJump>().enabled = false;
-
     }
     public void addAxeForce(GameObject axe)
     {

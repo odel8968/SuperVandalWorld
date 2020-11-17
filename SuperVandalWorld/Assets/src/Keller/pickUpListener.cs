@@ -60,10 +60,8 @@ public class pickUpListener : MonoBehaviour
             //if object name contains multiJump
             case string a when a.Contains("multiJump"):
 
-                //disable powerAxe and enable multiJump
-                GameObject.Find("Player").GetComponent<powerAxe>().enabled = false;
+                //enable multiJump
                 GameObject.Find("Player").GetComponent<multiJump>().enabled = true;
-                Debug.Log(gObject.name);
             break;
 
             //if object name contains powerAxe
@@ -71,7 +69,6 @@ public class pickUpListener : MonoBehaviour
 
                 //disable multiJump and enable powerAxe
                 GameObject.Find("Player").GetComponent<powerAxe>().enabled = true;
-                GameObject.Find("Player").GetComponent<multiJump>().enabled = false;
                 Debug.Log(gObject.name);
             break;
 

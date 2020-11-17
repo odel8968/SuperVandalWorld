@@ -5,33 +5,32 @@ using UnityEngine;
 
 public class multiJump : MonoBehaviour
 {
-
-    //memento pattern possibly?????????
-
-
     
     Character_Movement player;
     public Rigidbody2D rb;
     private bool grounded;
 
-    //function called when enabled by another script
-    void OnEnable()
+    void Start()
     {
+        player = GameObject.Find("Player").GetComponent<Character_Movement>(); 
+        GameObject.Find("Player").GetComponent<multiJump>().enabled = false;
+    }
+
+    //called upon enable from another script
+    private void OnEnable()
+    {
+        Debug.Log("multiJump enabled");
         //disable powerAxe powerup if enabled. 
         GameObject.Find("Player").GetComponent<powerAxe>().enabled = false;
 
         //change max jumps of player 2, allowing for a second jump in mid air
-        player.IncreaseMaxJumps();
+        Character_Movement.jumps_allowed = 2;
     }
-
-    void Start()
+    
+    //revert number of jumps to 1 when disabled
+    private void OnDisable()
     {
-        player = GameObject.Find("Player").GetComponent<Character_Movement>(); 
-    }
-
-    void OnDisable()
-    {
-        player.jumps_allowed = 1;
+        Character_Movement.jumps_allowed = 1;
     }
 }
 
