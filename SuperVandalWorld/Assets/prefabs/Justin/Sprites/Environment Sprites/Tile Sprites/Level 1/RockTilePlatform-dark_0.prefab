@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8154412654715357978}
   - component: {fileID: 7875700553309389774}
   - component: {fileID: 1005991602}
+  - component: {fileID: 9155607063990188075}
   m_Layer: 11
   m_Name: RockTilePlatform-dark_0
   m_TagString: Platform
@@ -131,3 +132,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &9155607063990188075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9045979615314881335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 530eace0fc1cd59448b039e5b3d65467, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerAlive: 1
+  playerPrefab: {fileID: 0}
+  camPrefab: {fileID: 0}

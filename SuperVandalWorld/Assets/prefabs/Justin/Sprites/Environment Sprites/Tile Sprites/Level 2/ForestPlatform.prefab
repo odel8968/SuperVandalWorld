@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1977584260746580839}
   - component: {fileID: 1977584260746580832}
   - component: {fileID: 8466823477553586507}
+  - component: {fileID: 1310321835600822498}
   m_Layer: 11
   m_Name: ForestPlatform
   m_TagString: Untagged
@@ -109,3 +110,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.875, y: 0.875}
   m_EdgeRadius: 0
+--- !u!114 &1310321835600822498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1977584260746580833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 530eace0fc1cd59448b039e5b3d65467, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerAlive: 1
+  playerPrefab: {fileID: 0}
+  camPrefab: {fileID: 0}

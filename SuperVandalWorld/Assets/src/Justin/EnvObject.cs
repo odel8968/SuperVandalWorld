@@ -70,8 +70,9 @@ public class EnvObject : MonoBehaviour
         /*Static bound method for environment collisions. This function will be called if 
         the method is not over-ridden in other functions*/
    public virtual void OnCollisionEnter2D(Collision2D collision)
-    {     
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    {   //Print which object collided with which EnvObject  
+        Debug.Log(collision.collider.name + " collided with " + this.name + " at " + collision.collider.transform.position);
+        //Set Player to Alive
         playerAlive = true;
     }
 
@@ -79,6 +80,9 @@ public class EnvObject : MonoBehaviour
         the method is not over-ridden in other functions*/
     public virtual void OnCollisionExit2D(Collision2D collision)
     {
+            //Print when an object is no longer in contact
+            Debug.Log(collision.collider.name + " no longer on " + this.name);
+            //Remove the object as a child, if it was set as one
             collision.collider.transform.SetParent(null);
     }
 

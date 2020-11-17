@@ -16,12 +16,12 @@ public class PlayerPos : MonoBehaviour
         transform.position = cm.lastCheckPointPos;
     }
 
-    void Update()
+    /*void Update()
     {
         //test checkpoints - remove for final build
         if(Input.GetKeyDown("y"))
         {
            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
-    }
+    }*/
 }

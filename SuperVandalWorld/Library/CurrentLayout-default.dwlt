@@ -17,11 +17,11 @@ MonoBehaviour:
     x: 0
     y: 43
     width: 2560
-    height: 997
+    height: 1357
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Hierarchy
   m_RootView: {fileID: 5}
-  m_MinSize: {x: 875, y: 542}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -42,7 +42,7 @@ MonoBehaviour:
     x: 1380
     y: 0
     width: 688
-    height: 350
+    height: 439
   m_MinSize: {x: 102, y: 121}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 20}
@@ -68,13 +68,13 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 597
+    y: 868
     width: 2068
-    height: 350
+    height: 439
   m_MinSize: {x: 333, y: 271}
   m_MaxSize: {x: 14003, y: 10021}
   vertical: 0
-  controlID: 208
+  controlID: 79
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -93,7 +93,7 @@ MonoBehaviour:
     x: 1082
     y: 0
     width: 986
-    height: 597
+    height: 868
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 15}
@@ -122,7 +122,7 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 2560
-    height: 997
+    height: 1357
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
@@ -170,7 +170,7 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 977
+    y: 1337
     width: 2560
     height: 20
   m_MinSize: {x: 0, y: 0}
@@ -195,11 +195,11 @@ MonoBehaviour:
     x: 0
     y: 30
     width: 2560
-    height: 947
+    height: 1307
   m_MinSize: {x: 881, y: 492}
   m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
-  controlID: 202
+  controlID: 227
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -220,11 +220,11 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 2068
-    height: 947
+    height: 1307
   m_MinSize: {x: 605, y: 492}
   m_MaxSize: {x: 14003, y: 14042}
   vertical: 1
-  controlID: 180
+  controlID: 56
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -246,11 +246,11 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 2068
-    height: 597
+    height: 868
   m_MinSize: {x: 605, y: 221}
   m_MaxSize: {x: 12005, y: 4021}
   vertical: 0
-  controlID: 181
+  controlID: 57
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -269,7 +269,7 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 357
-    height: 597
+    height: 868
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 16}
@@ -295,9 +295,9 @@ MonoBehaviour:
     x: 357
     y: 0
     width: 725
-    height: 597
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+    height: 868
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -321,7 +321,7 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 1380
-    height: 350
+    height: 439
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
   m_ActualView: {fileID: 18}
@@ -348,7 +348,7 @@ MonoBehaviour:
     x: 2068
     y: 0
     width: 492
-    height: 947
+    height: 1307
   m_MinSize: {x: 276, y: 71}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 21}
@@ -381,7 +381,7 @@ MonoBehaviour:
     x: 1082
     y: 73
     width: 984
-    height: 576
+    height: 847
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
   m_SerializedViewValues: []
@@ -426,9 +426,9 @@ MonoBehaviour:
       x: 0
       y: 21
       width: 984
-      height: 555
+      height: 826
     m_Scale: {x: 0.5125, y: 0.5125}
-    m_Translation: {x: 492, y: 277.5}
+    m_Translation: {x: 492, y: 413}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
@@ -436,12 +436,12 @@ MonoBehaviour:
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
       x: -960
-      y: -541.46344
+      y: -805.8537
       width: 1920
-      height: 1082.9269
+      height: 1611.7074
     m_MinimalGUI: 1
   m_defaultScale: 0.5125
-  m_LastWindowPixelSize: {x: 984, y: 576}
+  m_LastWindowPixelSize: {x: 984, y: 847}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -470,14 +470,14 @@ MonoBehaviour:
     x: 0
     y: 73
     width: 356
-    height: 576
+    height: 847
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 5cfbffff
+      m_SelectedIDs: 442dffff
+      m_LastClickedID: -53948
+      m_ExpandedIDs: 4043ffff044bffff0c55ffff588affff748affff0295ffff969cffffb29cffff06deffff92e5ffffaee5ffff1cf1ffff46f9ffffda740000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -524,7 +524,7 @@ MonoBehaviour:
     x: 357
     y: 73
     width: 723
-    height: 576
+    height: 847
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
   m_WindowGUID: 8fde1c7c9ac16d04fb45d7d761e25119
@@ -537,9 +537,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 5.804214, y: -0.18075971, z: -83.541145}
+    m_Target: {x: 66.6666, y: -11.182699, z: -14.89737}
     speed: 2
-    m_Value: {x: 5.804214, y: -0.18075971, z: -83.541145}
+    m_Value: {x: 66.6666, y: -11.182699, z: -14.89737}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -590,9 +590,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 12.774796
+    m_Target: 100.62693
     speed: 2
-    m_Value: 12.774796
+    m_Value: 100.62693
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -638,9 +638,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 670
+    y: 941
     width: 1379
-    height: 329
+    height: 418
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -655,21 +655,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/prefabs/Keller
+    - Assets/src/Justin
     m_Globs: []
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/prefabs/Keller
+  - Assets/src/Justin
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\Keller\Desktop\SuperVandalWorld\SuperVandalWorld
+  m_LastProjectPath: C:\Users\Justin\Desktop\SuperVandalWorld\SuperVandalWorld
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 31}
-    m_SelectedIDs: 04450000
-    m_LastClickedID: 17668
-    m_ExpandedIDs: 00000000d4440000d6440000d8440000da440000dc440000de440000e0440000e2440000
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 8e450000
+    m_LastClickedID: 17806
+    m_ExpandedIDs: 000000005c4500005e45000060450000624500006445000066450000684500006a45000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -697,7 +697,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000d4440000d6440000d8440000da440000dc440000de440000e0440000e2440000
+    m_ExpandedIDs: 000000005c4500005e45000060450000624500006445000066450000684500006a450000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -780,7 +780,7 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: -20672
+  m_LastSelectedObjectID: -30722
 --- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -802,9 +802,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 1380
-    y: 670
+    y: 941
     width: 686
-    height: 329
+    height: 418
   m_ViewDataDictionary: {fileID: 0}
 --- !u!114 &21
 MonoBehaviour:
@@ -829,7 +829,7 @@ MonoBehaviour:
     x: 2068
     y: 73
     width: 491
-    height: 926
+    height: 1286
   m_ViewDataDictionary: {fileID: 0}
   m_ObjectsLockedBeforeSerialization: []
   m_InstanceIDsLockedBeforeSerialization: 
@@ -864,13 +864,13 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 2068
-    y: 73
-    width: 491
+    x: 2063
+    y: 81
+    width: 488
     height: 926
   m_ViewDataDictionary: {fileID: 0}
   m_Spl:
-    ID: 280
+    ID: 273
     splitterInitialOffset: 516
     currentActiveSplitter: -1
     realSizes:
@@ -902,7 +902,7 @@ MonoBehaviour:
       name: SuperVandalWorld
       fullName: SuperVandalWorld
       resultStatus: 1
-      duration: 4.768848
+      duration: 0.4413603
       messages: 
       output: 
       stacktrace: 
@@ -918,7 +918,7 @@ MonoBehaviour:
       name: Tests.dll
       fullName: C:/Users/adave/Documents/GitHub/SuperVandalWorld/SuperVandalWorld/Library/ScriptAssemblies/Tests.dll
       resultStatus: 1
-      duration: 4.7483
+      duration: 0.4144621
       messages: 
       output: 
       stacktrace: 
@@ -934,7 +934,7 @@ MonoBehaviour:
       name: Tests
       fullName: Tests
       resultStatus: 1
-      duration: 4.7409377
+      duration: 0.4045468
       messages: 
       output: 
       stacktrace: 
@@ -1185,8 +1185,8 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/[Tests][Tests.FallThroughFloorStress][suite]
       name: FallThroughFloorStress
       fullName: Tests.FallThroughFloorStress
-      resultStatus: 0
-      duration: 0.1756823
+      resultStatus: 2
+      duration: 86.02484
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -1202,12 +1202,29 @@ MonoBehaviour:
       name: FallThroughFloorStressTest
       fullName: Tests.FallThroughFloorStress.FallThroughFloorStressTest
       resultStatus: 2
-      duration: 0
-      messages: Cancelled by user
-      output: 'Active Scene is ''1''.
+      duration: 80.26236
+      messages: "  Expected: True\r\n  But was:  False\r\n"
+      output: 'Help menu closed
+
+        slider show
+
+        Active Scene is ''1''.
+
+        Failed
+        at 160 Platform speed
+
+        Player falls through Ground at 160 Platform
+        speed
 
 '
-      stacktrace: 
+      stacktrace: 'at Tests.FallThroughFloorStress+<FallThroughFloorStressTest>d__3.MoveNext
+        () [0x001c9] in C:\Users\Justin\Desktop\SuperVandalWorld\SuperVandalWorld\Assets\tst\Justin\FallThroughFloorStress.cs:85
+
+        at
+        UnityEngine.TestTools.TestEnumerator+<Execute>d__5.MoveNext () [0x00038]
+        in C:\Users\Justin\Desktop\SuperVandalWorld\SuperVandalWorld\Library\PackageCache\com.unity.test-framework@1.1.16\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:31
+
+'
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -1220,8 +1237,8 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/[Tests][Tests.MovingPlatformStressTest][suite]
       name: MovingPlatformStressTest
       fullName: Tests.MovingPlatformStressTest
-      resultStatus: 0
-      duration: 3.6362739
+      resultStatus: 2
+      duration: 24.796268
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -1237,12 +1254,40 @@ MonoBehaviour:
       name: MovingPlatformNumberStressTest
       fullName: Tests.MovingPlatformStressTest.MovingPlatformNumberStressTest
       resultStatus: 2
-      duration: 0
-      messages: Cancelled by user
-      output: 'Active Scene is ''1''.
+      duration: 24.775408
+      messages: "  Expected: 512\r\n  But was:  490\r\n"
+      output: 'Help menu closed
+
+        slider show
+
+        Active Scene is ''1''.
+
+        Sapphire
+        (1)
+
+        Emerald (1)
+
+        Sapphire
+
+        Sapphire
+
+        Sapphire
+        (3)
+
+        Failed at 490 Moving Rock Platforms
+
+        Current FPS =
+        29.32612
 
 '
-      stacktrace: 
+      stacktrace: 'at Tests.MovingPlatformStressTest+<MovingPlatformNumberStressTest>d__3.MoveNext
+        () [0x0025c] in C:\Users\Justin\Desktop\SuperVandalWorld\SuperVandalWorld\Assets\tst\Justin\MovingPlatformStressTest.cs:97
+
+        at
+        UnityEngine.TestTools.TestEnumerator+<Execute>d__5.MoveNext () [0x00038]
+        in C:\Users\Justin\Desktop\SuperVandalWorld\SuperVandalWorld\Library\PackageCache\com.unity.test-framework@1.1.16\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:31
+
+'
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -1416,9 +1461,9 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/[Tests][Tests.PlatformMovementTest][suite]
       name: PlatformMovementTest
       fullName: Tests.PlatformMovementTest
-      resultStatus: 0
-      duration: 0.1893103
-      messages: One or more child tests had errors
+      resultStatus: 1
+      duration: 0.4002564
+      messages: 
       output: 
       stacktrace: 
       notRunnable: 0
@@ -1432,28 +1477,17 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/PlatformMovementTest/[Tests][Tests.PlatformMovementTest.MovingPlatformSpeed]
       name: MovingPlatformSpeed
       fullName: Tests.PlatformMovementTest.MovingPlatformSpeed
-      resultStatus: 0
-      duration: 0.1738271
-      messages: 'Unhandled log message: ''[Exception] NullReferenceException: Object
-        reference not set to an instance of an object''. Use UnityEngine.TestTools.LogAssert.Expect'
-      output: 'NullReferenceException: Object reference not set to an instance of
-        an object
+      resultStatus: 1
+      duration: 0.3803092
+      messages: 
+      output: 'Help menu closed
 
-        NullReferenceException: Object reference not set to an
-        instance of an object
+        slider show
 
-        DontDestroyOnLoad only works for root GameObjects
-        or components on root GameObjects.
+        Active Scene is ''1''.
 
 '
-      stacktrace: 'KeepBetweenLevels.FindStartPos () (at Assets/src/Justin/KeepBetweenLevels.cs:60)
-
-        KeepBetweenLevels.OnLevelWasLoaded
-        (System.Int32 level) (at Assets/src/Justin/KeepBetweenLevels.cs:29)
-
-
-
-'
+      stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -1702,13 +1736,22 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1001
       parentUniqueId: Tests.dll/Tests/[Tests][Tests.UITest][suite]
-    m_ResultText: pickupPointTest (4.732s)
+    m_ResultText: 'MovingPlatformSpeed (0.380s)
+
+      ---
+
+      Help menu closed
+
+      slider
+      show
+
+      Active Scene is ''1''.'
     m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 98906ddc
-      m_LastClickedID: -596799336
-      m_ExpandedIDs: c973899a98906ddc5dfc4bdfe557abf7761f4b11ab3ce1198302573d8359db41ffffff7f
+      m_SelectedIDs: 79838941
+      m_LastClickedID: 1099531129
+      m_ExpandedIDs: c973899a20712cd098906ddc5dfc4bdfe557abf7761f4b11e1b06317ab3ce1198302573d8359db41ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
