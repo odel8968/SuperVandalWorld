@@ -16,11 +16,16 @@ public class powerAxe : MonoBehaviour
     public GameObject axeProj;
     Character_Movement player;
 
+    //method called when enabled
     void OnEnable()
     {
+        //find player
         player = GameObject.Find("Player").GetComponent<Character_Movement>(); 
+        //disable multiJump script
         GameObject.Find("Player").GetComponent<multiJump>().enabled = false;
     }
+
+    //add force to axe by passing in object and direction
     public void addAxeForce(GameObject axe, float direction)
     {
         axe.GetComponent<Rigidbody2D>().velocity = new Vector2(direction, projForce * projVel);
