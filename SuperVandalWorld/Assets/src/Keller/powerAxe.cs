@@ -31,6 +31,7 @@ public class powerAxe : MonoBehaviour
         axe.GetComponent<Rigidbody2D>().velocity = new Vector2(direction, projForce * projVel);
     }
 
+    //Destroy projectile after 5 seconds if collision has not occurred
     public void removeProjectile(GameObject axe)
     {
         Destroy(axe, 5.0f);
@@ -38,6 +39,7 @@ public class powerAxe : MonoBehaviour
 
     void Update()
     {
+        //check if player is flipped. Player facing left is false, right is true
         playerFlipped = checkPlayerFlipped(playerFlipped);
 
         if(Input.GetKeyDown(player.ability))
@@ -85,16 +87,18 @@ public class powerAxe : MonoBehaviour
 
         float x = Input.GetAxisRaw("Horizontal");
         
+        //if player is facing left on update and was facing right before
         if (x < 0 && !isFlipped) 
         {
             isFlipped = true;
         }
-
+        //if player is facing right on update and was facing left before
         if (x > 0 && isFlipped)
         {
             isFlipped = false;
         }
         
+        //default returns bool passed into method
         return isFlipped;
     }
 }
