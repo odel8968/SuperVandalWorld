@@ -20,6 +20,7 @@ public class pickUpListener : MonoBehaviour
         }
     }
 
+    //only allow one instance of this object
     void Awake()
     {
         if(_instance != null && _instance != this)
@@ -40,6 +41,7 @@ public class pickUpListener : MonoBehaviour
         score = GameObject.Find("Score").GetComponent<UIManager>();
     }
 
+    //runs when script is enabled
     private void OnEnable()
     {
         //add notifications to list
@@ -67,6 +69,9 @@ public class pickUpListener : MonoBehaviour
 
                 //enable multiJump
                 GameObject.Find("Player").GetComponent<multiJump>().enabled = true;
+                //call sound manager function to play item sound
+                sounds.PlaySound("PowerUp");
+                player.hasAbility = true;
             break;
 
             //if object name contains powerAxe
@@ -74,34 +79,46 @@ public class pickUpListener : MonoBehaviour
 
                 //disable multiJump and enable powerAxe
                 GameObject.Find("Player").GetComponent<powerAxe>().enabled = true;
+                //call sound manager function to play item sound
+                sounds.PlaySound("PowerUp");
+                player.hasAbility = true;
             break;
 
             //if object name contains badApple
             case string c when c.Contains("badApple"):
 
-                //disable all powerups
-                GameObject.Find("Player").GetComponent<powerAxe>().enabled = false;
-                GameObject.Find("Player").GetComponent<multiJump>().enabled = false;
-                player.enabled = false;
-
-                //restart level and enable player movement
-                Invoke("ResetLevel", restartDelay);
-                Invoke("ReEnablePlayerMovement", restartDelay);
+                //if the player has an ability, lose ability
+                if(player.hasAbility)
+                {
+                    //disable all powerups
+                    GameObject.Find("Player").GetComponent<powerAxe>().enabled = false;
+                    GameObject.Find("Player").GetComponent<multiJump>().enabled = false;
+                    player.hasAbility = false;
+                }
+                else
+                {
+                    //else, kill player and restart level from last checkpoint
+                    player.enabled = false;
+                    //restart level and enable player movement
+                    Invoke("ResetLevel", restartDelay);
+                    Invoke("ReEnablePlayerMovement", restartDelay);
+                }
+                
             break;
 
             //if object name contains BCMODE
             case "BCMODE":
                 Debug.Log("BC Mode is enabled");
+                score.AddScore(10000);
+                sounds.PlaySound("PowerUp");
             break;
         }
-
-        //call sound manager function to play item sound
-        sounds.PlaySound("PowerUp");
 
         //call score function to udpate score
         score.AddScore(gObject.scoreValue);
     }
 
+    //runs when script is disabled
     private void OnDisable()
     {
         //remove notifications
