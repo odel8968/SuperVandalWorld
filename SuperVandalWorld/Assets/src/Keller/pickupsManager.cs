@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class pickupsManager : MonoBehaviour
 {    
+    public int scoreValue;
+
     void Start()
     {
         GameObject.Find("Player").GetComponent<multiJump>().enabled = false;
@@ -20,4 +22,5 @@ public class pickupsManager : MonoBehaviour
         //remove asset from level via destroy function
         Destroy(other.gameObject);
     }
+    
 }

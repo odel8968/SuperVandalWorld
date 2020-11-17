@@ -5,7 +5,6 @@ using System;
 
 public class PowerUp : pickupsManager
 {
-    public int scoreValue;
     public int healthChange;
     
     PauseMenu pause;

@@ -5,7 +5,6 @@ using System;
 
 public class Item : pickupsManager
 {
-    public int scoreValue;
 
     public override void OnTriggerEnter2D(Collider2D col)
     {
