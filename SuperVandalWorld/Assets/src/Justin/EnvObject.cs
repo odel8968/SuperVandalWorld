@@ -23,6 +23,10 @@ public class EnvObject : MonoBehaviour
         //Vector to hold starting position
         private Vector3 tempPos;
 
+        public Animator transition;
+
+        public float transitionTime = 3f;
+
    void Start()
    {
            //Find the player and camera objects
@@ -85,13 +89,22 @@ public class EnvObject : MonoBehaviour
        //public function to load the next level 
    public void LoadNextLevel()
     {
-             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+             StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
     }
 
         //public function to load a previous level - probably removed for final product
     public void LoadPreviousLevel()
     {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+    }
+
+    IEnumerator LoadLevel(int levelIndex)
+    {
+            transition.SetTrigger("Start");
+
+            yield return new WaitForSeconds(transitionTime);
+
+            SceneManager.LoadScene(levelIndex);
     }
 
     

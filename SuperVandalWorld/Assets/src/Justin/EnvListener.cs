@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class EnvListener : MonoBehaviour
 {
     //variable to use between restarting level
-    public float restartDelay = 2f;
+    public float restartDelay = 1f;
 
     //variable to hold reference to Player_Movement script
     Player_Movement playerMovement;
@@ -127,7 +127,7 @@ public class EnvListener : MonoBehaviour
     {
         EnvHazard.objectCollisionNotification -= EnvHazard_objectCollisionNotification;
         MovingPlatform.objectCollisionNotification -= MovingPlatform_objectCollisionNotification;
-        FallingPlatform.objectCollisionNotification += FallingPlatform_objectCollisionNotification;
+        FallingPlatform.objectCollisionNotification -= FallingPlatform_objectCollisionNotification;
     }
 
     //Function to reset the level

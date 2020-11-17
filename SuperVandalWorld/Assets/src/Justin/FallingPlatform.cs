@@ -58,7 +58,7 @@ public class FallingPlatform : EnvObject
             if(collision.gameObject.name.Equals("Player"))
             {
                 Invoke("DropPlatform", fallDelay);
-                objectCollisionNotification("Falling");
+                objectCollisionNotification("Falling");  
                 Invoke("RespawnPlatform", respawnDelay);
             }
         }

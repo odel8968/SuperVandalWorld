@@ -19,11 +19,21 @@ public class LevelLoader : MonoBehaviour
         //If the game object name is Player
         if(collisionGameObject.name == "Player")
         {
-            //Load next level - called from EnvObject script
-            envObject.LoadNextLevel();
+            //If player finishes last level, load back to title
+            if(SceneManager.GetActiveScene().name == "Level 3")
+            {
+                SceneManager.LoadScene("TitleScene");
+            }
+
+            else
+            {
+                //Load next level - called from EnvObject script
+                envObject.LoadNextLevel();
             
-            //Set variable for next level loaded to be true
-            nxtLevel = true;
+                 //Set variable for next level loaded to be true
+                 nxtLevel = true;
+            }
+            
         }
 
     }
