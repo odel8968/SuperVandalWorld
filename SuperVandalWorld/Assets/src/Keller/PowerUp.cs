@@ -7,6 +7,7 @@ public class PowerUp : pickupsManager
 {
     public int scoreValue;
     public int healthChange;
+    
     PauseMenu pause;
     bool bcMode;
 
@@ -23,12 +24,12 @@ public class PowerUp : pickupsManager
     public override void OnTriggerEnter2D(Collider2D col)
     {
         //pass power up object to observer
-        if(bcMode && this.name == "badApple")
+        if(bcMode && this.name.Contains("badApple"))
         {
-            PowerUp bc = new PowerUp();
-            bc.name = "BCMODE";
+            this.name = "BCMODE";
+            Debug.Log(this.name);
 
-            objectCollisionNotification(bc);
+            objectCollisionNotification(this);
         }
         else
         {

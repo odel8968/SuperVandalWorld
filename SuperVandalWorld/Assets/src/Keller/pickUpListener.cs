@@ -74,7 +74,6 @@ public class pickUpListener : MonoBehaviour
 
                 //disable multiJump and enable powerAxe
                 GameObject.Find("Player").GetComponent<powerAxe>().enabled = true;
-                Debug.Log(gObject.name);
             break;
 
             //if object name contains badApple
@@ -83,7 +82,7 @@ public class pickUpListener : MonoBehaviour
                 //disable all powerups
                 GameObject.Find("Player").GetComponent<powerAxe>().enabled = false;
                 GameObject.Find("Player").GetComponent<multiJump>().enabled = false;
-                Debug.Log(gObject.name);
+                player.enabled = false;
 
                 //restart level and enable player movement
                 Invoke("ResetLevel", restartDelay);
