@@ -25,9 +25,7 @@ public class Enemy : MonoBehaviour
 
     public bool PlayerAlive { get { return playerAlive;} set { playerAlive = value;}}
 
-    List<GameObject> poolingList = new List<GameObject>();
-    List<bool> poolingListAvail = new List<bool>();
-    public int numObjsInPool = 5; 
+    
 
     // Start is called before the first frame update
     void Start()
@@ -36,53 +34,6 @@ public class Enemy : MonoBehaviour
        animator = GetComponent<Animator>();
         playerAlive = true;
         playerMovement = FindObjectOfType<Character_Movement>();
-
-        if(throwableObject != null)
-        {
-            for(int i = 0; i < numObjsInPool; i++)
-            {
-                GameObject obj = Instantiate(throwableObject);
-                obj.SetActive(false);
-                obj.GetComponentInChildren<ThrowableObject>().PoolIndex = i;
-                obj.GetComponentInChildren<ThrowableObject>().Enemy = this;
-                poolingList.Add(obj);
-                poolingListAvail.Add(true);
-            }
-        }
-    }
-
-    private GameObject GetThrowableObjectFromPool()
-    {
-        if(throwableObject == null)
-            return null;
-
-        for(int i = 0; i < poolingList.Count; i++)
-        {
-            if(poolingListAvail[i])
-            {
-                poolingListAvail[i] = false;
-                print("Requesting object " + i);
-                return poolingList[i];
-            }
-        }
-
-        print("Couldn't find available object");
-
-        GameObject obj = Instantiate(throwableObject);
-        poolingList.Add(obj);
-        poolingListAvail.Add(false);
-        obj.GetComponentInChildren<ThrowableObject>().PoolIndex = poolingList.Count - 1;
-        obj.GetComponentInChildren<ThrowableObject>().Enemy = this;
-        obj.SetActive(false);
-
-
-
-        return obj;
-    }
-
-    public void ReleasePoolingObj(int index)
-    {
-        poolingListAvail[index] = true;
     }
 
     // Update is called once per frame
@@ -96,7 +47,7 @@ public class Enemy : MonoBehaviour
             if(curAttackTime >= timeBetweenAttacks)
             {
                 //GameObject obj = GameObject.Instantiate(throwableObject, transform.position, Quaternion.identity);
-                GameObject obj = GetThrowableObjectFromPool();
+                GameObject obj = ThrowableObjPool.Instance.GetThrowableObjectFromPool();
                 if(obj != null)
                 {
                     obj.SetActive(true);

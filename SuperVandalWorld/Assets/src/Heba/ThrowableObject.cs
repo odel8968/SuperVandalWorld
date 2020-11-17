@@ -2,14 +2,15 @@
 class ThrowableObject : MonoBehaviour
 {
     public int PoolIndex { get; set; }
-    public Enemy Enemy { get;set; }
+    //public Enemy Enemy { get;set; }
 
     void OnBecameInvisible()
     {
-        if(Enemy != null)
+        //if(Enemy != null)
         {
             print("released: " + PoolIndex);
-            Enemy.ReleasePoolingObj(PoolIndex);
+            //Enemy.ReleasePoolingObj(PoolIndex);
+            ThrowableObjPool.Instance.ReleasePoolingObj(PoolIndex);
             transform.parent.gameObject.SetActive(false);
         }
     }
