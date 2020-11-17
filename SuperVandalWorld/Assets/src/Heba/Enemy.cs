@@ -13,16 +13,16 @@ public class Enemy : MonoBehaviour
     public float moveTime = 3;
     public float direction = 1;
 
-    Character_Movement playerMovement;
+    Character_Movement playerMovement;    //control the movement
     bool playerAlive;
     public float restartDelay = 2f;
 
-    public GameObject throwableObject;
-    public float attackDistance = 5;
-    public float attackForce = 100;
-    public float timeBetweenAttacks = 4;
-    private float curAttackTime;
+    public float attackDistance = 5; // distance at which the enemy starts attacking
+    public float attackForce = 100; // the force of the attack
+    public float timeBetweenAttacks = 4; // the time it takes to attack again (in seconds)
+    private float curAttackTime; // variable to keep track of when to attack next
 
+    // Property to get the state of the player (alive or dead)
     public bool PlayerAlive { get { return playerAlive;} set { playerAlive = value;}}
 
     
@@ -39,31 +39,39 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     public void Update()
     {
+        // Calculate the distance between this enemy and the player
         float dist = Mathf.Abs(playerMovement.transform.position.x - transform.position.x);
-        if(dist <= attackDistance)
+        if(dist <= attackDistance) // and if it's less than the attack distance, we see if we can attack
         {
             curAttackTime += Time.deltaTime;
-
+            // if the time from the last attack is greater than the time between attacks then we can attack
             if(curAttackTime >= timeBetweenAttacks)
             {
                 //GameObject obj = GameObject.Instantiate(throwableObject, transform.position, Quaternion.identity);
+                // Grab throwable object from our pool singleton class
                 GameObject obj = ThrowableObjPool.Instance.GetThrowableObjectFromPool();
                 if(obj != null)
                 {
-                    obj.SetActive(true);
-
+                    // Set position and rotation of the throwable object
+                    // position is the position of this enemy, with default rotation (no rotation)
                     obj.transform.position = transform.position;
                     obj.transform.rotation = Quaternion.identity;
 
+                    // Calculate the direction of the movement for the throwable object
+                    // This is calculated based on the position of the player and the position of the enemy
                     var forceVector = (playerMovement.transform.position - transform.position).normalized * attackForce;
+                    // Apply the force to the throwable object
                     obj.GetComponent<Rigidbody2D>().AddForce(forceVector);
                 }
+
+                // resetting the timer for next attack so that we're not attacking all the time
                 curAttackTime = 0;
             }
 
+            // don't move while attacking
             moveVelocity.x = 0;
         }
-        else
+        else // else we're not attacking, we're just moving from one side to the other
         {
             curAttackTime = timeBetweenAttacks;
             curTime += Time.deltaTime;
@@ -75,12 +83,15 @@ public class Enemy : MonoBehaviour
             moveVelocity = new Vector2(direction, 0) * speed;
         }
 
+        // Setting animation property (velocity) with the current velocity value so that the animator knows
+        // which state to execute
         animator.SetFloat("velocity", moveVelocity.x);
 
     }
 
     void FixedUpdate()
     {
+        // Move character with physics
         rb.MovePosition(rb.position + moveVelocity * Time.fixedDeltaTime);
     }
 

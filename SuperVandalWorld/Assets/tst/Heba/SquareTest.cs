@@ -28,7 +28,7 @@ namespace Tests
         public IEnumerator SquareTestInitialCondition()
         {
             yield return new WaitWhile(() => sceneLoaded == false);
-            GameObject.FindGameObjectWithTag("MainMenu").SetActive(false);
+           // GameObject.FindGameObjectWithTag("MainMenu").SetActive(false);
             Time.timeScale = 1;
 
             // Use the Assert class to test conditions
@@ -43,7 +43,7 @@ namespace Tests
         public IEnumerator SquareTestBoundary1()
         {
             yield return new WaitWhile(() => sceneLoaded == false);
-            GameObject.FindGameObjectWithTag("MainMenu").SetActive(false);
+           // GameObject.FindGameObjectWithTag("MainMenu").SetActive(false);
             Time.timeScale = 1;
 
             // Use the Assert class to test conditions
@@ -60,7 +60,7 @@ namespace Tests
         public IEnumerator SquareTestBoundary2()
         {
             yield return new WaitWhile(() => sceneLoaded == false);
-            GameObject.FindGameObjectWithTag("MainMenu").SetActive(false);
+           // GameObject.FindGameObjectWithTag("MainMenu").SetActive(false);
             Time.timeScale = 1;
 
             var square = GameObject.Find("Square").GetComponent<Square>();
@@ -76,7 +76,7 @@ namespace Tests
         public IEnumerator SquareTestStress()
         {
             yield return new WaitWhile(() => sceneLoaded == false);
-            GameObject.FindGameObjectWithTag("MainMenu").SetActive(false);
+           // GameObject.FindGameObjectWithTag("MainMenu").SetActive(false);
 
             GameObject enemyPrefab = GameObject.Find("Square");
             //var square = GameObject.Find("Square").GetComponent<Square>();
