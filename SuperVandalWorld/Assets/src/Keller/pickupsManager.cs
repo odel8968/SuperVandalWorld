@@ -9,6 +9,7 @@ public class pickupsManager : MonoBehaviour
         GameObject.Find("Player").GetComponent<multiJump>().enabled = false;
         GameObject.Find("Player").GetComponent<powerAxe>().enabled = false;
     }
+    
     public virtual void OnTriggerEnter2D(Collider2D col)
     {
         Debug.Log("Default constructor called");
