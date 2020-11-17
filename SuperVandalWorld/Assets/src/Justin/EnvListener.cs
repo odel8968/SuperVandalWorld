@@ -87,6 +87,7 @@ public class EnvListener : MonoBehaviour
                 Invoke("ReEnablePlayerMovement", restartDelay);
             break;
 
+                //If in BCMode (EasyMode) player shouldn't die when colliding with objects
             case "BCMODE":
                 Debug.Log("Never Die");
             break;
