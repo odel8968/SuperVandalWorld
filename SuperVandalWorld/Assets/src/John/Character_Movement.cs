@@ -60,10 +60,11 @@ public class Character_Movement : MonoBehaviour
         if (recentlyDamaged)
         {
             invulnerableTimer++;
-            //insert sprite flickering effect here
+            spriteRenderer.color = new Color(1, 1, 1, 0.5f); //set sprite partially transparent
             if (invulnerableTimer >= 200)
             {
                 recentlyDamaged = false;
+                spriteRenderer.color = new Color(1, 1, 1, 1); //sprite now back to regular transparancy
             }
         }
     }
@@ -86,7 +87,6 @@ public class Character_Movement : MonoBehaviour
 
     public void Jump(bool is_grounded)
     {
-        //Debug.Log("is_grounded = " + is_grounded + ", jumps_taken = " + jumps_taken + ", jumps_allowed = " + jumps_allowed);
         if (is_grounded || jumps_taken < jumps_allowed)
         {
             Debug.Log("Jumping");

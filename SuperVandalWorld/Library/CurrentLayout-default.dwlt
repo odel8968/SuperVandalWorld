@@ -15,13 +15,13 @@ MonoBehaviour:
   m_PixelRect:
     serializedVersion: 2
     x: 0
-    y: 43
+    y: 42
     width: 2560
-    height: 1357
+    height: 1358
   m_ShowMode: 4
-  m_Title: Hierarchy
+  m_Title: Game
   m_RootView: {fileID: 5}
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -39,12 +39,12 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1380
+    x: 1381
     y: 0
     width: 688
     height: 439
-  m_MinSize: {x: 102, y: 121}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 20}
@@ -68,11 +68,11 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 868
-    width: 2068
+    y: 869
+    width: 2069
     height: 439
-  m_MinSize: {x: 333, y: 271}
-  m_MaxSize: {x: 14003, y: 10021}
+  m_MinSize: {x: 331, y: 271}
+  m_MaxSize: {x: 14001, y: 10021}
   vertical: 0
   controlID: 79
 --- !u!114 &4
@@ -90,12 +90,12 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1082
+    x: 1079
     y: 0
-    width: 986
-    height: 868
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+    width: 990
+    height: 869
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -122,7 +122,7 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 2560
-    height: 1357
+    height: 1358
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
@@ -170,7 +170,7 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 1337
+    y: 1338
     width: 2560
     height: 20
   m_MinSize: {x: 0, y: 0}
@@ -195,11 +195,11 @@ MonoBehaviour:
     x: 0
     y: 30
     width: 2560
-    height: 1307
-  m_MinSize: {x: 881, y: 492}
-  m_MaxSize: {x: 18004, y: 14042}
+    height: 1308
+  m_MinSize: {x: 879, y: 492}
+  m_MaxSize: {x: 18002, y: 14042}
   vertical: 0
-  controlID: 227
+  controlID: 49
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -219,12 +219,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 2068
-    height: 1307
-  m_MinSize: {x: 605, y: 492}
-  m_MaxSize: {x: 14003, y: 14042}
+    width: 2069
+    height: 1308
+  m_MinSize: {x: 603, y: 492}
+  m_MaxSize: {x: 14001, y: 14042}
   vertical: 1
-  controlID: 56
+  controlID: 50
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -245,12 +245,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 2068
-    height: 868
-  m_MinSize: {x: 605, y: 221}
-  m_MaxSize: {x: 12005, y: 4021}
+    width: 2069
+    height: 869
+  m_MinSize: {x: 603, y: 221}
+  m_MaxSize: {x: 12003, y: 4021}
   vertical: 0
-  controlID: 57
+  controlID: 51
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -268,8 +268,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 357
-    height: 868
+    width: 354
+    height: 869
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 16}
@@ -292,12 +292,12 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 357
+    x: 354
     y: 0
     width: 725
-    height: 868
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+    height: 869
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -320,7 +320,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1380
+    width: 1381
     height: 439
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
@@ -345,12 +345,12 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 2068
+    x: 2069
     y: 0
-    width: 492
-    height: 1307
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+    width: 491
+    height: 1308
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 21}
   m_Panes:
   - {fileID: 21}
@@ -378,10 +378,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1082
-    y: 73
-    width: 984
-    height: 847
+    x: 1079
+    y: 72
+    width: 988
+    height: 848
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
   m_SerializedViewValues: []
@@ -425,10 +425,10 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 984
-      height: 826
-    m_Scale: {x: 0.5125, y: 0.5125}
-    m_Translation: {x: 492, y: 413}
+      width: 988
+      height: 827
+    m_Scale: {x: 0.51458335, y: 0.51458335}
+    m_Translation: {x: 494, y: 413.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
@@ -436,12 +436,12 @@ MonoBehaviour:
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
       x: -960
-      y: -805.8537
+      y: -803.56274
       width: 1920
-      height: 1611.7074
+      height: 1607.1255
     m_MinimalGUI: 1
-  m_defaultScale: 0.5125
-  m_LastWindowPixelSize: {x: 984, y: 847}
+  m_defaultScale: 0.51458335
+  m_LastWindowPixelSize: {x: 988, y: 848}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -468,16 +468,16 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 73
-    width: 356
-    height: 847
+    y: 72
+    width: 353
+    height: 848
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 442dffff
-      m_LastClickedID: -53948
-      m_ExpandedIDs: 4043ffff044bffff0c55ffff588affff748affff0295ffff969cffffb29cffff06deffff92e5ffffaee5ffff1cf1ffff46f9ffffda740000
+      m_SelectedIDs: b2360000
+      m_LastClickedID: 0
+      m_ExpandedIDs: 9087ffffac87ffffb693fffffec1fffffacdffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -521,10 +521,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 357
-    y: 73
+    x: 354
+    y: 72
     width: 723
-    height: 847
+    height: 848
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
   m_WindowGUID: 8fde1c7c9ac16d04fb45d7d761e25119
@@ -639,7 +639,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 941
-    width: 1379
+    width: 1380
     height: 418
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
@@ -655,21 +655,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/src/Justin
+    - Assets/src/John
     m_Globs: []
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/src/Justin
+  - Assets/src/John
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\Justin\Desktop\SuperVandalWorld\SuperVandalWorld
+  m_LastProjectPath: C:\Users\John Cambareri\Documents\GitHub\SuperVandalWorld3\SuperVandalWorld
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 8e450000
-    m_LastClickedID: 17806
-    m_ExpandedIDs: 000000005c4500005e45000060450000624500006445000066450000684500006a45000000ca9a3b
+    scrollPos: {x: 0, y: 86}
+    m_SelectedIDs: 8a4a0000
+    m_LastClickedID: 19082
+    m_ExpandedIDs: 00000000544a0000564a0000584a00005a4a00005c4a00005e4a0000604a0000624a0000964a000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -697,7 +697,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000005c4500005e45000060450000624500006445000066450000684500006a450000
+    m_ExpandedIDs: 00000000544a0000564a0000584a00005a4a00005c4a00005e4a0000604a0000624a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -724,7 +724,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000a4430000ae3f0000b83c00007e4600007246000064430000383d0000f43c00000c42000040500000704400005eab0000a43f0000764f010074650200da9d0000803f0000c24f0000164900000000000014840100
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -780,7 +780,7 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: -30722
+  m_LastSelectedObjectID: 57468
 --- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -801,7 +801,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1380
+    x: 1381
     y: 941
     width: 686
     height: 418
@@ -826,10 +826,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 2068
-    y: 73
-    width: 491
-    height: 1286
+    x: 2069
+    y: 72
+    width: 490
+    height: 1287
   m_ViewDataDictionary: {fileID: 0}
   m_ObjectsLockedBeforeSerialization: []
   m_InstanceIDsLockedBeforeSerialization: 
@@ -864,18 +864,18 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 2063
-    y: 81
-    width: 488
-    height: 926
+    x: 2069
+    y: 72
+    width: 490
+    height: 1287
   m_ViewDataDictionary: {fileID: 0}
   m_Spl:
-    ID: 273
+    ID: 3730
     splitterInitialOffset: 516
     currentActiveSplitter: -1
     realSizes:
-    - 501
-    - 355
+    - 712
+    - 505
     relativeSizes:
     - 0.58498025
     - 0.41501975
@@ -885,7 +885,7 @@ MonoBehaviour:
     maxSizes:
     - 0
     - 0
-    lastTotalSize: 856
+    lastTotalSize: 1217
     splitSize: 6
     xOffset: 0
     m_Version: 1
@@ -901,9 +901,9 @@ MonoBehaviour:
       uniqueId: '[SuperVandalWorld][suite]'
       name: SuperVandalWorld
       fullName: SuperVandalWorld
-      resultStatus: 1
-      duration: 0.4413603
-      messages: 
+      resultStatus: 2
+      duration: 32.325184
+      messages: One or more child tests had errors
       output: 
       stacktrace: 
       notRunnable: 0
@@ -917,9 +917,9 @@ MonoBehaviour:
       uniqueId: '[Tests.dll][suite]'
       name: Tests.dll
       fullName: C:/Users/adave/Documents/GitHub/SuperVandalWorld/SuperVandalWorld/Library/ScriptAssemblies/Tests.dll
-      resultStatus: 1
-      duration: 0.4144621
-      messages: 
+      resultStatus: 2
+      duration: 32.288334
+      messages: One or more child tests had errors
       output: 
       stacktrace: 
       notRunnable: 0
@@ -933,9 +933,9 @@ MonoBehaviour:
       uniqueId: Tests.dll/[Tests][suite]
       name: Tests
       fullName: Tests
-      resultStatus: 1
-      duration: 0.4045468
-      messages: 
+      resultStatus: 2
+      duration: 32.27487
+      messages: One or more child tests had errors
       output: 
       stacktrace: 
       notRunnable: 0
@@ -950,7 +950,7 @@ MonoBehaviour:
       name: CharacterMovementTests
       fullName: Tests.CharacterMovementTests
       resultStatus: 2
-      duration: 0.4296227
+      duration: 32.264187
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -966,25 +966,201 @@ MonoBehaviour:
       name: jump_stress_test
       fullName: Tests.CharacterMovementTests.jump_stress_test
       resultStatus: 2
-      duration: 0.2823556
-      messages: 'UnityEngine.UnassignedReferenceException : The variable rb of Character_Movement
-        has not been assigned.
+      duration: 32.008793
+      messages: "  Player has failed to collect a gem, even with a jump speed of
+        1.5E+21\r\n  Expected: True\r\n  But was:  False\r\n"
+      output: 'Help menu closed
 
-        You probably need to assign the rb variable
-        of the Character_Movement script in the inspector.'
-      output: 'Active Scene is ''1''.
+        slider show
+
+        Active Scene is ''1''.
+
+        enemySkel
+        (3) collided with RockTilePlatform (17) at (161.1, 38.7, 0.0)
 
         Jumping
 
+        Jump
+        force = 15
+
+        Sapphire(Clone)
+
+        enemySkel (3) collided with
+        RockTilePlatform (18) at (159.0, 38.7, 0.0)
+
+        enemySkel (3) no longer
+        on RockTilePlatform (17)
+
+        Jumping
+
+        Jump force = 150
+
+        Sapphire(Clone)
+
+        enemySkel
+        (3) no longer on RockTilePlatform (18)
+
+        Jumping
+
+        Jump force
+        = 1500
+
+        Sapphire(Clone)
+
+        Sapphire (1)
+
+        enemySkel
+        (3) no longer on Level1 Spike_0 (14)
+
+        Jumping
+
+        Jump force
+        = 15000
+
+        Sapphire(Clone)
+
+        enemySkel (3) no longer on Level1
+        Spike_0 (15)
+
+        enemySkel (3) no longer on Level1 Spike_0 (13)
+
+        enemySkel
+        (3) no longer on Level1 Spike_0 (12)
+
+        Jumping
+
+        Jump force
+        = 150000
+
+        Sapphire(Clone)
+
+        enemySkel (3) no longer on Level1
+        Spike_0 (11)
+
+        enemySkel (3) no longer on Level1 Spike_0 (10)
+
+        enemySkel
+        (3) collided with RockTilePlatform (5) at (133.3, -1.3, 0.0)
+
+        Jumping
+
+        Jump
+        force = 1500000
+
+        Sapphire(Clone)
+
+        Jumping
+
+        Jump
+        force = 1.5E+07
+
+        Sapphire(Clone)
+
+        Jumping
+
+        Jump
+        force = 1.5E+08
+
+        Sapphire(Clone)
+
+        Jumping
+
+        Jump
+        force = 1.5E+09
+
+        Sapphire(Clone)
+
+        Jumping
+
+        Jump
+        force = 1.5E+10
+
+        Sapphire(Clone)
+
+        Jumping
+
+        Jump
+        force = 1.5E+11
+
+        Sapphire(Clone)
+
+        Jumping
+
+        Jump
+        force = 1.5E+12
+
+        Sapphire(Clone)
+
+        Jumping
+
+        Jump
+        force = 1.5E+13
+
+        Sapphire(Clone)
+
+        Jumping
+
+        Jump
+        force = 1.5E+14
+
+        Sapphire(Clone)
+
+        Jumping
+
+        Jump
+        force = 1.5E+15
+
+        Sapphire(Clone)
+
+        Jumping
+
+        Jump
+        force = 1.5E+16
+
+        Sapphire(Clone)
+
+        Jumping
+
+        Jump
+        force = 1.5E+17
+
+        Sapphire(Clone)
+
+        Jumping
+
+        Jump
+        force = 1.5E+18
+
+        Sapphire(Clone)
+
+        Jumping
+
+        Jump
+        force = 1.5E+19
+
+        Sapphire(Clone)
+
+        Jumping
+
+        Jump
+        force = 1.5E+20
+
+        Sapphire(Clone)
+
+        Jumping
+
+        Jump
+        force = 1.5E+21
+
 '
-      stacktrace: "  at (wrapper managed-to-native) UnityEngine.Rigidbody2D.get_velocity_Injected(UnityEngine.Rigidbody2D,UnityEngine.Vector2&)\r\n 
-        at UnityEngine.Rigidbody2D.get_velocity () [0x00000] in <81986b7de77f470c8157a969000b3a00>:0
-        \r\n  at Character_Movement.Jump (System.Boolean is_grounded) [0x0001b] in
-        C:\\Users\\davey\\Desktop\\cs383GameFiles\\SuperVandalWorld\\SuperVandalWorld\\Assets\\src\\John\\Character_Movement.cs:66
-        \r\n  at Tests.CharacterMovementTests+<jump_stress_test>d__6.MoveNext ()
-        [0x00269] in C:\\Users\\davey\\Desktop\\cs383GameFiles\\SuperVandalWorld\\SuperVandalWorld\\Assets\\tst\\John\\CharacterMovementTests.cs:96
-        \r\n  at UnityEngine.TestTools.TestEnumerator+<Execute>d__5.MoveNext () [0x00038]
-        in <0e6a59ba521b44fba6d5f2ca6a5adff7>:0 "
+      stacktrace: 'at Tests.CharacterMovementTests+<jump_stress_test>d__6.MoveNext
+        () [0x00384] in C:\Users\John Cambareri\Documents\GitHub\SuperVandalWorld3\SuperVandalWorld\Assets\tst\John\CharacterMovementTests.cs:108
+
+        at
+        UnityEngine.TestTools.TestEnumerator+<Execute>d__5.MoveNext () [0x00038]
+        in <2bdc05726c474df59c630cfd16950260>:0
+
+'
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -1276,8 +1452,7 @@ MonoBehaviour:
 
         Failed at 490 Moving Rock Platforms
 
-        Current FPS =
-        29.32612
+        Current FPS = 29.32612
 
 '
       stacktrace: 'at Tests.MovingPlatformStressTest+<MovingPlatformNumberStressTest>d__3.MoveNext
@@ -1736,22 +1911,44 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1001
       parentUniqueId: Tests.dll/Tests/[Tests][Tests.UITest][suite]
-    m_ResultText: 'MovingPlatformSpeed (0.380s)
+    m_ResultText: "jump_stress_test (32.009s)\n---\nPlayer has failed to collect
+      a gem, even with a jump speed of 1.5E+21\r\n  Expected: True\r\n  But was: 
+      False\n---\nat Tests.CharacterMovementTests+<jump_stress_test>d__6.MoveNext
+      () [0x00384] in C:\\Users\\John Cambareri\\Documents\\GitHub\\SuperVandalWorld3\\SuperVandalWorld\\Assets\\tst\\John\\CharacterMovementTests.cs:108\r\nat
+      UnityEngine.TestTools.TestEnumerator+<Execute>d__5.MoveNext () [0x00038] in
+      <2bdc05726c474df59c630cfd16950260>:0\n---\nHelp menu closed\r\nslider show\r\nActive
+      Scene is '1'.\r\nenemySkel (3) collided with RockTilePlatform (17) at (161.1,
+      38.7, 0.0)\r\nJumping\r\nJump force = 15\r\nSapphire(Clone)\r\nenemySkel (3)
+      collided with RockTilePlatform (18) at (159.0, 38.7, 0.0)\r\nenemySkel (3)
+      no longer on RockTilePlatform (17)\r\nJumping\r\nJump force = 150\r\nSapphire(Clone)\r\nenemySkel
+      (3) no longer on RockTilePlatform (18)\r\nJumping\r\nJump force = 1500\r\nSapphire(Clone)\r\nSapphire
+      (1)\r\nenemySkel (3) no longer on Level1 Spike_0 (14)\r\nJumping\r\nJump force
+      = 15000\r\nSapphire(Clone)\r\nenemySkel (3) no longer on Level1 Spike_0 (15)\r\nenemySkel
+      (3) no longer on Level1 Spike_0 (13)\r\nenemySkel (3) no longer on Level1 Spike_0
+      (12)\r\nJumping\r\nJump force = 150000\r\nSapphire(Clone)\r\nenemySkel (3)
+      no longer on Level1 Spike_0 (11)\r\nenemySkel (3) no longer on Level1 Spike_0
+      (10)\r\nenemySkel (3) collided with RockTilePlatform (5) at (133.3, -1.3, 0.0)\r\nJumping\r\nJump
+      force = 1500000\r\nSapphire(Clone)\r\nJumping\r\nJump force = 1.5E+07\r\nSapphire(Clone)\r\nJumping\r\nJump
+      force = 1.5E+08\r\nSapphire(Clone)\r\nJumping\r\nJump force = 1.5E+09\r\nSapphire(Clone)\r\nJumping\r\nJump
+      force = 1.5E+10\r\nSapphire(Clone)\r\nJumping\r\nJump force = 1.5E+11\r\nSapphire(Clone)\r\nJumping\r\nJump
+      force = 1.5E+12\r\nSapphire(Clone)\r\nJumping\r\nJump force = 1.5E+13\r\nSapphire(Clone)\r\nJumping\r\nJump
+      force = 1.5E+14\r\nSapphire(Clone)\r\nJumping\r\nJump force = 1.5E+15\r\nSapphire(Clone)\r\nJumping\r\nJump
+      force = 1.5E+16\r\nSapphire(Clone)\r\nJumping\r\nJump force = 1.5E+17\r\nSapphire(Clone)\r\nJumping\r\nJump
+      force = 1.5E+18\r\nSapphire(Clone)\r\nJumping\r\nJump force = 1.5E+19\r\nSapphire(Clone)\r\nJumping\r\nJump
+      force = 1.5E+20\r\nSapphire(Clone)\r\nJumping\r\nJump force = 1.5E+21"
+    m_ResultStacktrace: 'at Tests.CharacterMovementTests+<jump_stress_test>d__6.MoveNext
+      () [0x00384] in C:\Users\John Cambareri\Documents\GitHub\SuperVandalWorld3\SuperVandalWorld\Assets\tst\John\CharacterMovementTests.cs:108
 
-      ---
+      at
+      UnityEngine.TestTools.TestEnumerator+<Execute>d__5.MoveNext () [0x00038] in
+      <2bdc05726c474df59c630cfd16950260>:0
 
-      Help menu closed
-
-      slider
-      show
-
-      Active Scene is ''1''.'
-    m_ResultStacktrace: 
+'
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 79838941
-      m_LastClickedID: 1099531129
-      m_ExpandedIDs: c973899a20712cd098906ddc5dfc4bdfe557abf7761f4b11e1b06317ab3ce1198302573d8359db41ffffff7f
+      m_SelectedIDs: c9861bd8
+      m_LastClickedID: -669284663
+      m_ExpandedIDs: c973899ac337b2b420712cd098906ddc5dfc4bdfe557abf7761f4b11e1b06317ab3ce1198302573d8359db41ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
