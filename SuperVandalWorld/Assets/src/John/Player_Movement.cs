@@ -18,7 +18,7 @@ public class Player_Movement : Character_Movement
             animator.enabled = false; //deactivates the walk animation if its playing
             spriteRenderer.sprite = spriteArray[0]; //standing still sprite
         }
-        if (x < 0 && !isFlipped) //if character is moving left
+        if (x < 0 && !isFlipped) //if character is moving left 
         {
             if (spriteRenderer != null)
             {

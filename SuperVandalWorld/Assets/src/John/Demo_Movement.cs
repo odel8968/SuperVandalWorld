@@ -1,65 +1,97 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Demo_Movement : Character_Movement
 {
     public int seed;
-    private int timer = 0;
+    private int jumpTimer = 0;
+    private int leftTimer = 0;
     private bool left = false;
-    private bool first_iteration = true;
     public Player_Movement Player;
-    private bool over_spikes = false;
+    private float currentXPos;
+    private float lastXPos;
+
+    void Awake()
+    {
+        Player = GameObject.Find("Player").GetComponent<Player_Movement>();
+        Player.gameObject.SetActive(false);
+        seed = Random.Range(0, 2);
+        lastXPos = 0;
+        Debug.Log("Seed = " + seed);
+    }
 
     public override void Move()
     {
-        if (first_iteration) 
+        isGrounded = CheckIfGrounded();
+        currentXPos = this.transform.position.x;
+
+        if (seed != 0)
         {
-            Player = GameObject.Find("Player").GetComponent<Player_Movement>();
-            Player.gameObject.SetActive(false);
-            first_iteration = false;
+            leftTimer++;
+            if (leftTimer > 50)
+            {
+                if (left)
+                {
+                    left = false;
+                }
+                else if (currentXPos == lastXPos)
+                {
+                    left = true;
+                }
+                leftTimer = 0;
+                lastXPos = currentXPos;
+            }
         }
 
         if (!left)
         {
             rb.velocity = new Vector2(speed, rb.velocity.y);
+            if (spriteRenderer != null && isFlipped)
+            {
+                isFlipped = false;
+                spriteRenderer.flipX = false; //sprite will now face right
+            }
         }
         else
         {
             rb.velocity = new Vector2(-speed, rb.velocity.y);
+            if (spriteRenderer != null && !isFlipped)
+            {
+                isFlipped = true;
+                spriteRenderer.flipX = true; //sprite will now face left
+            }
+        }
+
+        if (speed != 0) //walking animation
+        {
+            if (isGrounded)
+            {
+                animator.enabled = true;
+            }
+            else
+            {
+                animator.enabled = false;
+            }
         }
         
-        //timer++;
-        /*if (timer > 100)
-        {
-            left = !left;
-            timer = 0;
-        }*/
-
-        isGrounded = CheckIfGrounded();
         if (isGrounded)
         {
             jumps_taken = 0;
-            timer++;
-            if (timer > 50)
+            jumpTimer++;
+            if ((seed == 0) || (seed == 1 && jumpTimer > 50)) //in seed 0, character jumps constantly; in seed 1; it waits 50 frames
             {
                 Jump(isGrounded);
-                timer = 0;
+                jumpTimer = 0;
             }
         }
 
-        /*if (seed > 0)
-        {
-            RayCastHit2D spike = Physics2D.BoxCast(bc.bounds.center, bc.bounds.size, 0f, Vector2.down, 5f, groundLayer);
-            if (spike.collider.GameObject.Find("LvlSpikes")){
-
-            }
-        }*/
-
-        if (Input.anyKey)
+        if (Input.anyKey) //if a key is pressed; end the demo
         {
             Player.gameObject.SetActive(true);
             Destroy(this.gameObject);
+            SceneManager.LoadScene(sceneName:"TitleScene");
         }
     }
 }

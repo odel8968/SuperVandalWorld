@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Sprite_Decorator; //decorator pattern
 
 public class Character_Movement : MonoBehaviour
 {
@@ -20,9 +21,10 @@ public class Character_Movement : MonoBehaviour
     public int characterHealth;
     protected SoundManager soundManager;
     protected SpriteRenderer spriteRenderer;
-    protected Animator animator;
+    public Animator animator;
     protected bool isFlipped;
     public Sprite[] spriteArray;
+    //public Basic_Sprite basicSprite;
     protected bool recentlyDamaged = false;
     protected int invulnerableTimer = 0;
 
@@ -38,9 +40,12 @@ public class Character_Movement : MonoBehaviour
         soundManager = GameObject.Find("SoundManager").GetComponent<SoundManager>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         isFlipped = false;
+        //basicSprite = new Basic_Sprite();
+        //spriteArray = basicSprite.getSprites();
         spriteRenderer.sprite = spriteArray[0];
         characterHealth = 1;
         animator = GetComponent<Animator>();
+        //animator = basicSprite.getAnimation();
         animator.enabled = false;
     }
 
@@ -119,6 +124,7 @@ public class Character_Movement : MonoBehaviour
     public void takeDamage(int damageTaken)
     {
         if (recentlyDamaged == true) return; //do nothing if the character was recently damaged
+        
         characterHealth -= damageTaken;
         if (characterHealth <= 0)
         {
