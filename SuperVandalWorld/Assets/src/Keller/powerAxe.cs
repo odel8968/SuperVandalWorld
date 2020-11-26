@@ -8,7 +8,7 @@ using UnityEngine;
 public class powerAxe : MonoBehaviour
 {
     private float projVel = 8.0f;       //projectile velocity
-    private float projDelay = 1.0f;     //delay between projectile fires
+    private float projDelay = .5f;     //delay between projectile fires
     private float projNextTime = 0.0f;  //next time projectile can be fired
     private float projForce = 1.5f;
     private bool playerFlipped;
@@ -58,8 +58,9 @@ public class powerAxe : MonoBehaviour
             if(Time.time >= projNextTime)
             {
                 proj = GameObject.Instantiate(axeProj, transform.position, transform.rotation);
+                Physics2D.IgnoreCollision(proj.GetComponent<Collider2D>(), GameObject.Find("Player").GetComponent<Collider2D>(), true);
 
-                switch(flipped)
+                switch (flipped)
                 {
                     //if player is flipped
                     case true:

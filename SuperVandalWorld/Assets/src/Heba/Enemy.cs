@@ -98,6 +98,13 @@ public class Enemy : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
+        if (collision.collider.tag == "Projectile")
+        {
+            Debug.Log("You killed an enemy with a projectile!");
+
+            Destroy(gameObject);
+        }
+
         if (playerAlive == true)
         {
             if (collision.collider.tag == "Player")

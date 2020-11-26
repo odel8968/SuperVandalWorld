@@ -116,6 +116,14 @@ public class daEnemy : MonoBehaviour
         Vector3 direction = transform.position - collision.gameObject.transform.position;
         UIManager score = GameObject.Find("Score").GetComponent<UIManager>();
 
+        if (collision.collider.tag == "Projectile")
+        {
+            Debug.Log("You killed an enemy with a projectile!");
+            score.AddScore(10);
+
+            Destroy(gameObject);
+        }
+
         if (collision.collider.tag == "EnvHazard")
         {
             Debug.Log("Oops, enemy died from natural causes.");
