@@ -19,6 +19,8 @@ TagManager:
   - RopeLogBridge
   - CM
   - End
+  - EnvHazard
+  - daShootPoint
   layers:
   - Default
   - TransparentFX

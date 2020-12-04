@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: -3703322753667717349}
   - component: {fileID: 747212049059683072}
   - component: {fileID: -4515635174064630065}
+  - component: {fileID: 1093110680236821579}
   m_Layer: 0
   m_Name: daBullet
   m_TagString: Untagged
@@ -29,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 3259779191612845987}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 28.475462, y: 4.561871, z: 0}
-  m_LocalScale: {x: 6, y: 6, z: 2}
+  m_LocalScale: {x: 40, y: 40, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -74,7 +75,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -5337090024257511082, guid: 26233ef9cd6e72d4caa86562eed72b6f, type: 3}
+  m_Sprite: {fileID: 9000462578179707952, guid: c9d3a00be480fb444936d5ad8d3cb4cc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
@@ -102,7 +103,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.26, y: 0.21}
+    oldSize: {x: 0.16, y: 0.13}
     newSize: {x: 0.12, y: 0.12}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -151,4 +152,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77d7ffe4654691d468ce1583aba774cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5000
+  speed: 2000
+  restartWait: 1
+--- !u!95 &1093110680236821579
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3259779191612845987}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8f776ec751ac1404db113b198f82d538, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

@@ -44,12 +44,14 @@ public class daBullet : MonoBehaviour
         {
             if (easyMode)
             {
+                Destroy(gameObject);
+                
                 Physics.IgnoreLayerCollision(0,10);
             }
             else
             {
                 Debug.Log("Hit!");
-                characterMvmnt.characterHealth -= 1;
+                // characterMvmnt.characterHealth -= 1;
                 if (characterMvmnt.characterHealth == 0) 
                 {
                     playerMvmnt.enabled = false;

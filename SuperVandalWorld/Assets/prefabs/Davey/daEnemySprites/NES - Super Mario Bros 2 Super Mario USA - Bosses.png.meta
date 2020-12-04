@@ -5,6 +5,33 @@ TextureImporter:
   - first:
       213: 4291738947342355768
     second: snakeIdle
+  - first:
+      213: 4123351237317388012
+    second: daKrabIdle
+  - first:
+      213: 8005658127472029153
+    second: daKrabWalking1
+  - first:
+      213: 4152701029575675792
+    second: daKrabWalking2
+  - first:
+      213: 8212428848968578795
+    second: daKrabWalking3
+  - first:
+      213: 7399277201001192033
+    second: daKrabWalking4
+  - first:
+      213: -167444794218228264
+    second: daKrabAttack
+  - first:
+      213: 6376017013092669420
+    second: daKrabHit
+  - first:
+      213: -5599688981814313902
+    second: daKrabDead1
+  - first:
+      213: 2779725842214154083
+    second: daKrabDead2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -92,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: snakeIdle
+      name: daKrabIdle
       rect:
         serializedVersion: 2
-        x: 15
-        y: 55
-        width: 36
-        height: 47
+        x: 175
+        y: 105
+        width: 32
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -106,8 +133,176 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 83dcc0185d15f8b30800000000000000
-      internalID: 4291738947342355768
+      spriteID: ce668789a16193930800000000000000
+      internalID: 4123351237317388012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: daKrabWalking1
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 105
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ed6031b6afc91f60800000000000000
+      internalID: 8005658127472029153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: daKrabWalking2
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 105
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09fc14e959b51a930800000000000000
+      internalID: 4152701029575675792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: daKrabWalking3
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 105
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be631fdd68868f170800000000000000
+      internalID: 8212428848968578795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: daKrabWalking4
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 105
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16a925849638fa660800000000000000
+      internalID: 7399277201001192033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: daKrabAttack
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 105
+        width: 30
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d55229c8dd1dadf0800000000000000
+      internalID: -167444794218228264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: daKrabHit
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 105
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce75c3b11b92c7850800000000000000
+      internalID: 6376017013092669420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: daKrabDead1
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 104
+        width: 32
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25cf94a1a88e942b0800000000000000
+      internalID: -5599688981814313902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: daKrabDead2
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 105
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36fe5260de1939620800000000000000
+      internalID: 2779725842214154083
       vertices: []
       indices: 
       edges: []

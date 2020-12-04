@@ -29,7 +29,7 @@ public class daBoss : MonoBehaviour
     public HealthBar healthBar;
 
     [SerializeField]
-    Transform shootPoint;
+    public Transform shootPoint;
     public GameObject bul;
     Transform tg;
     float fireR;
@@ -117,6 +117,14 @@ public class daBoss : MonoBehaviour
     {
         Vector3 direction = transform.position - collision.gameObject.transform.position;
         UIManager score = GameObject.Find("Score").GetComponent<UIManager>();
+
+        if (collision.collider.tag == "Projectile")
+        {
+            Debug.Log("You killed an enemy with a projectile!");
+            score.AddScore(10);
+
+            Destroy(gameObject);
+        }
 
         if (playerAlive == true)
         {

@@ -14,6 +14,24 @@ TextureImporter:
   - first:
       213: 2516962906230899409
     second: mummyIdle4
+  - first:
+      213: 8042877213637659062
+    second: fireAttack1
+  - first:
+      213: 9000462578179707952
+    second: fireAttack2
+  - first:
+      213: 7288639688749531903
+    second: fireAttack3
+  - first:
+      213: 4793756498269385669
+    second: fireAttack4
+  - first:
+      213: 1832925264481792372
+    second: fireBallExplosion
+  - first:
+      213: 7102822959494548823
+    second: massiveBall
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -109,7 +127,7 @@ TextureImporter:
         width: 33
         height: 63
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -130,7 +148,7 @@ TextureImporter:
         width: 34
         height: 59
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -151,7 +169,7 @@ TextureImporter:
         width: 33
         height: 57
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -172,7 +190,7 @@ TextureImporter:
         width: 33
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -180,6 +198,132 @@ TextureImporter:
       bones: []
       spriteID: 1d24ab28d6c0ee220800000000000000
       internalID: 2516962906230899409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireAttack1
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 290
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b9c4fa763a0e9f60800000000000000
+      internalID: 8042877213637659062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireAttack2
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 290
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0341992470118ec70800000000000000
+      internalID: 9000462578179707952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireAttack3
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 289
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff2cab71e23762560800000000000000
+      internalID: 7288639688749531903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireAttack4
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 289
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c331130328d68240800000000000000
+      internalID: 4793756498269385669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireBallExplosion
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 288
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 471b64911dbdf6910800000000000000
+      internalID: 1832925264481792372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: massiveBall
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 288
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75d492b69db429260800000000000000
+      internalID: 7102822959494548823
       vertices: []
       indices: 
       edges: []

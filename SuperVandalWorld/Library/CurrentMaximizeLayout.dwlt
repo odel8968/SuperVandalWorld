@@ -14,17 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Children:
   - {fileID: 3}
-  - {fileID: 13}
   m_Position:
     serializedVersion: 2
     x: 0
     y: 30
-    width: 2560
-    height: 1307
-  m_MinSize: {x: 679, y: 492}
-  m_MaxSize: {x: 14002, y: 14042}
+    width: 1920
+    height: 947
+  m_MinSize: {x: 881, y: 492}
+  m_MaxSize: {x: 18002, y: 14042}
   vertical: 0
-  controlID: 6941
+  controlID: 41031
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -45,10 +44,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 302
-    y: 19
-    width: 1765
-    height: 804
+    x: 1032
+    y: 73
+    width: 887
+    height: 561
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
   m_SerializedViewValues: []
@@ -83,7 +82,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
+    m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -92,23 +91,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 2560
-      height: 1267
-    m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 1280, y: 633.5}
+      width: 887
+      height: 540
+    m_Scale: {x: 0.46197918, y: 0.4619792}
+    m_Translation: {x: 443.5, y: 270}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -1280
-      y: -633.5
-      width: 2560
-      height: 1267
+      x: -960
+      y: -584.4419
+      width: 1920
+      height: 1168.8838
     m_MinimalGUI: 1
-  m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 2560, y: 1288}
+  m_defaultScale: 0.46197918
+  m_LastWindowPixelSize: {x: 887, y: 561}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -128,17 +127,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Children:
   - {fileID: 4}
-  - {fileID: 9}
+  - {fileID: 14}
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 2068
-    height: 1307
-  m_MinSize: {x: 403, y: 492}
-  m_MaxSize: {x: 10001, y: 14042}
+    width: 1920
+    height: 947
+  m_MinSize: {x: 881, y: 492}
+  m_MaxSize: {x: 18002, y: 14042}
   vertical: 1
-  controlID: 6942
+  controlID: 41032
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -154,16 +153,18 @@ MonoBehaviour:
   m_Children:
   - {fileID: 5}
   - {fileID: 7}
+  - {fileID: 11}
+  - {fileID: 13}
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 2068
-    height: 825
-  m_MinSize: {x: 403, y: 221}
-  m_MaxSize: {x: 8003, y: 4021}
+    width: 1920
+    height: 582
+  m_MinSize: {x: 881, y: 221}
+  m_MaxSize: {x: 16006, y: 4021}
   vertical: 0
-  controlID: 6943
+  controlID: 40999
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -181,8 +182,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 301
-    height: 825
+    width: 248
+    height: 582
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 6}
@@ -212,15 +213,15 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 73
-    width: 300
-    height: 804
+    width: 247
+    height: 561
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 40afffff
-      m_LastClickedID: -20672
-      m_ExpandedIDs: 4aafffffbeb1ffffccd0ffff14e6ffff0eeeffff5cfbffffa49d00004e9e0000609f0000
+      scrollPos: {x: 0, y: 20}
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: b0f7feffecf7feffa2fffeffcc0cffff8816ffff521bffffc21bffffd2a3ffff12b5fffffabcffffc8c9ffff6eeeffff46faffff52480000f24900003eac0000dead000096b0000028b1000036b20000682f0300083103007e500300105103001e520300
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -252,387 +253,27 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: GameView
-  m_EditorClassIdentifier: 
-  m_Children: []
-  m_Position:
-    serializedVersion: 2
-    x: 301
-    y: 0
-    width: 1767
-    height: 825
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 2}
-  m_Panes:
-  - {fileID: 8}
-  - {fileID: 2}
-  m_Selected: 1
-  m_LastSelected: 0
---- !u!114 &8
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12013, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Scene
-    m_Image: {fileID: 2593428753322112591, guid: 0000000000000000d000000000000000, type: 0}
-    m_Tooltip: 
-  m_Pos:
-    serializedVersion: 2
-    x: 301
-    y: 73
-    width: 1765
-    height: 804
-  m_ViewDataDictionary: {fileID: 0}
-  m_ShowContextualTools: 0
-  m_WindowGUID: 8fde1c7c9ac16d04fb45d7d761e25119
-  m_Gizmos: 1
-  m_OverrideSceneCullingMask: 6917529027641081856
-  m_SceneIsLit: 1
-  m_SceneLighting: 1
-  m_2DMode: 1
-  m_isRotationLocked: 0
-  m_PlayAudio: 0
-  m_AudioPlay: 0
-  m_Position:
-    m_Target: {x: 733.1113, y: -0.5877884, z: -200.4802}
-    speed: 2
-    m_Value: {x: 733.1113, y: -0.5877884, z: -200.4802}
-  m_RenderMode: 0
-  m_CameraMode:
-    drawMode: 0
-    name: Shaded
-    section: Shading Mode
-  m_ValidateTrueMetals: 0
-  m_DoValidateTrueMetals: 0
-  m_ExposureSliderValue: 0
-  m_SceneViewState:
-    showFog: 1
-    showMaterialUpdate: 0
-    showSkybox: 1
-    showFlares: 1
-    showImageEffects: 1
-    showParticleSystems: 1
-    showVisualEffectGraphs: 1
-    m_FxEnabled: 1
-  m_Grid:
-    xGrid:
-      m_Fade:
-        m_Target: 0
-        speed: 2
-        m_Value: 0
-      m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
-      m_Pivot: {x: 0, y: 0, z: 0}
-      m_Size: {x: 0, y: 0}
-    yGrid:
-      m_Fade:
-        m_Target: 0
-        speed: 2
-        m_Value: 0
-      m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
-      m_Pivot: {x: 0, y: 0, z: 0}
-      m_Size: {x: 0, y: 0}
-    zGrid:
-      m_Fade:
-        m_Target: 0
-        speed: 2
-        m_Value: 0
-      m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
-      m_Pivot: {x: 0, y: 0, z: 0}
-      m_Size: {x: 1, y: 1}
-    m_ShowGrid: 0
-    m_GridAxis: 1
-    m_gridOpacity: 0.5
-  m_Rotation:
-    m_Target: {x: 0, y: 0, z: 0, w: 1}
-    speed: 2
-    m_Value: {x: 0, y: 0, z: 0, w: 1}
-  m_Size:
-    m_Target: 46.25527
-    speed: 2
-    m_Value: 46.25527
-  m_Ortho:
-    m_Target: 1
-    speed: 2
-    m_Value: 1
-  m_CameraSettings:
-    m_Speed: 1
-    m_SpeedNormalized: 0.5
-    m_SpeedMin: 0.001
-    m_SpeedMax: 2
-    m_EasingEnabled: 1
-    m_EasingDuration: 0.4
-    m_AccelerationEnabled: 1
-    m_FieldOfViewHorizontalOrVertical: 60
-    m_NearClip: 0.03
-    m_FarClip: 10000
-    m_DynamicClip: 1
-    m_OcclusionCulling: 0
-  m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
-  m_LastSceneViewOrtho: 0
-  m_ReplacementShader: {fileID: 0}
-  m_ReplacementString: 
-  m_SceneVisActive: 1
-  m_LastLockedObject: {fileID: 0}
-  m_ViewIsLockedToObject: 0
---- !u!114 &9
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ProjectBrowser
-  m_EditorClassIdentifier: 
-  m_Children: []
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 825
-    width: 2068
-    height: 482
-  m_MinSize: {x: 231, y: 271}
-  m_MaxSize: {x: 10001, y: 10021}
-  m_ActualView: {fileID: 10}
-  m_Panes:
-  - {fileID: 10}
-  - {fileID: 11}
-  - {fileID: 12}
-  m_Selected: 0
-  m_LastSelected: 2
---- !u!114 &10
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12014, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MinSize: {x: 230, y: 250}
-  m_MaxSize: {x: 10000, y: 10000}
-  m_TitleContent:
-    m_Text: Project
-    m_Image: {fileID: -5467254957812901981, guid: 0000000000000000d000000000000000, type: 0}
-    m_Tooltip: 
-  m_Pos:
-    serializedVersion: 2
-    x: 0
-    y: 898
-    width: 2067
-    height: 461
-  m_ViewDataDictionary: {fileID: 0}
-  m_SearchFilter:
-    m_NameFilter: 
-    m_ClassNames: []
-    m_AssetLabels: []
-    m_AssetBundleNames: []
-    m_VersionControlStates: []
-    m_SoftLockControlStates: []
-    m_ReferencingInstanceIDs: 
-    m_SceneHandles: 
-    m_ShowAllHits: 0
-    m_SkipHidden: 0
-    m_SearchArea: 1
-    m_Folders:
-    - Assets/Scenes
-    m_Globs: []
-  m_ViewMode: 1
-  m_StartGridSize: 64
-  m_LastFolders:
-  - Assets/Scenes
-  m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\Justin\Desktop\SuperVandalWorld\SuperVandalWorld
-  m_LockTracker:
-    m_IsLocked: 0
-  m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 40450000
-    m_LastClickedID: 17728
-    m_ExpandedIDs: 00000000ee440000f0440000f2440000f4440000f6440000f8440000fa440000fc44000000ca9a3b
-    m_RenameOverlay:
-      m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
-      m_EditFieldRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 0
-        height: 0
-      m_UserData: 0
-      m_IsWaitingForDelay: 0
-      m_IsRenaming: 0
-      m_OriginalEventType: 11
-      m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 9}
-    m_SearchString: 
-    m_CreateAssetUtility:
-      m_EndAction: {fileID: 0}
-      m_InstanceID: 0
-      m_Path: 
-      m_Icon: {fileID: 0}
-      m_ResourceFile: 
-  m_AssetTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 
-    m_LastClickedID: 0
-    m_ExpandedIDs: 00000000ee440000f0440000f2440000f4440000f6440000f8440000fa440000fc44000000ca9a3b
-    m_RenameOverlay:
-      m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
-      m_EditFieldRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 0
-        height: 0
-      m_UserData: 0
-      m_IsWaitingForDelay: 0
-      m_IsRenaming: 0
-      m_OriginalEventType: 11
-      m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 0}
-    m_SearchString: 
-    m_CreateAssetUtility:
-      m_EndAction: {fileID: 0}
-      m_InstanceID: 0
-      m_Path: 
-      m_Icon: {fileID: 0}
-      m_ResourceFile: 
-  m_ListAreaState:
-    m_SelectedInstanceIDs: 40afffff
-    m_LastClickedInstanceID: -20672
-    m_HadKeyboardFocusLastEvent: 0
-    m_ExpandedInstanceIDs: c6230000a4430000ae3f0000b83c00007e4600007246000064430000383d0000f43c00000c42000040500000704400005eab0000a43f0000764f010074650200da9d0000803f0000c24f0000164900000000000014840100
-    m_RenameOverlay:
-      m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
-      m_EditFieldRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 0
-        height: 0
-      m_UserData: 0
-      m_IsWaitingForDelay: 0
-      m_IsRenaming: 0
-      m_OriginalEventType: 11
-      m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 9}
-    m_CreateAssetUtility:
-      m_EndAction: {fileID: 0}
-      m_InstanceID: 0
-      m_Path: 
-      m_Icon: {fileID: 0}
-      m_ResourceFile: 
-    m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 0}
-    m_GridSize: 64
-  m_SkipHiddenPackages: 0
-  m_DirectoriesAreaWidth: 180.85715
---- !u!114 &11
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 12071, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Animation
-    m_Image: {fileID: -8166618308981325432, guid: 0000000000000000d000000000000000, type: 0}
-    m_Tooltip: 
-  m_Pos:
-    serializedVersion: 2
-    x: 0
-    y: 538
-    width: 1162
-    height: 250
-  m_ViewDataDictionary: {fileID: 0}
-  m_LockTracker:
-    m_IsLocked: 0
-  m_LastSelectedObjectID: -20672
---- !u!114 &12
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12003, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Console
-    m_Image: {fileID: -4327648978806127646, guid: 0000000000000000d000000000000000, type: 0}
-    m_Tooltip: 
-  m_Pos:
-    serializedVersion: 2
-    x: 1
-    y: 900
-    width: 1381
-    height: 458
-  m_ViewDataDictionary: {fileID: 0}
---- !u!114 &13
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: InspectorWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 2068
+    x: 248
     y: 0
-    width: 492
-    height: 1307
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 14}
+    width: 341
+    height: 582
+  m_MinSize: {x: 277, y: 71}
+  m_MaxSize: {x: 4002, y: 4021}
+  m_ActualView: {fileID: 8}
   m_Panes:
-  - {fileID: 14}
-  - {fileID: 15}
-  - {fileID: 16}
+  - {fileID: 8}
+  - {fileID: 9}
+  - {fileID: 10}
   m_Selected: 0
-  m_LastSelected: 2
---- !u!114 &14
+  m_LastSelected: 0
+--- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -652,10 +293,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 2068
+    x: 248
     y: 73
-    width: 491
-    height: 1286
+    width: 339
+    height: 561
   m_ViewDataDictionary: {fileID: 0}
   m_ObjectsLockedBeforeSerialization: []
   m_InstanceIDsLockedBeforeSerialization: 
@@ -664,13 +305,13 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
+  m_LastVerticalScrollValue: 178
   m_AssetGUID: 
   m_InstanceID: 0
   m_LockTracker:
     m_IsLocked: 0
   m_PreviewWindow: {fileID: 0}
---- !u!114 &15
+--- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -690,18 +331,18 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1163
-    y: 75
-    width: 276
-    height: 713
+    x: 248
+    y: 73
+    width: 339
+    height: 561
   m_ViewDataDictionary: {fileID: 0}
   m_Spl:
-    ID: 835
+    ID: 2429
     splitterInitialOffset: 516
     currentActiveSplitter: -1
     realSizes:
-    - 376
-    - 267
+    - 287
+    - 204
     relativeSizes:
     - 0.58498025
     - 0.41501975
@@ -711,7 +352,7 @@ MonoBehaviour:
     maxSizes:
     - 0
     - 0
-    lastTotalSize: 643
+    lastTotalSize: 491
     splitSize: 6
     xOffset: 0
     m_Version: 1
@@ -721,14 +362,14 @@ MonoBehaviour:
     oldSplitSize: 0
   m_TestTypeToolbarIndex: 0
   m_PlayModeTestListGUI:
-    m_Window: {fileID: 15}
+    m_Window: {fileID: 9}
     newResultList:
     - id: 1003
       uniqueId: '[SuperVandalWorld][suite]'
       name: SuperVandalWorld
       fullName: SuperVandalWorld
       resultStatus: 2
-      duration: 6.767852
+      duration: 32.325184
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -744,7 +385,7 @@ MonoBehaviour:
       name: Tests.dll
       fullName: C:/Users/adave/Documents/GitHub/SuperVandalWorld/SuperVandalWorld/Library/ScriptAssemblies/Tests.dll
       resultStatus: 2
-      duration: 6.730129
+      duration: 32.288334
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -760,7 +401,7 @@ MonoBehaviour:
       name: Tests
       fullName: Tests
       resultStatus: 2
-      duration: 6.717093
+      duration: 32.27487
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -776,7 +417,7 @@ MonoBehaviour:
       name: CharacterMovementTests
       fullName: Tests.CharacterMovementTests
       resultStatus: 2
-      duration: 0.4296227
+      duration: 32.264187
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -792,25 +433,197 @@ MonoBehaviour:
       name: jump_stress_test
       fullName: Tests.CharacterMovementTests.jump_stress_test
       resultStatus: 2
-      duration: 0.2823556
-      messages: 'UnityEngine.UnassignedReferenceException : The variable rb of Character_Movement
-        has not been assigned.
+      duration: 32.008793
+      messages: "  Player has failed to collect a gem, even with a jump speed of
+        1.5E+21\r\n  Expected: True\r\n  But was:  False\r\n"
+      output: 'Help menu closed
 
-        You probably need to assign the rb variable
-        of the Character_Movement script in the inspector.'
-      output: 'Active Scene is ''1''.
+        slider show
+
+        Active Scene is ''1''.
+
+        enemySkel
+        (3) collided with RockTilePlatform (17) at (161.1, 38.7, 0.0)
 
         Jumping
 
+        Jump
+        force = 15
+
+        Sapphire(Clone)
+
+        enemySkel (3) collided with
+        RockTilePlatform (18) at (159.0, 38.7, 0.0)
+
+        enemySkel (3) no longer
+        on RockTilePlatform (17)
+
+        Jumping
+
+        Jump force = 150
+
+        Sapphire(Clone)
+
+        enemySkel
+        (3) no longer on RockTilePlatform (18)
+
+        Jumping
+
+        Jump force
+        = 1500
+
+        Sapphire(Clone)
+
+        Sapphire (1)
+
+        enemySkel
+        (3) no longer on Level1 Spike_0 (14)
+
+        Jumping
+
+        Jump force
+        = 15000
+
+        Sapphire(Clone)
+
+        enemySkel (3) no longer on Level1
+        Spike_0 (15)
+
+        enemySkel (3) no longer on Level1 Spike_0 (13)
+
+        enemySkel
+        (3) no longer on Level1 Spike_0 (12)
+
+        Jumping
+
+        Jump force
+        = 150000
+
+        Sapphire(Clone)
+
+        enemySkel (3) no longer on Level1
+        Spike_0 (11)
+
+        enemySkel (3) no longer on Level1 Spike_0 (10)
+
+        enemySkel
+        (3) collided with RockTilePlatform (5) at (133.3, -1.3, 0.0)
+
+        Jumping
+
+        Jump
+        force = 1500000
+
+        Sapphire(Clone)
+
+        Jumping
+
+        Jump force
+        = 1.5E+07
+
+        Sapphire(Clone)
+
+        Jumping
+
+        Jump force =
+        1.5E+08
+
+        Sapphire(Clone)
+
+        Jumping
+
+        Jump force = 1.5E+09
+
+        Sapphire(Clone)
+
+        Jumping
+
+        Jump
+        force = 1.5E+10
+
+        Sapphire(Clone)
+
+        Jumping
+
+        Jump force
+        = 1.5E+11
+
+        Sapphire(Clone)
+
+        Jumping
+
+        Jump force =
+        1.5E+12
+
+        Sapphire(Clone)
+
+        Jumping
+
+        Jump force = 1.5E+13
+
+        Sapphire(Clone)
+
+        Jumping
+
+        Jump
+        force = 1.5E+14
+
+        Sapphire(Clone)
+
+        Jumping
+
+        Jump force
+        = 1.5E+15
+
+        Sapphire(Clone)
+
+        Jumping
+
+        Jump force =
+        1.5E+16
+
+        Sapphire(Clone)
+
+        Jumping
+
+        Jump force = 1.5E+17
+
+        Sapphire(Clone)
+
+        Jumping
+
+        Jump
+        force = 1.5E+18
+
+        Sapphire(Clone)
+
+        Jumping
+
+        Jump force
+        = 1.5E+19
+
+        Sapphire(Clone)
+
+        Jumping
+
+        Jump force =
+        1.5E+20
+
+        Sapphire(Clone)
+
+        Jumping
+
+        Jump force = 1.5E+21
+
 '
-      stacktrace: "  at (wrapper managed-to-native) UnityEngine.Rigidbody2D.get_velocity_Injected(UnityEngine.Rigidbody2D,UnityEngine.Vector2&)\r\n 
-        at UnityEngine.Rigidbody2D.get_velocity () [0x00000] in <81986b7de77f470c8157a969000b3a00>:0
-        \r\n  at Character_Movement.Jump (System.Boolean is_grounded) [0x0001b] in
-        C:\\Users\\davey\\Desktop\\cs383GameFiles\\SuperVandalWorld\\SuperVandalWorld\\Assets\\src\\John\\Character_Movement.cs:66
-        \r\n  at Tests.CharacterMovementTests+<jump_stress_test>d__6.MoveNext ()
-        [0x00269] in C:\\Users\\davey\\Desktop\\cs383GameFiles\\SuperVandalWorld\\SuperVandalWorld\\Assets\\tst\\John\\CharacterMovementTests.cs:96
-        \r\n  at UnityEngine.TestTools.TestEnumerator+<Execute>d__5.MoveNext () [0x00038]
-        in <0e6a59ba521b44fba6d5f2ca6a5adff7>:0 "
+      stacktrace: 'at Tests.CharacterMovementTests+<jump_stress_test>d__6.MoveNext
+        () [0x00384] in C:\Users\John Cambareri\Documents\GitHub\SuperVandalWorld3\SuperVandalWorld\Assets\tst\John\CharacterMovementTests.cs:108
+
+        at
+        UnityEngine.TestTools.TestEnumerator+<Execute>d__5.MoveNext () [0x00038]
+        in <2bdc05726c474df59c630cfd16950260>:0
+
+'
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -1011,8 +824,8 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/[Tests][Tests.FallThroughFloorStress][suite]
       name: FallThroughFloorStress
       fullName: Tests.FallThroughFloorStress
-      resultStatus: 0
-      duration: 0.1756823
+      resultStatus: 2
+      duration: 86.02484
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -1028,12 +841,29 @@ MonoBehaviour:
       name: FallThroughFloorStressTest
       fullName: Tests.FallThroughFloorStress.FallThroughFloorStressTest
       resultStatus: 2
-      duration: 0
-      messages: Cancelled by user
-      output: 'Active Scene is ''1''.
+      duration: 80.26236
+      messages: "  Expected: True\r\n  But was:  False\r\n"
+      output: 'Help menu closed
+
+        slider show
+
+        Active Scene is ''1''.
+
+        Failed
+        at 160 Platform speed
+
+        Player falls through Ground at 160 Platform
+        speed
 
 '
-      stacktrace: 
+      stacktrace: 'at Tests.FallThroughFloorStress+<FallThroughFloorStressTest>d__3.MoveNext
+        () [0x001c9] in C:\Users\Justin\Desktop\SuperVandalWorld\SuperVandalWorld\Assets\tst\Justin\FallThroughFloorStress.cs:85
+
+        at
+        UnityEngine.TestTools.TestEnumerator+<Execute>d__5.MoveNext () [0x00038]
+        in C:\Users\Justin\Desktop\SuperVandalWorld\SuperVandalWorld\Library\PackageCache\com.unity.test-framework@1.1.16\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:31
+
+'
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -1046,8 +876,8 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/[Tests][Tests.MovingPlatformStressTest][suite]
       name: MovingPlatformStressTest
       fullName: Tests.MovingPlatformStressTest
-      resultStatus: 0
-      duration: 3.6362739
+      resultStatus: 2
+      duration: 24.796268
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -1063,12 +893,39 @@ MonoBehaviour:
       name: MovingPlatformNumberStressTest
       fullName: Tests.MovingPlatformStressTest.MovingPlatformNumberStressTest
       resultStatus: 2
-      duration: 0
-      messages: Cancelled by user
-      output: 'Active Scene is ''1''.
+      duration: 24.775408
+      messages: "  Expected: 512\r\n  But was:  490\r\n"
+      output: 'Help menu closed
+
+        slider show
+
+        Active Scene is ''1''.
+
+        Sapphire
+        (1)
+
+        Emerald (1)
+
+        Sapphire
+
+        Sapphire
+
+        Sapphire
+        (3)
+
+        Failed at 490 Moving Rock Platforms
+
+        Current FPS = 29.32612
 
 '
-      stacktrace: 
+      stacktrace: 'at Tests.MovingPlatformStressTest+<MovingPlatformNumberStressTest>d__3.MoveNext
+        () [0x0025c] in C:\Users\Justin\Desktop\SuperVandalWorld\SuperVandalWorld\Assets\tst\Justin\MovingPlatformStressTest.cs:97
+
+        at
+        UnityEngine.TestTools.TestEnumerator+<Execute>d__5.MoveNext () [0x00038]
+        in C:\Users\Justin\Desktop\SuperVandalWorld\SuperVandalWorld\Library\PackageCache\com.unity.test-framework@1.1.16\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:31
+
+'
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -1081,9 +938,9 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/[Tests][Tests.pickupPointTest][suite]
       name: pickupPointTest
       fullName: Tests.pickupPointTest
-      resultStatus: 2
-      duration: 0.4343973
-      messages: One or more child tests had errors
+      resultStatus: 1
+      duration: 4.7315216
+      messages: 
       output: 
       stacktrace: 
       notRunnable: 0
@@ -1097,28 +954,17 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/pickupPointTest/[Tests][Tests.pickupPointTest.AddPointsForItemsBeforePowerUps]
       name: AddPointsForItemsBeforePowerUps
       fullName: Tests.pickupPointTest.AddPointsForItemsBeforePowerUps
-      resultStatus: 2
-      duration: 0.2960506
-      messages: 'System.NullReferenceException : Object reference not set to an instance
-        of an object'
-      output: 'The AnimationClip ''CheckpointAnim'' used by the Animation component
-        ''Checkpoint1'' must be marked as Legacy.
+      resultStatus: 1
+      duration: 4.663405
+      messages: 
+      output: 'Help menu closed
 
-        The AnimationClip ''CheckpointAnim''
-        used by the Animation component ''Checkpoint1'' must be marked as Legacy.
-
-        Help
-        menu closed
+        slider show
 
         Active Scene is ''1''.
 
 '
-      stacktrace: "  at Tests.pickupPointTest.updateScore (UnityEngine.GameObject
-        other, System.Int32 numItems, System.Int32 currentScore) [0x00000] in C:\\Users\\Keller\\Desktop\\SuperVandalWorld\\SuperVandalWorld\\Assets\\tst\\Keller\\pickupScoreTest.cs:29
-        \r\n  at Tests.pickupPointTest+<AddPointsForItemsBeforePowerUps>d__6.MoveNext
-        () [0x000f4] in C:\\Users\\Keller\\Desktop\\SuperVandalWorld\\SuperVandalWorld\\Assets\\tst\\Keller\\pickupScoreTest.cs:135
-        \r\n  at UnityEngine.TestTools.TestEnumerator+<Execute>d__5.MoveNext () [0x00038]
-        in <0e6a59ba521b44fba6d5f2ca6a5adff7>:0 "
+      stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -1131,17 +977,11 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/pickupPointTest/[Tests][Tests.pickupPointTest.AddPointsForPowerupsBeforeItems]
       name: AddPointsForPowerupsBeforeItems
       fullName: Tests.pickupPointTest.AddPointsForPowerupsBeforeItems
-      resultStatus: 2
-      duration: 0.0459116
-      messages: 'System.NullReferenceException : Object reference not set to an instance
-        of an object'
+      resultStatus: 1
+      duration: 0.0152082
+      messages: 
       output: 
-      stacktrace: "  at Tests.pickupPointTest.updateScore (UnityEngine.GameObject
-        other, System.Int32 numItems, System.Int32 currentScore) [0x00000] in C:\\Users\\Keller\\Desktop\\SuperVandalWorld\\SuperVandalWorld\\Assets\\tst\\Keller\\pickupScoreTest.cs:29
-        \r\n  at Tests.pickupPointTest+<AddPointsForPowerupsBeforeItems>d__7.MoveNext
-        () [0x00098] in C:\\Users\\Keller\\Desktop\\SuperVandalWorld\\SuperVandalWorld\\Assets\\tst\\Keller\\pickupScoreTest.cs:163
-        \r\n  at UnityEngine.TestTools.TestEnumerator+<Execute>d__5.MoveNext () [0x00038]
-        in <0e6a59ba521b44fba6d5f2ca6a5adff7>:0 "
+      stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -1155,7 +995,7 @@ MonoBehaviour:
       name: PickUpItemAddsPointsToScore
       fullName: Tests.pickupPointTest.PickUpItemAddsPointsToScore
       resultStatus: 1
-      duration: 0.0533701
+      duration: 0.0238088
       messages: 
       output: 
       stacktrace: 
@@ -1171,17 +1011,11 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/pickupPointTest/[Tests][Tests.pickupPointTest.PickUpPowerUpsAddsPointsToScore]
       name: PickUpPowerUpsAddsPointsToScore
       fullName: Tests.pickupPointTest.PickUpPowerUpsAddsPointsToScore
-      resultStatus: 2
-      duration: 0.0205708
-      messages: 'System.NullReferenceException : Object reference not set to an instance
-        of an object'
+      resultStatus: 1
+      duration: 0.0119675
+      messages: 
       output: 
-      stacktrace: "  at Tests.pickupPointTest.updateScore (UnityEngine.GameObject
-        other, System.Int32 numItems, System.Int32 currentScore) [0x00000] in C:\\Users\\Keller\\Desktop\\SuperVandalWorld\\SuperVandalWorld\\Assets\\tst\\Keller\\pickupScoreTest.cs:29
-        \r\n  at Tests.pickupPointTest+<PickUpPowerUpsAddsPointsToScore>d__5.MoveNext
-        () [0x00055] in C:\\Users\\Keller\\Desktop\\SuperVandalWorld\\SuperVandalWorld\\Assets\\tst\\Keller\\pickupScoreTest.cs:102
-        \r\n  at UnityEngine.TestTools.TestEnumerator+<Execute>d__5.MoveNext () [0x00038]
-        in <0e6a59ba521b44fba6d5f2ca6a5adff7>:0 "
+      stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -1195,7 +1029,7 @@ MonoBehaviour:
       name: pickUpsStressTest
       fullName: Tests.pickUpsStressTest
       resultStatus: 2
-      duration: 30.739185
+      duration: 40.45127
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -1211,38 +1045,38 @@ MonoBehaviour:
       name: stressSpawnDiamonds
       fullName: Tests.pickUpsStressTest.stressSpawnDiamonds
       resultStatus: 2
-      duration: 26.223684
-      messages: "  Expected: 8000\r\n  But was:  6601\r\n"
-      output: 'The AnimationClip ''CheckpointAnim'' used by the Animation component
-        ''Checkpoint1'' must be marked as Legacy.
+      duration: 35.968117
+      messages: "  Expected: 16000\r\n  But was:  4401\r\n"
+      output: 'Help menu closed
 
-        The AnimationClip ''CheckpointAnim''
-        used by the Animation component ''Checkpoint1'' must be marked as Legacy.
-
-        Help
-        menu closed
+        slider show
 
         Active Scene is ''1''.
 
         <color=green>Passed</color>
         at 1000 diamonds
 
-        Current FPS = <color=green> 159.4668</color>
+        Current FPS = <color=green> 232.6826</color>
 
         <color=green>Passed</color>
         at 2000 diamonds
 
-        Current FPS = <color=green> 154.8923</color>
+        Current FPS = <color=green> 179.6009</color>
 
         <color=green>Passed</color>
         at 4000 diamonds
 
-        Current FPS = <color=green> 79.43002</color>
+        Current FPS = <color=green> 109.0822</color>
 
-        <color=red>Failed</color>
+        <color=green>Passed</color>
         at 8000 diamonds
 
-        Current FPS = <color=red> 58.47885</color>
+        Current FPS = <color=green> 68.81413</color>
+
+        <color=red>Failed</color>
+        at 16000 diamonds
+
+        Current FPS = <color=red> 39.96435</color>
 
 '
       stacktrace: 'at Tests.pickUpsStressTest+<stressSpawnDiamonds>d__3.MoveNext
@@ -1250,7 +1084,7 @@ MonoBehaviour:
 
         at
         UnityEngine.TestTools.TestEnumerator+<Execute>d__5.MoveNext () [0x00038]
-        in <0e6a59ba521b44fba6d5f2ca6a5adff7>:0
+        in <2bdc05726c474df59c630cfd16950260>:0
 
 '
       notRunnable: 0
@@ -1265,9 +1099,9 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/[Tests][Tests.PlatformMovementTest][suite]
       name: PlatformMovementTest
       fullName: Tests.PlatformMovementTest
-      resultStatus: 0
-      duration: 0.1893103
-      messages: One or more child tests had errors
+      resultStatus: 1
+      duration: 0.4002564
+      messages: 
       output: 
       stacktrace: 
       notRunnable: 0
@@ -1281,28 +1115,17 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/PlatformMovementTest/[Tests][Tests.PlatformMovementTest.MovingPlatformSpeed]
       name: MovingPlatformSpeed
       fullName: Tests.PlatformMovementTest.MovingPlatformSpeed
-      resultStatus: 0
-      duration: 0.1738271
-      messages: 'Unhandled log message: ''[Exception] NullReferenceException: Object
-        reference not set to an instance of an object''. Use UnityEngine.TestTools.LogAssert.Expect'
-      output: 'NullReferenceException: Object reference not set to an instance of
-        an object
+      resultStatus: 1
+      duration: 0.3803092
+      messages: 
+      output: 'Help menu closed
 
-        NullReferenceException: Object reference not set to an
-        instance of an object
+        slider show
 
-        DontDestroyOnLoad only works for root GameObjects
-        or components on root GameObjects.
+        Active Scene is ''1''.
 
 '
-      stacktrace: 'KeepBetweenLevels.FindStartPos () (at Assets/src/Justin/KeepBetweenLevels.cs:60)
-
-        KeepBetweenLevels.OnLevelWasLoaded
-        (System.Int32 level) (at Assets/src/Justin/KeepBetweenLevels.cs:29)
-
-
-
-'
+      stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -1551,39 +1374,44 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1001
       parentUniqueId: Tests.dll/Tests/[Tests][Tests.UITest][suite]
-    m_ResultText: 'SquareTestBoundary1 (0.176s)
+    m_ResultText: "jump_stress_test (32.009s)\n---\nPlayer has failed to collect
+      a gem, even with a jump speed of 1.5E+21\r\n  Expected: True\r\n  But was: 
+      False\n---\nat Tests.CharacterMovementTests+<jump_stress_test>d__6.MoveNext
+      () [0x00384] in C:\\Users\\John Cambareri\\Documents\\GitHub\\SuperVandalWorld3\\SuperVandalWorld\\Assets\\tst\\John\\CharacterMovementTests.cs:108\nat
+      UnityEngine.TestTools.TestEnumerator+<Execute>d__5.MoveNext () [0x00038] in
+      <2bdc05726c474df59c630cfd16950260>:0\n---\nHelp menu closed\nslider show\nActive
+      Scene is '1'.\nenemySkel (3) collided with RockTilePlatform (17) at (161.1,
+      38.7, 0.0)\nJumping\nJump force = 15\nSapphire(Clone)\nenemySkel (3) collided
+      with RockTilePlatform (18) at (159.0, 38.7, 0.0)\nenemySkel (3) no longer on
+      RockTilePlatform (17)\nJumping\nJump force = 150\nSapphire(Clone)\nenemySkel
+      (3) no longer on RockTilePlatform (18)\nJumping\nJump force = 1500\nSapphire(Clone)\nSapphire
+      (1)\nenemySkel (3) no longer on Level1 Spike_0 (14)\nJumping\nJump force =
+      15000\nSapphire(Clone)\nenemySkel (3) no longer on Level1 Spike_0 (15)\nenemySkel
+      (3) no longer on Level1 Spike_0 (13)\nenemySkel (3) no longer on Level1 Spike_0
+      (12)\nJumping\nJump force = 150000\nSapphire(Clone)\nenemySkel (3) no longer
+      on Level1 Spike_0 (11)\nenemySkel (3) no longer on Level1 Spike_0 (10)\nenemySkel
+      (3) collided with RockTilePlatform (5) at (133.3, -1.3, 0.0)\nJumping\nJump
+      force = 1500000\nSapphire(Clone)\nJumping\nJump force = 1.5E+07\nSapphire(Clone)\nJumping\nJump
+      force = 1.5E+08\nSapphire(Clone)\nJumping\nJump force = 1.5E+09\nSapphire(Clone)\nJumping\nJump
+      force = 1.5E+10\nSapphire(Clone)\nJumping\nJump force = 1.5E+11\nSapphire(Clone)\nJumping\nJump
+      force = 1.5E+12\nSapphire(Clone)\nJumping\nJump force = 1.5E+13\nSapphire(Clone)\nJumping\nJump
+      force = 1.5E+14\nSapphire(Clone)\nJumping\nJump force = 1.5E+15\nSapphire(Clone)\nJumping\nJump
+      force = 1.5E+16\nSapphire(Clone)\nJumping\nJump force = 1.5E+17\nSapphire(Clone)\nJumping\nJump
+      force = 1.5E+18\nSapphire(Clone)\nJumping\nJump force = 1.5E+19\nSapphire(Clone)\nJumping\nJump
+      force = 1.5E+20\nSapphire(Clone)\nJumping\nJump force = 1.5E+21"
+    m_ResultStacktrace: 'at Tests.CharacterMovementTests+<jump_stress_test>d__6.MoveNext
+      () [0x00384] in C:\Users\John Cambareri\Documents\GitHub\SuperVandalWorld3\SuperVandalWorld\Assets\tst\John\CharacterMovementTests.cs:108
 
-      ---
-
-      Unhandled log message:
-      ''[Exception] NullReferenceException: Object reference not set to an instance
-      of an object''. Use UnityEngine.TestTools.LogAssert.Expect
-
-      ---
-
-      PlayerPos.Start
-      () (at Assets/src/Justin/PlayerPos.cs:13)
-
-      ---
-
-      Help menu closed
-
-      slider
-      show
-
-      Active Scene is ''1''.
-
-      NullReferenceException: Object reference
-      not set to an instance of an object'
-    m_ResultStacktrace: 'PlayerPos.Start () (at Assets/src/Justin/PlayerPos.cs:13)
-
+      at
+      UnityEngine.TestTools.TestEnumerator+<Execute>d__5.MoveNext () [0x00038] in
+      <2bdc05726c474df59c630cfd16950260>:0
 
 '
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 375f9a9a
-      m_LastClickedID: -1701159113
-      m_ExpandedIDs: 98906ddc5dfc4bdfe557abf7ab3ce1198302573d8359db41ffffff7f
+      m_SelectedIDs: c9861bd8
+      m_LastClickedID: -669284663
+      m_ExpandedIDs: c973899ac337b2b420712cd098906ddc5dfc4bdfe557abf7761f4b11e1b06317ab3ce1198302573d8359db41ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1610,7 +1438,7 @@ MonoBehaviour:
       availableCategories:
       - Uncategorized
   m_EditModeTestListGUI:
-    m_Window: {fileID: 15}
+    m_Window: {fileID: 9}
     newResultList:
     - id: 1000
       uniqueId: '[SuperVandalWorld][suite]'
@@ -1660,7 +1488,7 @@ MonoBehaviour:
       selectedCategoryMask: 0
       availableCategories:
       - Uncategorized
---- !u!114 &16
+--- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1680,10 +1508,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1390
-    y: 81
-    width: 328
-    height: 1270
+    x: 248
+    y: 73
+    width: 339
+    height: 561
   m_ViewDataDictionary: {fileID: 0}
   m_PreviewResizer:
     m_CachedPref: 50
@@ -1691,3 +1519,560 @@ MonoBehaviour:
     m_PrefName: Preview_TilemapBrushInspector
   m_Palette: {fileID: 5713101419344279301, guid: b0186b213b3ff05489000e4ca7c9417e, type: 3}
   m_DrawGizmos: 0
+--- !u!114 &11
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: SceneView
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 589
+    y: 0
+    width: 443
+    height: 582
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
+  m_ActualView: {fileID: 12}
+  m_Panes:
+  - {fileID: 12}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &12
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12013, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Scene
+    m_Image: {fileID: 2593428753322112591, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 589
+    y: 73
+    width: 441
+    height: 561
+  m_ViewDataDictionary: {fileID: 0}
+  m_ShowContextualTools: 0
+  m_WindowGUID: 8fde1c7c9ac16d04fb45d7d761e25119
+  m_Gizmos: 1
+  m_OverrideSceneCullingMask: 6917529027641081856
+  m_SceneIsLit: 1
+  m_SceneLighting: 1
+  m_2DMode: 1
+  m_isRotationLocked: 0
+  m_PlayAudio: 0
+  m_AudioPlay: 0
+  m_Position:
+    m_Target: {x: 760.0265, y: 5.6114345, z: -190.03891}
+    speed: 2
+    m_Value: {x: 760.0265, y: 5.6114345, z: -190.03891}
+  m_RenderMode: 0
+  m_CameraMode:
+    drawMode: 0
+    name: Shaded
+    section: Shading Mode
+  m_ValidateTrueMetals: 0
+  m_DoValidateTrueMetals: 0
+  m_ExposureSliderValue: 0
+  m_SceneViewState:
+    showFog: 1
+    showMaterialUpdate: 0
+    showSkybox: 1
+    showFlares: 1
+    showImageEffects: 1
+    showParticleSystems: 1
+    showVisualEffectGraphs: 1
+    m_FxEnabled: 1
+  m_Grid:
+    xGrid:
+      m_Fade:
+        m_Target: 0
+        speed: 2
+        m_Value: 0
+      m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
+      m_Pivot: {x: 0, y: 0, z: 0}
+      m_Size: {x: 0, y: 0}
+    yGrid:
+      m_Fade:
+        m_Target: 0
+        speed: 2
+        m_Value: 0
+      m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
+      m_Pivot: {x: 0, y: 0, z: 0}
+      m_Size: {x: 0, y: 0}
+    zGrid:
+      m_Fade:
+        m_Target: 0
+        speed: 2
+        m_Value: 0
+      m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
+      m_Pivot: {x: 0, y: 0, z: 0}
+      m_Size: {x: 1, y: 1}
+    m_ShowGrid: 0
+    m_GridAxis: 1
+    m_gridOpacity: 0.5
+  m_Rotation:
+    m_Target: {x: 0, y: 0, z: 0, w: 1}
+    speed: 2
+    m_Value: {x: 0, y: 0, z: 0, w: 1}
+  m_Size:
+    m_Target: 32.71857
+    speed: 2
+    m_Value: 32.71857
+  m_Ortho:
+    m_Target: 1
+    speed: 2
+    m_Value: 1
+  m_CameraSettings:
+    m_Speed: 1
+    m_SpeedNormalized: 0.5
+    m_SpeedMin: 0.001
+    m_SpeedMax: 2
+    m_EasingEnabled: 1
+    m_EasingDuration: 0.4
+    m_AccelerationEnabled: 1
+    m_FieldOfViewHorizontalOrVertical: 60
+    m_NearClip: 0.03
+    m_FarClip: 10000
+    m_DynamicClip: 1
+    m_OcclusionCulling: 0
+  m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
+  m_LastSceneViewOrtho: 0
+  m_ReplacementShader: {fileID: 0}
+  m_ReplacementString: 
+  m_SceneVisActive: 1
+  m_LastLockedObject: {fileID: 0}
+  m_ViewIsLockedToObject: 0
+--- !u!114 &13
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: GameView
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 1032
+    y: 0
+    width: 888
+    height: 582
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 2}
+  m_Panes:
+  - {fileID: 2}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &14
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 15}
+  - {fileID: 18}
+  - {fileID: 20}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 582
+    width: 1920
+    height: 365
+  m_MinSize: {x: 432, y: 271}
+  m_MaxSize: {x: 18002, y: 10021}
+  vertical: 0
+  controlID: 41033
+--- !u!114 &15
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: ProjectBrowser
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 748
+    height: 365
+  m_MinSize: {x: 230, y: 250}
+  m_MaxSize: {x: 10000, y: 10000}
+  m_ActualView: {fileID: 16}
+  m_Panes:
+  - {fileID: 16}
+  - {fileID: 17}
+  m_Selected: 0
+  m_LastSelected: 1
+--- !u!114 &16
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12014, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 230, y: 250}
+  m_MaxSize: {x: 10000, y: 10000}
+  m_TitleContent:
+    m_Text: Project
+    m_Image: {fileID: -5467254957812901981, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 0
+    y: 655
+    width: 747
+    height: 344
+  m_ViewDataDictionary: {fileID: 0}
+  m_SearchFilter:
+    m_NameFilter: 
+    m_ClassNames: []
+    m_AssetLabels: []
+    m_AssetBundleNames: []
+    m_VersionControlStates: []
+    m_SoftLockControlStates: []
+    m_ReferencingInstanceIDs: 
+    m_SceneHandles: 
+    m_ShowAllHits: 0
+    m_SkipHidden: 0
+    m_SearchArea: 1
+    m_Folders:
+    - Assets/prefabs/Davey/daPrefabs
+    m_Globs: []
+  m_ViewMode: 1
+  m_StartGridSize: 64
+  m_LastFolders:
+  - Assets/prefabs/Davey/daPrefabs
+  m_LastFoldersGridSize: -1
+  m_LastProjectPath: C:\Users\davey\Desktop\cs383GameFiles\SuperVandalWorld\SuperVandalWorld
+  m_LockTracker:
+    m_IsLocked: 0
+  m_FolderTreeState:
+    scrollPos: {x: 0, y: 79}
+    m_SelectedIDs: 1a4d0000
+    m_LastClickedID: 19738
+    m_ExpandedIDs: 00000000c6450000c8450000ca450000cc450000ce450000d0450000d2450000d4450000d64500000246000000ca9a3b
+    m_RenameOverlay:
+      m_UserAcceptedRename: 0
+      m_Name: 
+      m_OriginalName: 
+      m_EditFieldRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      m_UserData: 0
+      m_IsWaitingForDelay: 0
+      m_IsRenaming: 0
+      m_OriginalEventType: 11
+      m_IsRenamingFilename: 1
+      m_ClientGUIView: {fileID: 15}
+    m_SearchString: 
+    m_CreateAssetUtility:
+      m_EndAction: {fileID: 0}
+      m_InstanceID: 0
+      m_Path: 
+      m_Icon: {fileID: 0}
+      m_ResourceFile: 
+  m_AssetTreeState:
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 
+    m_LastClickedID: 0
+    m_ExpandedIDs: 00000000c6450000c8450000ca450000cc450000ce450000d0450000d2450000d4450000d64500000246000000ca9a3b
+    m_RenameOverlay:
+      m_UserAcceptedRename: 0
+      m_Name: 
+      m_OriginalName: 
+      m_EditFieldRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      m_UserData: 0
+      m_IsWaitingForDelay: 0
+      m_IsRenaming: 0
+      m_OriginalEventType: 11
+      m_IsRenamingFilename: 1
+      m_ClientGUIView: {fileID: 0}
+    m_SearchString: 
+    m_CreateAssetUtility:
+      m_EndAction: {fileID: 0}
+      m_InstanceID: 0
+      m_Path: 
+      m_Icon: {fileID: 0}
+      m_ResourceFile: 
+  m_ListAreaState:
+    m_SelectedInstanceIDs: aceffeff
+    m_LastClickedInstanceID: -69716
+    m_HadKeyboardFocusLastEvent: 0
+    m_ExpandedInstanceIDs: c6230000a4430000ae3f0000b83c00007e46000064430000383d0000f43c00000c42000040500000704400005eab0000a43f0000764f010074650200da9d0000803f0000c24f000016490000000000001484010026430000
+    m_RenameOverlay:
+      m_UserAcceptedRename: 0
+      m_Name: 
+      m_OriginalName: 
+      m_EditFieldRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      m_UserData: 0
+      m_IsWaitingForDelay: 0
+      m_IsRenaming: 0
+      m_OriginalEventType: 11
+      m_IsRenamingFilename: 1
+      m_ClientGUIView: {fileID: 15}
+    m_CreateAssetUtility:
+      m_EndAction: {fileID: 0}
+      m_InstanceID: 0
+      m_Path: 
+      m_Icon: {fileID: 0}
+      m_ResourceFile: 
+    m_NewAssetIndexInList: -1
+    m_ScrollPosition: {x: 0, y: 0}
+    m_GridSize: 64
+  m_SkipHiddenPackages: 0
+  m_DirectoriesAreaWidth: 180.85715
+--- !u!114 &17
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12914, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Animator
+    m_Image: {fileID: -1673928668082335149, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 0
+    y: 655
+    width: 747
+    height: 344
+  m_ViewDataDictionary: {fileID: 0}
+  m_ViewTransforms:
+    m_KeySerializationHelper:
+    - {fileID: -3468335064538142472, guid: 413c21d81828d004aa842d05408e7f9c, type: 2}
+    - {fileID: 3986199767635603658, guid: 4f90b96e18f5a4f4db57281a6811ce19, type: 2}
+    - {fileID: -5168103687767483315, guid: 8f776ec751ac1404db113b198f82d538, type: 2}
+    m_ValueSerializationHelper:
+    - e00: 1
+      e01: 0
+      e02: 0
+      e03: -20
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 55
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    - e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    - e00: 0.44
+      e01: 0
+      e02: 0
+      e03: -7
+      e10: 0
+      e11: 0.44
+      e12: 0
+      e13: 115.1
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+  m_PreviewAnimator: {fileID: 0}
+  m_AnimatorController: {fileID: 9100000, guid: 8f776ec751ac1404db113b198f82d538, type: 2}
+  m_BreadCrumbs:
+  - m_Target: {fileID: -5168103687767483315, guid: 8f776ec751ac1404db113b198f82d538, type: 2}
+    m_ScrollPosition: {x: 0, y: 0}
+  stateMachineGraph: {fileID: 0}
+  stateMachineGraphGUI: {fileID: 0}
+  blendTreeGraph: {fileID: 0}
+  blendTreeGraphGUI: {fileID: 0}
+  m_AutoLiveLink: 1
+  m_MiniTool: 0
+  m_LockTracker:
+    m_IsLocked: 0
+  m_CurrentEditor: 0
+  m_LayerEditor:
+    m_SelectedLayerIndex: 0
+--- !u!114 &18
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: AnimationWindow
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 748
+    y: 0
+    width: 781
+    height: 365
+  m_MinSize: {x: 102, y: 121}
+  m_MaxSize: {x: 4002, y: 4021}
+  m_ActualView: {fileID: 19}
+  m_Panes:
+  - {fileID: 19}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &19
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12071, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Animation
+    m_Image: {fileID: -8166618308981325432, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 748
+    y: 655
+    width: 779
+    height: 344
+  m_ViewDataDictionary: {fileID: 0}
+  m_LockTracker:
+    m_IsLocked: 0
+  m_LastSelectedObjectID: -69716
+--- !u!114 &20
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: ConsoleWindow
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 1529
+    y: 0
+    width: 391
+    height: 365
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 21}
+  m_Panes:
+  - {fileID: 21}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &21
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12003, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Console
+    m_Image: {fileID: -4327648978806127646, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 1529
+    y: 655
+    width: 390
+    height: 344
+  m_ViewDataDictionary: {fileID: 0}

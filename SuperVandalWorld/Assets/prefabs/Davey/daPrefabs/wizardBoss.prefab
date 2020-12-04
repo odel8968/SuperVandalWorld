@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 3108471414663674388}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 18.81, y: 4.31, z: 0}
-  m_LocalScale: {x: 11.748233, y: 10.273438, z: 2}
+  m_LocalScale: {x: 6.6964927, y: 9.759767, z: 2}
   m_Children:
   - {fileID: 351409382579521684}
   - {fileID: 3810685646636014477}
@@ -81,7 +81,7 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
-  m_DrawMode: 0
+  m_DrawMode: 1
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
@@ -108,7 +108,7 @@ BoxCollider2D:
     oldSize: {x: 0.57, y: 0.95}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
-    drawMode: 0
+    drawMode: 1
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
@@ -171,8 +171,9 @@ MonoBehaviour:
   initPos: {x: 0, y: 0}
   fallMultiplier: 2.5
   healthBar: {fileID: 0}
-  bul: {fileID: 0}
-  bulletForce: 3
+  shootPoint: {fileID: 0}
+  bul: {fileID: 3259779191612845987, guid: fd666213cb4952446b2c679e4eea23c4, type: 3}
+  turnSpeed: 5
 --- !u!1 &3195365051107923604
 GameObject:
   m_ObjectHideFlags: 0
