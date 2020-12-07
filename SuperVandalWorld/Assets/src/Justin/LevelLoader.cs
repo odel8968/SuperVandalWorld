@@ -2,14 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Threading;
 
 public class LevelLoader : MonoBehaviour
 {
     //Reference to EnvObject class
     public EnvObject envObject;
 
+    public Player_Movement playerMvmt;
+
     //Varialbe to see if the next level has been loaded
     public bool nxtLevel = false;
+
+    public GameObject lvlComplete;
+
+    void Start()
+    {
+        playerMvmt = FindObjectOfType<Player_Movement>();
+    }
 
     void OnTriggerEnter2D(Collider2D collision)
     {
@@ -27,11 +37,11 @@ public class LevelLoader : MonoBehaviour
 
             else
             {
-                //Load next level - called from EnvObject script
-                envObject.LoadNextLevel();
-            
-                 //Set variable for next level loaded to be true
-                 nxtLevel = true;
+                lvlComplete.SetActive(true);
+                playerMvmt.enabled = false;
+                Invoke("NextLevel", 2f);  
+                playerMvmt.enabled = true;
+                
             }
             
         }
@@ -47,4 +57,14 @@ public class LevelLoader : MonoBehaviour
         //return next level variable value
         return nxtLevel;
     }
+
+    void NextLevel()
+    {
+        //Load next level - called from EnvObject script
+                envObject.LoadNextLevel();
+            
+                 //Set variable for next level loaded to be true
+                 nxtLevel = true;
+    }
+
 }
