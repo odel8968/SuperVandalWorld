@@ -32,7 +32,7 @@ public class LevelLoader : MonoBehaviour
             //If player finishes last level, load back to title
             if(SceneManager.GetActiveScene().name == "Level 3")
             {
-                SceneManager.LoadScene("TitleScene");
+                SceneManager.LoadScene("GameFinish");
             }
 
             else
