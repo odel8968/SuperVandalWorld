@@ -43,4 +43,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4f8b1abf8a7d814fbe2acceed10c771, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  restartDelay: 2
+  restartDelay: 0.5

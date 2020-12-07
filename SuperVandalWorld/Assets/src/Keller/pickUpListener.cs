@@ -8,7 +8,7 @@ public class pickUpListener : MonoBehaviour
     Character_Movement player;
     SoundManager sounds;
     UIManager score;
-    private float restartDelay = 2f;
+    private float restartDelay = 0.5f;
     
     //set up singleton pattern
     private static pickUpListener _instance;
@@ -100,7 +100,8 @@ public class pickUpListener : MonoBehaviour
                     //else, kill player and restart level from last checkpoint
                     player.enabled = false;
                     //restart level and enable player movement
-                    Invoke("ResetLevel", restartDelay);
+                    deathSceneManager.lastActiveScene = SceneManager.GetActiveScene().name;
+                    goToKillPlayerScene();
                     Invoke("ReEnablePlayerMovement", restartDelay);
                 }
                 
@@ -134,5 +135,10 @@ public class pickUpListener : MonoBehaviour
     void ReEnablePlayerMovement()
     {
         player.enabled = true;
+    }
+
+    void goToKillPlayerScene()
+    {
+        SceneManager.LoadScene("DeathScene");
     }
 }

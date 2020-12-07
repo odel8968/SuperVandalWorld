@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1761487737759772564}
   - component: {fileID: -1130437897327053375}
   - component: {fileID: 3906736809826409933}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: enemyKrab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -110,7 +110,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.33, y: 0.27}
+  m_Size: {x: 0.33, y: 0.26}
   m_EdgeRadius: 0
 --- !u!50 &1761487737759772564
 Rigidbody2D:
@@ -145,7 +145,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51d259917a04cf04b8e2cf5715d44f63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  restartWait: 1
+  restartWait: 0.5
   enemySpeed: 4
   initPos: {x: 0, y: 0}
   fallMultiplier: 2.5

@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class EnvListener : MonoBehaviour
 {
     //variable to use between restarting level
-    public float restartDelay = 1f;
+    public float restartDelay = 0.25f;
 
     //variable to hold reference to Player_Movement script
     Player_Movement playerMovement;
@@ -60,7 +60,8 @@ public class EnvListener : MonoBehaviour
                 environment.playerAlive = false;
 
                 //reset the level after a time of the restart delay
-                Invoke("ResetLevel", restartDelay);
+                deathSceneManager.lastActiveScene = SceneManager.GetActiveScene().name;
+                Invoke("goToKillPlayerScene", restartDelay);
 
                 //re-enable the player movement after a time of the restart delay
                 Invoke("ReEnablePlayerMovement", restartDelay);
@@ -81,7 +82,8 @@ public class EnvListener : MonoBehaviour
                 environment.playerAlive = false;
 
                 //reset the level after a time of the restart delay
-                Invoke("ResetLevel", restartDelay);
+                deathSceneManager.lastActiveScene = SceneManager.GetActiveScene().name;
+                goToKillPlayerScene();
 
                 //re-enable the player movement after a time of the restart delay
                 Invoke("ReEnablePlayerMovement", restartDelay);
@@ -155,6 +157,11 @@ public class EnvListener : MonoBehaviour
     void FallingPlatformSound()
     {
         sounds.PlaySound("FallingFP");
+    }
+
+    void goToKillPlayerScene()
+    {
+        SceneManager.LoadScene("DeathScene");
     }
 
 }

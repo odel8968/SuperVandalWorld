@@ -10,7 +10,7 @@ public class daBullet : MonoBehaviour
     [SerializeField]
     float speed = 500f;
 
-    public float restartWait = 1f;
+    public float restartWait = 0.5f;
 
     Player_Movement playerMvmnt;
     Character_Movement characterMvmnt;
@@ -58,7 +58,8 @@ public class daBullet : MonoBehaviour
 
                     Debug.Log("You died by the boss!");
                     
-                    Invoke("ResetLevel", restartWait);
+                    deathSceneManager.lastActiveScene = SceneManager.GetActiveScene().name;
+                    goToKillPlayerScene();
                     Invoke("ReEnablePlayerMovement", restartWait);
                 }
                 Destroy(gameObject);
@@ -79,5 +80,10 @@ public class daBullet : MonoBehaviour
     void ReEnablePlayerMovement()
     {
         playerMvmnt.enabled = true;
+    }
+
+    void goToKillPlayerScene()
+    {
+        SceneManager.LoadScene("DeathScene");
     }
 }

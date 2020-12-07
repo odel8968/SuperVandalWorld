@@ -15,7 +15,7 @@ public class Enemy : MonoBehaviour
 
     Character_Movement playerMovement;    //control the movement
     bool playerAlive;
-    public float restartDelay = 2f;
+    public float restartDelay = 0.5f;
 
     public float attackDistance = 5; // distance at which the enemy starts attacking
     public float attackForce = 100; // the force of the attack
@@ -113,7 +113,8 @@ public class Enemy : MonoBehaviour
 
                 Debug.Log("You Died");
                 playerAlive = false;
-                Invoke("ResetLevel", restartDelay);
+                deathSceneManager.lastActiveScene = SceneManager.GetActiveScene().name;
+                goToKillPlayerScene();
                 Invoke("ReEnablePlayerMovement", restartDelay);
             }
         }
@@ -128,4 +129,10 @@ public class Enemy : MonoBehaviour
     {
         playerMovement.enabled = true;
     }
+
+    void goToKillPlayerScene()
+    {
+        SceneManager.LoadScene("DeathScene");
+    }
+
 }

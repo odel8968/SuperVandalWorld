@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 9001776332128913348}
   - component: {fileID: 8781292963545272196}
   - component: {fileID: 7014540463747091028}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: enemySkel
   m_TagString: daEnemy
   m_Icon: {fileID: 0}
@@ -28,7 +28,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9001776332128913344}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 2, y: 1.9999999, z: 2}
   m_Children: []
@@ -99,7 +99,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.04, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -110,7 +110,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.99, y: 1.23}
   m_EdgeRadius: 0
 --- !u!50 &9001776332128913348
 Rigidbody2D:
@@ -145,7 +145,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51d259917a04cf04b8e2cf5715d44f63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  restartWait: 1
+  restartWait: 0.5
   enemySpeed: 4
   initPos: {x: 0, y: 0}
   fallMultiplier: 2.5

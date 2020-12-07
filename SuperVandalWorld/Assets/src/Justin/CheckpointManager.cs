@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CheckpointManager : MonoBehaviour
 {
@@ -31,13 +32,17 @@ public class CheckpointManager : MonoBehaviour
         //Get LevelLoader Script
         lvlLoaded = GameObject.FindObjectOfType<LevelLoader>();
 
-        //Upon loading to the next level
-        if(lvlLoaded.nxtLevel)
+        if(SceneManager.GetActiveScene().name != "DeathScene")
         {
-            //reset checkpoint position to beginning of next level
-            lastCheckPointPos = new Vector2(0,0);
-            //Set the state of the next level loaded back to false to indicate nxlLevel = current level
-            lvlLoaded.SetToCurrentLevel();
+            //Upon loading to the next level
+            if(lvlLoaded.nxtLevel)
+            {
+                //reset checkpoint position to beginning of next level
+                lastCheckPointPos = new Vector2(0,0);
+                //Set the state of the next level loaded back to false to indicate nxlLevel = current level
+                lvlLoaded.SetToCurrentLevel();
+            }
         }
+        
     }
 }

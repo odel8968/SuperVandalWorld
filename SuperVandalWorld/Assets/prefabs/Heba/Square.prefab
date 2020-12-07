@@ -120,12 +120,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75e892bcffc03bf4084b9cdef73d01b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 10
   curTime: 0
   moveTime: 3
   direction: 1
-  restartDelay: 2
-  throwableObject: {fileID: 803973349216080928, guid: bcba4278a27614190b0331f394d86d65, type: 3}
+  restartDelay: 0.5
   attackDistance: 5
   attackForce: 100
   timeBetweenAttacks: 4
@@ -141,6 +140,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8861cff9a03f6594b9b7d74bda5228a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scoreValue: 0
 --- !u!95 &320071833
 Animator:
   serializedVersion: 3

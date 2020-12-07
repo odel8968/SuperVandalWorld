@@ -7,7 +7,7 @@ public class daEnemy : MonoBehaviour
 {
 
     // Retrieve player movement
-    public float restartWait = 1f;
+    public float restartWait = 0.5f;
     Player_Movement playerMvmnt;
     protected bool playerAlive = false;
 
@@ -153,7 +153,8 @@ public class daEnemy : MonoBehaviour
                             
                             playerAlive = false;
 
-                            Invoke("ResetLevel", restartWait);
+                            deathSceneManager.lastActiveScene = SceneManager.GetActiveScene().name;
+                            goToKillPlayerScene();
                             Invoke("ReEnablePlayerMovement", restartWait);
                         }
                         else
@@ -165,7 +166,8 @@ public class daEnemy : MonoBehaviour
                             
                             playerAlive = false;
 
-                            Invoke("ResetLevel", restartWait);
+                            deathSceneManager.lastActiveScene = SceneManager.GetActiveScene().name;
+                            goToKillPlayerScene();
                             Invoke("ReEnablePlayerMovement", restartWait);
                         }
                     
@@ -182,7 +184,8 @@ public class daEnemy : MonoBehaviour
                             
                             playerAlive = false;
 
-                            Invoke("ResetLevel", restartWait);
+                            deathSceneManager.lastActiveScene = SceneManager.GetActiveScene().name;
+                            goToKillPlayerScene();
                             Invoke("ReEnablePlayerMovement", restartWait);
                         }
                         else
@@ -209,5 +212,10 @@ public class daEnemy : MonoBehaviour
     void ReEnablePlayerMovement()
     {
         playerMvmnt.enabled = true;
+    }
+
+    void goToKillPlayerScene()
+    {
+        SceneManager.LoadScene("DeathScene");
     }
 }
