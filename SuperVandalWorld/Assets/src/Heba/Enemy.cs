@@ -13,7 +13,7 @@ public class Enemy : MonoBehaviour
     public float moveTime = 3;
     public float direction = 1;
 
-    Character_Movement playerMovement;    //control the movement
+    Player_Movement playerMovement;    //control the movement
     bool playerAlive;
     public float restartDelay = 0.5f;
 
@@ -33,7 +33,7 @@ public class Enemy : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();  
        animator = GetComponent<Animator>();
         playerAlive = true;
-        playerMovement = FindObjectOfType<Character_Movement>();
+        playerMovement = FindObjectOfType<Player_Movement>();
     }
 
     // Update is called once per frame

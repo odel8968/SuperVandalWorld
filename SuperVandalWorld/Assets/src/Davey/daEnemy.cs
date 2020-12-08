@@ -174,7 +174,6 @@ public class daEnemy : MonoBehaviour
                     }
                     else
                     {
-
                         if(direction.y > 0)
                         {
                             playerMvmnt.enabled = false;
