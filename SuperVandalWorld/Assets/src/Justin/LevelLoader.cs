@@ -39,7 +39,9 @@ public class LevelLoader : MonoBehaviour
             {
                 lvlComplete.SetActive(true);
                 playerMvmt.enabled = false;
-                Invoke("NextLevel", 2f);  
+                //Set variable for next level loaded to be true
+                nxtLevel = true;
+                Invoke("NextLevel", 2f); 
                 playerMvmt.enabled = true;
                 
             }
@@ -61,10 +63,8 @@ public class LevelLoader : MonoBehaviour
     void NextLevel()
     {
         //Load next level - called from EnvObject script
-                envObject.LoadNextLevel();
-            
-                 //Set variable for next level loaded to be true
-                 nxtLevel = true;
+        envObject.LoadNextLevel();
+        Debug.Log("Next Level Loaded");
     }
 
 }
