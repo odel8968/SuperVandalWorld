@@ -22,6 +22,9 @@ public class Enemy : MonoBehaviour
     public float timeBetweenAttacks = 4; // the time it takes to attack again (in seconds)
     private float curAttackTime; // variable to keep track of when to attack next
 
+    PauseMenu menuScreen;
+    bool bcMode;
+
     // Property to get the state of the player (alive or dead)
     public bool PlayerAlive { get { return playerAlive;} set { playerAlive = value;}}
 
@@ -31,9 +34,10 @@ public class Enemy : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();  
-       animator = GetComponent<Animator>();
+        animator = GetComponent<Animator>();
         playerAlive = true;
         playerMovement = FindObjectOfType<Player_Movement>();
+        menuScreen = FindObjectOfType<PauseMenu>();
     }
 
     // Update is called once per frame
@@ -87,6 +91,7 @@ public class Enemy : MonoBehaviour
         // which state to execute
         animator.SetFloat("velocity", moveVelocity.x);
 
+        bcMode = menuScreen.DrBCMode();
     }
 
     void FixedUpdate()
@@ -98,6 +103,9 @@ public class Enemy : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
+        Vector3 direction = transform.position - collision.gameObject.transform.position;
+        UIManager score = GameObject.Find("Score").GetComponent<UIManager>();
+
         if (collision.collider.tag == "Projectile")
         {
             Debug.Log("You killed an enemy with a projectile!");
@@ -107,15 +115,32 @@ public class Enemy : MonoBehaviour
 
         if (playerAlive == true)
         {
-            if (collision.collider.tag == "Player")
+            if (bcMode)
             {
-                playerMovement.enabled = false;
-
-                Debug.Log("You Died");
-                playerAlive = false;
-                deathSceneManager.lastActiveScene = SceneManager.GetActiveScene().name;
-                goToKillPlayerScene();
-                Invoke("ReEnablePlayerMovement", restartDelay);
+                Physics.IgnoreLayerCollision(0,10);
+            }
+            else 
+            {
+                if (collision.collider.tag == "Player")
+                {
+                    if (direction.y < 0)
+                    {
+                        Debug.Log("Enemy killed.");
+                        playerMovement.enabled = true;
+                        score.AddScore(100);
+                        Destroy(gameObject);
+                    } 
+                    else
+                    {
+                        playerMovement.enabled = false;
+    
+                        Debug.Log("You Died");
+                        playerAlive = false;
+                        deathSceneManager.lastActiveScene = SceneManager.GetActiveScene().name;
+                        goToKillPlayerScene();
+                        Invoke("ReEnablePlayerMovement", restartDelay);
+                    }
+                }
             }
         }
     }
